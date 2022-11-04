@@ -1,2 +1,2 @@
-# Enverify
-Enverify SDK Framework
+# EnVerify
+EnVerify KYC
