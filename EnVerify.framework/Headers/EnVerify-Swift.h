@@ -254,6 +254,7 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+
 @class NSString;
 
 SWIFT_CLASS("_TtC8EnVerify10EnVSession")
@@ -436,6 +437,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isCallAnswered;)
 + (NSString * _Nullable)getScreenRecordFilePath SWIFT_WARN_UNUSED_RESULT;
 + (void)setShowLogsWithValue:(BOOL)value;
 + (void)setCertificateBase64WithStr:(NSString * _Nonnull)str;
++ (void)setShowMobileSpeedWithState:(BOOL)state;
 + (void)saveRecordAssetWithFilePath:(NSString * _Nonnull)filePath;
 + (void)startCardFrontDetect;
 + (void)startCardHoloDetect;
@@ -456,10 +458,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isCallAnswered;)
 + (void)getAvailableAppointmentWithStartDate:(NSDate * _Nonnull)startDate endDate:(NSDate * _Nonnull)endDate callType:(NSString * _Nullable)callType completion:(void (^ _Nonnull)(NSArray<EnverifyVerifyAvailableAppointmentResult *> * _Nullable, NSError * _Nullable))completion;
 + (void)saveAppointmentWithData:(EnverifyVerifyAppointmentSaveMobileModel * _Nonnull)data completion:(void (^ _Nonnull)(EnverifyVerifySaveMobileAppointmentResult * _Nullable, NSError * _Nullable))completion;
 + (void)cancelAppointmentWithIdentityType:(NSString * _Nullable)identityType identityNo:(NSString * _Nullable)identityNo callType:(NSString * _Nullable)callType completion:(void (^ _Nonnull)(EnverifyVerifyCancelAppointmentResult * _Nullable, NSError * _Nullable))completion;
++ (void)setAgentRequest;
 + (void)getAppointmentWithIdentityNo:(NSString * _Nullable)identityNo identityType:(NSString * _Nullable)identityType completion:(void (^ _Nonnull)(NSArray<EnverifyVerifyAppointmentResult *> * _Nullable, NSError * _Nullable))completion;
 + (void)getCallTypesWithCompletion:(void (^ _Nonnull)(NSArray<EnverifyVerifyCallTypeResult *> * _Nullable, NSError * _Nullable))completion;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 

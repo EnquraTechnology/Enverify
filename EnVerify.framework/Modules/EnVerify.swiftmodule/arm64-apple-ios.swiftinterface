@@ -800,6 +800,7 @@ public enum EntityStateTypeEnum : Swift.String, Swift.Codable {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class EnVerify : ObjectiveC.NSObject, UIKit.UIApplicationDelegate {
+  @_Concurrency.MainActor(unsafe) public static var releaseNumber: Swift.String
   @objc @_Concurrency.MainActor(unsafe) public static var screenRecordAssets: [AVFoundation.AVAsset]
   @objc @_Concurrency.MainActor(unsafe) public static var screenRecordingParts: Swift.String
   @objc @_Concurrency.MainActor(unsafe) public static var screenRecordingData: EnVerify.EnverifyScreenRecordingData
@@ -920,6 +921,7 @@ public enum EntityStateTypeEnum : Swift.String, Swift.Codable {
   @objc @_Concurrency.MainActor(unsafe) public static func getScreenRecordFilePath() -> Swift.String?
   @objc @_Concurrency.MainActor(unsafe) public static func setShowLogs(value: Swift.Bool)
   @objc @_Concurrency.MainActor(unsafe) public static func setCertificateBase64(str: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public static func setShowMobileSpeed(state: Swift.Bool)
   @objc @_Concurrency.MainActor(unsafe) public static func saveRecordAsset(filePath: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) public static func startCardFrontDetect()
   @objc @_Concurrency.MainActor(unsafe) public static func startCardHoloDetect()
@@ -940,10 +942,11 @@ public enum EntityStateTypeEnum : Swift.String, Swift.Codable {
   @objc @_Concurrency.MainActor(unsafe) public static func getAvailableAppointment(startDate: Foundation.Date, endDate: Foundation.Date, callType: Swift.String?, completion: @escaping ((_ data: [EnVerify.EnverifyVerifyAvailableAppointmentResult]?, _ error: Swift.Error?) -> Swift.Void))
   @objc @_Concurrency.MainActor(unsafe) public static func saveAppointment(data: EnVerify.EnverifyVerifyAppointmentSaveMobileModel, completion: @escaping ((_ data: EnVerify.EnverifyVerifySaveMobileAppointmentResult?, _ error: Swift.Error?) -> Swift.Void))
   @objc @_Concurrency.MainActor(unsafe) public static func cancelAppointment(identityType: Swift.String?, identityNo: Swift.String?, callType: Swift.String?, completion: @escaping ((_ data: EnVerify.EnverifyVerifyCancelAppointmentResult?, _ error: Swift.Error?) -> Swift.Void))
+  @objc @_Concurrency.MainActor(unsafe) public static func setAgentRequest()
   @objc @_Concurrency.MainActor(unsafe) public static func getAppointment(identityNo: Swift.String?, identityType: Swift.String?, completion: @escaping ((_ data: [EnVerify.EnverifyVerifyAppointmentResult]?, _ error: Swift.Error?) -> Swift.Void))
   @objc @_Concurrency.MainActor(unsafe) public static func getCallTypes(completion: @escaping ((_ data: [EnVerify.EnverifyVerifyCallTypeResult]?, _ error: Swift.Error?) -> Swift.Void))
-  @_Concurrency.MainActor(unsafe) public static func getSettings(completion: @escaping ((_ isSuceess: Swift.Bool) -> Swift.Void))
-  @_Concurrency.MainActor(unsafe) public static func getMaxCallTime(completion: @escaping ((_ isSuceess: Swift.Bool) -> Swift.Void))
+  @_Concurrency.MainActor(unsafe) public static func getSettings()
+  @_Concurrency.MainActor(unsafe) public static func getScreenRecordingSettings(completion: @escaping ((_ isSuceess: Swift.Bool) -> Swift.Void))
   @_Concurrency.MainActor(unsafe) public static func speedCheck()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
   @objc deinit
@@ -1133,6 +1136,20 @@ extension EnVerify.EnVerify {
   @objc public func getHolopage() -> UIKit.UIImage
   @objc override dynamic public init()
   @objc deinit
+}
+public enum AgentRequestType {
+  case none
+  case nfc
+  case ocr
+  case liveness
+  case faceRecognition
+  case agent
+  case busy
+  public static func == (a: EnVerify.AgentRequestType, b: EnVerify.AgentRequestType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public typealias EncodeResult = (data: Foundation.Data?, error: Swift.Error?)
 @_hasMissingDesignatedInitializers open class CodableHelper {
@@ -1370,7 +1387,7 @@ public struct MessageSignature : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers open class AlamofireRequestBuilder<T> : EnVerify.RequestBuilder<T> {
-  required public init(method: Swift.String, URLString: Swift.String, parameters: [Swift.String : Any]?, isBody: Swift.Bool, headers: [Swift.String : Swift.String] = [:], timeout: Swift.Int?)
+  required public init(method: Swift.String, URLString: Swift.String, parameters: [Swift.String : Any]?, isBody: Swift.Bool, headers: [Swift.String : Swift.String] = [:], timeout: Swift.Int = 30)
   open func createSessionManager() -> Alamofire.Session
   open func contentTypeForFormPart(fileURL: Foundation.URL) -> Swift.String?
   open func makeRequest(manager: Alamofire.Session, method: Alamofire.HTTPMethod, encoding: Alamofire.ParameterEncoding, headers: [Swift.String : Swift.String]) -> Alamofire.DataRequest
@@ -1385,7 +1402,7 @@ public enum AlamofireDecodableRequestBuilderError : Swift.Error {
   case generalError(Swift.Error)
 }
 @_inheritsConvenienceInitializers open class AlamofireDecodableRequestBuilder<T> : EnVerify.AlamofireRequestBuilder<T> where T : Swift.Decodable {
-  required public init(method: Swift.String, URLString: Swift.String, parameters: [Swift.String : Any]?, isBody: Swift.Bool, headers: [Swift.String : Swift.String] = super, timeout: Swift.Int?)
+  required public init(method: Swift.String, URLString: Swift.String, parameters: [Swift.String : Any]?, isBody: Swift.Bool, headers: [Swift.String : Swift.String] = super, timeout: Swift.Int = super)
   @objc deinit
 }
 public struct VerifyCallIntegrationAddResponse : Swift.Codable {
@@ -1506,7 +1523,7 @@ open class RequestBuilder<T> {
   final public let URLString: Swift.String
   final public let timeout: Swift.Int?
   public var onProgressReady: ((Foundation.Progress) -> ())?
-  required public init(method: Swift.String, URLString: Swift.String, parameters: [Swift.String : Any]?, isBody: Swift.Bool, headers: [Swift.String : Swift.String] = [:], timeout: Swift.Int?)
+  required public init(method: Swift.String, URLString: Swift.String, parameters: [Swift.String : Any]?, isBody: Swift.Bool, headers: [Swift.String : Swift.String] = [:], timeout: Swift.Int = 30)
   open func addHeaders(_ aHeaders: [Swift.String : Swift.String])
   open func execute(_ completion: @escaping (_ response: EnVerify.Response<T>?, _ error: Swift.Error?) -> Swift.Void)
   public func addHeader(name: Swift.String, value: Swift.String) -> Self
@@ -2039,6 +2056,15 @@ public enum IdentityType : Swift.String {
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
+    get
+  }
+}
+public enum NFCStartResponseType : Swift.Int {
+  case success
+  case failure
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
 }
@@ -2596,7 +2622,8 @@ public struct VerifyMobileParameterGetResponse : Swift.Codable {
   public var maxCallTime: Swift.Int?
   public var setIceCheckingTimeout: Swift.Int?
   public var setCallWaitTimeout: Swift.Int?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, livenessScore: Swift.Double? = nil, faceRecognitionThreshold: Swift.Double? = nil, timeout: Swift.Int? = nil, maxCallStartErrorTime: Swift.Int? = nil, maxCallStartWaitTime: Swift.Int? = nil, screenRecordBitrate: Swift.Int? = nil, screenRecord: Swift.Bool? = nil, screenRecordPart: Swift.String? = nil, screenRecordRetryCount: Swift.Int? = nil, screenRecordUploadTimeout: Swift.Int? = nil, oCRMode: Swift.String? = nil, oCRDifficultyLevel: Swift.Int? = nil, livenessCalibration: Swift.Int? = nil, eyeDetectionTimeout: Swift.Int? = nil, headCalibration: Swift.Int? = nil, smileCalibration: Swift.Double? = nil, eyeCalibration: Swift.Double? = nil, livenessTimeOut: Swift.Int? = nil, distanceMin: Swift.Double? = nil, distanceMax: Swift.Double? = nil, chipDistanceMin: Swift.Double? = nil, chipDistanceMax: Swift.Double? = nil, maxCallTime: Swift.Int? = nil, setIceCheckingTimeout: Swift.Int? = nil, setCallWaitTimeout: Swift.Int? = nil)
+  public var showMobileSpeed: Swift.Bool?
+  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, livenessScore: Swift.Double? = nil, faceRecognitionThreshold: Swift.Double? = nil, timeout: Swift.Int? = nil, maxCallStartErrorTime: Swift.Int? = nil, maxCallStartWaitTime: Swift.Int? = nil, screenRecordBitrate: Swift.Int? = nil, screenRecord: Swift.Bool? = nil, screenRecordPart: Swift.String? = nil, screenRecordRetryCount: Swift.Int? = nil, screenRecordUploadTimeout: Swift.Int? = nil, oCRMode: Swift.String? = nil, oCRDifficultyLevel: Swift.Int? = nil, livenessCalibration: Swift.Int? = nil, eyeDetectionTimeout: Swift.Int? = nil, headCalibration: Swift.Int? = nil, smileCalibration: Swift.Double? = nil, eyeCalibration: Swift.Double? = nil, livenessTimeOut: Swift.Int? = nil, distanceMin: Swift.Double? = nil, distanceMax: Swift.Double? = nil, chipDistanceMin: Swift.Double? = nil, chipDistanceMax: Swift.Double? = nil, maxCallTime: Swift.Int? = nil, setIceCheckingTimeout: Swift.Int? = nil, setCallWaitTimeout: Swift.Int? = nil, showMobileSpeed: Swift.Bool? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -2627,6 +2654,7 @@ public struct VerifyMobileParameterGetResponse : Swift.Codable {
     case maxCallTime
     case setIceCheckingTimeout
     case setCallWaitTimeout
+    case showMobileSpeed
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -3457,8 +3485,6 @@ public struct AuthRevokeTokenResponse : Swift.Codable {
   open class func apiVerifySessionRoomPostWithRequestBuilder(body: EnVerify.SignedMessageVerifyCallSessionRoomRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyCallSessionRoomResponse>
   open class func apiVerifySettingGetPost(body: EnVerify.SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyMobileParameterGetResponse?, _ error: Swift.Error?) -> Swift.Void))
   open class func apiVerifySettingGetPostWithRequestBuilder(body: EnVerify.SignedMessageBaseRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyMobileParameterGetResponse>
-  open class func apiVerifySpeedCheckDownloadPost(body: EnVerify.SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: EnVerify.BaseResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifySpeedCheckDownloadPostWithRequestBuilder(body: EnVerify.SignedMessageBaseRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.BaseResponse>
   open class func apiVerifyVideoAddPost(timeout: Swift.Int, body: EnVerify.VerifySignedMessageCallVideoMobileAddRequest? = nil, completion: @escaping ((_ data: EnVerify.BaseResponse?, _ error: Swift.Error?) -> Swift.Void))
   open class func apiVerifyVideoAddPostWithRequestBuilder(timeout: Swift.Int, body: EnVerify.VerifySignedMessageCallVideoMobileAddRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.BaseResponse>
   @objc deinit
@@ -3596,6 +3622,8 @@ extension EnVerify.EntityStateTypeEnum : Swift.RawRepresentable {}
 extension EnVerify.EnVerifyCallSessionStatusTypeEnum : Swift.Equatable {}
 extension EnVerify.EnVerifyCallSessionStatusTypeEnum : Swift.Hashable {}
 extension EnVerify.EnVerifyCallSessionStatusTypeEnum : Swift.RawRepresentable {}
+extension EnVerify.AgentRequestType : Swift.Equatable {}
+extension EnVerify.AgentRequestType : Swift.Hashable {}
 extension EnVerify.SignedMessageAuthTokenRequest.CodingKeys : Swift.Equatable {}
 extension EnVerify.SignedMessageAuthTokenRequest.CodingKeys : Swift.Hashable {}
 extension EnVerify.SignedMessageAuthTokenRequest.CodingKeys : Swift.RawRepresentable {}
@@ -3677,6 +3705,9 @@ extension EnVerify.AuthTokenRequest.CodingKeys : Swift.RawRepresentable {}
 extension EnVerify.IdentityType : Swift.Equatable {}
 extension EnVerify.IdentityType : Swift.Hashable {}
 extension EnVerify.IdentityType : Swift.RawRepresentable {}
+extension EnVerify.NFCStartResponseType : Swift.Equatable {}
+extension EnVerify.NFCStartResponseType : Swift.Hashable {}
+extension EnVerify.NFCStartResponseType : Swift.RawRepresentable {}
 extension EnVerify.EnLogLevel : Swift.Equatable {}
 extension EnVerify.EnLogLevel : Swift.Hashable {}
 extension EnVerify.EnLogLevel : Swift.RawRepresentable {}

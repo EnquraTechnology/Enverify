@@ -4,14 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		q3VU88a4Q/KmXO3B310JVFzcUu8=
-		</data>
-		<key>Assets.car</key>
-		<data>
-		jFRCxebotMW9ZykwUoqRce2+0Ik=
-		</data>
 		<key>Config.plist</key>
 		<data>
 		G3fZEyQca4yMnbmTwSVyrMdR0bo=
@@ -62,7 +54,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
-		JtULu5zGylXNJtpIAEfN/rPBe/s=
+		64CQfZDBLlQepkv6g9acd6s3qh0=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/blazeface.tfl</key>
 		<data>
@@ -110,7 +102,7 @@
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
-		xU4qaOdh3n8OJyBj8a92hF3lzas=
+		MUlLNy4fjiHa9Q82VbzR17G6GXE=
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
 		<data>
@@ -154,19 +146,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		K6w9Id91XjhE1P9ZVK33UjuddFE=
-		</data>
-		<key>Modules/.DS_Store</key>
-		<data>
-		bfpSOgpGoxbNdMT/+oa0LTgnGJo=
+		6xg+kuRGCHxg1BC8uN02A46n83c=
 		</data>
 		<key>Modules/IDVerify.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		oKWG43kXLmro7TBChMIyqaDnW0g=
+		P2UEv8lR3a/gHigVyEhaa3jzlGY=
 		</data>
 		<key>Modules/IDVerify.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		FaoLGTY81+bNUf/xX6DUiDZkmO4=
+		powc4xkIcJQQD59jLOFKso4RSpY=
 		</data>
 		<key>Modules/IDVerify.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -182,15 +170,11 @@
 		</data>
 		<key>Modules/IDVerify.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		a6ZcbyulJcVJE394sVlsqg7JIEc=
+		1NjF76vuzSZbsyrkdlgJAUBeTaA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		snJJ2c4Wc2kEnyStSuffUab7mrk=
-		</data>
-		<key>SmartIDLogo.svg</key>
-		<data>
-		aR+Z6mDWvVQ0yBzvetvL78FNgcI=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
@@ -449,17 +433,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Assets.car</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			jFRCxebotMW9ZykwUoqRce2+0Ik=
-			</data>
-			<key>hash2</key>
-			<data>
-			odNQ3Bt8VYdtQxOVGfD/e1Vq6yyKZfYwjjci0iXNMvI=
-			</data>
-		</dict>
 		<key>Config.plist</key>
 		<dict>
 			<key>hash</key>
@@ -596,11 +569,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JtULu5zGylXNJtpIAEfN/rPBe/s=
+			64CQfZDBLlQepkv6g9acd6s3qh0=
 			</data>
 			<key>hash2</key>
 			<data>
-			fdnX3kaeiR8wScpz516rruMIsf37J/DRaibPuycl1yA=
+			B+3StJW2+bxaXJuJSSR1QHxsnZ2tvEWVwJzWYBlXWK0=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/blazeface.tfl</key>
@@ -728,11 +701,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xU4qaOdh3n8OJyBj8a92hF3lzas=
+			MUlLNy4fjiHa9Q82VbzR17G6GXE=
 			</data>
 			<key>hash2</key>
 			<data>
-			1uMcj/qCwWFj+OWt0UkAsH+b58kQVZT6/eW3LNNDgkw=
+			ZtxdjklMBuGVJNBLrseFFamh70IolYBF5T8O7/Ax7QI=
 			</data>
 		</dict>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
@@ -849,22 +822,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oKWG43kXLmro7TBChMIyqaDnW0g=
+			P2UEv8lR3a/gHigVyEhaa3jzlGY=
 			</data>
 			<key>hash2</key>
 			<data>
-			l9pUNu3ahBBUpD9JuxNaQciChEX7O3vqrDglhnnBFgQ=
+			vKbNDPBNze9GbstD+yyortvdzvfkmKy9t456rwEXZ3Q=
 			</data>
 		</dict>
 		<key>Modules/IDVerify.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FaoLGTY81+bNUf/xX6DUiDZkmO4=
+			powc4xkIcJQQD59jLOFKso4RSpY=
 			</data>
 			<key>hash2</key>
 			<data>
-			fmkrNNNqfGPd4INerg6Pg1R0OvGmMbKINp8u72VNUwM=
+			0A3dfgOYWJIB5jcZ6RGaVS3dYIsYDmmitIS5zGYtgk8=
 			</data>
 		</dict>
 		<key>Modules/IDVerify.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -904,11 +877,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a6ZcbyulJcVJE394sVlsqg7JIEc=
+			1NjF76vuzSZbsyrkdlgJAUBeTaA=
 			</data>
 			<key>hash2</key>
 			<data>
-			8SFvjgn6xt55O3GT2peWAo0Cpi0Pp3PrTrPUe39WCTM=
+			UAcNtqeDxyRY7/3wp6ZAxvLY9zpmTdJlspbTV21dLwI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -920,17 +893,6 @@
 			<key>hash2</key>
 			<data>
 			Z1RnXHOGzBnOMwMMXY/nNjImy9mFrpEKlSxxIVfIjZg=
-			</data>
-		</dict>
-		<key>SmartIDLogo.svg</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			aR+Z6mDWvVQ0yBzvetvL78FNgcI=
-			</data>
-			<key>hash2</key>
-			<data>
-			4tK5aQYqsiGFreYEmS+5ayJqeo5iYmScuFvphU6Ckw8=
 			</data>
 		</dict>
 		<key>en.lproj/Localizable.strings</key>
