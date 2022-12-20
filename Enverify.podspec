@@ -1,14 +1,14 @@
   Pod::Spec.new do |spec|
     spec.name         = "EnVerify"
-    spec.version      = "1.1.2"
+    spec.version      = "1.1.3"
     spec.summary      = "EnVerify."
     spec.authors      = { "Enqura" => "http://www.enqura.com" }
     spec.homepage     = "http://www.enqura.com"
-    spec.license          = { :type => 'MIT', :file => "EnVerify-1.1.2/LICENSE" }
+    spec.license          = { :type => 'MIT', :file => "EnVerify-1.1.3/LICENSE" }
     spec.platform     = :ios
     spec.ios.deployment_target = '10.3'
-    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/1.1.2.zip"}
-    spec.ios.vendored_frameworks = "EnVerify-1.1.2/EnVerify.xcframework" , "EnVerify-1.1.2/IDVerify.xcframework"
+    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/1.1.3.zip"}
+    spec.ios.vendored_frameworks = "EnVerify-1.1.3/EnVerify.xcframework" , "EnVerify-1.1.3/IDVerify.xcframework"
     spec.ios.frameworks = "EnVerify"
     spec.requires_arc = true
     spec.swift_version = '5.0'	
@@ -23,6 +23,6 @@
     spec.dependency 'SwiftyJSON', '~> 5.0'
     spec.dependency 'TensorFlowLiteSwift'
     spec.dependency 'netfox', :configurations => ['Debug']
-    spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386 arm64' }
   end
 
