@@ -8,7 +8,7 @@
     spec.platform     = :ios
     spec.ios.deployment_target = '10.3'
     spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/1.2.11.3.zip"}
-    spec.ios.vendored_frameworks = "EnVerify-1.2.11.3/EnVerify.XCframework" , "EnVerify-1.2.11.3/IDVerify.XCframework"
+    spec.ios.vendored_frameworks = "EnVerify-1.2.11.3/EnVerify.xcframework" , "EnVerify-1.2.11.3/IDVerify.xcframework"
     spec.ios.frameworks = "EnVerify"
     spec.requires_arc = true	
     spec.dependency 'Starscream', '~> 3.0.0'

@@ -1,0 +1,4 @@
+framework module EnQualify {
+  header "EnQualify-Swift.h"
+  requires objc
+}
