@@ -10,7 +10,8 @@
     spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/1.2.11.3.zip"}
     spec.ios.vendored_frameworks = "EnVerify-1.2.11.3/EnVerify.xcframework" , "EnVerify-1.2.11.3/IDVerify.xcframework"
     spec.ios.frameworks = "EnVerify"
-    spec.requires_arc = true	
+    spec.requires_arc = true
+    spec.swift_version = '5.0'	
     spec.dependency 'Starscream', '~> 3.0.0'
     spec.dependency 'GoogleWebRTC'
     spec.dependency 'Socket.IO-Client-Swift'
