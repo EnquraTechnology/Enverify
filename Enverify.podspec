@@ -8,9 +8,11 @@
     spec.platform     = :ios
     spec.ios.deployment_target = '10.3'
     spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/0.1.2000.zip"}
-    spec.ios.vendored_frameworks = "EnVerify-0.1.2000/EnVerify.framework" , "EnVerify-0.1.2000/IDVerify.framework"
+    spec.ios.vendored_frameworks = "EnVerify-0.1.2000/EnVerify.xcframework" , "EnVerify-0.1.2000/IDVerify.xcframework"
     spec.ios.frameworks = "EnVerify"
     spec.requires_arc = true	
+    spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' }
+    spec.user_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' }
     spec.dependency 'Starscream', '~> 3.0.6'
     spec.dependency 'GoogleWebRTC'
     spec.dependency 'Socket.IO-Client-Swift'
