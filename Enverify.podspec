@@ -1,4 +1,4 @@
-  Pod::Spec.new do |spec|
+   Pod::Spec.new do |spec|
     spec.name         = "EnVerify"
     spec.version      = "1.2.13.3"
     spec.summary      = "EnVerify."
@@ -17,12 +17,12 @@
     spec.dependency 'Alamofire', '~> 5.5.0'
     spec.dependency 'GoogleMLKit/TextRecognition','2.2.0'
     spec.dependency 'GoogleMLKit/FaceDetection'
-    spec.dependency 'OpenSSL-Universal','1.1.1400'
+    spec.dependency 'OpenSSL-Universal','1.1.1900'
     spec.dependency 'SwiftyJSON', '~> 5.0'
     spec.dependency 'TensorFlowLiteSwift'
     spec.dependency 'PromisesObjC'
     spec.dependency 'GTMSessionFetcher'
-    spec.dependency 'GoogleDataTransport'
+    spec.dependency 'GoogleDataTransport','9.2.0'
     spec.dependency 'GoogleToolboxForMac'
     spec.dependency 'Protobuf'
     spec.dependency 'GoogleUtilities'
