@@ -1,0 +1,4 @@
+framework module IDVerification {
+  header "IDVerification-Swift.h"
+  requires objc
+}
