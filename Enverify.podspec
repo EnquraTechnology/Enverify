@@ -8,8 +8,8 @@
     spec.platform     = :ios
     spec.ios.deployment_target = '10.3'
     spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/1.2.14.1.zip"}
-    spec.ios.vendored_frameworks = "EnVerify-1.2.14.1/EnVerify.xcframework" , "EnVerify-1.2.14.1/IDVerification.xcframework"
-    spec.ios.frameworks = "EnVerify"
+    spec.ios.vendored_frameworks = "EnVerify-1.2.14.1/EnQualify.xcframework" , "EnVerify-1.2.14.1/IDVerification.xcframework"
+    spec.ios.frameworks = "EnQualify"
     spec.requires_arc = true	
     spec.swift_versions = '5.0'
     spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' ,  'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
