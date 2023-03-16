@@ -1,14 +1,14 @@
    Pod::Spec.new do |spec|
     spec.name         = "EnVerify"
-    spec.version      = "1.1.35.1"
+    spec.version      = "1.1.35.2"
     spec.summary      = "EnVerify."
     spec.authors      = { "Enqura" => "http://www.enqura.com" }
     spec.homepage     = "http://www.enqura.com"
     spec.license          = { :type => 'MIT', :text => "MIT License" }
     spec.platform     = :ios
     spec.ios.deployment_target = '10.3'
-    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/1.1.35.1.zip"}
-    spec.ios.vendored_frameworks = "EnVerify-1.1.35.1/EnVerify.framework" , "EnVerify-1.1.35.1/IDVerify.framework"
+    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/1.1.35.2.zip"}
+    spec.ios.vendored_frameworks = "EnVerify-1.1.35.2/EnVerify.framework" , "EnVerify-1.1.35.2/IDVerify.framework"
     spec.ios.frameworks = "EnVerify"
     spec.requires_arc = true	
     spec.swift_versions = '5.0'
@@ -20,7 +20,7 @@
     spec.dependency 'Alamofire', '~> 5.5.0'
     spec.dependency 'GoogleMLKit/TextRecognition','2.2.0'
     spec.dependency 'GoogleMLKit/FaceDetection'
-    spec.dependency 'OpenSSL-Universal'
+    spec.dependency 'OpenSSL-Universal','1.0.2.20'
     spec.dependency 'SwiftyJSON', '~> 5.0'
   end
 
