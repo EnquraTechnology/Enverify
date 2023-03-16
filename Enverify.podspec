@@ -14,22 +14,13 @@
     spec.swift_versions = '5.0'
     spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' ,  'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     spec.user_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' , 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
-    spec.dependency 'Starscream', '~> 3.0.6'
+    spec.dependency 'Starscream', '~> 3.0.0'
     spec.dependency 'GoogleWebRTC'
-    spec.dependency 'Socket.IO-Client-Swift','14.0.0'
+    spec.dependency 'Socket.IO-Client-Swift'
     spec.dependency 'Alamofire', '~> 5.5.0'
     spec.dependency 'GoogleMLKit/TextRecognition','2.2.0'
     spec.dependency 'GoogleMLKit/FaceDetection'
-    spec.dependency 'GoogleMLKit/BarcodeScanning'
-    spec.dependency 'OpenSSL-Universal','1.1.1900'
+    spec.dependency 'OpenSSL-Universal'
     spec.dependency 'SwiftyJSON', '~> 5.0'
-    spec.dependency 'TensorFlowLiteSwift'
-    spec.dependency 'PromisesObjC'
-    spec.dependency 'GTMSessionFetcher'
-    spec.dependency 'GoogleDataTransport'
-    spec.dependency 'GoogleToolboxForMac'
-    spec.dependency 'Protobuf'
-    spec.dependency 'nanopb'
-    spec.dependency 'GoogleUtilities'
   end
 
