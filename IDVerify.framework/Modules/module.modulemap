@@ -6,6 +6,6 @@ framework module IDVerify {
 }
 
 module IDVerify.Swift {
-    header "IDVerify-Swift.h"
-    requires objc
+  header "IDVerify-Swift.h"
+  requires objc
 }

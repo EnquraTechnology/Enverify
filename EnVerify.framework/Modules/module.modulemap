@@ -6,6 +6,6 @@ framework module EnVerify {
 }
 
 module EnVerify.Swift {
-    header "EnVerify-Swift.h"
-    requires objc
+  header "EnVerify-Swift.h"
+  requires objc
 }

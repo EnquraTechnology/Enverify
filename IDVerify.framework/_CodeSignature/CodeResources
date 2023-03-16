@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		i8dcksRGYNieHeF2Zf/TnMEtD1I=
+		</data>
 		<key>Config.plist</key>
 		<data>
 		G3fZEyQca4yMnbmTwSVyrMdR0bo=
@@ -22,7 +26,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<data>
-		3gWxPMyamc6/Kw3qvTRgJ92xjYI=
+		dUyRIR9eRC3PuLnqR98eSSohcQs=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<data>
@@ -54,7 +58,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
-		1DR7ND5S9OCnWmosG/LMrVNYvog=
+		EmKNgaoZhzThyI9PWHA38KB/YmU=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/blazeface.tfl</key>
 		<data>
@@ -82,7 +86,7 @@
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/Info.plist</key>
 		<data>
-		/xOveDRsNBlUv2uojDb3oGJfsOU=
+		u6LHBSUUQxeQBvAVpZfNriWbgFs=
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
@@ -102,7 +106,7 @@
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
-		lVFPErUqZ8krVewlQqtjtIUreRw=
+		gdlDAZAL87fd1yEhK/zWXJdrnro=
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
 		<data>
@@ -138,7 +142,7 @@
 		</data>
 		<key>Headers/IDVerify-Swift.h</key>
 		<data>
-		2IDZHhPtuE4HEg6KkgLeIJzG4dU=
+		qjhJdY8OFB5v/sok0EvCuwpsL74=
 		</data>
 		<key>Headers/IDVerify.h</key>
 		<data>
@@ -146,35 +150,39 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OTDUsHbcEAdJBb50Wkwwyquo7jQ=
+		ESzSKWfVavKOGYYr4dE/kouke0g=
 		</data>
 		<key>Modules/IDVerify.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		96Z+N8zpDvdIR961bjfipUB5uOk=
+		AOzOT63tdjdjFI6YbFnK7ReN1I4=
 		</data>
 		<key>Modules/IDVerify.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		vmSFjbNFp676gMEuWKlk7fBU5gs=
+		+2U5TLBkS+OqurKpIEPqUwcCVhc=
 		</data>
 		<key>Modules/IDVerify.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		dphI0Fa8BZBu9ZHb9a+knoAmmds=
+		xFSUWQkBtEszYv5I2wSRxiBdILQ=
 		</data>
 		<key>Modules/IDVerify.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		eF3kYEOJo6bXatLc/PsX/OARDG0=
+		q12svedOl2iayIxvhluhnVENXj0=
 		</data>
 		<key>Modules/IDVerify.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Qy90kL4I4I3TxeguI21SwyxleOs=
+		xFSUWQkBtEszYv5I2wSRxiBdILQ=
 		</data>
 		<key>Modules/IDVerify.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		obgmNK/fbSeB6NWssf+8WXt/3m0=
+		AMuNNXjtZ5OT3opv1r6mgIIfJ9w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		VnC/z1/EKCjWPH8DGBoPjiuq7pQ=
+		snJJ2c4Wc2kEnyStSuffUab7mrk=
+		</data>
+		<key>SmartIDLogo.svg</key>
+		<data>
+		aR+Z6mDWvVQ0yBzvetvL78FNgcI=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
@@ -209,10 +217,6 @@
 		<data>
 		aQqCesXQx5coAt/6bOjKhFsVRKY=
 		</data>
-		<key>idvCall.png</key>
-		<data>
-		UkORg6MNtYuPcMfSCjXMzelCW2I=
-		</data>
 		<key>idvCancel.png</key>
 		<data>
 		kwiyIj2QJPyFUOffm8aZo17esvE=
@@ -220,10 +224,6 @@
 		<key>idvExit.png</key>
 		<data>
 		p+U8Xr5omDk9esdRaYrOrL7lL4k=
-		</data>
-		<key>idvHangup.png</key>
-		<data>
-		t9cfafOSctjxyaelkI7uzPcAJFI=
 		</data>
 		<key>idvRetry.png</key>
 		<data>
@@ -237,17 +237,9 @@
 		<data>
 		HvW3IPuiJK+hXeOLyO6QTWl9pJQ=
 		</data>
-		<key>labels.txt</key>
-		<data>
-		EC+wWFNIrxc9YBm35qIC6CBXmOU=
-		</data>
 		<key>masterList.pem</key>
 		<data>
-		Tt0bcdSiiWDR0oTEexc4f7JdiZg=
-		</data>
-		<key>model.enc</key>
-		<data>
-		qocrxEqBRHxVEH3KY+eX9XzCwuc=
+		YpQww+dHgnvcBCGfBq5ImsmrQNo=
 		</data>
 		<key>stt_app_start.mp3</key>
 		<data>
@@ -363,7 +355,7 @@
 		</data>
 		<key>stt_txt_back_fail.mp3</key>
 		<data>
-		vnI5ZXn45fkQ4pmsr350bLp0/n8=
+		TIgraiVzFToXbay3t96TRDzlB44=
 		</data>
 		<key>stt_txt_back_start.mp3</key>
 		<data>
@@ -433,6 +425,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i8dcksRGYNieHeF2Zf/TnMEtD1I=
+			</data>
+			<key>hash2</key>
+			<data>
+			I1XbBp4PjoQ8heg5+09aF16YfDyB/7vQfTOQky1d5to=
+			</data>
+		</dict>
 		<key>Config.plist</key>
 		<dict>
 			<key>hash</key>
@@ -481,11 +484,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3gWxPMyamc6/Kw3qvTRgJ92xjYI=
+			dUyRIR9eRC3PuLnqR98eSSohcQs=
 			</data>
 			<key>hash2</key>
 			<data>
-			YFaIpJzKX6xEf6S28o43Zc7qB0ycCA/Mhy838tdtaus=
+			Q4XLxXpLbu4wZ4IgGugDzvcjPlJX+LiLOtjl+DLLlkk=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
@@ -569,11 +572,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1DR7ND5S9OCnWmosG/LMrVNYvog=
+			EmKNgaoZhzThyI9PWHA38KB/YmU=
 			</data>
 			<key>hash2</key>
 			<data>
-			kYQO8cw+Afzj7CkXY/7GKmqVJ6KQfJ05LWbXqlpa0Mw=
+			MTrME+4KIpWYA6AdUR3Sd+/OgowotmrynTH2wZy+iec=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/blazeface.tfl</key>
@@ -646,11 +649,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/xOveDRsNBlUv2uojDb3oGJfsOU=
+			u6LHBSUUQxeQBvAVpZfNriWbgFs=
 			</data>
 			<key>hash2</key>
 			<data>
-			mqebtg/z4BoA5m/bokqYX3Qq1GF5UGGAsGeWLbEvHvM=
+			1ta2VM3ABe4LagLHXPGRZs8cRxrQcTxsEePwcRjnLaY=
 			</data>
 		</dict>
 		<key>GoogleMVTextDetectorResources.bundle/_CodeSignature/CodeDirectory</key>
@@ -701,11 +704,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lVFPErUqZ8krVewlQqtjtIUreRw=
+			gdlDAZAL87fd1yEhK/zWXJdrnro=
 			</data>
 			<key>hash2</key>
 			<data>
-			vW06Cia66uERKykKVGMFBQLGXj0pUamOjOCXY3vXlBE=
+			8SUfAOzYmXHinneCApGrlzItw3e8B38TS1Oy7QdnDag=
 			</data>
 		</dict>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
@@ -800,11 +803,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2IDZHhPtuE4HEg6KkgLeIJzG4dU=
+			qjhJdY8OFB5v/sok0EvCuwpsL74=
 			</data>
 			<key>hash2</key>
 			<data>
-			cQPXYHDODeqcUX5GmLAWNFMIL5TElPddzMGMm71scGw=
+			513ry3jcwSTyACy6DyB0joJPXAesKMm2oi1as12yJRA=
 			</data>
 		</dict>
 		<key>Headers/IDVerify.h</key>
@@ -822,77 +825,88 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			96Z+N8zpDvdIR961bjfipUB5uOk=
+			AOzOT63tdjdjFI6YbFnK7ReN1I4=
 			</data>
 			<key>hash2</key>
 			<data>
-			rDlcA/pIbyy5V1jcEEK+VAO53+a+UI7++qguZzVxWpg=
+			ufBHFNozQdFA7WJq8YgwrNFae1DNb3xv3zgT+A7P4fc=
 			</data>
 		</dict>
 		<key>Modules/IDVerify.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vmSFjbNFp676gMEuWKlk7fBU5gs=
+			+2U5TLBkS+OqurKpIEPqUwcCVhc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qh7ToFomDcrhBy5NSJqzRFdvpJqQ1ovGQyPwuEJXKw0=
+			Br2VcyX/hPehxSIla61A54lGqhD0WyB0+kupNnoFT3o=
 			</data>
 		</dict>
 		<key>Modules/IDVerify.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dphI0Fa8BZBu9ZHb9a+knoAmmds=
+			xFSUWQkBtEszYv5I2wSRxiBdILQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			MbTsvIPXveOpOJ4q6AznVCZhreGRWcdBjFpCjK41Dnc=
+			k5JEI6CdlIk6ZrGe8iZJ1kDFBczCSaacoj/SAUGnFX8=
 			</data>
 		</dict>
 		<key>Modules/IDVerify.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eF3kYEOJo6bXatLc/PsX/OARDG0=
+			q12svedOl2iayIxvhluhnVENXj0=
 			</data>
 			<key>hash2</key>
 			<data>
-			LiGcAvp8BLNneOz8HlgrVnWAf/fFolJcxQ15+evDUg8=
+			/ilfDEZHhDLiNi/W5+hUQKNhEaVOtFOEoYQq5CejZ4c=
 			</data>
 		</dict>
 		<key>Modules/IDVerify.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Qy90kL4I4I3TxeguI21SwyxleOs=
+			xFSUWQkBtEszYv5I2wSRxiBdILQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			DFWs+BYnktjq9ZXAmmFQwPB0CVZ3Eg7Wg7mPyyuQaXI=
+			k5JEI6CdlIk6ZrGe8iZJ1kDFBczCSaacoj/SAUGnFX8=
 			</data>
 		</dict>
 		<key>Modules/IDVerify.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			obgmNK/fbSeB6NWssf+8WXt/3m0=
+			AMuNNXjtZ5OT3opv1r6mgIIfJ9w=
 			</data>
 			<key>hash2</key>
 			<data>
-			yAC7z4e83GZcpav79Da3qV8iHq3HrAi6y1Y4bWRdb4U=
+			Y122ScXERmujWJJe7S2Q6rbkyPJNrkXY600UUxpWqEo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VnC/z1/EKCjWPH8DGBoPjiuq7pQ=
+			snJJ2c4Wc2kEnyStSuffUab7mrk=
 			</data>
 			<key>hash2</key>
 			<data>
-			Wqy8hO9yB9hUBlBswYMg/63w6FYwmyxHchQ0qq9jVLI=
+			Z1RnXHOGzBnOMwMMXY/nNjImy9mFrpEKlSxxIVfIjZg=
+			</data>
+		</dict>
+		<key>SmartIDLogo.svg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aR+Z6mDWvVQ0yBzvetvL78FNgcI=
+			</data>
+			<key>hash2</key>
+			<data>
+			4tK5aQYqsiGFreYEmS+5ayJqeo5iYmScuFvphU6Ckw8=
 			</data>
 		</dict>
 		<key>en.lproj/Localizable.strings</key>
@@ -974,17 +988,6 @@
 			bwgEM0BdGBj+1QHw1g8VrZx3TQklv50RQkUPFRhSprA=
 			</data>
 		</dict>
-		<key>idvCall.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UkORg6MNtYuPcMfSCjXMzelCW2I=
-			</data>
-			<key>hash2</key>
-			<data>
-			4iE9WWbrNqCHvItLzduKJEIki2uUxetAzjrlz24BJNY=
-			</data>
-		</dict>
 		<key>idvCancel.png</key>
 		<dict>
 			<key>hash</key>
@@ -1005,17 +1008,6 @@
 			<key>hash2</key>
 			<data>
 			aVaZFZwAz7cN/L5qfwRS1ZiOERCxUwsR66MgSivAsQY=
-			</data>
-		</dict>
-		<key>idvHangup.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			t9cfafOSctjxyaelkI7uzPcAJFI=
-			</data>
-			<key>hash2</key>
-			<data>
-			mhmUxZBqw7m4RloJ2DZCCXnekv20saYB0qeAnslqSqo=
 			</data>
 		</dict>
 		<key>idvRetry.png</key>
@@ -1051,37 +1043,15 @@
 			abJKUOHoNsvRLC7zgk4CGJFyhXTwTTW+NAe4QaNNim8=
 			</data>
 		</dict>
-		<key>labels.txt</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EC+wWFNIrxc9YBm35qIC6CBXmOU=
-			</data>
-			<key>hash2</key>
-			<data>
-			vk3MOzDdN+Is5/G/mBaVPxnE8V0POfww9cKESCWIuII=
-			</data>
-		</dict>
 		<key>masterList.pem</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Tt0bcdSiiWDR0oTEexc4f7JdiZg=
+			YpQww+dHgnvcBCGfBq5ImsmrQNo=
 			</data>
 			<key>hash2</key>
 			<data>
-			W5kKumAKpLTD3aZon6QdKWXippdkzFVz1CT7OkNDnqs=
-			</data>
-		</dict>
-		<key>model.enc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qocrxEqBRHxVEH3KY+eX9XzCwuc=
-			</data>
-			<key>hash2</key>
-			<data>
-			oD/kU4QXJinBjRswuZ22CwsQMEtL9xB/BBSdApDoiz4=
+			WcQCkK3HfyyixG/8Ll7LviaXaCqgQ5gpNpQzth/R8xQ=
 			</data>
 		</dict>
 		<key>stt_app_start.mp3</key>
@@ -1396,11 +1366,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vnI5ZXn45fkQ4pmsr350bLp0/n8=
+			TIgraiVzFToXbay3t96TRDzlB44=
 			</data>
 			<key>hash2</key>
 			<data>
-			oBFkTPM1NwuD5WYnxu8L1yEWJG+wgsAsn5niHqbH3SI=
+			DS6MjU+d66lCQnXz+32nPCW1+yFotyJyOF0k0sHOS4k=
 			</data>
 		</dict>
 		<key>stt_txt_back_start.mp3</key>

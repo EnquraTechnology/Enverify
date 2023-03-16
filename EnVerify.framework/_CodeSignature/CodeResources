@@ -18,7 +18,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<data>
-		BTRWUOaqKTRJyl/scvrpdEeZkU0=
+		ObooRZuqjuNkTAT+M6+yVJAvqbM=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<data>
@@ -31,26 +31,6 @@
 		<key>GoogleMVFaceDetectorResources.bundle/MFT_fssd_fastgray.pb</key>
 		<data>
 		DP+qJf0czliL6znGLVx90ASNzCY=
-		</data>
-		<key>GoogleMVFaceDetectorResources.bundle/_CodeSignature/CodeDirectory</key>
-		<data>
-		nZa9hGZkfB2RANfCEY90f1uNhRQ=
-		</data>
-		<key>GoogleMVFaceDetectorResources.bundle/_CodeSignature/CodeRequirements</key>
-		<data>
-		Z8wPj4lz3Wk1HF3q3yIBDi2GTls=
-		</data>
-		<key>GoogleMVFaceDetectorResources.bundle/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		VPE8eiJFuGVag36Jo4wp32UzP3U=
-		</data>
-		<key>GoogleMVFaceDetectorResources.bundle/_CodeSignature/CodeResources</key>
-		<data>
-		MhB3UG8viKa+dwO2iK7bMpceck0=
-		</data>
-		<key>GoogleMVFaceDetectorResources.bundle/_CodeSignature/CodeSignature</key>
-		<data>
-		OBkWWvV7Mg2YJgsAsP9gpfRE2Xw=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/blazeface.tfl</key>
 		<data>
@@ -78,27 +58,7 @@
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/Info.plist</key>
 		<data>
-		1EcMBMa5Z3zqQ4/HGolTddZtX6I=
-		</data>
-		<key>GoogleMVTextDetectorResources.bundle/_CodeSignature/CodeDirectory</key>
-		<data>
-		1Nq6CqdGcFBmSBF0C0vHRp8kB9U=
-		</data>
-		<key>GoogleMVTextDetectorResources.bundle/_CodeSignature/CodeRequirements</key>
-		<data>
-		HVWtyHiEIx+QGxaDNQfiiKewnJU=
-		</data>
-		<key>GoogleMVTextDetectorResources.bundle/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		qjY3LuBR+D1wFUZu0s88xWaAMsM=
-		</data>
-		<key>GoogleMVTextDetectorResources.bundle/_CodeSignature/CodeResources</key>
-		<data>
-		wAcvRDpr4WwSmhX9K6fHkl08qbg=
-		</data>
-		<key>GoogleMVTextDetectorResources.bundle/_CodeSignature/CodeSignature</key>
-		<data>
-		F48Z/08P+6tq8jUT18+pm5SR/CM=
+		VJRDlbtpS2MbQzapomZNVKW57WE=
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
 		<data>
@@ -134,7 +94,7 @@
 		</data>
 		<key>Headers/EnVerify-Swift.h</key>
 		<data>
-		2eLFgk65bCr+2MzBrrF/V0FnAEg=
+		tTr5QHJ6N46GIYlM1U20EufjW1o=
 		</data>
 		<key>Headers/EnVerify.h</key>
 		<data>
@@ -142,27 +102,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZZ8xz0iZEueOMWP/sizjZ0eezCk=
+		+NkGRb9X4vBbII1RyPKa/TloYlk=
 		</data>
 		<key>Modules/EnVerify.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		911VmsKrhlDhigrqt/5fppjpwk0=
+		UeDlwFlycY1mAJvNMWBPT3txwLQ=
+		</data>
+		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		XcQPtl6RyN0+/ksK3PpAgiU2MN4=
+		</data>
+		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		pqf+AQNpDmSQ3bOfLAzG8yV8cPk=
 		</data>
 		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		OpSJxZ9FKn9Ebwvv7/nWeu+BzGg=
+		Tfb3fyjQ0NRKmExlAyvYSbqPLz4=
 		</data>
 		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		V19kzXFjs2qJRPF3jWFmdV7FODQ=
+		pqf+AQNpDmSQ3bOfLAzG8yV8cPk=
 		</data>
 		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		8eOYxMjEC6wbJdc03i4sUtErgNc=
+		60dBXHvofK12bKpXRp9b+k//X80=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		BRoFj1kZKvUckdggJtN3htyn6aQ=
+		lmZdS0cv3X/k/WMnP1kgBg4zou8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -204,11 +172,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BTRWUOaqKTRJyl/scvrpdEeZkU0=
+			ObooRZuqjuNkTAT+M6+yVJAvqbM=
 			</data>
 			<key>hash2</key>
 			<data>
-			EVEH9vKzNPhfvwpt9nd5b2B7VlMB9ldWv0QWh4MqsVQ=
+			O09cQBjEjBFgP29LviyhlqVv1k6EONYkG21HS+zWuAc=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
@@ -242,61 +210,6 @@
 			<key>hash2</key>
 			<data>
 			CUNCXfGzUODFinvmaL4flC6sM4wZjhpPFoWco+Eif0U=
-			</data>
-		</dict>
-		<key>GoogleMVFaceDetectorResources.bundle/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			nZa9hGZkfB2RANfCEY90f1uNhRQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			tcF4LThf88chuyUxSpRm+/sAxPfDmyTBFnAFbjGCxUI=
-			</data>
-		</dict>
-		<key>GoogleMVFaceDetectorResources.bundle/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Z8wPj4lz3Wk1HF3q3yIBDi2GTls=
-			</data>
-			<key>hash2</key>
-			<data>
-			GoqsQ0WaQ9ldQ6Ndrp7GU0Z/Cjmyg/fdz//y0jabAS8=
-			</data>
-		</dict>
-		<key>GoogleMVFaceDetectorResources.bundle/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VPE8eiJFuGVag36Jo4wp32UzP3U=
-			</data>
-			<key>hash2</key>
-			<data>
-			2bOCEUxDQi1iYml7We0O6qVJNLUB77ESEdBPGFBB4fQ=
-			</data>
-		</dict>
-		<key>GoogleMVFaceDetectorResources.bundle/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MhB3UG8viKa+dwO2iK7bMpceck0=
-			</data>
-			<key>hash2</key>
-			<data>
-			2gju7+eYFs+Uf0FIDqLbFLpDnmzKCESbbVyK2OSSbAk=
-			</data>
-		</dict>
-		<key>GoogleMVFaceDetectorResources.bundle/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OBkWWvV7Mg2YJgsAsP9gpfRE2Xw=
-			</data>
-			<key>hash2</key>
-			<data>
-			mqrUO5RHoFURjEy4M7LtpHFDOWMi0sEx/rVzpvxEMZ4=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/blazeface.tfl</key>
@@ -369,66 +282,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1EcMBMa5Z3zqQ4/HGolTddZtX6I=
+			VJRDlbtpS2MbQzapomZNVKW57WE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ge82jvBmmo6cDhOQ+GFbiEYBNx7OYHMLqpx0mnE6TYM=
-			</data>
-		</dict>
-		<key>GoogleMVTextDetectorResources.bundle/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1Nq6CqdGcFBmSBF0C0vHRp8kB9U=
-			</data>
-			<key>hash2</key>
-			<data>
-			ETDkZ6DGz9OWytoe5bpONDOQejNbigpv7CSc159U/iw=
-			</data>
-		</dict>
-		<key>GoogleMVTextDetectorResources.bundle/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HVWtyHiEIx+QGxaDNQfiiKewnJU=
-			</data>
-			<key>hash2</key>
-			<data>
-			ZavsjbqQdBbw3bNppPxb7AL9WJTdGdq8KT+T0ix9UqM=
-			</data>
-		</dict>
-		<key>GoogleMVTextDetectorResources.bundle/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qjY3LuBR+D1wFUZu0s88xWaAMsM=
-			</data>
-			<key>hash2</key>
-			<data>
-			29uYIqMMhHB2uQxv8qRJo0KRU3VnfZd68S87m54fNmQ=
-			</data>
-		</dict>
-		<key>GoogleMVTextDetectorResources.bundle/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wAcvRDpr4WwSmhX9K6fHkl08qbg=
-			</data>
-			<key>hash2</key>
-			<data>
-			invF7KpCHCac7fmWM4LSKwZVfsuUXzSgywbk4dGvZ3c=
-			</data>
-		</dict>
-		<key>GoogleMVTextDetectorResources.bundle/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			F48Z/08P+6tq8jUT18+pm5SR/CM=
-			</data>
-			<key>hash2</key>
-			<data>
-			Yf1/orI+QyMKHpoFkaUQx01qc8rryerAdC+XaA9Rm10=
+			8ML+cUkYLC7XIskgcvmb1Lwo1uoJEtBWn0W40nWVvx0=
 			</data>
 		</dict>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
@@ -523,11 +381,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2eLFgk65bCr+2MzBrrF/V0FnAEg=
+			tTr5QHJ6N46GIYlM1U20EufjW1o=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jfvw/Qwn/YzSom5z7BOywxDTXvr07S8Y2toX3QF2kko=
+			h/Zxt5RuS0pbbIU9vh21fmyrLlu/pkemYh8Whx8MFMI=
 			</data>
 		</dict>
 		<key>Headers/EnVerify.h</key>
@@ -545,55 +403,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			911VmsKrhlDhigrqt/5fppjpwk0=
+			UeDlwFlycY1mAJvNMWBPT3txwLQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			qznHcm+CY5LfPckAtYGX8lqbj7ODms53lAHa8n9GwRg=
+			KYvFPuMCPr6E6qFVpxLr02T+rkWTyDsXD6+TPZ6TBeE=
+			</data>
+		</dict>
+		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XcQPtl6RyN0+/ksK3PpAgiU2MN4=
+			</data>
+			<key>hash2</key>
+			<data>
+			680EoMfvwDY71XTsfN3bhns5vsj/+TkASonyUCvVy4Y=
+			</data>
+		</dict>
+		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pqf+AQNpDmSQ3bOfLAzG8yV8cPk=
+			</data>
+			<key>hash2</key>
+			<data>
+			SDGFIIGkCwvfnh5bfWd3SGftNmE54jAnYhj1OxvO5Bg=
 			</data>
 		</dict>
 		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OpSJxZ9FKn9Ebwvv7/nWeu+BzGg=
+			Tfb3fyjQ0NRKmExlAyvYSbqPLz4=
 			</data>
 			<key>hash2</key>
 			<data>
-			qKpTA7pWc7ssof33tRpdZC1dT/RhXsZGYE74i3HdXOo=
+			srWzGdwgR9R+KGmc3D0NTOGjw3pHSXRC3Y7sjdLkJ6I=
 			</data>
 		</dict>
 		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			V19kzXFjs2qJRPF3jWFmdV7FODQ=
+			pqf+AQNpDmSQ3bOfLAzG8yV8cPk=
 			</data>
 			<key>hash2</key>
 			<data>
-			99rLtdJtXejKczjTpQHyKRzh+5thKOvsAsUawUpRZD0=
+			SDGFIIGkCwvfnh5bfWd3SGftNmE54jAnYhj1OxvO5Bg=
 			</data>
 		</dict>
 		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8eOYxMjEC6wbJdc03i4sUtErgNc=
+			60dBXHvofK12bKpXRp9b+k//X80=
 			</data>
 			<key>hash2</key>
 			<data>
-			t3tNruR/Z+e8rZbhL9eTaGxxB+1eUIFV0H0AxgC7Ink=
+			9i0LRxN/pVT+KaWhijqto0mySXBEN//pBHfBcPCPdgU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BRoFj1kZKvUckdggJtN3htyn6aQ=
+			lmZdS0cv3X/k/WMnP1kgBg4zou8=
 			</data>
 			<key>hash2</key>
 			<data>
-			zT3AH2A7NNaP2Sm9hYlW/uEySG0OsbtTagamoxUDMfE=
+			uqARRzITpO4Yyrsl7wZJoCQ8nxsFQWLhFBf+oNmzqxU=
 			</data>
 		</dict>
 	</dict>
