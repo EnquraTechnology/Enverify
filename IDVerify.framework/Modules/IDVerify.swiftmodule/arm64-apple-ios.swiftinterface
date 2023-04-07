@@ -191,6 +191,7 @@ public class NFCModel {
     get
   }
   public init()
+  public init(from dump: [Swift.String : Swift.String])
   public func addDataGroup(_ id: IDVerify.DataGroupId, dataGroup: IDVerify.DataGroup)
   public func getDataGroup(_ id: IDVerify.DataGroupId) -> IDVerify.DataGroup?
   public func getHashesForDatagroups(hashAlgorythm: Swift.String) -> [IDVerify.DataGroupId : [Swift.UInt8]]
@@ -246,6 +247,7 @@ public enum IDLayout : Swift.Int {
   @objc public static func nfcStart() -> Swift.Int
   @objc public static func nfcViewStart(vc: UIKit.UIViewController)
   @objc public static func nfcStore()
+  @objc public static func nfcLoad(data: [Swift.String : Swift.String])
   @objc public static func faceDetectStart()
   @objc public static func livenessDetectStart()
   @objc public static func idTypeCheckSet()
@@ -604,6 +606,7 @@ extension IDVerify.NFCViewDisplayMessage {
 public class NFCReader : ObjectiveC.NSObject {
   public init(masterListURL: Foundation.URL? = nil)
   public func setMasterListURL(_ masterListURL: Foundation.URL)
+  public func loadPassport(data: [Swift.String : Swift.String])
   public func readPassport(mrzKey: Swift.String, tags: [IDVerify.DataGroupId] = [], skipSecureElements: Swift.Bool = true, customDisplayMessage: ((IDVerify.NFCViewDisplayMessage) -> Swift.String?)? = nil, completed: @escaping (IDVerify.NFCModel?, IDVerify.TagError?) -> ())
   @objc deinit
 }
@@ -628,11 +631,15 @@ public enum LogLevel : Swift.Int {
 }
 @_hasMissingDesignatedInitializers public class Log {
   public static var logLevel: IDVerify.LogLevel
+  public static var storeLogs: Swift.Bool
+  public static var logData: [Swift.String]
   public class func verbose(_ msg: Swift.String...)
   public class func debug(_ msg: Swift.String...)
   public class func info(_ msg: Swift.String...)
   public class func warning(_ msg: Swift.String...)
   public class func error(_ msg: Swift.String...)
+  public class func clearStoredLogs()
+  public class func saveLogData()
   @objc deinit
 }
 extension UIKit.UIDevice {

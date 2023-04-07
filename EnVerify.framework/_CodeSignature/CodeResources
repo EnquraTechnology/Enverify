@@ -18,7 +18,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<data>
-		ObooRZuqjuNkTAT+M6+yVJAvqbM=
+		3PW4A71tBh6xOdOqKiKB7wNoAk4=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/Info.plist</key>
 		<data>
-		VJRDlbtpS2MbQzapomZNVKW57WE=
+		dQNJQ0kFiBFlisKib9Ge/F0QQjE=
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
 		<data>
@@ -102,19 +102,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+NkGRb9X4vBbII1RyPKa/TloYlk=
+		ZlX+NjpfPR7tV2WkTL4aXkmVhms=
 		</data>
 		<key>Modules/EnVerify.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		UeDlwFlycY1mAJvNMWBPT3txwLQ=
+		YF9xY5e8oJxaKq/rAf7t6RcbiW0=
 		</data>
 		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		XcQPtl6RyN0+/ksK3PpAgiU2MN4=
+		fk1nxmETxPvzy/8wzBzA7mLYUrw=
 		</data>
 		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		pqf+AQNpDmSQ3bOfLAzG8yV8cPk=
+		XXyIyt7Tzl9g3utrkNB7JSPHuRA=
 		</data>
 		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -122,11 +122,11 @@
 		</data>
 		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		pqf+AQNpDmSQ3bOfLAzG8yV8cPk=
+		XXyIyt7Tzl9g3utrkNB7JSPHuRA=
 		</data>
 		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		60dBXHvofK12bKpXRp9b+k//X80=
+		dmi3V+SOmstMrpFr2VyfvzsfKxE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -172,11 +172,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ObooRZuqjuNkTAT+M6+yVJAvqbM=
+			3PW4A71tBh6xOdOqKiKB7wNoAk4=
 			</data>
 			<key>hash2</key>
 			<data>
-			O09cQBjEjBFgP29LviyhlqVv1k6EONYkG21HS+zWuAc=
+			XaU6LNvyJVsu7dx74otTqKs7CtB5NZEDjJUbJlIug/E=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
@@ -282,11 +282,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VJRDlbtpS2MbQzapomZNVKW57WE=
+			dQNJQ0kFiBFlisKib9Ge/F0QQjE=
 			</data>
 			<key>hash2</key>
 			<data>
-			8ML+cUkYLC7XIskgcvmb1Lwo1uoJEtBWn0W40nWVvx0=
+			P0XUBGCzzovz+/f0vcORedRfNJ0KTec8WUKNKruycCg=
 			</data>
 		</dict>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
@@ -403,33 +403,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UeDlwFlycY1mAJvNMWBPT3txwLQ=
+			YF9xY5e8oJxaKq/rAf7t6RcbiW0=
 			</data>
 			<key>hash2</key>
 			<data>
-			KYvFPuMCPr6E6qFVpxLr02T+rkWTyDsXD6+TPZ6TBeE=
+			saBsXqp277eOSOW2iTjCsOaWop9gjlnGZppKDdAYU/o=
 			</data>
 		</dict>
 		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XcQPtl6RyN0+/ksK3PpAgiU2MN4=
+			fk1nxmETxPvzy/8wzBzA7mLYUrw=
 			</data>
 			<key>hash2</key>
 			<data>
-			680EoMfvwDY71XTsfN3bhns5vsj/+TkASonyUCvVy4Y=
+			Ik1M6b6q6gAOhZZqu+GBBCZtoIXE5tfDj82Q3iGtMdw=
 			</data>
 		</dict>
 		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pqf+AQNpDmSQ3bOfLAzG8yV8cPk=
+			XXyIyt7Tzl9g3utrkNB7JSPHuRA=
 			</data>
 			<key>hash2</key>
 			<data>
-			SDGFIIGkCwvfnh5bfWd3SGftNmE54jAnYhj1OxvO5Bg=
+			w1N36zc3JpnI3G0YiMCKpXenPtWwfwybgudo0rayUOA=
 			</data>
 		</dict>
 		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -447,22 +447,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pqf+AQNpDmSQ3bOfLAzG8yV8cPk=
+			XXyIyt7Tzl9g3utrkNB7JSPHuRA=
 			</data>
 			<key>hash2</key>
 			<data>
-			SDGFIIGkCwvfnh5bfWd3SGftNmE54jAnYhj1OxvO5Bg=
+			w1N36zc3JpnI3G0YiMCKpXenPtWwfwybgudo0rayUOA=
 			</data>
 		</dict>
 		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			60dBXHvofK12bKpXRp9b+k//X80=
+			dmi3V+SOmstMrpFr2VyfvzsfKxE=
 			</data>
 			<key>hash2</key>
 			<data>
-			9i0LRxN/pVT+KaWhijqto0mySXBEN//pBHfBcPCPdgU=
+			1G4PnkHT1Q18+lO7noIt1aEgJ139M4IbdR5OQaBy7kQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

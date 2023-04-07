@@ -231,6 +231,7 @@ using UInt = size_t;
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import Foundation;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -343,6 +344,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CustomerIdentityDoc * 
 @end
 
 
+
 @class UIViewController;
 @class UINavigationController;
 @class UIButton;
@@ -362,6 +364,7 @@ SWIFT_CLASS("_TtC8IDVerify8IDVerify")
 + (NSInteger)nfcStart SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(ios,introduced=13.0);
 + (void)nfcViewStartWithVc:(UIViewController * _Nonnull)vc;
 + (void)nfcStore;
++ (void)nfcLoadWithData:(NSDictionary<NSString *, NSString *> * _Nonnull)data;
 + (void)faceDetectStart;
 + (void)livenessDetectStart;
 + (void)idTypeCheckSet;
