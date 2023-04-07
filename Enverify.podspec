@@ -1,14 +1,14 @@
    Pod::Spec.new do |spec|
     spec.name         = "EnVerify"
-    spec.version      = "0.0.922.2"
+    spec.version      = "0.0.922.3"
     spec.summary      = "EnVerify."
     spec.authors      = { "Enqura" => "http://www.enqura.com" }
     spec.homepage     = "http://www.enqura.com"
     spec.license          = { :type => 'MIT', :text => "MIT License" }
     spec.platform     = :ios
     spec.ios.deployment_target = '10.3'
-    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/0.0.922.2.zip"}
-    spec.ios.vendored_frameworks = "EnVerify-0.0.922.2/EnVerify.framework" , "EnVerify-0.0.922.2/IDVerify.framework"
+    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/0.0.922.3.zip"}
+    spec.ios.vendored_frameworks = "EnVerify-0.0.922.3/EnVerify.framework" , "EnVerify-0.0.922.3/IDVerify.framework"
     spec.ios.frameworks = "EnVerify"
     spec.requires_arc = true	
     spec.swift_versions = '5.0'
@@ -19,7 +19,7 @@
     spec.dependency 'GoogleMLKit/TextRecognition','2.2.0'
     spec.dependency 'GoogleMLKit/FaceDetection'
     spec.dependency 'GoogleMLKit/BarcodeScanning'
-    spec.dependency 'OpenSSL-Universal','1.0.2.20'
+    spec.dependency 'OpenSSL-Universal/Framework','1.0.2.20'
     spec.dependency 'SwiftyJSON', '~> 5.0'
     spec.dependency 'TensorFlowLiteSwift'
     spec.dependency 'PromisesObjC','2.1.1'
