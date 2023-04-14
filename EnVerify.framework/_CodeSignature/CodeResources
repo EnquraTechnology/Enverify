@@ -126,7 +126,7 @@
 		</data>
 		<key>Modules/EnVerify.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Ns3nBHcnUqR1LJCTociwONT/VFc=
+		dmi3V+SOmstMrpFr2VyfvzsfKxE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -458,11 +458,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ns3nBHcnUqR1LJCTociwONT/VFc=
+			dmi3V+SOmstMrpFr2VyfvzsfKxE=
 			</data>
 			<key>hash2</key>
 			<data>
-			1r0Y0f8tAova7jNue4QGic2sJehq5/jAH/BO5AIrg9I=
+			1G4PnkHT1Q18+lO7noIt1aEgJ139M4IbdR5OQaBy7kQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
