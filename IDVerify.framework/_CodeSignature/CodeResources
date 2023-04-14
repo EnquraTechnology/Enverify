@@ -6,7 +6,7 @@
 	<dict>
 		<key>.DS_Store</key>
 		<data>
-		AXX0e0KUYzf3X3VQQp1g8l6RQ7w=
+		86wrHp+2MbpIneR3Y2Z8BCt6UDw=
 		</data>
 		<key>Assets.car</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
-		73wloRqqvxd7sXzAH9pF8J+46VE=
+		cqzZaFTINqswQnXKjvBl7Fr0xdI=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/blazeface.tfl</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
-		fViLWe6lb+KkRENoajqBqdr/uGo=
+		VdWgUT2K+q/mLirxm/7+uVmzk4Q=
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
 		<data>
@@ -154,11 +154,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4blplrPqYg/drYz306pufHKDcXg=
+		KivN2U4RV7WNatAYyTo/0B76AJI=
 		</data>
 		<key>Modules/IDVerify.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		xFyu/wxFiXZ8JmfUBIxz+cc5gH0=
+		TvLbfbj5PuEywXlCQL9HathGdG8=
 		</data>
 		<key>Modules/IDVerify.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -576,11 +576,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			73wloRqqvxd7sXzAH9pF8J+46VE=
+			cqzZaFTINqswQnXKjvBl7Fr0xdI=
 			</data>
 			<key>hash2</key>
 			<data>
-			2bxBBysmzWHk8rMemxDaN1x/Y7UHFsIvf/cQbnjPGcM=
+			+VGwVtaLLXmhqOYgbCbdnZVcuGyRspuQlc1B4e8Id0E=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/blazeface.tfl</key>
@@ -708,11 +708,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fViLWe6lb+KkRENoajqBqdr/uGo=
+			VdWgUT2K+q/mLirxm/7+uVmzk4Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			DrRb68DMMEr4lLy4KiG8JGF9+ii4wsxlLVT8oD0Z9as=
+			CIREcsD3Yl7tvw8MAU0Vd6yQ68nHJjGg3spfNQ26mWc=
 			</data>
 		</dict>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
@@ -829,11 +829,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xFyu/wxFiXZ8JmfUBIxz+cc5gH0=
+			TvLbfbj5PuEywXlCQL9HathGdG8=
 			</data>
 			<key>hash2</key>
 			<data>
-			U8nIJnaMKt2HeEnOgQ8mwPcApiN9p96ssn97PIaOYLA=
+			BL8JR5gE4bGN8grBvltxRr2cpYaeL9maaitB//ibeFA=
 			</data>
 		</dict>
 		<key>Modules/IDVerify.swiftmodule/arm64-apple-ios.abi.json</key>
