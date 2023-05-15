@@ -12,8 +12,8 @@
     spec.ios.frameworks = "EnQualify"
     spec.requires_arc = true	
     spec.swift_versions = '5.0'
-    spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' ,  'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 i386' ,'IPHONEOS_DEPLOYMENT_TARGET' => '10.3' }
-    spec.user_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' , 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 i386','IPHONEOS_DEPLOYMENT_TARGET' => '10.3'}
+    spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' ,  'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' ,'IPHONEOS_DEPLOYMENT_TARGET' => '10.3' }
+    spec.user_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' , 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64','IPHONEOS_DEPLOYMENT_TARGET' => '10.3'}
     spec.dependency 'Starscream', '~> 3.0.6'
     spec.dependency 'GoogleWebRTC'
     spec.dependency 'Socket.IO-Client-Swift'
