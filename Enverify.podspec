@@ -1,19 +1,19 @@
    Pod::Spec.new do |spec|
     spec.name         = "EnVerify"
-    spec.version      = "1.2.14.6"
+    spec.version      = "1.3.11.1"
     spec.summary      = "EnVerify."
     spec.authors      = { "Enqura" => "http://www.enqura.com" }
     spec.homepage     = "http://www.enqura.com"
     spec.license          = { :type => 'MIT', :text => "MIT License" }
     spec.platform     = :ios
     spec.ios.deployment_target = '10.3'
-    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/1.2.14.6.zip"}
-    spec.ios.vendored_frameworks = "EnVerify-1.2.14.6/EnVerify.framework" , "EnVerify-1.2.14.6/IDVerify.framework"
+    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/1.3.11.1.zip"}
+    spec.ios.vendored_frameworks = "EnVerify-1.3.11.1/EnQualify.xcframework" , "EnVerify-1.3.11.1/IDVerification.xcframework"
     spec.ios.frameworks = "EnVerify"
     spec.requires_arc = true	
     spec.swift_versions = '5.0'
-    spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' ,  'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-    spec.user_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' , 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+    spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' ,  'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 i386' ,'IPHONEOS_DEPLOYMENT_TARGET' = '10.3' }
+    spec.user_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' , 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 i386','IPHONEOS_DEPLOYMENT_TARGET' = '10.3'}
     spec.dependency 'Starscream', '~> 3.0.6'
     spec.dependency 'GoogleWebRTC'
     spec.dependency 'Socket.IO-Client-Swift','14.0.0'
