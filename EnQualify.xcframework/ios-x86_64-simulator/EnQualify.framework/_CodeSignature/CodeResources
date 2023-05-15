@@ -18,7 +18,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<data>
-		9JPnqCQY1KaPzIgfGKA9IGBVJlE=
+		+uz7C3KzENz6vMHAvBHgSGb4sj8=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/Info.plist</key>
 		<data>
-		iH93ZwLmzW1LcDuVHEmb42j1xsM=
+		TBaYYKp/9DDM1a3vVDbW/+NIU/k=
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
 		<data>
@@ -172,11 +172,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9JPnqCQY1KaPzIgfGKA9IGBVJlE=
+			+uz7C3KzENz6vMHAvBHgSGb4sj8=
 			</data>
 			<key>hash2</key>
 			<data>
-			+DYpR6iZB3txPU5Q5IalC3oqx6R45soiqWEjdDnmH5g=
+			L1VI1Qm6sRaqvi2Xlrf/84bMv93WJijkQT3l6z8HZXw=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
@@ -282,11 +282,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iH93ZwLmzW1LcDuVHEmb42j1xsM=
+			TBaYYKp/9DDM1a3vVDbW/+NIU/k=
 			</data>
 			<key>hash2</key>
 			<data>
-			EEusjWjQCK59ySzy6dII6Q715tH1RsD9zEo/tHCwheE=
+			Jmcp9AdOl1sRR1oOcJd8P4EkXccblTA3QjkSBebsyzY=
 			</data>
 		</dict>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
