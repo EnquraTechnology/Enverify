@@ -16,7 +16,7 @@
     spec.user_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' , 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 i386','IPHONEOS_DEPLOYMENT_TARGET' => '10.3'}
     spec.dependency 'Starscream', '~> 3.0.6'
     spec.dependency 'GoogleWebRTC'
-    spec.dependency 'Socket.IO-Client-Swift','14.0.0'
+    spec.dependency 'Socket.IO-Client-Swift'
     spec.dependency 'Alamofire', '~> 5.5.0'
     spec.dependency 'GoogleMLKit/TextRecognition','2.2.0'
     spec.dependency 'GoogleMLKit/FaceDetection'
