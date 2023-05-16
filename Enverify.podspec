@@ -1,14 +1,14 @@
    Pod::Spec.new do |spec|
     spec.name         = "EnVerify"
-    spec.version      = "1.3.11.1"
+    spec.version      = "1.3.11.2"
     spec.summary      = "EnVerify."
     spec.authors      = { "Enqura" => "http://www.enqura.com" }
     spec.homepage     = "http://www.enqura.com"
     spec.license          = { :type => 'MIT', :text => "MIT License" }
     spec.platform     = :ios
     spec.ios.deployment_target = '10.3'
-    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/1.3.11.1.zip"}
-    spec.ios.vendored_frameworks = "EnVerify-1.3.11.1/EnQualify.xcframework" , "EnVerify-1.3.11.1/IDVerification.xcframework"
+    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/1.3.11.2.zip"}
+    spec.ios.vendored_frameworks = "EnVerify-1.3.11.2/EnQualify.xcframework" , "EnVerify-1.3.11.2/IDVerification.xcframework"
     spec.ios.frameworks = "EnQualify"
     spec.requires_arc = true	
     spec.swift_versions = '5.0'
@@ -24,9 +24,9 @@
     spec.dependency 'OpenSSL-Universal','1.1.1900'
     spec.dependency 'SwiftyJSON', '~> 5.0'
     spec.dependency 'TensorFlowLiteSwift'
-    spec.dependency 'PromisesObjC'
+    spec.dependency 'PromisesObjC','2.1.1'
     spec.dependency 'GTMSessionFetcher'
-    spec.dependency 'GoogleDataTransport'
+    spec.dependency 'GoogleDataTransport','9.2.0'
     spec.dependency 'GoogleToolboxForMac'
     spec.dependency 'Protobuf'
     spec.dependency 'nanopb'
