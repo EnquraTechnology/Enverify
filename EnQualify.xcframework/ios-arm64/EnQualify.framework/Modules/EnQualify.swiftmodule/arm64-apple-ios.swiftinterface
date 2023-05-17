@@ -1047,7 +1047,7 @@ public struct CoreStatusResponse : Swift.Codable {
   @objc @_Concurrency.MainActor(unsafe) public static func getAvailableAppointment(startDate: Foundation.Date, endDate: Foundation.Date, callType: Swift.String?, completion: @escaping ((_ data: [EnQualify.EnverifyVerifyAvailableAppointmentResult]?, _ error: Swift.Error?) -> Swift.Void))
   @objc @_Concurrency.MainActor(unsafe) public static func saveAppointment(data: EnQualify.EnverifyVerifyAppointmentSaveMobileModel, completion: @escaping ((_ data: EnQualify.EnverifyVerifySaveMobileAppointmentResult?, _ error: Swift.Error?) -> Swift.Void))
   @objc @_Concurrency.MainActor(unsafe) public static func cancelAppointment(identityType: Swift.String?, identityNo: Swift.String?, callType: Swift.String?, completion: @escaping ((_ data: EnQualify.EnverifyVerifyCancelAppointmentResult?, _ error: Swift.Error?) -> Swift.Void))
-  @objc @_Concurrency.MainActor(unsafe) public static func setAgentRequest()
+  @objc @_Concurrency.MainActor(unsafe) public static func agentRequestCompleted()
   @objc @_Concurrency.MainActor(unsafe) public static func getAppointment(identityNo: Swift.String?, identityType: Swift.String?, completion: @escaping ((_ data: [EnQualify.EnverifyVerifyAppointmentResult]?, _ error: Swift.Error?) -> Swift.Void))
   @objc @_Concurrency.MainActor(unsafe) public static func getCallTypes(completion: @escaping ((_ data: [EnQualify.EnverifyVerifyCallTypeResult]?, _ error: Swift.Error?) -> Swift.Void))
   @_Concurrency.MainActor(unsafe) public static func getSettings()
