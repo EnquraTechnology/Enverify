@@ -1,14 +1,14 @@
    Pod::Spec.new do |spec|
     spec.name         = "EnVerify"
-    spec.version      = "0.0.0.2"
+    spec.version      = "0.0.0.3"
     spec.summary      = "EnVerify."
     spec.authors      = { "Enqura" => "http://www.enqura.com" }
     spec.homepage     = "http://www.enqura.com"
     spec.license          = { :type => 'MIT', :text => "MIT License" }
     spec.platform     = :ios
     spec.ios.deployment_target = '10.3'
-    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/0.0.0.2.zip"}
-    spec.ios.vendored_frameworks = "EnVerify-0.0.0.2/EnQualify.xcframework" , "EnVerify-0.0.0.2/IDVerification.xcframework"
+    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/0.0.0.3.zip"}
+    spec.ios.vendored_frameworks = "EnVerify-0.0.0.3/EnQualify.xcframework" , "EnVerify-0.0.0.3/IDVerification.xcframework"
     spec.ios.frameworks = "EnQualify"
     spec.requires_arc = true	
     spec.swift_versions = '5.0'
@@ -26,7 +26,7 @@
     spec.dependency 'TensorFlowLiteSwift'
     spec.dependency 'PromisesObjC'
     spec.dependency 'GTMSessionFetcher'
-    spec.dependency 'GoogleDataTransport'
+    spec.dependency 'GoogleDataTransport', :inhibit_warnings => true
     spec.dependency 'GoogleToolboxForMac'
     spec.dependency 'Protobuf'
     spec.dependency 'GoogleUtilities'
