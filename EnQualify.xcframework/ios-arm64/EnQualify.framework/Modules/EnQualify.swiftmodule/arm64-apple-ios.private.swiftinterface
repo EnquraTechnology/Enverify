@@ -978,6 +978,7 @@ public struct CoreStatusResponse : Swift.Codable {
   @objc @_Concurrency.MainActor(unsafe) public static func startLivenessDetect()
   @objc @_Concurrency.MainActor(unsafe) public static func setSSStartButtons(buttonState: Swift.Bool)
   @objc @_Concurrency.MainActor(unsafe) public static func idvSettings(domainName: Swift.String?, certificateNames: [Swift.String], aiUsername: Swift.String?, aiPassword: Swift.String?, signalingServer: Swift.String?, stunServer: Swift.String?, turnServer: Swift.String?, turnUsername: Swift.String?, turnPassword: Swift.String?, backOfficeBasePath: Swift.String?, referenceId: Swift.String? = nil, userNameForToken: Swift.String? = nil) -> Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public static func agentRequestCompleted()
   @objc @_Concurrency.MainActor(unsafe) public static func stopSSStartVC(_ sender: Any)
   @objc @_Concurrency.MainActor(unsafe) public static func setNavigationController(navigator: UIKit.UINavigationController)
   @objc @_Concurrency.MainActor(unsafe) public static func getNavigationController() -> UIKit.UINavigationController?
@@ -1050,7 +1051,7 @@ public struct CoreStatusResponse : Swift.Codable {
   @objc @_Concurrency.MainActor(unsafe) public static func setAgentRequest()
   @objc @_Concurrency.MainActor(unsafe) public static func getAppointment(identityNo: Swift.String?, identityType: Swift.String?, completion: @escaping ((_ data: [EnQualify.EnverifyVerifyAppointmentResult]?, _ error: Swift.Error?) -> Swift.Void))
   @objc @_Concurrency.MainActor(unsafe) public static func getCallTypes(completion: @escaping ((_ data: [EnQualify.EnverifyVerifyCallTypeResult]?, _ error: Swift.Error?) -> Swift.Void))
-  @_Concurrency.MainActor(unsafe) public static func getSettings()
+  @_Concurrency.MainActor(unsafe) public static func getSettings(completion: @escaping () -> ())
   @objc @_Concurrency.MainActor(unsafe) public static func appMovedToForeground()
   @objc @_Concurrency.MainActor(unsafe) public static func appMovedToBackground()
   @objc @_Concurrency.MainActor(unsafe) public static func speedCheck()

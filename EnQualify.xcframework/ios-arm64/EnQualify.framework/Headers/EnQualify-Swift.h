@@ -404,6 +404,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isCallCancelled;)
 + (void)startLivenessDetect;
 + (void)setSSStartButtonsWithButtonState:(BOOL)buttonState;
 + (BOOL)idvSettingsWithDomainName:(NSString * _Nullable)domainName certificateNames:(NSArray<NSString *> * _Nonnull)certificateNames aiUsername:(NSString * _Nullable)aiUsername aiPassword:(NSString * _Nullable)aiPassword signalingServer:(NSString * _Nullable)signalingServer stunServer:(NSString * _Nullable)stunServer turnServer:(NSString * _Nullable)turnServer turnUsername:(NSString * _Nullable)turnUsername turnPassword:(NSString * _Nullable)turnPassword backOfficeBasePath:(NSString * _Nullable)backOfficeBasePath referenceId:(NSString * _Nullable)referenceId userNameForToken:(NSString * _Nullable)userNameForToken SWIFT_WARN_UNUSED_RESULT;
++ (void)agentRequestCompleted;
 + (void)stopSSStartVC:(id _Nonnull)sender;
 + (void)setNavigationControllerWithNavigator:(UINavigationController * _Nonnull)navigator;
 + (UINavigationController * _Nullable)getNavigationController SWIFT_WARN_UNUSED_RESULT;
