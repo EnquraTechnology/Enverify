@@ -12,6 +12,7 @@
     spec.ios.frameworks = "EnQualify"
     spec.requires_arc = true	
     spec.swift_versions = '5.0'
+    spec.xcconfig = { 'OTHER_LDFLAGS' => '-lObjC -lc++ -lsqlite3 -lz -framework AVFoundation -framework Accelerate -framework CFNetwork -framework CoreGraphics -framework CoreImage -framework CoreMedia -framework CoreTelephony -framework CoreVideo -framework FBLPromises -framework Foundation -framework LocalAuthentication -framework Security -framework SocketIO -framework SystemConfiguration -framework TensorFlowLite -framework UIKit' }
     spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64' ,  'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => '' , 'IPHONEOS_DEPLOYMENT_TARGET' => '11.0' , 'OTHER_LDFLAGS' => '-lObjC -lc++ -lsqlite3 -lz -framework AVFoundation -framework Accelerate -framework CFNetwork -framework CoreGraphics -framework CoreImage -framework CoreMedia -framework CoreTelephony -framework CoreVideo -framework FBLPromises -framework Foundation -framework LocalAuthentication -framework Security -framework SocketIO -framework SystemConfiguration -framework TensorFlowLite -framework UIKit'}
     spec.user_target_xcconfig = { 'VALID_ARCHS' => 'arm64' , 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => '' , 'IPHONEOS_DEPLOYMENT_TARGET' => '11.0' ,'ONLY_ACTIVE_ARCH' => 'YES'}
     spec.dependency 'Starscream', '~> 3.0.0'
