@@ -6,14 +6,14 @@
     spec.homepage     = "http://www.enqura.com"
     spec.license          = { :type => 'MIT', :text => "MIT License" }
     spec.platform     = :ios
-    spec.ios.deployment_target = '10.3'
+    spec.ios.deployment_target = '11.0'
     spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/0.0.0.4.zip"}
     spec.ios.vendored_frameworks = "EnVerify-0.0.0.4/EnQualify.xcframework" , "EnVerify-0.0.0.4/IDVerification.xcframework"
     spec.ios.frameworks = "EnQualify"
     spec.requires_arc = true	
     spec.swift_versions = '5.0'
-    spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64','IPHONEOS_DEPLOYMENT_TARGET' => '11.0' }
-    spec.user_target_xcconfig = { 'VALID_ARCHS' => 'arm64','IPHONEOS_DEPLOYMENT_TARGET' => '11.0' }
+    spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64'}
+    spec.user_target_xcconfig = { 'VALID_ARCHS' => 'arm64'}
     spec.dependency 'Starscream', '~> 3.0.0'
     spec.dependency 'GoogleWebRTC'
     spec.dependency 'Socket.IO-Client-Swift', '14.0.0'
