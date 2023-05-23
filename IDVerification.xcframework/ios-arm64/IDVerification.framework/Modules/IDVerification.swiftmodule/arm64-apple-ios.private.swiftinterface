@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IDVerification
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IDVerification
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import AVKit
@@ -106,9 +106,9 @@ import _StringProcessing
 }
 final public class ScreenRecorder {
   public init()
-  final public func startRecording(to outputURL: Foundation.URL? = nil, size: CoreFoundation.CGSize? = nil, saveToCameraRoll: Swift.Bool = false, errorHandler: @escaping (Swift.Error) -> Swift.Void)
-  final public func stoprecording(errorHandler: @escaping (Swift.Error) -> Swift.Void)
-  final public func appendVideoFiles(arrayVideos: [AVFoundation.AVAsset], completion: @escaping (Foundation.URL?, Swift.Error?) -> ())
+  final public func startRecording(to outputURL: Foundation.URL? = nil, size: CoreFoundation.CGSize? = nil, saveToCameraRoll: Swift.Bool = false, errorHandler: @escaping (any Swift.Error) -> Swift.Void)
+  final public func stoprecording(errorHandler: @escaping (any Swift.Error) -> Swift.Void)
+  final public func appendVideoFiles(arrayVideos: [AVFoundation.AVAsset], completion: @escaping (Foundation.URL?, (any Swift.Error)?) -> ())
   @objc deinit
 }
 public enum NFCAuthenticationStatus {
@@ -222,7 +222,7 @@ public class NFCModel {
   public var activeAuthenticationSignature: [Swift.UInt8] {
     get
   }
-  public var verificationErrors: [Swift.Error] {
+  public var verificationErrors: [any Swift.Error] {
     get
   }
   public var isPACESupported: Swift.Bool {
@@ -733,7 +733,7 @@ public class NFCReader : ObjectiveC.NSObject {
 @available(iOS 13, *)
 extension IDVerification.NFCReader : CoreNFC.NFCTagReaderSessionDelegate {
   public func tagReaderSessionDidBecomeActive(_ session: CoreNFC.NFCTagReaderSession)
-  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didInvalidateWithError error: Swift.Error)
+  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didInvalidateWithError error: any Swift.Error)
   public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didDetect tags: [CoreNFC.NFCTag])
 }
 @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
@@ -920,10 +920,10 @@ public class OpenSSLUtils {
   @objc deinit
 }
 public struct CustomerIdentityDocEncodable : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct CustomerIdentityDocData : Swift.Decodable {
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class UIUtilities {
   public static func addCircle(atPoint point: CoreFoundation.CGPoint, to view: UIKit.UIView, color: UIKit.UIColor, radius: CoreFoundation.CGFloat)
