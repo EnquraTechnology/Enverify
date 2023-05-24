@@ -1,22 +1,22 @@
    Pod::Spec.new do |spec|
     spec.name         = "EnVerify"
-    spec.version      = "0.0.0.42"
+    spec.version      = "0.0.0.43"
     spec.summary      = "EnVerify."
     spec.authors      = { "Enqura" => "http://www.enqura.com" }
     spec.homepage     = "http://www.enqura.com"
     spec.license          = { :type => 'MIT', :text => "MIT License" }
     spec.platform     = :ios
     spec.ios.deployment_target = '10.3'
-    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/0.0.0.42.zip"}
-    spec.vendored_frameworks = "EnVerify-0.0.0.42/EnQualify.xcframework" , "EnVerify-0.0.0.42/IDVerification.xcframework"
+    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/0.0.0.43.zip"}
+    spec.vendored_frameworks = "EnVerify-0.0.0.43/EnQualify.xcframework" , "EnVerify-0.0.0.43/IDVerification.xcframework"
     spec.ios.frameworks = "EnQualify"
     spec.requires_arc = true	
     spec.swift_versions = '5.0'
 
 spec.pod_target_xcconfig = {
   'OTHER_LDFLAGS' => '$(inherited)',
-  'OTHER_LDFLAGS[sdk=iphoneos*]' => '$(inherited) -framework GoogleDataTransport',
-  'OTHER_LDFLAGS[sdk=iphonesimulator*]' => '$(inherited) -framework GoogleDataTransport -framework FBLPromises ',
+  'OTHER_LDFLAGS[sdk=iphoneos*]' => '$(inherited) -lc++ -lsqlite3 -lz -framework AVFoundation -framework Accelerate -framework CFNetwork -framework CoreGraphics -framework CoreImage -framework CoreMedia -framework CoreTelephony -framework CoreVideo -framework FBLPromises -framework Foundation -framework LocalAuthentication -framework Security -framework SocketIO -framework SystemConfiguration -framework TensorFlowLite -framework UIKit -framework EnQualify -framework MLImage -framework MLKitBarcodeScanning -framework MLKitCommon -framework MLKitFaceDetection -framework MLKitTextRecognition -framework MLKitVision -framework WebRTC',
+  'OTHER_LDFLAGS[sdk=iphonesimulator*]' => '-ObjC -lc++ -framework EnQualify -framework FBLPromises ',
   'IPHONEOS_DEPLOYMENT_TARGET' => '11.0',
   'ONLY_ACTIVE_ARCH' => 'YES' 
 }
