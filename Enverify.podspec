@@ -1,21 +1,21 @@
    Pod::Spec.new do |spec|
     spec.name         = "EnVerify"
-    spec.version      = "0.0.0.39"
+    spec.version      = "0.0.0.40"
     spec.summary      = "EnVerify."
     spec.authors      = { "Enqura" => "http://www.enqura.com" }
     spec.homepage     = "http://www.enqura.com"
     spec.license          = { :type => 'MIT', :text => "MIT License" }
     spec.platform     = :ios
     spec.ios.deployment_target = '10.3'
-    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/0.0.0.39.zip"}
-    spec.vendored_frameworks = "EnVerify-0.0.0.39/EnQualify.xcframework" , "EnVerify-0.0.0.39/IDVerification.xcframework"
+    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/0.0.0.40.zip"}
+    spec.vendored_frameworks = "EnVerify-0.0.0.40/EnQualify.xcframework" , "EnVerify-0.0.0.40/IDVerification.xcframework"
     spec.ios.frameworks = "EnQualify"
     spec.requires_arc = true	
     spec.swift_versions = '5.0'
      simulator_frameworks =  ['GoogleDataTransport', 'FBLPromises', 'AVFoundation', 'CFNetwork', 
     'CoreAudio', 'CoreMedia', 'CoreTelephony', 'CoreVideo', 'MobileCoreServices', 
      'QuartzCore', 'Security', 'SystemConfiguration','GTMSessionFetcher','Alamofire','SwiftyJSON']
-simulator_ldflags = ' -ObjC -l"z"' +’ -framework ' + simulator_frameworks.join(' -framework ') +
+simulator_ldflags = ' -ObjC -lz' +’ -framework ' + simulator_frameworks.join(' -framework ') +
     spec.pod_target_xcconfig = {'IPHONEOS_DEPLOYMENT_TARGET' => '11.0' ,'ONLY_ACTIVE_ARCH' => 'YES','OTHER_LDFLAGS[sdk=iphonesimulator*]' => simulator_ldflags }
 
     spec.dependency 'Starscream', '~> 3.0.0'
