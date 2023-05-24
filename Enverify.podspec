@@ -1,18 +1,24 @@
    Pod::Spec.new do |spec|
     spec.name         = "EnVerify"
-    spec.version      = "0.0.0.31"
+    spec.version      = "0.0.0.32"
     spec.summary      = "EnVerify."
     spec.authors      = { "Enqura" => "http://www.enqura.com" }
     spec.homepage     = "http://www.enqura.com"
     spec.license          = { :type => 'MIT', :text => "MIT License" }
     spec.platform     = :ios
     spec.ios.deployment_target = '10.3'
-    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/0.0.0.31.zip"}
-    spec.ios.vendored_frameworks = "EnVerify-0.0.0.31/EnQualify.xcframework" , "EnVerify-0.0.0.31/IDVerification.xcframework"
+    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/0.0.0.32.zip"}
+    spec.ios.vendored_frameworks = "EnVerify-0.0.0.32/EnQualify.xcframework" , "EnVerify-0.0.0.32/IDVerification.xcframework"
     spec.ios.frameworks = "EnQualify"
     spec.requires_arc = true	
     spec.swift_versions = '5.0'
-    spec.xcconfig = { 'OTHER_LDFLAGS[sdk=iphoneos*]' => '-lc++ -lsqlite3 -lz -framework AVFoundation -framework Accelerate -framework CFNetwork -framework CoreGraphics -framework CoreImage -framework CoreMedia -framework CoreTelephony -framework CoreVideo -framework FBLPromises -framework Foundation -framework LocalAuthentication -framework Security -framework SocketIO -framework SystemConfiguration -framework TensorFlowLite -framework UIKit' ,'OTHER_LDFLAGS[sdk=iphonesimulator*]' => '-Wl,-undefined,dynamic_lookup,-ObjC'}
+
+    simulator_frameworks =  ['GoogleDataTransport', 'FBLPromises', 'AVFoundation', 'CFNetwork', 
+    'CoreAudio', 'CoreMedia', 'CoreTelephony', 'CoreVideo', 'MobileCoreServices', 
+     'QuartzCore', 'Security', 'SystemConfiguration','GTMSessionFetcher','Alamofire','SwiftyJSON']
+simulator_ldflags = ' -framework ' + simulator_frameworks.join(' -framework ') + ' -ObjC -lz'
+
+    spec.xcconfig = { 'OTHER_LDFLAGS[sdk=iphoneos*]' => '-lc++ -lsqlite3 -lz -framework AVFoundation -framework Accelerate -framework CFNetwork -framework CoreGraphics -framework CoreImage -framework CoreMedia -framework CoreTelephony -framework CoreVideo -framework FBLPromises -framework Foundation -framework LocalAuthentication -framework Security -framework SocketIO -framework SystemConfiguration -framework TensorFlowLite -framework UIKit' ,'OTHER_LDFLAGS[sdk=iphonesimulator*]' => simulator_ldflags}
     spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64' ,  'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => '' , 'IPHONEOS_DEPLOYMENT_TARGET' => '11.0' ,'ONLY_ACTIVE_ARCH' => 'YES'}
     spec.user_target_xcconfig = { 'VALID_ARCHS' => 'arm64' , 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => '' , 'IPHONEOS_DEPLOYMENT_TARGET' => '11.0' ,'ONLY_ACTIVE_ARCH' => 'YES'}
     spec.dependency 'Starscream', '~> 3.0.0'
