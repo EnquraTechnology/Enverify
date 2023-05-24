@@ -1,19 +1,19 @@
    Pod::Spec.new do |spec|
     spec.name         = "EnVerify"
-    spec.version      = "0.0.0.37"
+    spec.version      = "0.0.0.38"
     spec.summary      = "EnVerify."
     spec.authors      = { "Enqura" => "http://www.enqura.com" }
     spec.homepage     = "http://www.enqura.com"
     spec.license          = { :type => 'MIT', :text => "MIT License" }
     spec.platform     = :ios
     spec.ios.deployment_target = '10.3'
-    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/0.0.0.37.zip"}
-    spec.vendored_frameworks = "EnVerify-0.0.0.37/EnQualify.xcframework" , "EnVerify-0.0.0.37/IDVerification.xcframework"
+    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/0.0.0.38.zip"}
+    spec.vendored_frameworks = "EnVerify-0.0.0.38/EnQualify.xcframework" , "EnVerify-0.0.0.38/IDVerification.xcframework"
     spec.ios.frameworks = "EnQualify"
     spec.requires_arc = true	
     spec.swift_versions = '5.0'
  
-    spec.pod_target_xcconfig = {'IPHONEOS_DEPLOYMENT_TARGET' => '11.0' ,'ONLY_ACTIVE_ARCH' => 'YES'}
+    spec.pod_target_xcconfig = {'IPHONEOS_DEPLOYMENT_TARGET' => '11.0' ,'ONLY_ACTIVE_ARCH' => 'YES','ARCHS[sdk=iphonesimulator*]' => `uname -m` }
 
     spec.dependency 'Starscream', '~> 3.0.0'
     spec.dependency 'GoogleWebRTC'
