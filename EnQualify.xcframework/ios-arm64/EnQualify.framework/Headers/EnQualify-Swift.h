@@ -255,6 +255,12 @@ using UInt = size_t;
 
 #if defined(__OBJC__)
 
+
+SWIFT_CLASS("_TtC9EnQualify17CalibrationValues")
+@interface CalibrationValues : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSString;
 
 SWIFT_CLASS("_TtC9EnQualify10EnVSession")
@@ -343,9 +349,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isCallAnswered;)
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isCallCancelled;)
 + (BOOL)isCallCancelled SWIFT_WARN_UNUSED_RESULT;
 + (void)setIsCallCancelled:(BOOL)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _Nonnull calibrationValues;)
++ (CalibrationValues * _Nonnull)calibrationValues SWIFT_WARN_UNUSED_RESULT;
++ (void)setCalibrationValues:(CalibrationValues * _Nonnull)value;
 + (void)incomingCallObserverWithCallChanged:(CXCall * _Nonnull)call;
 + (void)integrationAddWithType:(NSString * _Nonnull)type reference:(NSString * _Nonnull)reference callType:(NSString * _Nullable)callType phone:(NSString * _Nullable)phone email:(NSString * _Nullable)email data:(NSString * _Nonnull)data addressRegistration:(EnVerifyCallAddressRegistrationModel * _Nullable)addressRegistration iDRegistration:(EnVerifyCallIDRegistrationModel * _Nullable)iDRegistration;
 + (void)getAuthToken:(NSString * _Nullable)userNameForToken :(NSString * _Nonnull)backOfficeBasePath completion:(void (^ _Nonnull)(BOOL))completion;
++ (void)sessionUpdateForHandicappedWithHandicapped:(BOOL)handicapped;
 + (void)logInfoAddWithCode:(NSString * _Nullable)code message:(NSString * _Nullable)message;
 /// self serviste işlemlerin başarılı şekilde bittiğini anlattması için session/close’u çağırıyorsanız finished=true
 /// bir de arama daha karşılanmamış ise mobilden kapatıldığında bu servisi false çağrılıyor
