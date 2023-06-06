@@ -22,15 +22,15 @@ import _Concurrency
 import _StringProcessing
 public struct AuthTokenResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
-  public var user: EnVerify.AuthAuthenticatedUser?
+  public var user: AuthAuthenticatedUser?
   public var token: Swift.String?
   public var expires: Foundation.Date?
   public var validity: Foundation.Date?
-  public var validationInfo: EnVerify.AuthAuthenticationValidationInfo?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, user: EnVerify.AuthAuthenticatedUser? = nil, token: Swift.String? = nil, expires: Foundation.Date? = nil, validity: Foundation.Date? = nil, validationInfo: EnVerify.AuthAuthenticationValidationInfo? = nil)
+  public var validationInfo: AuthAuthenticationValidationInfo?
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil, user: AuthAuthenticatedUser? = nil, token: Swift.String? = nil, expires: Foundation.Date? = nil, validity: Foundation.Date? = nil, validationInfo: AuthAuthenticationValidationInfo? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -60,11 +60,11 @@ public struct AuthTokenResponse : Swift.Codable {
 }
 public struct VerifyCallIDCheckAddResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
-  public var status: EnVerify.VerifyCallSessionStatusTypeEnum?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: EnVerify.VerifyCallSessionStatusTypeEnum? = nil)
+  public var status: VerifyCallSessionStatusTypeEnum?
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: VerifyCallSessionStatusTypeEnum? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -146,10 +146,10 @@ public struct VerifyCallIDCheckAddResponse : Swift.Codable {
 }
 @objc public class EnverifyVerifyCancelAppointmentResult : ObjectiveC.NSObject {
   @objc public var isSuccessful: Swift.Bool
-  @objc public var result: EnVerify.EnverifyVerifyResultInfo?
-  @objc public var warning: EnVerify.EnverifyVerifyResultInfo?
+  @objc public var result: EnverifyVerifyResultInfo?
+  @objc public var warning: EnverifyVerifyResultInfo?
   @objc public var referenceId: Foundation.UUID?
-  @objc public init(isSuccessful: Swift.Bool, result: EnVerify.EnverifyVerifyResultInfo? = nil, warning: EnVerify.EnverifyVerifyResultInfo? = nil, referenceId: Foundation.UUID? = nil)
+  @objc public init(isSuccessful: Swift.Bool, result: EnverifyVerifyResultInfo? = nil, warning: EnverifyVerifyResultInfo? = nil, referenceId: Foundation.UUID? = nil)
   @objc deinit
 }
 @objc public class EnverifyVerifyAppointmentSaveMobileModel : ObjectiveC.NSObject {
@@ -191,10 +191,10 @@ public struct VerifyCallIDCheckAddResponse : Swift.Codable {
 }
 @objc public class EnverifyVerifySaveMobileAppointmentResult : ObjectiveC.NSObject {
   @objc public var isSuccessful: Swift.Bool
-  @objc public var result: EnVerify.EnverifyVerifyResultInfo?
-  @objc public var warning: EnVerify.EnverifyVerifyResultInfo?
+  @objc public var result: EnverifyVerifyResultInfo?
+  @objc public var warning: EnverifyVerifyResultInfo?
   @objc public var referenceId: Foundation.UUID?
-  @objc public init(isSuccessful: Swift.Bool, result: EnVerify.EnverifyVerifyResultInfo? = nil, warning: EnVerify.EnverifyVerifyResultInfo? = nil, referenceId: Foundation.UUID? = nil)
+  @objc public init(isSuccessful: Swift.Bool, result: EnverifyVerifyResultInfo? = nil, warning: EnverifyVerifyResultInfo? = nil, referenceId: Foundation.UUID? = nil)
   @objc deinit
 }
 @objc public class EnverifyVerifyResultInfo : ObjectiveC.NSObject {
@@ -228,10 +228,10 @@ public struct VerifyCallIDCheckAddResponse : Swift.Codable {
 }
 public struct VerifyDocumentSignSetMobileResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil)
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -257,15 +257,15 @@ public struct VerifyDocumentSignSetMobileResponse : Swift.Codable {
 public struct DocumentsDocumentModel : Swift.Codable {
   public var uId: Foundation.UUID?
   public var name: Swift.String?
-  public var type: EnVerify.DocumentsDocumentTypeEnum?
+  public var type: DocumentsDocumentTypeEnum?
   public var subjectType: Swift.String?
   public var title: Swift.String?
   public var locale: Swift.String?
   public var mime: Swift.String?
-  public var state: EnVerify.EntityStateTypeEnum?
+  public var state: EntityStateTypeEnum?
   public var contentUId: Foundation.UUID?
-  public var content: EnVerify.DocumentsContent?
-  public init(uId: Foundation.UUID? = nil, name: Swift.String? = nil, type: EnVerify.DocumentsDocumentTypeEnum? = nil, subjectType: Swift.String? = nil, title: Swift.String? = nil, locale: Swift.String? = nil, mime: Swift.String? = nil, state: EnVerify.EntityStateTypeEnum? = nil, contentUId: Foundation.UUID? = nil, content: EnVerify.DocumentsContent? = nil)
+  public var content: DocumentsContent?
+  public init(uId: Foundation.UUID? = nil, name: Swift.String? = nil, type: DocumentsDocumentTypeEnum? = nil, subjectType: Swift.String? = nil, title: Swift.String? = nil, locale: Swift.String? = nil, mime: Swift.String? = nil, state: EntityStateTypeEnum? = nil, contentUId: Foundation.UUID? = nil, content: DocumentsContent? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case uId
     case name
@@ -296,9 +296,9 @@ public struct DocumentsDocumentModel : Swift.Codable {
 }
 public struct VerifySignedMessageCallVideoMobileAddRequest : Swift.Codable {
   public var content: Swift.String?
-  public var message: EnVerify.VerifyCallVideoMobileAddRequest?
-  public var signature: EnVerify.MessageSignature?
-  public init(content: Swift.String? = nil, message: EnVerify.VerifyCallVideoMobileAddRequest? = nil, signature: EnVerify.MessageSignature? = nil)
+  public var message: VerifyCallVideoMobileAddRequest?
+  public var signature: MessageSignature?
+  public init(content: Swift.String? = nil, message: VerifyCallVideoMobileAddRequest? = nil, signature: MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case content
     case message
@@ -329,17 +329,17 @@ public enum Model : Swift.String {
   }
 }
 extension UIKit.UIDevice {
-  @_Concurrency.MainActor(unsafe) public var typeDevice: EnVerify.Model {
+  @_Concurrency.MainActor(unsafe) public var typeDevice: Model {
     get
   }
 }
 public struct VerifyCallLogAddRequest : Swift.Codable {
   public var sessionUId: Foundation.UUID?
-  public var type: EnVerify.VerifyCallLogTypeEnum?
+  public var type: VerifyCallLogTypeEnum?
   public var code: Swift.String?
   public var message: Swift.String?
   public var data: Swift.String?
-  public init(sessionUId: Foundation.UUID? = nil, type: EnVerify.VerifyCallLogTypeEnum? = nil, code: Swift.String? = nil, message: Swift.String? = nil, data: Swift.String? = nil)
+  public init(sessionUId: Foundation.UUID? = nil, type: VerifyCallLogTypeEnum? = nil, code: Swift.String? = nil, message: Swift.String? = nil, data: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case sessionUId
     case type
@@ -365,11 +365,11 @@ public struct VerifyCallLogAddRequest : Swift.Codable {
 }
 public struct VerifyCallResultResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
-  public var data: EnVerify.VerifyCallResultModel?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, data: EnVerify.VerifyCallResultModel? = nil)
+  public var data: VerifyCallResultModel?
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil, data: VerifyCallResultModel? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -470,26 +470,26 @@ public struct VerifyCallIDDocModel : Swift.Codable {
   public var backDocumentChipContent: Swift.String?
   public var backDocumentBarcodeContent: Swift.String?
   public var backDocumentGuillocheContent: Swift.String?
-  public var frontDocument: EnVerify.VerifyCallDocumentModel?
-  public var backDocument: EnVerify.VerifyCallDocumentModel?
-  public var holoDocument: EnVerify.VerifyCallDocumentModel?
-  public var faceDocument: EnVerify.VerifyCallDocumentModel?
-  public var frontDocumentGeneral: EnVerify.VerifyCallDocumentModel?
-  public var frontDocumentGenderNationaltiy: EnVerify.VerifyCallDocumentModel?
-  public var frontDocumentHoloFirst: EnVerify.VerifyCallDocumentModel?
-  public var frontDocumentHoloSecond: EnVerify.VerifyCallDocumentModel?
-  public var frontDocumentGuillocheFirst: EnVerify.VerifyCallDocumentModel?
-  public var frontDocumentGuillocheSecond: EnVerify.VerifyCallDocumentModel?
-  public var frontDocumentFlag: EnVerify.VerifyCallDocumentModel?
-  public var frontDocumentSignature: EnVerify.VerifyCallDocumentModel?
-  public var frontDocumentBioPhoto: EnVerify.VerifyCallDocumentModel?
-  public var frontDocumentGhostImage: EnVerify.VerifyCallDocumentModel?
-  public var backDocumentGeneral: EnVerify.VerifyCallDocumentModel?
-  public var backDocumentAssembly: EnVerify.VerifyCallDocumentModel?
-  public var backDocumentICAOLogo: EnVerify.VerifyCallDocumentModel?
-  public var backDocumentChip: EnVerify.VerifyCallDocumentModel?
-  public var backDocumentBarcode: EnVerify.VerifyCallDocumentModel?
-  public var backDocumentGuilloche: EnVerify.VerifyCallDocumentModel?
+  public var frontDocument: VerifyCallDocumentModel?
+  public var backDocument: VerifyCallDocumentModel?
+  public var holoDocument: VerifyCallDocumentModel?
+  public var faceDocument: VerifyCallDocumentModel?
+  public var frontDocumentGeneral: VerifyCallDocumentModel?
+  public var frontDocumentGenderNationaltiy: VerifyCallDocumentModel?
+  public var frontDocumentHoloFirst: VerifyCallDocumentModel?
+  public var frontDocumentHoloSecond: VerifyCallDocumentModel?
+  public var frontDocumentGuillocheFirst: VerifyCallDocumentModel?
+  public var frontDocumentGuillocheSecond: VerifyCallDocumentModel?
+  public var frontDocumentFlag: VerifyCallDocumentModel?
+  public var frontDocumentSignature: VerifyCallDocumentModel?
+  public var frontDocumentBioPhoto: VerifyCallDocumentModel?
+  public var frontDocumentGhostImage: VerifyCallDocumentModel?
+  public var backDocumentGeneral: VerifyCallDocumentModel?
+  public var backDocumentAssembly: VerifyCallDocumentModel?
+  public var backDocumentICAOLogo: VerifyCallDocumentModel?
+  public var backDocumentChip: VerifyCallDocumentModel?
+  public var backDocumentBarcode: VerifyCallDocumentModel?
+  public var backDocumentGuilloche: VerifyCallDocumentModel?
   public var identityType: Swift.String?
   public var identityNo: Swift.String?
   public var documentNo: Swift.String?
@@ -501,7 +501,7 @@ public struct VerifyCallIDDocModel : Swift.Codable {
   public var issuedBy: Swift.String?
   public var issuedDate: Swift.String?
   public var expireDate: Swift.String?
-  public init(uId: Foundation.UUID? = nil, sessionUId: Foundation.UUID? = nil, dateTime: Foundation.Date? = nil, frontDocumentUId: Foundation.UUID? = nil, backDocumentUId: Foundation.UUID? = nil, holoDocumentUId: Foundation.UUID? = nil, faceDocumentUId: Foundation.UUID? = nil, frontDocumentGeneralUId: Foundation.UUID? = nil, frontDocumentGenderNationaltiyUId: Foundation.UUID? = nil, frontDocumentHoloFirstUId: Foundation.UUID? = nil, frontDocumentHoloSecondUId: Foundation.UUID? = nil, frontDocumentGuillocheFirstUId: Foundation.UUID? = nil, frontDocumentGuillocheSecondUId: Foundation.UUID? = nil, frontDocumentFlagUId: Foundation.UUID? = nil, frontDocumentSignatureUId: Foundation.UUID? = nil, frontDocumentBioPhotoUId: Foundation.UUID? = nil, frontDocumentGhostImageUId: Foundation.UUID? = nil, backDocumentGeneralUId: Foundation.UUID? = nil, backDocumentAssemblyUId: Foundation.UUID? = nil, backDocumentICAOLogoUId: Foundation.UUID? = nil, backDocumentChipUId: Foundation.UUID? = nil, backDocumentBarcodeUId: Foundation.UUID? = nil, backDocumentGuillocheUId: Foundation.UUID? = nil, isValid: Swift.Bool? = nil, isValidIdentityNo: Swift.Bool? = nil, isValidNameSurname: Swift.Bool? = nil, isValidGender: Swift.Bool? = nil, isValidBirthDate: Swift.Bool? = nil, isValidDocumentNo: Swift.Bool? = nil, isValidNationality: Swift.Bool? = nil, isValidExpireDate: Swift.Bool? = nil, idIssuer: Swift.String? = nil, externalData1: Swift.String? = nil, externalData2: Swift.String? = nil, frontDocumentContent: Swift.String? = nil, backDocumentContent: Swift.String? = nil, holoDocumentContent: Swift.String? = nil, faceDocumentContent: Swift.String? = nil, frontDocumentGeneralContent: Swift.String? = nil, frontDocumentGenderNationaltiyContent: Swift.String? = nil, frontDocumentHoloFirstContent: Swift.String? = nil, frontDocumentHoloSecondContent: Swift.String? = nil, frontDocumentGuillocheFirstContent: Swift.String? = nil, frontDocumentGuillocheSecondContent: Swift.String? = nil, frontDocumentFlagContent: Swift.String? = nil, frontDocumentSignatureContent: Swift.String? = nil, frontDocumentBioPhotoContent: Swift.String? = nil, frontDocumentGhostImageContent: Swift.String? = nil, backDocumentGeneralContent: Swift.String? = nil, backDocumentAssemblyContent: Swift.String? = nil, backDocumentICAOLogoContent: Swift.String? = nil, backDocumentChipContent: Swift.String? = nil, backDocumentBarcodeContent: Swift.String? = nil, backDocumentGuillocheContent: Swift.String? = nil, frontDocument: EnVerify.VerifyCallDocumentModel? = nil, backDocument: EnVerify.VerifyCallDocumentModel? = nil, holoDocument: EnVerify.VerifyCallDocumentModel? = nil, faceDocument: EnVerify.VerifyCallDocumentModel? = nil, frontDocumentGeneral: EnVerify.VerifyCallDocumentModel? = nil, frontDocumentGenderNationaltiy: EnVerify.VerifyCallDocumentModel? = nil, frontDocumentHoloFirst: EnVerify.VerifyCallDocumentModel? = nil, frontDocumentHoloSecond: EnVerify.VerifyCallDocumentModel? = nil, frontDocumentGuillocheFirst: EnVerify.VerifyCallDocumentModel? = nil, frontDocumentGuillocheSecond: EnVerify.VerifyCallDocumentModel? = nil, frontDocumentFlag: EnVerify.VerifyCallDocumentModel? = nil, frontDocumentSignature: EnVerify.VerifyCallDocumentModel? = nil, frontDocumentBioPhoto: EnVerify.VerifyCallDocumentModel? = nil, frontDocumentGhostImage: EnVerify.VerifyCallDocumentModel? = nil, backDocumentGeneral: EnVerify.VerifyCallDocumentModel? = nil, backDocumentAssembly: EnVerify.VerifyCallDocumentModel? = nil, backDocumentICAOLogo: EnVerify.VerifyCallDocumentModel? = nil, backDocumentChip: EnVerify.VerifyCallDocumentModel? = nil, backDocumentBarcode: EnVerify.VerifyCallDocumentModel? = nil, backDocumentGuilloche: EnVerify.VerifyCallDocumentModel? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, documentNo: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, gender: Swift.String? = nil, birthDate: Swift.String? = nil, nationality: Swift.String? = nil, issuedBy: Swift.String? = nil, issuedDate: Swift.String? = nil, expireDate: Swift.String? = nil)
+  public init(uId: Foundation.UUID? = nil, sessionUId: Foundation.UUID? = nil, dateTime: Foundation.Date? = nil, frontDocumentUId: Foundation.UUID? = nil, backDocumentUId: Foundation.UUID? = nil, holoDocumentUId: Foundation.UUID? = nil, faceDocumentUId: Foundation.UUID? = nil, frontDocumentGeneralUId: Foundation.UUID? = nil, frontDocumentGenderNationaltiyUId: Foundation.UUID? = nil, frontDocumentHoloFirstUId: Foundation.UUID? = nil, frontDocumentHoloSecondUId: Foundation.UUID? = nil, frontDocumentGuillocheFirstUId: Foundation.UUID? = nil, frontDocumentGuillocheSecondUId: Foundation.UUID? = nil, frontDocumentFlagUId: Foundation.UUID? = nil, frontDocumentSignatureUId: Foundation.UUID? = nil, frontDocumentBioPhotoUId: Foundation.UUID? = nil, frontDocumentGhostImageUId: Foundation.UUID? = nil, backDocumentGeneralUId: Foundation.UUID? = nil, backDocumentAssemblyUId: Foundation.UUID? = nil, backDocumentICAOLogoUId: Foundation.UUID? = nil, backDocumentChipUId: Foundation.UUID? = nil, backDocumentBarcodeUId: Foundation.UUID? = nil, backDocumentGuillocheUId: Foundation.UUID? = nil, isValid: Swift.Bool? = nil, isValidIdentityNo: Swift.Bool? = nil, isValidNameSurname: Swift.Bool? = nil, isValidGender: Swift.Bool? = nil, isValidBirthDate: Swift.Bool? = nil, isValidDocumentNo: Swift.Bool? = nil, isValidNationality: Swift.Bool? = nil, isValidExpireDate: Swift.Bool? = nil, idIssuer: Swift.String? = nil, externalData1: Swift.String? = nil, externalData2: Swift.String? = nil, frontDocumentContent: Swift.String? = nil, backDocumentContent: Swift.String? = nil, holoDocumentContent: Swift.String? = nil, faceDocumentContent: Swift.String? = nil, frontDocumentGeneralContent: Swift.String? = nil, frontDocumentGenderNationaltiyContent: Swift.String? = nil, frontDocumentHoloFirstContent: Swift.String? = nil, frontDocumentHoloSecondContent: Swift.String? = nil, frontDocumentGuillocheFirstContent: Swift.String? = nil, frontDocumentGuillocheSecondContent: Swift.String? = nil, frontDocumentFlagContent: Swift.String? = nil, frontDocumentSignatureContent: Swift.String? = nil, frontDocumentBioPhotoContent: Swift.String? = nil, frontDocumentGhostImageContent: Swift.String? = nil, backDocumentGeneralContent: Swift.String? = nil, backDocumentAssemblyContent: Swift.String? = nil, backDocumentICAOLogoContent: Swift.String? = nil, backDocumentChipContent: Swift.String? = nil, backDocumentBarcodeContent: Swift.String? = nil, backDocumentGuillocheContent: Swift.String? = nil, frontDocument: VerifyCallDocumentModel? = nil, backDocument: VerifyCallDocumentModel? = nil, holoDocument: VerifyCallDocumentModel? = nil, faceDocument: VerifyCallDocumentModel? = nil, frontDocumentGeneral: VerifyCallDocumentModel? = nil, frontDocumentGenderNationaltiy: VerifyCallDocumentModel? = nil, frontDocumentHoloFirst: VerifyCallDocumentModel? = nil, frontDocumentHoloSecond: VerifyCallDocumentModel? = nil, frontDocumentGuillocheFirst: VerifyCallDocumentModel? = nil, frontDocumentGuillocheSecond: VerifyCallDocumentModel? = nil, frontDocumentFlag: VerifyCallDocumentModel? = nil, frontDocumentSignature: VerifyCallDocumentModel? = nil, frontDocumentBioPhoto: VerifyCallDocumentModel? = nil, frontDocumentGhostImage: VerifyCallDocumentModel? = nil, backDocumentGeneral: VerifyCallDocumentModel? = nil, backDocumentAssembly: VerifyCallDocumentModel? = nil, backDocumentICAOLogo: VerifyCallDocumentModel? = nil, backDocumentChip: VerifyCallDocumentModel? = nil, backDocumentBarcode: VerifyCallDocumentModel? = nil, backDocumentGuilloche: VerifyCallDocumentModel? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, documentNo: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, gender: Swift.String? = nil, birthDate: Swift.String? = nil, nationality: Swift.String? = nil, issuedBy: Swift.String? = nil, issuedDate: Swift.String? = nil, expireDate: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case uId
     case sessionUId
@@ -607,11 +607,11 @@ public struct VerifyCallIDDocModel : Swift.Codable {
 }
 public struct VerifyAppointmentListMobileResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
-  public var data: [EnVerify.VerifyAppointmentMobileModel]?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, data: [EnVerify.VerifyAppointmentMobileModel]? = nil)
+  public var data: [VerifyAppointmentMobileModel]?
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil, data: [VerifyAppointmentMobileModel]? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -637,11 +637,11 @@ public struct VerifyAppointmentListMobileResponse : Swift.Codable {
 }
 public struct VerifyCallSessionAddResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var sessionUid: Swift.String?
   public var referenceId: Foundation.UUID?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil)
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -666,9 +666,9 @@ public struct VerifyCallSessionAddResponse : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct SignedMessageVerifyDocumentSignSetMobileRequest : Swift.Codable {
-  public var message: EnVerify.VerifyDocumentSignSetMobileRequest?
-  public var signature: EnVerify.MessageSignature?
-  public init(message: EnVerify.VerifyDocumentSignSetMobileRequest? = nil, signature: EnVerify.MessageSignature? = nil)
+  public var message: VerifyDocumentSignSetMobileRequest?
+  public var signature: MessageSignature?
+  public init(message: VerifyDocumentSignSetMobileRequest? = nil, signature: MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case message
     case signature
@@ -691,11 +691,11 @@ public struct SignedMessageVerifyDocumentSignSetMobileRequest : Swift.Codable {
 }
 public struct VerifyCallIDChipAddResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
-  public var status: EnVerify.VerifyCallSessionStatusTypeEnum?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: EnVerify.VerifyCallSessionStatusTypeEnum? = nil)
+  public var status: VerifyCallSessionStatusTypeEnum?
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: VerifyCallSessionStatusTypeEnum? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -771,10 +771,10 @@ public struct VerifyCallSessionAddRequest : Swift.Codable {
 }
 public struct VerifyAppointmentCancelResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil)
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -799,11 +799,11 @@ public struct VerifyAppointmentCancelResponse : Swift.Codable {
 }
 public struct VerifyCallSessionCloseResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
-  public var status: EnVerify.VerifyCallSessionStatusTypeEnum?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: EnVerify.VerifyCallSessionStatusTypeEnum? = nil)
+  public var status: VerifyCallSessionStatusTypeEnum?
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: VerifyCallSessionStatusTypeEnum? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -839,7 +839,7 @@ public enum EntityStateTypeEnum : Swift.String, Swift.Codable {
   }
 }
 @objc @_inheritsConvenienceInitializers public class EnLog : ObjectiveC.NSObject {
-  public class func getLogLevel() -> EnVerify.EnLogLevel
+  public class func getLogLevel() -> EnLogLevel
   public class func verbose(_ msg: Swift.String)
   public class func debug(_ msg: Swift.String)
   public class func info(_ msg: Swift.String)
@@ -868,7 +868,7 @@ public enum EntityStateTypeEnum : Swift.String, Swift.Codable {
   @objc @_Concurrency.MainActor(unsafe) public static var releaseNumber: Swift.String
   @objc @_Concurrency.MainActor(unsafe) public static var screenRecordAssets: [AVFoundation.AVAsset]
   @objc @_Concurrency.MainActor(unsafe) public static var screenRecordingParts: Swift.String
-  @objc @_Concurrency.MainActor(unsafe) public static var screenRecordingData: EnVerify.EnverifyScreenRecordingData
+  @objc @_Concurrency.MainActor(unsafe) public static var screenRecordingData: EnverifyScreenRecordingData
   @objc @_Concurrency.MainActor(unsafe) public static var timerLiveLog: Foundation.Timer?
   @objc @_Concurrency.MainActor(unsafe) public static var enverify_accessToken: Swift.String?
   @objc @_Concurrency.MainActor(unsafe) public static var callType: Swift.String
@@ -884,11 +884,11 @@ public enum EntityStateTypeEnum : Swift.String, Swift.Codable {
     @objc set
   }
   @objc @_Concurrency.MainActor(unsafe) public static var isCallAnswered: Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) public static func integrationAdd(type: Swift.String, reference: Swift.String, callType: Swift.String?, phone: Swift.String?, email: Swift.String?, data: Swift.String, iDRegistration: EnVerify.EnVerifyCallIDRegistrationModel?)
+  @objc @_Concurrency.MainActor(unsafe) public static func integrationAdd(type: Swift.String, reference: Swift.String, callType: Swift.String?, phone: Swift.String?, email: Swift.String?, data: Swift.String, iDRegistration: EnVerifyCallIDRegistrationModel?)
   @objc @_Concurrency.MainActor(unsafe) public static func getAuthToken(_ userNameForToken: Swift.String? = nil, _ backOfficeBasePath: Swift.String, completion: @escaping (Swift.Bool) -> ())
   @objc @_Concurrency.MainActor(unsafe) public static func logInfoAdd(code: Swift.String?, message: Swift.String?)
   @objc @_Concurrency.MainActor(unsafe) public static func callSessionClose(finished: Swift.Bool = true)
-  @_Concurrency.MainActor(unsafe) public static func connectionType() -> EnVerify.ConnectionType
+  @_Concurrency.MainActor(unsafe) public static func connectionType() -> ConnectionType
   @objc @_Concurrency.MainActor(unsafe) public static func idVerifyStart(_ sender: Any) -> Swift.Bool
   @objc @_Concurrency.MainActor(unsafe) public static func videoCallStart(_ sender: Any) -> Swift.Bool
   @objc @_Concurrency.MainActor(unsafe) public static func selfServiceStart(_ sender: Any) -> Swift.Bool
@@ -1005,19 +1005,19 @@ public enum EntityStateTypeEnum : Swift.String, Swift.Codable {
   @objc @_Concurrency.MainActor(unsafe) public static func iconRotateButton(_ button: UIKit.UIButton)
   @objc @_Concurrency.MainActor(unsafe) public static func iconChatRotateButton(_ button: UIKit.UIButton)
   @objc @_Concurrency.MainActor(unsafe) public static func rotateButtonAct()
-  @objc @_Concurrency.MainActor(unsafe) public static func getAvailableAppointment(startDate: Foundation.Date, endDate: Foundation.Date, callType: Swift.String?, completion: @escaping ((_ data: [EnVerify.EnverifyVerifyAvailableAppointmentResult]?, _ error: Swift.Error?) -> Swift.Void))
-  @objc @_Concurrency.MainActor(unsafe) public static func saveAppointment(data: EnVerify.EnverifyVerifyAppointmentSaveMobileModel, completion: @escaping ((_ data: EnVerify.EnverifyVerifySaveMobileAppointmentResult?, _ error: Swift.Error?) -> Swift.Void))
-  @objc @_Concurrency.MainActor(unsafe) public static func cancelAppointment(identityType: Swift.String?, identityNo: Swift.String?, callType: Swift.String?, completion: @escaping ((_ data: EnVerify.EnverifyVerifyCancelAppointmentResult?, _ error: Swift.Error?) -> Swift.Void))
+  @objc @_Concurrency.MainActor(unsafe) public static func getAvailableAppointment(startDate: Foundation.Date, endDate: Foundation.Date, callType: Swift.String?, completion: @escaping ((_ data: [EnverifyVerifyAvailableAppointmentResult]?, _ error: Swift.Error?) -> Swift.Void))
+  @objc @_Concurrency.MainActor(unsafe) public static func saveAppointment(data: EnverifyVerifyAppointmentSaveMobileModel, completion: @escaping ((_ data: EnverifyVerifySaveMobileAppointmentResult?, _ error: Swift.Error?) -> Swift.Void))
+  @objc @_Concurrency.MainActor(unsafe) public static func cancelAppointment(identityType: Swift.String?, identityNo: Swift.String?, callType: Swift.String?, completion: @escaping ((_ data: EnverifyVerifyCancelAppointmentResult?, _ error: Swift.Error?) -> Swift.Void))
   @objc @_Concurrency.MainActor(unsafe) public static func setAgentRequest()
-  @objc @_Concurrency.MainActor(unsafe) public static func getAppointment(identityNo: Swift.String?, identityType: Swift.String?, completion: @escaping ((_ data: [EnVerify.EnverifyVerifyAppointmentResult]?, _ error: Swift.Error?) -> Swift.Void))
-  @objc @_Concurrency.MainActor(unsafe) public static func getCallTypes(completion: @escaping ((_ data: [EnVerify.EnverifyVerifyCallTypeResult]?, _ error: Swift.Error?) -> Swift.Void))
+  @objc @_Concurrency.MainActor(unsafe) public static func getAppointment(identityNo: Swift.String?, identityType: Swift.String?, completion: @escaping ((_ data: [EnverifyVerifyAppointmentResult]?, _ error: Swift.Error?) -> Swift.Void))
+  @objc @_Concurrency.MainActor(unsafe) public static func getCallTypes(completion: @escaping ((_ data: [EnverifyVerifyCallTypeResult]?, _ error: Swift.Error?) -> Swift.Void))
   @_Concurrency.MainActor(unsafe) public static func getSettings()
   @_Concurrency.MainActor(unsafe) public static func getScreenRecordingSettings(completion: @escaping ((_ isSuceess: Swift.Bool) -> Swift.Void))
   @_Concurrency.MainActor(unsafe) public static func speedCheck()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
   @objc deinit
 }
-extension EnVerify.EnVerify {
+extension EnVerify {
   @_Concurrency.MainActor(unsafe) public static func startTimer()
   @objc @_Concurrency.MainActor(unsafe) public static func signDocument(data: Swift.String)
 }
@@ -1082,7 +1082,7 @@ extension EnVerify.EnVerify {
   @objc func callConnectionFailure()
   @objc func integrationAddCompleted()
   @objc func integrationAddFailure()
-  @objc func resultGetCompleted(_ value: EnVerify.EnverifyVerifyCallResult?)
+  @objc func resultGetCompleted(_ value: EnverifyVerifyCallResult?)
   @objc func resultGetFailure()
   @objc func sessionStartFailure()
   @objc func sessionStartCompleted()
@@ -1096,7 +1096,7 @@ extension EnVerify.EnVerify {
   @objc func requestVideoAudioPermissionsResult(_ granted: Swift.Bool)
   @objc func forceHangup()
   @objc func idTextRecognitionTimeout()
-  @objc func callSessionCloseResult(status: EnVerify.EnVerifyCallSessionStatusTypeEnum)
+  @objc func callSessionCloseResult(status: EnVerifyCallSessionStatusTypeEnum)
 }
 @objc public enum EnVerifyCallSessionStatusTypeEnum : Swift.Int {
   case _none
@@ -1113,7 +1113,7 @@ extension EnVerify.EnVerify {
   }
 }
 @_inheritsConvenienceInitializers @objc public class EnVerifyCustomerCard : ObjectiveC.NSObject {
-  @objc public static var shared: EnVerify.EnVerifyCustomerCard
+  @objc public static var shared: EnVerifyCustomerCard
   @objc public func setHoloDetectionType(holoDetectionType: Swift.String)
   @objc public func setDetectionThreshold(threshold: Swift.Float)
   @objc override dynamic public init()
@@ -1124,7 +1124,7 @@ extension EnVerify.EnVerify {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class EnVerifyCustomerChip : ObjectiveC.NSObject {
-  @objc public static var shared: EnVerify.EnVerifyCustomerChip
+  @objc public static var shared: EnVerifyCustomerChip
   @objc public func getID() -> Swift.String
   @objc public func getIdentityNo() -> Swift.String
   @objc public func getIdentityType() -> Swift.String
@@ -1148,7 +1148,7 @@ extension EnVerify.EnVerify {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class EnVerifyCustomerFace : ObjectiveC.NSObject {
-  @objc public static var shared: EnVerify.EnVerifyCustomerFace
+  @objc public static var shared: EnVerifyCustomerFace
   @objc public func getChipConfidence() -> Swift.Int
   @objc public func getIdConfidence() -> Swift.Int
   @objc public func getChipDistance() -> Swift.Float
@@ -1167,7 +1167,7 @@ extension EnVerify.EnVerify {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class EnVerifyCustomerIdentityDoc : ObjectiveC.NSObject {
-  @objc public static var shared: EnVerify.EnVerifyCustomerIdentityDoc
+  @objc public static var shared: EnVerifyCustomerIdentityDoc
   @objc public func getOptionalData1() -> Swift.String
   @objc public func getOptionalData2() -> Swift.String
   @objc public func getCountry() -> Swift.String
@@ -1197,7 +1197,7 @@ public enum AgentRequestType {
   case faceRecognition
   case agent
   case busy
-  public static func == (a: EnVerify.AgentRequestType, b: EnVerify.AgentRequestType) -> Swift.Bool
+  public static func == (a: AgentRequestType, b: AgentRequestType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
@@ -1207,13 +1207,13 @@ public typealias EncodeResult = (data: Foundation.Data?, error: Swift.Error?)
 @_hasMissingDesignatedInitializers open class CodableHelper {
   public static var dateformatter: Foundation.DateFormatter?
   open class func decode<T>(_ type: T.Type, from data: Foundation.Data) -> (decodableObj: T?, error: Swift.Error?) where T : Swift.Decodable
-  open class func encode<T>(_ value: T, prettyPrint: Swift.Bool = false) -> EnVerify.EncodeResult where T : Swift.Encodable
+  open class func encode<T>(_ value: T, prettyPrint: Swift.Bool = false) -> EncodeResult where T : Swift.Encodable
   @objc deinit
 }
 public struct SignedMessageAuthTokenRequest : Swift.Codable {
-  public var message: EnVerify.AuthTokenRequest?
-  public var signature: EnVerify.MessageSignature?
-  public init(message: EnVerify.AuthTokenRequest? = nil, signature: EnVerify.MessageSignature? = nil)
+  public var message: AuthTokenRequest?
+  public var signature: MessageSignature?
+  public init(message: AuthTokenRequest? = nil, signature: MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case message
     case signature
@@ -1235,9 +1235,9 @@ public struct SignedMessageAuthTokenRequest : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct SignedMessageVerifyAppointmentListMobileRequest : Swift.Codable {
-  public var message: EnVerify.VerifyAppointmentListMobileRequest?
-  public var signature: EnVerify.MessageSignature?
-  public init(message: EnVerify.VerifyAppointmentListMobileRequest? = nil, signature: EnVerify.MessageSignature? = nil)
+  public var message: VerifyAppointmentListMobileRequest?
+  public var signature: MessageSignature?
+  public init(message: VerifyAppointmentListMobileRequest? = nil, signature: MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case message
     case signature
@@ -1260,9 +1260,9 @@ public struct SignedMessageVerifyAppointmentListMobileRequest : Swift.Codable {
 }
 public struct VerifySignedMessageCallIDChipAddRequest : Swift.Codable {
   public var faceDocumentContent: Swift.String?
-  public var message: EnVerify.VerifyCallIDChipAddRequest?
-  public var signature: EnVerify.MessageSignature?
-  public init(faceDocumentContent: Swift.String? = nil, message: EnVerify.VerifyCallIDChipAddRequest? = nil, signature: EnVerify.MessageSignature? = nil)
+  public var message: VerifyCallIDChipAddRequest?
+  public var signature: MessageSignature?
+  public init(faceDocumentContent: Swift.String? = nil, message: VerifyCallIDChipAddRequest? = nil, signature: MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case faceDocumentContent
     case message
@@ -1336,11 +1336,11 @@ public enum VerifyCallLogTypeEnum : Swift.String, Swift.Codable {
 }
 public struct VerifyCallSessionRoomResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
-  public var status: EnVerify.VerifyCallSessionStatusTypeEnum?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: EnVerify.VerifyCallSessionStatusTypeEnum? = nil)
+  public var status: VerifyCallSessionStatusTypeEnum?
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: VerifyCallSessionStatusTypeEnum? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -1389,9 +1389,9 @@ public struct VerifyCallTypeNameModel : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct SignedMessageVerifyCallSessionAddRequest : Swift.Codable {
-  public var message: EnVerify.VerifyCallSessionAddRequest?
-  public var signature: EnVerify.MessageSignature?
-  public init(message: EnVerify.VerifyCallSessionAddRequest? = nil, signature: EnVerify.MessageSignature? = nil)
+  public var message: VerifyCallSessionAddRequest?
+  public var signature: MessageSignature?
+  public init(message: VerifyCallSessionAddRequest? = nil, signature: MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case message
     case signature
@@ -1438,12 +1438,12 @@ public struct MessageSignature : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
-@_inheritsConvenienceInitializers open class AlamofireRequestBuilder<T> : EnVerify.RequestBuilder<T> {
+@_inheritsConvenienceInitializers open class AlamofireRequestBuilder<T> : RequestBuilder<T> {
   required public init(method: Swift.String, URLString: Swift.String, parameters: [Swift.String : Any]?, isBody: Swift.Bool, headers: [Swift.String : Swift.String] = [:], timeout: Swift.Int = 30)
   open func createSessionManager() -> Alamofire.Session
   open func contentTypeForFormPart(fileURL: Foundation.URL) -> Swift.String?
   open func makeRequest(manager: Alamofire.Session, method: Alamofire.HTTPMethod, encoding: Alamofire.ParameterEncoding, headers: [Swift.String : Swift.String]) -> Alamofire.DataRequest
-  override open func execute(_ completion: @escaping (_ response: EnVerify.Response<T>?, _ error: Swift.Error?) -> Swift.Void)
+  override open func execute(_ completion: @escaping (_ response: Response<T>?, _ error: Swift.Error?) -> Swift.Void)
   open func buildHeaders() -> Alamofire.HTTPHeaders
   @objc deinit
 }
@@ -1453,16 +1453,16 @@ public enum AlamofireDecodableRequestBuilderError : Swift.Error {
   case jsonDecoding(Swift.DecodingError)
   case generalError(Swift.Error)
 }
-@_inheritsConvenienceInitializers open class AlamofireDecodableRequestBuilder<T> : EnVerify.AlamofireRequestBuilder<T> where T : Swift.Decodable {
+@_inheritsConvenienceInitializers open class AlamofireDecodableRequestBuilder<T> : AlamofireRequestBuilder<T> where T : Swift.Decodable {
   required public init(method: Swift.String, URLString: Swift.String, parameters: [Swift.String : Any]?, isBody: Swift.Bool, headers: [Swift.String : Swift.String] = super, timeout: Swift.Int = super)
   @objc deinit
 }
 public struct VerifyCallIntegrationAddResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil)
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -1500,13 +1500,13 @@ public enum ResultTypeEnum : Swift.String, Swift.Codable {
 }
 public struct ResultInfo : Swift.Codable {
   public var code: Swift.String?
-  public var type: EnVerify.ResultTypeEnum?
+  public var type: ResultTypeEnum?
   public var title: Swift.String?
   public var message: Swift.String?
   public var logMessage: Swift.String?
   public var values: [Swift.String : Swift.String]?
   public var info: Swift.String?
-  public init(code: Swift.String? = nil, type: EnVerify.ResultTypeEnum? = nil, title: Swift.String? = nil, message: Swift.String? = nil, logMessage: Swift.String? = nil, values: [Swift.String : Swift.String]? = nil, info: Swift.String? = nil)
+  public init(code: Swift.String? = nil, type: ResultTypeEnum? = nil, title: Swift.String? = nil, message: Swift.String? = nil, logMessage: Swift.String? = nil, values: [Swift.String : Swift.String]? = nil, info: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case code
     case type
@@ -1533,14 +1533,14 @@ public struct ResultInfo : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers open class StatusAPI {
-  open class func apiStatusGetGet(completion: @escaping ((_ data: EnVerify.CoreStatusResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiStatusGetGetWithRequestBuilder() -> EnVerify.RequestBuilder<EnVerify.CoreStatusResponse>
+  open class func apiStatusGetGet(completion: @escaping ((_ data: CoreStatusResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiStatusGetGetWithRequestBuilder() -> RequestBuilder<CoreStatusResponse>
   @objc deinit
 }
 public struct SignedMessageVerifyCallIntegrationAddRequest : Swift.Codable {
-  public var message: EnVerify.VerifyCallIntegrationAddRequest?
-  public var signature: EnVerify.MessageSignature?
-  public init(message: EnVerify.VerifyCallIntegrationAddRequest? = nil, signature: EnVerify.MessageSignature? = nil)
+  public var message: VerifyCallIntegrationAddRequest?
+  public var signature: MessageSignature?
+  public init(message: VerifyCallIntegrationAddRequest? = nil, signature: MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case message
     case signature
@@ -1565,7 +1565,7 @@ public struct SignedMessageVerifyCallIntegrationAddRequest : Swift.Codable {
   public static var basePath: Swift.String
   public static var credential: Foundation.URLCredential?
   public static var customHeaders: [Swift.String : Swift.String]
-  public static var requestBuilderFactory: EnVerify.RequestBuilderFactory
+  public static var requestBuilderFactory: RequestBuilderFactory
   @objc deinit
 }
 open class RequestBuilder<T> {
@@ -1577,14 +1577,14 @@ open class RequestBuilder<T> {
   public var onProgressReady: ((Foundation.Progress) -> ())?
   required public init(method: Swift.String, URLString: Swift.String, parameters: [Swift.String : Any]?, isBody: Swift.Bool, headers: [Swift.String : Swift.String] = [:], timeout: Swift.Int = 30)
   open func addHeaders(_ aHeaders: [Swift.String : Swift.String])
-  open func execute(_ completion: @escaping (_ response: EnVerify.Response<T>?, _ error: Swift.Error?) -> Swift.Void)
+  open func execute(_ completion: @escaping (_ response: Response<T>?, _ error: Swift.Error?) -> Swift.Void)
   public func addHeader(name: Swift.String, value: Swift.String) -> Self
   open func addCredential() -> Self
   @objc deinit
 }
 public protocol RequestBuilderFactory {
-  func getNonDecodableBuilder<T>() -> EnVerify.RequestBuilder<T>.Type
-  func getBuilder<T>() -> EnVerify.RequestBuilder<T>.Type where T : Swift.Decodable
+  func getNonDecodableBuilder<T>() -> RequestBuilder<T>.Type
+  func getBuilder<T>() -> RequestBuilder<T>.Type where T : Swift.Decodable
 }
 public struct VerifyCallIDRegistrationModel : Swift.Codable {
   public var fatherName: Swift.String?
@@ -1653,12 +1653,12 @@ public struct DocumentsContent : Swift.Codable {
   public var path: Swift.String?
   public var text: Swift.String?
   public var binary: Swift.String?
-  public var state: EnVerify.EntityStateTypeEnum?
+  public var state: EntityStateTypeEnum?
   public var _id: Swift.Int64
   public var uId: Foundation.UUID
   public var createDate: Foundation.Date?
   public var modifyDate: Foundation.Date?
-  public init(documentUId: Foundation.UUID? = nil, name: Swift.String? = nil, version: Swift.String? = nil, length: Swift.Int64? = nil, storage: Swift.String? = nil, path: Swift.String? = nil, text: Swift.String? = nil, binary: Swift.String? = nil, state: EnVerify.EntityStateTypeEnum? = nil, _id: Swift.Int64, uId: Foundation.UUID, createDate: Foundation.Date? = nil, modifyDate: Foundation.Date? = nil)
+  public init(documentUId: Foundation.UUID? = nil, name: Swift.String? = nil, version: Swift.String? = nil, length: Swift.Int64? = nil, storage: Swift.String? = nil, path: Swift.String? = nil, text: Swift.String? = nil, binary: Swift.String? = nil, state: EntityStateTypeEnum? = nil, _id: Swift.Int64, uId: Foundation.UUID, createDate: Foundation.Date? = nil, modifyDate: Foundation.Date? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case documentUId
     case name
@@ -1692,11 +1692,11 @@ public struct DocumentsContent : Swift.Codable {
 }
 public struct VerifyCallIDBlockGetResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
   public var valid: Swift.Bool?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, valid: Swift.Bool? = nil)
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil, valid: Swift.Bool? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -1721,9 +1721,9 @@ public struct VerifyCallIDBlockGetResponse : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct SignedMessageVerifyCallSessionCloseRequest : Swift.Codable {
-  public var message: EnVerify.VerifyCallSessionCloseRequest?
-  public var signature: EnVerify.MessageSignature?
-  public init(message: EnVerify.VerifyCallSessionCloseRequest? = nil, signature: EnVerify.MessageSignature? = nil)
+  public var message: VerifyCallSessionCloseRequest?
+  public var signature: MessageSignature?
+  public init(message: VerifyCallSessionCloseRequest? = nil, signature: MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case message
     case signature
@@ -1745,10 +1745,10 @@ public struct SignedMessageVerifyCallSessionCloseRequest : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers open class AuthAPI {
-  open class func apiAuthRevokePost(completion: @escaping ((_ data: EnVerify.AuthRevokeTokenResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiAuthRevokePostWithRequestBuilder() -> EnVerify.RequestBuilder<EnVerify.AuthRevokeTokenResponse>
-  open class func apiAuthTokenPost(body: EnVerify.AuthTokenRequest? = nil, completion: @escaping ((_ data: EnVerify.AuthTokenResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiAuthTokenPostWithRequestBuilder(body: EnVerify.AuthTokenRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.AuthTokenResponse>
+  open class func apiAuthRevokePost(completion: @escaping ((_ data: AuthRevokeTokenResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAuthRevokePostWithRequestBuilder() -> RequestBuilder<AuthRevokeTokenResponse>
+  open class func apiAuthTokenPost(body: AuthTokenRequest? = nil, completion: @escaping ((_ data: AuthTokenResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAuthTokenPostWithRequestBuilder(body: AuthTokenRequest? = nil) -> RequestBuilder<AuthTokenResponse>
   @objc deinit
 }
 public struct VerifySignedMessageCallIDDocAddRequest : Swift.Codable {
@@ -1772,9 +1772,9 @@ public struct VerifySignedMessageCallIDDocAddRequest : Swift.Codable {
   public var backDocumentChipContent: Swift.String?
   public var backDocumentBarcodeContent: Swift.String?
   public var backDocumentGuillocheContent: Swift.String?
-  public var message: EnVerify.VerifyCallIDDocAddRequest?
-  public var signature: EnVerify.MessageSignature?
-  public init(frontDocumentContent: Swift.String? = nil, backDocumentContent: Swift.String? = nil, holoDocumentContent: Swift.String? = nil, faceDocumentContent: Swift.String? = nil, frontDocumentGeneralContent: Swift.String? = nil, frontDocumentGenderNationaltiyContent: Swift.String? = nil, frontDocumentHoloFirstContent: Swift.String? = nil, frontDocumentHoloSecondContent: Swift.String? = nil, frontDocumentGuillocheFirstContent: Swift.String? = nil, frontDocumentGuillocheSecondContent: Swift.String? = nil, frontDocumentFlagContent: Swift.String? = nil, frontDocumentSignatureContent: Swift.String? = nil, frontDocumentBioPhotoContent: Swift.String? = nil, frontDocumentGhostImageContent: Swift.String? = nil, backDocumentGeneralContent: Swift.String? = nil, backDocumentAssemblyContent: Swift.String? = nil, backDocumentICAOLogoContent: Swift.String? = nil, backDocumentChipContent: Swift.String? = nil, backDocumentBarcodeContent: Swift.String? = nil, backDocumentGuillocheContent: Swift.String? = nil, message: EnVerify.VerifyCallIDDocAddRequest? = nil, signature: EnVerify.MessageSignature? = nil)
+  public var message: VerifyCallIDDocAddRequest?
+  public var signature: MessageSignature?
+  public init(frontDocumentContent: Swift.String? = nil, backDocumentContent: Swift.String? = nil, holoDocumentContent: Swift.String? = nil, faceDocumentContent: Swift.String? = nil, frontDocumentGeneralContent: Swift.String? = nil, frontDocumentGenderNationaltiyContent: Swift.String? = nil, frontDocumentHoloFirstContent: Swift.String? = nil, frontDocumentHoloSecondContent: Swift.String? = nil, frontDocumentGuillocheFirstContent: Swift.String? = nil, frontDocumentGuillocheSecondContent: Swift.String? = nil, frontDocumentFlagContent: Swift.String? = nil, frontDocumentSignatureContent: Swift.String? = nil, frontDocumentBioPhotoContent: Swift.String? = nil, frontDocumentGhostImageContent: Swift.String? = nil, backDocumentGeneralContent: Swift.String? = nil, backDocumentAssemblyContent: Swift.String? = nil, backDocumentICAOLogoContent: Swift.String? = nil, backDocumentChipContent: Swift.String? = nil, backDocumentBarcodeContent: Swift.String? = nil, backDocumentGuillocheContent: Swift.String? = nil, message: VerifyCallIDDocAddRequest? = nil, signature: MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case frontDocumentContent
     case backDocumentContent
@@ -1827,24 +1827,24 @@ public enum DocumentHashType : Swift.String {
 public struct AuthAuthenticatedUser : Swift.Codable {
   public var userId: Swift.Int64?
   public var userName: Swift.String?
-  public var userRole: EnVerify.PartiesUserRoleTypeEnum?
+  public var userRole: PartiesUserRoleTypeEnum?
   public var userPartyId: Swift.Int64?
-  public var userPartyType: EnVerify.PartiesPartyTypeEnum?
+  public var userPartyType: PartiesPartyTypeEnum?
   public var domainId: Swift.Int64?
   public var domainCode: Swift.String?
   public var domainName: Swift.String?
-  public var domainType: EnVerify.PartiesPartyRoleTypeEnum?
+  public var domainType: PartiesPartyRoleTypeEnum?
   public var domainRole: Swift.String?
   public var domainPartyId: Swift.Int64?
-  public var domainPartyType: EnVerify.PartiesPartyTypeEnum?
+  public var domainPartyType: PartiesPartyTypeEnum?
   public var name: Swift.String?
   public var firstName: Swift.String?
   public var lastName: Swift.String?
-  public var profile: EnVerify.PartiesProfileModel?
+  public var profile: PartiesProfileModel?
   public var staffId: Swift.Int64?
   public var staffCode: Swift.String?
-  public var history: [EnVerify.AuthAuthenticationInfo]?
-  public init(userId: Swift.Int64? = nil, userName: Swift.String? = nil, userRole: EnVerify.PartiesUserRoleTypeEnum? = nil, userPartyId: Swift.Int64? = nil, userPartyType: EnVerify.PartiesPartyTypeEnum? = nil, domainId: Swift.Int64? = nil, domainCode: Swift.String? = nil, domainName: Swift.String? = nil, domainType: EnVerify.PartiesPartyRoleTypeEnum? = nil, domainRole: Swift.String? = nil, domainPartyId: Swift.Int64? = nil, domainPartyType: EnVerify.PartiesPartyTypeEnum? = nil, name: Swift.String? = nil, firstName: Swift.String? = nil, lastName: Swift.String? = nil, profile: EnVerify.PartiesProfileModel? = nil, staffId: Swift.Int64? = nil, staffCode: Swift.String? = nil, history: [EnVerify.AuthAuthenticationInfo]? = nil)
+  public var history: [AuthAuthenticationInfo]?
+  public init(userId: Swift.Int64? = nil, userName: Swift.String? = nil, userRole: PartiesUserRoleTypeEnum? = nil, userPartyId: Swift.Int64? = nil, userPartyType: PartiesPartyTypeEnum? = nil, domainId: Swift.Int64? = nil, domainCode: Swift.String? = nil, domainName: Swift.String? = nil, domainType: PartiesPartyRoleTypeEnum? = nil, domainRole: Swift.String? = nil, domainPartyId: Swift.Int64? = nil, domainPartyType: PartiesPartyTypeEnum? = nil, name: Swift.String? = nil, firstName: Swift.String? = nil, lastName: Swift.String? = nil, profile: PartiesProfileModel? = nil, staffId: Swift.Int64? = nil, staffCode: Swift.String? = nil, history: [AuthAuthenticationInfo]? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case userId
     case userName
@@ -1883,9 +1883,9 @@ public struct AuthAuthenticatedUser : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct SignedMessageVerifyAppointmentCancelRequest : Swift.Codable {
-  public var message: EnVerify.VerifyAppointmentCancelRequest?
-  public var signature: EnVerify.MessageSignature?
-  public init(message: EnVerify.VerifyAppointmentCancelRequest? = nil, signature: EnVerify.MessageSignature? = nil)
+  public var message: VerifyAppointmentCancelRequest?
+  public var signature: MessageSignature?
+  public init(message: VerifyAppointmentCancelRequest? = nil, signature: MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case message
     case signature
@@ -1908,12 +1908,12 @@ public struct SignedMessageVerifyAppointmentCancelRequest : Swift.Codable {
 }
 public struct VerifyDocumentSignGetMobileResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
   public var key: Swift.String?
   public var method: Swift.String?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, key: Swift.String? = nil, method: Swift.String? = nil)
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil, key: Swift.String? = nil, method: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -1956,7 +1956,7 @@ public struct VerifyCallIDChipModel : Swift.Codable {
   public var isValidExpireDate: Swift.Bool?
   public var faceDocumentUId: Foundation.UUID?
   public var faceDocumentContent: Swift.String?
-  public var faceDocument: EnVerify.VerifyCallDocumentModel?
+  public var faceDocument: VerifyCallDocumentModel?
   public var identityType: Swift.String?
   public var identityNo: Swift.String?
   public var documentNo: Swift.String?
@@ -1968,7 +1968,7 @@ public struct VerifyCallIDChipModel : Swift.Codable {
   public var issuedBy: Swift.String?
   public var issuedDate: Swift.String?
   public var expireDate: Swift.String?
-  public init(uId: Foundation.UUID? = nil, sessionUId: Foundation.UUID? = nil, dateTime: Foundation.Date? = nil, activeAuthSucceeded: Swift.Bool? = nil, chipAuthSucceeded: Swift.Bool? = nil, passiveAuthSucceeded: Swift.Bool? = nil, publicKey: Swift.String? = nil, isValid: Swift.Bool? = nil, isValidIdentityNo: Swift.Bool? = nil, isValidNameSurname: Swift.Bool? = nil, isValidGender: Swift.Bool? = nil, isValidBirthDate: Swift.Bool? = nil, isValidDocumentNo: Swift.Bool? = nil, isValidNationality: Swift.Bool? = nil, isValidExpireDate: Swift.Bool? = nil, faceDocumentUId: Foundation.UUID? = nil, faceDocumentContent: Swift.String? = nil, faceDocument: EnVerify.VerifyCallDocumentModel? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, documentNo: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, gender: Swift.String? = nil, birthDate: Swift.String? = nil, nationality: Swift.String? = nil, issuedBy: Swift.String? = nil, issuedDate: Swift.String? = nil, expireDate: Swift.String? = nil)
+  public init(uId: Foundation.UUID? = nil, sessionUId: Foundation.UUID? = nil, dateTime: Foundation.Date? = nil, activeAuthSucceeded: Swift.Bool? = nil, chipAuthSucceeded: Swift.Bool? = nil, passiveAuthSucceeded: Swift.Bool? = nil, publicKey: Swift.String? = nil, isValid: Swift.Bool? = nil, isValidIdentityNo: Swift.Bool? = nil, isValidNameSurname: Swift.Bool? = nil, isValidGender: Swift.Bool? = nil, isValidBirthDate: Swift.Bool? = nil, isValidDocumentNo: Swift.Bool? = nil, isValidNationality: Swift.Bool? = nil, isValidExpireDate: Swift.Bool? = nil, faceDocumentUId: Foundation.UUID? = nil, faceDocumentContent: Swift.String? = nil, faceDocument: VerifyCallDocumentModel? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, documentNo: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, gender: Swift.String? = nil, birthDate: Swift.String? = nil, nationality: Swift.String? = nil, issuedBy: Swift.String? = nil, issuedDate: Swift.String? = nil, expireDate: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case uId
     case sessionUId
@@ -2032,8 +2032,8 @@ public struct VerifyCallIDChipAddRequest : Swift.Codable {
   public var _id: Swift.Int64?
   public var uId: Foundation.UUID?
   public var code: Swift.String?
-  public var data: EnVerify.VerifyCallIDChipModel
-  public init(faceDocumentContentHash: Swift.String? = nil, _id: Swift.Int64? = nil, uId: Foundation.UUID? = nil, code: Swift.String? = nil, data: EnVerify.VerifyCallIDChipModel)
+  public var data: VerifyCallIDChipModel
+  public init(faceDocumentContentHash: Swift.String? = nil, _id: Swift.Int64? = nil, uId: Foundation.UUID? = nil, code: Swift.String? = nil, data: VerifyCallIDChipModel)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case faceDocumentContentHash
     case _id
@@ -2058,9 +2058,9 @@ public struct VerifyCallIDChipAddRequest : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct SignedMessageVerifyCallSessionRoomRequest : Swift.Codable {
-  public var message: EnVerify.VerifyCallSessionRoomRequest?
-  public var signature: EnVerify.MessageSignature?
-  public init(message: EnVerify.VerifyCallSessionRoomRequest? = nil, signature: EnVerify.MessageSignature? = nil)
+  public var message: VerifyCallSessionRoomRequest?
+  public var signature: MessageSignature?
+  public init(message: VerifyCallSessionRoomRequest? = nil, signature: MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case message
     case signature
@@ -2083,10 +2083,10 @@ public struct SignedMessageVerifyCallSessionRoomRequest : Swift.Codable {
 }
 public struct BaseResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil)
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -2110,13 +2110,13 @@ public struct BaseResponse : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct AuthTokenRequest : Swift.Codable {
-  public var auth: EnVerify.PartiesAuthTypeEnum?
-  public var domainType: EnVerify.PartiesPartyRoleTypeEnum?
+  public var auth: PartiesAuthTypeEnum?
+  public var domainType: PartiesPartyRoleTypeEnum?
   public var domain: Swift.String?
   public var userName: Swift.String?
   public var password: Swift.String?
-  public var client: EnVerify.AuthClientInfo?
-  public init(auth: EnVerify.PartiesAuthTypeEnum? = nil, domainType: EnVerify.PartiesPartyRoleTypeEnum? = nil, domain: Swift.String? = nil, userName: Swift.String? = nil, password: Swift.String? = nil, client: EnVerify.AuthClientInfo? = nil)
+  public var client: AuthClientInfo?
+  public init(auth: PartiesAuthTypeEnum? = nil, domainType: PartiesPartyRoleTypeEnum? = nil, domain: Swift.String? = nil, userName: Swift.String? = nil, password: Swift.String? = nil, client: AuthClientInfo? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case auth
     case domainType
@@ -2179,7 +2179,7 @@ public enum ConnectionType : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
-  public static func == (a: EnVerify.ConnectionType, b: EnVerify.ConnectionType) -> Swift.Bool
+  public static func == (a: ConnectionType, b: ConnectionType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
@@ -2190,47 +2190,47 @@ public enum JSONValue : Swift.Codable, Swift.Equatable {
   case int(Swift.Int)
   case double(Swift.Double)
   case bool(Swift.Bool)
-  case object([Swift.String : EnVerify.JSONValue])
-  case array([EnVerify.JSONValue])
+  case object([Swift.String : JSONValue])
+  case array([JSONValue])
   case null
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
-  public static func == (a: EnVerify.JSONValue, b: EnVerify.JSONValue) -> Swift.Bool
+  public static func == (a: JSONValue, b: JSONValue) -> Swift.Bool
 }
-extension EnVerify.JSONValue : Swift.ExpressibleByStringLiteral {
+extension JSONValue : Swift.ExpressibleByStringLiteral {
   public init(stringLiteral value: Swift.String)
   public typealias ExtendedGraphemeClusterLiteralType = Swift.String
   public typealias StringLiteralType = Swift.String
   public typealias UnicodeScalarLiteralType = Swift.String
 }
-extension EnVerify.JSONValue : Swift.ExpressibleByIntegerLiteral {
+extension JSONValue : Swift.ExpressibleByIntegerLiteral {
   public init(integerLiteral value: Swift.Int)
   public typealias IntegerLiteralType = Swift.Int
 }
-extension EnVerify.JSONValue : Swift.ExpressibleByFloatLiteral {
+extension JSONValue : Swift.ExpressibleByFloatLiteral {
   public init(floatLiteral value: Swift.Double)
   public typealias FloatLiteralType = Swift.Double
 }
-extension EnVerify.JSONValue : Swift.ExpressibleByBooleanLiteral {
+extension JSONValue : Swift.ExpressibleByBooleanLiteral {
   public init(booleanLiteral value: Swift.Bool)
   public typealias BooleanLiteralType = Swift.Bool
 }
-extension EnVerify.JSONValue : Swift.ExpressibleByDictionaryLiteral {
-  public init(dictionaryLiteral elements: (Swift.String, EnVerify.JSONValue)...)
+extension JSONValue : Swift.ExpressibleByDictionaryLiteral {
+  public init(dictionaryLiteral elements: (Swift.String, JSONValue)...)
   public typealias Key = Swift.String
-  public typealias Value = EnVerify.JSONValue
+  public typealias Value = JSONValue
 }
-extension EnVerify.JSONValue : Swift.ExpressibleByArrayLiteral {
-  public init(arrayLiteral elements: EnVerify.JSONValue...)
-  public typealias ArrayLiteralElement = EnVerify.JSONValue
+extension JSONValue : Swift.ExpressibleByArrayLiteral {
+  public init(arrayLiteral elements: JSONValue...)
+  public typealias ArrayLiteralElement = JSONValue
 }
 public struct VerifyAvailableAppointmentListResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
-  public var data: [EnVerify.VerifyAvailableAppointmentModel]?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, data: [EnVerify.VerifyAvailableAppointmentModel]? = nil)
+  public var data: [VerifyAvailableAppointmentModel]?
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil, data: [VerifyAvailableAppointmentModel]? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -2349,9 +2349,9 @@ public struct VerifyCallVideoMobileAddRequest : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct SignedMessageVerifyDocumentSignGetMobileRequest : Swift.Codable {
-  public var message: EnVerify.VerifyDocumentSignGetMobileRequest?
-  public var signature: EnVerify.MessageSignature?
-  public init(message: EnVerify.VerifyDocumentSignGetMobileRequest? = nil, signature: EnVerify.MessageSignature? = nil)
+  public var message: VerifyDocumentSignGetMobileRequest?
+  public var signature: MessageSignature?
+  public init(message: VerifyDocumentSignGetMobileRequest? = nil, signature: MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case message
     case signature
@@ -2374,10 +2374,10 @@ public struct SignedMessageVerifyDocumentSignGetMobileRequest : Swift.Codable {
 }
 public struct VerifyAppointmentAddResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil)
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -2428,11 +2428,11 @@ public struct VerifyAppointmentCancelRequest : Swift.Codable {
 }
 public struct CoreStatusResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
   public var dateTime: Foundation.Date?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, dateTime: Foundation.Date? = nil)
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil, dateTime: Foundation.Date? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -2457,21 +2457,21 @@ public struct CoreStatusResponse : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers open class Auth2API {
-  open class func apiAuth2RevokePost(body: EnVerify.SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: EnVerify.AuthRevokeTokenResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiAuth2RevokePostWithRequestBuilder(body: EnVerify.SignedMessageBaseRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.AuthRevokeTokenResponse>
-  open class func apiAuth2TokenPost(body: EnVerify.SignedMessageAuthTokenRequest? = nil, completion: @escaping ((_ data: EnVerify.AuthTokenResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiAuth2TokenPostWithRequestBuilder(body: EnVerify.SignedMessageAuthTokenRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.AuthTokenResponse>
+  open class func apiAuth2RevokePost(body: SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: AuthRevokeTokenResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAuth2RevokePostWithRequestBuilder(body: SignedMessageBaseRequest? = nil) -> RequestBuilder<AuthRevokeTokenResponse>
+  open class func apiAuth2TokenPost(body: SignedMessageAuthTokenRequest? = nil, completion: @escaping ((_ data: AuthTokenResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAuth2TokenPostWithRequestBuilder(body: SignedMessageAuthTokenRequest? = nil) -> RequestBuilder<AuthTokenResponse>
   @objc deinit
 }
 public struct VerifyCallDocumentModel : Swift.Codable {
   public var uId: Foundation.UUID?
-  public var type: EnVerify.DocumentsDocumentTypeEnum?
+  public var type: DocumentsDocumentTypeEnum?
   public var subjectType: Swift.String?
   public var category: Swift.String?
   public var notes: Swift.String?
   public var documentUId: Foundation.UUID?
-  public var document: EnVerify.DocumentsDocumentModel?
-  public init(uId: Foundation.UUID? = nil, type: EnVerify.DocumentsDocumentTypeEnum? = nil, subjectType: Swift.String? = nil, category: Swift.String? = nil, notes: Swift.String? = nil, documentUId: Foundation.UUID? = nil, document: EnVerify.DocumentsDocumentModel? = nil)
+  public var document: DocumentsDocumentModel?
+  public init(uId: Foundation.UUID? = nil, type: DocumentsDocumentTypeEnum? = nil, subjectType: Swift.String? = nil, category: Swift.String? = nil, notes: Swift.String? = nil, documentUId: Foundation.UUID? = nil, document: DocumentsDocumentModel? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case uId
     case type
@@ -2526,9 +2526,9 @@ public struct VerifyAvailableAppointmentModel : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct SignedMessageVerifyAppointmentSaveMobileRequest : Swift.Codable {
-  public var message: EnVerify.VerifyAppointmentSaveMobileRequest?
-  public var signature: EnVerify.MessageSignature?
-  public init(message: EnVerify.VerifyAppointmentSaveMobileRequest? = nil, signature: EnVerify.MessageSignature? = nil)
+  public var message: VerifyAppointmentSaveMobileRequest?
+  public var signature: MessageSignature?
+  public init(message: VerifyAppointmentSaveMobileRequest? = nil, signature: MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case message
     case signature
@@ -2550,9 +2550,9 @@ public struct SignedMessageVerifyAppointmentSaveMobileRequest : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct SignedMessageVerifyAvailableAppointmentListRequest : Swift.Codable {
-  public var message: EnVerify.VerifyAvailableAppointmentListRequest?
-  public var signature: EnVerify.MessageSignature?
-  public init(message: EnVerify.VerifyAvailableAppointmentListRequest? = nil, signature: EnVerify.MessageSignature? = nil)
+  public var message: VerifyAvailableAppointmentListRequest?
+  public var signature: MessageSignature?
+  public init(message: VerifyAvailableAppointmentListRequest? = nil, signature: MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case message
     case signature
@@ -2577,8 +2577,8 @@ public struct VerifyCallIDCheckAddRequest : Swift.Codable {
   public var _id: Swift.Int64?
   public var uId: Foundation.UUID?
   public var code: Swift.String?
-  public var data: EnVerify.VerifyCallIDCheckModel
-  public init(_id: Swift.Int64? = nil, uId: Foundation.UUID? = nil, code: Swift.String? = nil, data: EnVerify.VerifyCallIDCheckModel)
+  public var data: VerifyCallIDCheckModel
+  public init(_id: Swift.Int64? = nil, uId: Foundation.UUID? = nil, code: Swift.String? = nil, data: VerifyCallIDCheckModel)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case _id
     case uId
@@ -2687,9 +2687,9 @@ public struct AuthAuthenticationInfo : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct SignedMessageVerifyCallIDBlockGetRequest : Swift.Codable {
-  public var message: EnVerify.VerifyCallIDBlockGetRequest?
-  public var signature: EnVerify.MessageSignature?
-  public init(message: EnVerify.VerifyCallIDBlockGetRequest? = nil, signature: EnVerify.MessageSignature? = nil)
+  public var message: VerifyCallIDBlockGetRequest?
+  public var signature: MessageSignature?
+  public init(message: VerifyCallIDBlockGetRequest? = nil, signature: MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case message
     case signature
@@ -2712,8 +2712,8 @@ public struct SignedMessageVerifyCallIDBlockGetRequest : Swift.Codable {
 }
 public struct VerifyMobileParameterGetResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
   public var livenessScore: Swift.Double?
   public var faceRecognitionThreshold: Swift.Double?
@@ -2742,7 +2742,7 @@ public struct VerifyMobileParameterGetResponse : Swift.Codable {
   public var setCallWaitTimeout: Swift.Int?
   public var showMobileSpeed: Swift.Bool?
   public var getDG1Name: Swift.Bool?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, livenessScore: Swift.Double? = nil, faceRecognitionThreshold: Swift.Double? = nil, timeout: Swift.Int? = nil, maxCallStartErrorTime: Swift.Int? = nil, maxCallStartWaitTime: Swift.Int? = nil, screenRecordBitrate: Swift.Int? = nil, screenRecord: Swift.Bool? = nil, screenRecordPart: Swift.String? = nil, screenRecordRetryCount: Swift.Int? = nil, screenRecordUploadTimeout: Swift.Int? = nil, oCRMode: Swift.String? = nil, oCRDifficultyLevel: Swift.Int? = nil, livenessCalibration: Swift.Int? = nil, eyeDetectionTimeout: Swift.Int? = nil, headCalibration: Swift.Int? = nil, smileCalibration: Swift.Double? = nil, eyeCalibration: Swift.Double? = nil, livenessTimeOut: Swift.Int? = nil, distanceMin: Swift.Double? = nil, distanceMax: Swift.Double? = nil, chipDistanceMin: Swift.Double? = nil, chipDistanceMax: Swift.Double? = nil, maxCallTime: Swift.Int? = nil, setIceCheckingTimeout: Swift.Int? = nil, setCallWaitTimeout: Swift.Int? = nil, showMobileSpeed: Swift.Bool? = nil, getDG1Name: Swift.Bool? = nil)
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil, livenessScore: Swift.Double? = nil, faceRecognitionThreshold: Swift.Double? = nil, timeout: Swift.Int? = nil, maxCallStartErrorTime: Swift.Int? = nil, maxCallStartWaitTime: Swift.Int? = nil, screenRecordBitrate: Swift.Int? = nil, screenRecord: Swift.Bool? = nil, screenRecordPart: Swift.String? = nil, screenRecordRetryCount: Swift.Int? = nil, screenRecordUploadTimeout: Swift.Int? = nil, oCRMode: Swift.String? = nil, oCRDifficultyLevel: Swift.Int? = nil, livenessCalibration: Swift.Int? = nil, eyeDetectionTimeout: Swift.Int? = nil, headCalibration: Swift.Int? = nil, smileCalibration: Swift.Double? = nil, eyeCalibration: Swift.Double? = nil, livenessTimeOut: Swift.Int? = nil, distanceMin: Swift.Double? = nil, distanceMax: Swift.Double? = nil, chipDistanceMin: Swift.Double? = nil, chipDistanceMax: Swift.Double? = nil, maxCallTime: Swift.Int? = nil, setIceCheckingTimeout: Swift.Int? = nil, setCallWaitTimeout: Swift.Int? = nil, showMobileSpeed: Swift.Bool? = nil, getDG1Name: Swift.Bool? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -2823,8 +2823,8 @@ public struct VerifyCallFaceModel : Swift.Codable {
   public var antiSpoofingMin: Swift.Double?
   public var antiSpoofingMax: Swift.Double?
   public var faceDocumentContent: Swift.String?
-  public var faceDocument: EnVerify.VerifyCallDocumentModel?
-  public init(uId: Foundation.UUID? = nil, sessionUId: Foundation.UUID? = nil, dateTime: Foundation.Date? = nil, faceDocumentUId: Foundation.UUID? = nil, distance: Swift.Double? = nil, confidence: Swift.Int? = nil, chipDistance: Swift.Double? = nil, chipConfidence: Swift.Int? = nil, leftEyeCloseConfidence: Swift.Double? = nil, rightEyeCloseConfidence: Swift.Double? = nil, smilingConfidence: Swift.Double? = nil, livenessScore: Swift.Double? = nil, distanceMin: Swift.Double? = nil, distanceMax: Swift.Double? = nil, distanceValidityLevel: Swift.Int? = nil, chipDistanceMin: Swift.Double? = nil, chipDistanceMax: Swift.Double? = nil, chipDistanceValidityLevel: Swift.Int? = nil, livenessScoreValue: Swift.Double? = nil, livenessScoreValidityLevel: Swift.Int? = nil, validityLevel: Swift.Int? = nil, antiSpoofing: Swift.Float? = nil, antiSpoofingValidityLevel: Swift.Int? = nil, antiSpoofingMin: Swift.Double? = nil, antiSpoofingMax: Swift.Double? = nil, faceDocumentContent: Swift.String? = nil, faceDocument: EnVerify.VerifyCallDocumentModel? = nil)
+  public var faceDocument: VerifyCallDocumentModel?
+  public init(uId: Foundation.UUID? = nil, sessionUId: Foundation.UUID? = nil, dateTime: Foundation.Date? = nil, faceDocumentUId: Foundation.UUID? = nil, distance: Swift.Double? = nil, confidence: Swift.Int? = nil, chipDistance: Swift.Double? = nil, chipConfidence: Swift.Int? = nil, leftEyeCloseConfidence: Swift.Double? = nil, rightEyeCloseConfidence: Swift.Double? = nil, smilingConfidence: Swift.Double? = nil, livenessScore: Swift.Double? = nil, distanceMin: Swift.Double? = nil, distanceMax: Swift.Double? = nil, distanceValidityLevel: Swift.Int? = nil, chipDistanceMin: Swift.Double? = nil, chipDistanceMax: Swift.Double? = nil, chipDistanceValidityLevel: Swift.Int? = nil, livenessScoreValue: Swift.Double? = nil, livenessScoreValidityLevel: Swift.Int? = nil, validityLevel: Swift.Int? = nil, antiSpoofing: Swift.Float? = nil, antiSpoofingValidityLevel: Swift.Int? = nil, antiSpoofingMin: Swift.Double? = nil, antiSpoofingMax: Swift.Double? = nil, faceDocumentContent: Swift.String? = nil, faceDocument: VerifyCallDocumentModel? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case uId
     case sessionUId
@@ -2876,11 +2876,11 @@ public struct VerifyCallFaceModel : Swift.Codable {
 }
 public struct VerifyCallLogAddResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
-  public var status: EnVerify.VerifyCallSessionStatusTypeEnum?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: EnVerify.VerifyCallSessionStatusTypeEnum? = nil)
+  public var status: VerifyCallSessionStatusTypeEnum?
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: VerifyCallSessionStatusTypeEnum? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -2932,11 +2932,11 @@ public struct VerifyCallIDBlockGetRequest : Swift.Codable {
 }
 public struct VerifyCallTypeNameListResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
-  public var data: [EnVerify.VerifyCallTypeNameModel]?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, data: [EnVerify.VerifyCallTypeNameModel]? = nil)
+  public var data: [VerifyCallTypeNameModel]?
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil, data: [VerifyCallTypeNameModel]? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -2961,9 +2961,9 @@ public struct VerifyCallTypeNameListResponse : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public struct SignedMessageVerifyCallIDCheckAddRequest : Swift.Codable {
-  public var message: EnVerify.VerifyCallIDCheckAddRequest?
-  public var signature: EnVerify.MessageSignature?
-  public init(message: EnVerify.VerifyCallIDCheckAddRequest? = nil, signature: EnVerify.MessageSignature? = nil)
+  public var message: VerifyCallIDCheckAddRequest?
+  public var signature: MessageSignature?
+  public init(message: VerifyCallIDCheckAddRequest? = nil, signature: MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case message
     case signature
@@ -3090,9 +3090,9 @@ public struct VerifyCallIDCheckModel : Swift.Codable {
 }
 public struct VerifySignedMessageCallFaceAddRequest : Swift.Codable {
   public var faceDocumentContent: Swift.String?
-  public var message: EnVerify.VerifyCallFaceAddRequest?
-  public var signature: EnVerify.MessageSignature?
-  public init(faceDocumentContent: Swift.String? = nil, message: EnVerify.VerifyCallFaceAddRequest? = nil, signature: EnVerify.MessageSignature? = nil)
+  public var message: VerifyCallFaceAddRequest?
+  public var signature: MessageSignature?
+  public init(faceDocumentContent: Swift.String? = nil, message: VerifyCallFaceAddRequest? = nil, signature: MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case faceDocumentContent
     case message
@@ -3121,10 +3121,10 @@ public struct VerifyCallIntegrationAddRequest : Swift.Codable {
   public var phone: Swift.String?
   public var email: Swift.String?
   public var formUrl: Swift.String?
-  public var iDRegistration: EnVerify.VerifyCallIDRegistrationModel?
-  public var addressRegistration: EnVerify.VerifyCallAddressRegistrationModel?
+  public var iDRegistration: VerifyCallIDRegistrationModel?
+  public var addressRegistration: VerifyCallAddressRegistrationModel?
   public var data: Swift.String?
-  public init(type: Swift.String, reference: Swift.String, callType: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil, formUrl: Swift.String? = nil, iDRegistration: EnVerify.VerifyCallIDRegistrationModel? = nil, addressRegistration: EnVerify.VerifyCallAddressRegistrationModel? = nil, data: Swift.String? = nil)
+  public init(type: Swift.String, reference: Swift.String, callType: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil, formUrl: Swift.String? = nil, iDRegistration: VerifyCallIDRegistrationModel? = nil, addressRegistration: VerifyCallAddressRegistrationModel? = nil, data: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case type
     case reference
@@ -3207,11 +3207,11 @@ public struct VerifyAppointmentListMobileRequest : Swift.Codable {
 }
 public struct VerifyCallIDDocAddResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
-  public var status: EnVerify.VerifyCallSessionStatusTypeEnum?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: EnVerify.VerifyCallSessionStatusTypeEnum? = nil)
+  public var status: VerifyCallSessionStatusTypeEnum?
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: VerifyCallSessionStatusTypeEnum? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -3263,8 +3263,8 @@ public struct VerifyCallIDDocAddRequest : Swift.Codable {
   public var _id: Swift.Int64?
   public var uId: Foundation.UUID?
   public var code: Swift.String?
-  public var data: EnVerify.VerifyCallIDDocModel
-  public init(frontDocumentContentHash: Swift.String? = nil, backDocumentContentHash: Swift.String? = nil, holoDocumentContentHash: Swift.String? = nil, faceDocumentContentHash: Swift.String? = nil, frontDocumentGeneralContentHash: Swift.String? = nil, frontDocumentGenderNationaltiyContentHash: Swift.String? = nil, frontDocumentHoloFirstContentHash: Swift.String? = nil, frontDocumentHoloSecondContentHash: Swift.String? = nil, frontDocumentGuillocheFirstContentHash: Swift.String? = nil, frontDocumentGuillocheSecondContentHash: Swift.String? = nil, frontDocumentFlagContentHash: Swift.String? = nil, frontDocumentSignatureContentHash: Swift.String? = nil, frontDocumentBioPhotoContentHash: Swift.String? = nil, frontDocumentGhostImageContentHash: Swift.String? = nil, backDocumentGeneralContentHash: Swift.String? = nil, backDocumentAssemblyContentHash: Swift.String? = nil, backDocumentICAOLogoContentHash: Swift.String? = nil, backDocumentChipContentHash: Swift.String? = nil, backDocumentBarcodeContentHash: Swift.String? = nil, backDocumentGuillocheContentHash: Swift.String? = nil, _id: Swift.Int64? = nil, uId: Foundation.UUID? = nil, code: Swift.String? = nil, data: EnVerify.VerifyCallIDDocModel)
+  public var data: VerifyCallIDDocModel
+  public init(frontDocumentContentHash: Swift.String? = nil, backDocumentContentHash: Swift.String? = nil, holoDocumentContentHash: Swift.String? = nil, faceDocumentContentHash: Swift.String? = nil, frontDocumentGeneralContentHash: Swift.String? = nil, frontDocumentGenderNationaltiyContentHash: Swift.String? = nil, frontDocumentHoloFirstContentHash: Swift.String? = nil, frontDocumentHoloSecondContentHash: Swift.String? = nil, frontDocumentGuillocheFirstContentHash: Swift.String? = nil, frontDocumentGuillocheSecondContentHash: Swift.String? = nil, frontDocumentFlagContentHash: Swift.String? = nil, frontDocumentSignatureContentHash: Swift.String? = nil, frontDocumentBioPhotoContentHash: Swift.String? = nil, frontDocumentGhostImageContentHash: Swift.String? = nil, backDocumentGeneralContentHash: Swift.String? = nil, backDocumentAssemblyContentHash: Swift.String? = nil, backDocumentICAOLogoContentHash: Swift.String? = nil, backDocumentChipContentHash: Swift.String? = nil, backDocumentBarcodeContentHash: Swift.String? = nil, backDocumentGuillocheContentHash: Swift.String? = nil, _id: Swift.Int64? = nil, uId: Foundation.UUID? = nil, code: Swift.String? = nil, data: VerifyCallIDDocModel)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case frontDocumentContentHash
     case backDocumentContentHash
@@ -3324,8 +3324,8 @@ public struct VerifyCallFaceAddRequest : Swift.Codable {
   public var _id: Swift.Int64?
   public var uId: Foundation.UUID?
   public var code: Swift.String?
-  public var data: EnVerify.VerifyCallFaceModel
-  public init(faceDocumentContentHash: Swift.String? = nil, _id: Swift.Int64? = nil, uId: Foundation.UUID? = nil, code: Swift.String? = nil, data: EnVerify.VerifyCallFaceModel)
+  public var data: VerifyCallFaceModel
+  public init(faceDocumentContentHash: Swift.String? = nil, _id: Swift.Int64? = nil, uId: Foundation.UUID? = nil, code: Swift.String? = nil, data: VerifyCallFaceModel)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case faceDocumentContentHash
     case _id
@@ -3351,7 +3351,7 @@ public struct VerifyCallFaceAddRequest : Swift.Codable {
 }
 public struct VerifyCallResultModel : Swift.Codable {
   public var dateTime: Foundation.Date?
-  public var userRole: EnVerify.PartiesUserRoleTypeEnum?
+  public var userRole: PartiesUserRoleTypeEnum?
   public var result: Swift.String?
   public var _description: Swift.String?
   public var reference: Swift.String?
@@ -3359,7 +3359,7 @@ public struct VerifyCallResultModel : Swift.Codable {
   public var userUId: Foundation.UUID?
   public var name: Swift.String?
   public var createUser: Swift.String?
-  public init(dateTime: Foundation.Date? = nil, userRole: EnVerify.PartiesUserRoleTypeEnum? = nil, result: Swift.String? = nil, _description: Swift.String? = nil, reference: Swift.String? = nil, isCritical: Swift.Bool? = nil, userUId: Foundation.UUID? = nil, name: Swift.String? = nil, createUser: Swift.String? = nil)
+  public init(dateTime: Foundation.Date? = nil, userRole: PartiesUserRoleTypeEnum? = nil, result: Swift.String? = nil, _description: Swift.String? = nil, reference: Swift.String? = nil, isCritical: Swift.Bool? = nil, userUId: Foundation.UUID? = nil, name: Swift.String? = nil, createUser: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case dateTime
     case userRole
@@ -3471,9 +3471,9 @@ public enum DocumentsDocumentTypeEnum : Swift.String, Swift.Codable {
   }
 }
 public struct SignedMessageBaseRequest : Swift.Codable {
-  public var message: EnVerify.BaseRequest?
-  public var signature: EnVerify.MessageSignature?
-  public init(message: EnVerify.BaseRequest? = nil, signature: EnVerify.MessageSignature? = nil)
+  public var message: BaseRequest?
+  public var signature: MessageSignature?
+  public init(message: BaseRequest? = nil, signature: MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case message
     case signature
@@ -3513,9 +3513,9 @@ public enum PartiesPartyRoleTypeEnum : Swift.String, Swift.Codable {
   }
 }
 public struct SignedMessageVerifyCallLogAddRequest : Swift.Codable {
-  public var message: EnVerify.VerifyCallLogAddRequest?
-  public var signature: EnVerify.MessageSignature?
-  public init(message: EnVerify.VerifyCallLogAddRequest? = nil, signature: EnVerify.MessageSignature? = nil)
+  public var message: VerifyCallLogAddRequest?
+  public var signature: MessageSignature?
+  public init(message: VerifyCallLogAddRequest? = nil, signature: MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case message
     case signature
@@ -3572,10 +3572,10 @@ public struct AuthClientInfo : Swift.Codable {
 }
 public struct AuthRevokeTokenResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil)
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -3599,55 +3599,55 @@ public struct AuthRevokeTokenResponse : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers open class VerifyAPI {
-  open class func apiVerifyAppointmentAvailableListPost(body: EnVerify.SignedMessageVerifyAvailableAppointmentListRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyAvailableAppointmentListResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifyAppointmentAvailableListPostWithRequestBuilder(body: EnVerify.SignedMessageVerifyAvailableAppointmentListRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyAvailableAppointmentListResponse>
-  open class func apiVerifyAppointmentCancelPost(body: EnVerify.SignedMessageVerifyAppointmentCancelRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyAppointmentCancelResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifyAppointmentCancelPostWithRequestBuilder(body: EnVerify.SignedMessageVerifyAppointmentCancelRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyAppointmentCancelResponse>
-  open class func apiVerifyAppointmentListPost(body: EnVerify.SignedMessageVerifyAppointmentListMobileRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyAppointmentListMobileResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifyAppointmentListPostWithRequestBuilder(body: EnVerify.SignedMessageVerifyAppointmentListMobileRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyAppointmentListMobileResponse>
-  open class func apiVerifyAppointmentSavePost(body: EnVerify.SignedMessageVerifyAppointmentSaveMobileRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyAppointmentAddResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifyAppointmentSavePostWithRequestBuilder(body: EnVerify.SignedMessageVerifyAppointmentSaveMobileRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyAppointmentAddResponse>
-  open class func apiVerifyCallTypeListPost(body: EnVerify.SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyCallTypeNameListResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifyCallTypeListPostWithRequestBuilder(body: EnVerify.SignedMessageBaseRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyCallTypeNameListResponse>
-  open class func apiVerifyFaceAddPost(body: EnVerify.VerifySignedMessageCallFaceAddRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyCallFaceAddResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifyFaceAddPostWithRequestBuilder(body: EnVerify.VerifySignedMessageCallFaceAddRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyCallFaceAddResponse>
-  open class func apiVerifyIDBlockGetPost(body: EnVerify.SignedMessageVerifyCallIDBlockGetRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyCallIDBlockGetResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifyIDBlockGetPostWithRequestBuilder(body: EnVerify.SignedMessageVerifyCallIDBlockGetRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyCallIDBlockGetResponse>
-  open class func apiVerifyIDCheckAddPost(body: EnVerify.SignedMessageVerifyCallIDCheckAddRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyCallIDCheckAddResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifyIDCheckAddPostWithRequestBuilder(body: EnVerify.SignedMessageVerifyCallIDCheckAddRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyCallIDCheckAddResponse>
-  open class func apiVerifyIDChipAddPost(body: EnVerify.VerifySignedMessageCallIDChipAddRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyCallIDChipAddResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifyIDChipAddPostWithRequestBuilder(body: EnVerify.VerifySignedMessageCallIDChipAddRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyCallIDChipAddResponse>
-  open class func apiVerifyIDDocAddPost(body: EnVerify.VerifySignedMessageCallIDDocAddRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyCallIDDocAddResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifyIDDocAddPostWithRequestBuilder(body: EnVerify.VerifySignedMessageCallIDDocAddRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyCallIDDocAddResponse>
-  open class func apiVerifyIntegrationAddPost(body: EnVerify.SignedMessageVerifyCallIntegrationAddRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyCallIntegrationAddResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifyIntegrationAddPostWithRequestBuilder(body: EnVerify.SignedMessageVerifyCallIntegrationAddRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyCallIntegrationAddResponse>
-  open class func apiVerifyLogAddPost(body: EnVerify.SignedMessageVerifyCallLogAddRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyCallLogAddResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifyLogAddPostWithRequestBuilder(body: EnVerify.SignedMessageVerifyCallLogAddRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyCallLogAddResponse>
-  open class func apiVerifyResultGetPost(body: EnVerify.SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyCallResultResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifyResultGetPostWithRequestBuilder(body: EnVerify.SignedMessageBaseRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyCallResultResponse>
-  open class func apiVerifySessionAddPost(body: EnVerify.SignedMessageVerifyCallSessionAddRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyCallSessionAddResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifySessionAddPostWithRequestBuilder(body: EnVerify.SignedMessageVerifyCallSessionAddRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyCallSessionAddResponse>
-  open class func apiVerifySessionClosePost(body: EnVerify.SignedMessageVerifyCallSessionCloseRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyCallSessionCloseResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifySessionClosePostWithRequestBuilder(body: EnVerify.SignedMessageVerifyCallSessionCloseRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyCallSessionCloseResponse>
-  open class func apiVerifySessionRoomPost(body: EnVerify.SignedMessageVerifyCallSessionRoomRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyCallSessionRoomResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifySessionRoomPostWithRequestBuilder(body: EnVerify.SignedMessageVerifyCallSessionRoomRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyCallSessionRoomResponse>
-  open class func apiVerifySettingGetPost(body: EnVerify.SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyMobileParameterGetResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifySettingGetPostWithRequestBuilder(body: EnVerify.SignedMessageBaseRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyMobileParameterGetResponse>
-  open class func apiVerifyVideoAddPost(timeout: Swift.Int, body: EnVerify.VerifySignedMessageCallVideoMobileAddRequest? = nil, completion: @escaping ((_ data: EnVerify.BaseResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifyVideoAddPostWithRequestBuilder(timeout: Swift.Int, body: EnVerify.VerifySignedMessageCallVideoMobileAddRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.BaseResponse>
-  open class func apiVerifySigningGetPost(body: EnVerify.SignedMessageVerifyDocumentSignGetMobileRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyDocumentSignGetMobileResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifySigningGetPostWithRequestBuilder(body: EnVerify.SignedMessageVerifyDocumentSignGetMobileRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyDocumentSignGetMobileResponse>
-  open class func apiVerifySigningSetPost(body: EnVerify.SignedMessageVerifyDocumentSignSetMobileRequest? = nil, completion: @escaping ((_ data: EnVerify.VerifyDocumentSignSetMobileResponse?, _ error: Swift.Error?) -> Swift.Void))
-  open class func apiVerifySigningSetPostWithRequestBuilder(body: EnVerify.SignedMessageVerifyDocumentSignSetMobileRequest? = nil) -> EnVerify.RequestBuilder<EnVerify.VerifyDocumentSignSetMobileResponse>
+  open class func apiVerifyAppointmentAvailableListPost(body: SignedMessageVerifyAvailableAppointmentListRequest? = nil, completion: @escaping ((_ data: VerifyAvailableAppointmentListResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyAppointmentAvailableListPostWithRequestBuilder(body: SignedMessageVerifyAvailableAppointmentListRequest? = nil) -> RequestBuilder<VerifyAvailableAppointmentListResponse>
+  open class func apiVerifyAppointmentCancelPost(body: SignedMessageVerifyAppointmentCancelRequest? = nil, completion: @escaping ((_ data: VerifyAppointmentCancelResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyAppointmentCancelPostWithRequestBuilder(body: SignedMessageVerifyAppointmentCancelRequest? = nil) -> RequestBuilder<VerifyAppointmentCancelResponse>
+  open class func apiVerifyAppointmentListPost(body: SignedMessageVerifyAppointmentListMobileRequest? = nil, completion: @escaping ((_ data: VerifyAppointmentListMobileResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyAppointmentListPostWithRequestBuilder(body: SignedMessageVerifyAppointmentListMobileRequest? = nil) -> RequestBuilder<VerifyAppointmentListMobileResponse>
+  open class func apiVerifyAppointmentSavePost(body: SignedMessageVerifyAppointmentSaveMobileRequest? = nil, completion: @escaping ((_ data: VerifyAppointmentAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyAppointmentSavePostWithRequestBuilder(body: SignedMessageVerifyAppointmentSaveMobileRequest? = nil) -> RequestBuilder<VerifyAppointmentAddResponse>
+  open class func apiVerifyCallTypeListPost(body: SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: VerifyCallTypeNameListResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyCallTypeListPostWithRequestBuilder(body: SignedMessageBaseRequest? = nil) -> RequestBuilder<VerifyCallTypeNameListResponse>
+  open class func apiVerifyFaceAddPost(body: VerifySignedMessageCallFaceAddRequest? = nil, completion: @escaping ((_ data: VerifyCallFaceAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyFaceAddPostWithRequestBuilder(body: VerifySignedMessageCallFaceAddRequest? = nil) -> RequestBuilder<VerifyCallFaceAddResponse>
+  open class func apiVerifyIDBlockGetPost(body: SignedMessageVerifyCallIDBlockGetRequest? = nil, completion: @escaping ((_ data: VerifyCallIDBlockGetResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyIDBlockGetPostWithRequestBuilder(body: SignedMessageVerifyCallIDBlockGetRequest? = nil) -> RequestBuilder<VerifyCallIDBlockGetResponse>
+  open class func apiVerifyIDCheckAddPost(body: SignedMessageVerifyCallIDCheckAddRequest? = nil, completion: @escaping ((_ data: VerifyCallIDCheckAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyIDCheckAddPostWithRequestBuilder(body: SignedMessageVerifyCallIDCheckAddRequest? = nil) -> RequestBuilder<VerifyCallIDCheckAddResponse>
+  open class func apiVerifyIDChipAddPost(body: VerifySignedMessageCallIDChipAddRequest? = nil, completion: @escaping ((_ data: VerifyCallIDChipAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyIDChipAddPostWithRequestBuilder(body: VerifySignedMessageCallIDChipAddRequest? = nil) -> RequestBuilder<VerifyCallIDChipAddResponse>
+  open class func apiVerifyIDDocAddPost(body: VerifySignedMessageCallIDDocAddRequest? = nil, completion: @escaping ((_ data: VerifyCallIDDocAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyIDDocAddPostWithRequestBuilder(body: VerifySignedMessageCallIDDocAddRequest? = nil) -> RequestBuilder<VerifyCallIDDocAddResponse>
+  open class func apiVerifyIntegrationAddPost(body: SignedMessageVerifyCallIntegrationAddRequest? = nil, completion: @escaping ((_ data: VerifyCallIntegrationAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyIntegrationAddPostWithRequestBuilder(body: SignedMessageVerifyCallIntegrationAddRequest? = nil) -> RequestBuilder<VerifyCallIntegrationAddResponse>
+  open class func apiVerifyLogAddPost(body: SignedMessageVerifyCallLogAddRequest? = nil, completion: @escaping ((_ data: VerifyCallLogAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyLogAddPostWithRequestBuilder(body: SignedMessageVerifyCallLogAddRequest? = nil) -> RequestBuilder<VerifyCallLogAddResponse>
+  open class func apiVerifyResultGetPost(body: SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: VerifyCallResultResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyResultGetPostWithRequestBuilder(body: SignedMessageBaseRequest? = nil) -> RequestBuilder<VerifyCallResultResponse>
+  open class func apiVerifySessionAddPost(body: SignedMessageVerifyCallSessionAddRequest? = nil, completion: @escaping ((_ data: VerifyCallSessionAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifySessionAddPostWithRequestBuilder(body: SignedMessageVerifyCallSessionAddRequest? = nil) -> RequestBuilder<VerifyCallSessionAddResponse>
+  open class func apiVerifySessionClosePost(body: SignedMessageVerifyCallSessionCloseRequest? = nil, completion: @escaping ((_ data: VerifyCallSessionCloseResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifySessionClosePostWithRequestBuilder(body: SignedMessageVerifyCallSessionCloseRequest? = nil) -> RequestBuilder<VerifyCallSessionCloseResponse>
+  open class func apiVerifySessionRoomPost(body: SignedMessageVerifyCallSessionRoomRequest? = nil, completion: @escaping ((_ data: VerifyCallSessionRoomResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifySessionRoomPostWithRequestBuilder(body: SignedMessageVerifyCallSessionRoomRequest? = nil) -> RequestBuilder<VerifyCallSessionRoomResponse>
+  open class func apiVerifySettingGetPost(body: SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: VerifyMobileParameterGetResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifySettingGetPostWithRequestBuilder(body: SignedMessageBaseRequest? = nil) -> RequestBuilder<VerifyMobileParameterGetResponse>
+  open class func apiVerifyVideoAddPost(timeout: Swift.Int, body: VerifySignedMessageCallVideoMobileAddRequest? = nil, completion: @escaping ((_ data: BaseResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyVideoAddPostWithRequestBuilder(timeout: Swift.Int, body: VerifySignedMessageCallVideoMobileAddRequest? = nil) -> RequestBuilder<BaseResponse>
+  open class func apiVerifySigningGetPost(body: SignedMessageVerifyDocumentSignGetMobileRequest? = nil, completion: @escaping ((_ data: VerifyDocumentSignGetMobileResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifySigningGetPostWithRequestBuilder(body: SignedMessageVerifyDocumentSignGetMobileRequest? = nil) -> RequestBuilder<VerifyDocumentSignGetMobileResponse>
+  open class func apiVerifySigningSetPost(body: SignedMessageVerifyDocumentSignSetMobileRequest? = nil, completion: @escaping ((_ data: VerifyDocumentSignSetMobileResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifySigningSetPostWithRequestBuilder(body: SignedMessageVerifyDocumentSignSetMobileRequest? = nil) -> RequestBuilder<VerifyDocumentSignSetMobileResponse>
   @objc deinit
 }
 public struct VerifyCallFaceAddResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
-  public var result: EnVerify.ResultInfo?
-  public var warning: EnVerify.ResultInfo?
+  public var result: ResultInfo?
+  public var warning: ResultInfo?
   public var referenceId: Foundation.UUID?
-  public var status: EnVerify.VerifyCallSessionStatusTypeEnum?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnVerify.ResultInfo? = nil, warning: EnVerify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: EnVerify.VerifyCallSessionStatusTypeEnum? = nil)
+  public var status: VerifyCallSessionStatusTypeEnum?
+  public init(isSuccessful: Swift.Bool? = nil, result: ResultInfo? = nil, warning: ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: VerifyCallSessionStatusTypeEnum? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -3685,8 +3685,8 @@ public struct VerifyAppointmentSaveMobileRequest : Swift.Codable {
   public var _id: Swift.Int64?
   public var uId: Foundation.UUID?
   public var code: Swift.String?
-  public var data: EnVerify.VerifyAppointmentSaveMobileModel
-  public init(_id: Swift.Int64? = nil, uId: Foundation.UUID? = nil, code: Swift.String? = nil, data: EnVerify.VerifyAppointmentSaveMobileModel)
+  public var data: VerifyAppointmentSaveMobileModel
+  public init(_id: Swift.Int64? = nil, uId: Foundation.UUID? = nil, code: Swift.String? = nil, data: VerifyAppointmentSaveMobileModel)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case _id
     case uId
@@ -3720,295 +3720,295 @@ open class Response<T> {
   convenience public init(response: Foundation.HTTPURLResponse, body: T?)
   @objc deinit
 }
-extension EnVerify.AuthTokenResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.AuthTokenResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.AuthTokenResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallIDCheckAddResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallIDCheckAddResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallIDCheckAddResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.EnverifyVerifyAppointmentSaveMobileModel.CodingKeys : Swift.Equatable {}
-extension EnVerify.EnverifyVerifyAppointmentSaveMobileModel.CodingKeys : Swift.Hashable {}
-extension EnVerify.EnverifyVerifyAppointmentSaveMobileModel.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyDocumentSignSetMobileResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyDocumentSignSetMobileResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyDocumentSignSetMobileResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.DocumentsDocumentModel.CodingKeys : Swift.Equatable {}
-extension EnVerify.DocumentsDocumentModel.CodingKeys : Swift.Hashable {}
-extension EnVerify.DocumentsDocumentModel.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifySignedMessageCallVideoMobileAddRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifySignedMessageCallVideoMobileAddRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifySignedMessageCallVideoMobileAddRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.Model : Swift.Equatable {}
-extension EnVerify.Model : Swift.Hashable {}
-extension EnVerify.Model : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallLogAddRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallLogAddRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallLogAddRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallResultResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallResultResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallResultResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallSessionCloseRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallSessionCloseRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallSessionCloseRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallIDDocModel.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallIDDocModel.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallIDDocModel.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyAppointmentListMobileResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyAppointmentListMobileResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyAppointmentListMobileResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallSessionAddResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallSessionAddResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallSessionAddResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.SignedMessageVerifyDocumentSignSetMobileRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.SignedMessageVerifyDocumentSignSetMobileRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.SignedMessageVerifyDocumentSignSetMobileRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallIDChipAddResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallIDChipAddResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallIDChipAddResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallSessionAddRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallSessionAddRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallSessionAddRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyAppointmentCancelResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyAppointmentCancelResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyAppointmentCancelResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallSessionCloseResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallSessionCloseResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallSessionCloseResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.EntityStateTypeEnum : Swift.Equatable {}
-extension EnVerify.EntityStateTypeEnum : Swift.Hashable {}
-extension EnVerify.EntityStateTypeEnum : Swift.RawRepresentable {}
-extension EnVerify.EnVerifyCallSessionStatusTypeEnum : Swift.Equatable {}
-extension EnVerify.EnVerifyCallSessionStatusTypeEnum : Swift.Hashable {}
-extension EnVerify.EnVerifyCallSessionStatusTypeEnum : Swift.RawRepresentable {}
-extension EnVerify.AgentRequestType : Swift.Equatable {}
-extension EnVerify.AgentRequestType : Swift.Hashable {}
-extension EnVerify.SignedMessageAuthTokenRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.SignedMessageAuthTokenRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.SignedMessageAuthTokenRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.SignedMessageVerifyAppointmentListMobileRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.SignedMessageVerifyAppointmentListMobileRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.SignedMessageVerifyAppointmentListMobileRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifySignedMessageCallIDChipAddRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifySignedMessageCallIDChipAddRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifySignedMessageCallIDChipAddRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyAppointmentSaveMobileModel.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyAppointmentSaveMobileModel.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyAppointmentSaveMobileModel.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallLogTypeEnum : Swift.Equatable {}
-extension EnVerify.VerifyCallLogTypeEnum : Swift.Hashable {}
-extension EnVerify.VerifyCallLogTypeEnum : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallSessionRoomResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallSessionRoomResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallSessionRoomResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallTypeNameModel.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallTypeNameModel.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallTypeNameModel.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.SignedMessageVerifyCallSessionAddRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.SignedMessageVerifyCallSessionAddRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.SignedMessageVerifyCallSessionAddRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.MessageSignature.CodingKeys : Swift.Equatable {}
-extension EnVerify.MessageSignature.CodingKeys : Swift.Hashable {}
-extension EnVerify.MessageSignature.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallIntegrationAddResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallIntegrationAddResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallIntegrationAddResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.ResultTypeEnum : Swift.Equatable {}
-extension EnVerify.ResultTypeEnum : Swift.Hashable {}
-extension EnVerify.ResultTypeEnum : Swift.RawRepresentable {}
-extension EnVerify.ResultInfo.CodingKeys : Swift.Equatable {}
-extension EnVerify.ResultInfo.CodingKeys : Swift.Hashable {}
-extension EnVerify.ResultInfo.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.SignedMessageVerifyCallIntegrationAddRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.SignedMessageVerifyCallIntegrationAddRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.SignedMessageVerifyCallIntegrationAddRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallIDRegistrationModel.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallIDRegistrationModel.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallIDRegistrationModel.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.DocumentsContent.CodingKeys : Swift.Equatable {}
-extension EnVerify.DocumentsContent.CodingKeys : Swift.Hashable {}
-extension EnVerify.DocumentsContent.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallIDBlockGetResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallIDBlockGetResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallIDBlockGetResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.SignedMessageVerifyCallSessionCloseRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.SignedMessageVerifyCallSessionCloseRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.SignedMessageVerifyCallSessionCloseRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifySignedMessageCallIDDocAddRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifySignedMessageCallIDDocAddRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifySignedMessageCallIDDocAddRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.DocumentHashType : Swift.Equatable {}
-extension EnVerify.DocumentHashType : Swift.Hashable {}
-extension EnVerify.DocumentHashType : Swift.RawRepresentable {}
-extension EnVerify.AuthAuthenticatedUser.CodingKeys : Swift.Equatable {}
-extension EnVerify.AuthAuthenticatedUser.CodingKeys : Swift.Hashable {}
-extension EnVerify.AuthAuthenticatedUser.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.SignedMessageVerifyAppointmentCancelRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.SignedMessageVerifyAppointmentCancelRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.SignedMessageVerifyAppointmentCancelRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyDocumentSignGetMobileResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyDocumentSignGetMobileResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyDocumentSignGetMobileResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallIDChipModel.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallIDChipModel.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallIDChipModel.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.PartiesAuthTypeEnum : Swift.Equatable {}
-extension EnVerify.PartiesAuthTypeEnum : Swift.Hashable {}
-extension EnVerify.PartiesAuthTypeEnum : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallIDChipAddRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallIDChipAddRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallIDChipAddRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.SignedMessageVerifyCallSessionRoomRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.SignedMessageVerifyCallSessionRoomRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.SignedMessageVerifyCallSessionRoomRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.BaseResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.BaseResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.BaseResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.AuthTokenRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.AuthTokenRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.AuthTokenRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.IdentityType : Swift.Equatable {}
-extension EnVerify.IdentityType : Swift.Hashable {}
-extension EnVerify.IdentityType : Swift.RawRepresentable {}
-extension EnVerify.NFCStartResponseType : Swift.Equatable {}
-extension EnVerify.NFCStartResponseType : Swift.Hashable {}
-extension EnVerify.NFCStartResponseType : Swift.RawRepresentable {}
-extension EnVerify.EnLogLevel : Swift.Equatable {}
-extension EnVerify.EnLogLevel : Swift.Hashable {}
-extension EnVerify.EnLogLevel : Swift.RawRepresentable {}
-extension EnVerify.ConnectionType : Swift.Equatable {}
-extension EnVerify.ConnectionType : Swift.Hashable {}
-extension EnVerify.VerifyAvailableAppointmentListResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyAvailableAppointmentListResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyAvailableAppointmentListResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyAvailableAppointmentListRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyAvailableAppointmentListRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyAvailableAppointmentListRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallSessionRoomRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallSessionRoomRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallSessionRoomRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallSessionStatusTypeEnum : Swift.Equatable {}
-extension EnVerify.VerifyCallSessionStatusTypeEnum : Swift.Hashable {}
-extension EnVerify.VerifyCallSessionStatusTypeEnum : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallVideoMobileAddRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallVideoMobileAddRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallVideoMobileAddRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.SignedMessageVerifyDocumentSignGetMobileRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.SignedMessageVerifyDocumentSignGetMobileRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.SignedMessageVerifyDocumentSignGetMobileRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyAppointmentAddResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyAppointmentAddResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyAppointmentAddResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyAppointmentCancelRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyAppointmentCancelRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyAppointmentCancelRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.CoreStatusResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.CoreStatusResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.CoreStatusResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallDocumentModel.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallDocumentModel.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallDocumentModel.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyAvailableAppointmentModel.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyAvailableAppointmentModel.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyAvailableAppointmentModel.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.SignedMessageVerifyAppointmentSaveMobileRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.SignedMessageVerifyAppointmentSaveMobileRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.SignedMessageVerifyAppointmentSaveMobileRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.SignedMessageVerifyAvailableAppointmentListRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.SignedMessageVerifyAvailableAppointmentListRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.SignedMessageVerifyAvailableAppointmentListRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallIDCheckAddRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallIDCheckAddRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallIDCheckAddRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.PartiesProfileModel.CodingKeys : Swift.Equatable {}
-extension EnVerify.PartiesProfileModel.CodingKeys : Swift.Hashable {}
-extension EnVerify.PartiesProfileModel.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.PartiesUserRoleTypeEnum : Swift.Equatable {}
-extension EnVerify.PartiesUserRoleTypeEnum : Swift.Hashable {}
-extension EnVerify.PartiesUserRoleTypeEnum : Swift.RawRepresentable {}
-extension EnVerify.AuthAuthenticationInfo.CodingKeys : Swift.Equatable {}
-extension EnVerify.AuthAuthenticationInfo.CodingKeys : Swift.Hashable {}
-extension EnVerify.AuthAuthenticationInfo.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.SignedMessageVerifyCallIDBlockGetRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.SignedMessageVerifyCallIDBlockGetRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.SignedMessageVerifyCallIDBlockGetRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyMobileParameterGetResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyMobileParameterGetResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyMobileParameterGetResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallFaceModel.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallFaceModel.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallFaceModel.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallLogAddResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallLogAddResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallLogAddResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallIDBlockGetRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallIDBlockGetRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallIDBlockGetRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallTypeNameListResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallTypeNameListResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallTypeNameListResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.SignedMessageVerifyCallIDCheckAddRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.SignedMessageVerifyCallIDCheckAddRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.SignedMessageVerifyCallIDCheckAddRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyAppointmentMobileModel.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyAppointmentMobileModel.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyAppointmentMobileModel.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallIDCheckModel.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallIDCheckModel.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallIDCheckModel.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifySignedMessageCallFaceAddRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifySignedMessageCallFaceAddRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifySignedMessageCallFaceAddRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallIntegrationAddRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallIntegrationAddRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallIntegrationAddRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyDocumentSignSetMobileRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyDocumentSignSetMobileRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyDocumentSignSetMobileRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyAppointmentListMobileRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyAppointmentListMobileRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyAppointmentListMobileRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallIDDocAddResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallIDDocAddResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallIDDocAddResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallIDDocAddRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallIDDocAddRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallIDDocAddRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.PartiesPartyTypeEnum : Swift.Equatable {}
-extension EnVerify.PartiesPartyTypeEnum : Swift.Hashable {}
-extension EnVerify.PartiesPartyTypeEnum : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallFaceAddRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallFaceAddRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallFaceAddRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallResultModel.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallResultModel.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallResultModel.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallAddressRegistrationModel.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallAddressRegistrationModel.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallAddressRegistrationModel.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.AuthAuthenticationValidationInfo.CodingKeys : Swift.Equatable {}
-extension EnVerify.AuthAuthenticationValidationInfo.CodingKeys : Swift.Hashable {}
-extension EnVerify.AuthAuthenticationValidationInfo.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.DocumentsDocumentTypeEnum : Swift.Equatable {}
-extension EnVerify.DocumentsDocumentTypeEnum : Swift.Hashable {}
-extension EnVerify.DocumentsDocumentTypeEnum : Swift.RawRepresentable {}
-extension EnVerify.SignedMessageBaseRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.SignedMessageBaseRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.SignedMessageBaseRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.PartiesPartyRoleTypeEnum : Swift.Equatable {}
-extension EnVerify.PartiesPartyRoleTypeEnum : Swift.Hashable {}
-extension EnVerify.PartiesPartyRoleTypeEnum : Swift.RawRepresentable {}
-extension EnVerify.SignedMessageVerifyCallLogAddRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.SignedMessageVerifyCallLogAddRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.SignedMessageVerifyCallLogAddRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.AuthClientInfo.CodingKeys : Swift.Equatable {}
-extension EnVerify.AuthClientInfo.CodingKeys : Swift.Hashable {}
-extension EnVerify.AuthClientInfo.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.AuthRevokeTokenResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.AuthRevokeTokenResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.AuthRevokeTokenResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyCallFaceAddResponse.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyCallFaceAddResponse.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyCallFaceAddResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnVerify.VerifyAppointmentSaveMobileRequest.CodingKeys : Swift.Equatable {}
-extension EnVerify.VerifyAppointmentSaveMobileRequest.CodingKeys : Swift.Hashable {}
-extension EnVerify.VerifyAppointmentSaveMobileRequest.CodingKeys : Swift.RawRepresentable {}
+extension AuthTokenResponse.CodingKeys : Swift.Equatable {}
+extension AuthTokenResponse.CodingKeys : Swift.Hashable {}
+extension AuthTokenResponse.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallIDCheckAddResponse.CodingKeys : Swift.Equatable {}
+extension VerifyCallIDCheckAddResponse.CodingKeys : Swift.Hashable {}
+extension VerifyCallIDCheckAddResponse.CodingKeys : Swift.RawRepresentable {}
+extension EnverifyVerifyAppointmentSaveMobileModel.CodingKeys : Swift.Equatable {}
+extension EnverifyVerifyAppointmentSaveMobileModel.CodingKeys : Swift.Hashable {}
+extension EnverifyVerifyAppointmentSaveMobileModel.CodingKeys : Swift.RawRepresentable {}
+extension VerifyDocumentSignSetMobileResponse.CodingKeys : Swift.Equatable {}
+extension VerifyDocumentSignSetMobileResponse.CodingKeys : Swift.Hashable {}
+extension VerifyDocumentSignSetMobileResponse.CodingKeys : Swift.RawRepresentable {}
+extension DocumentsDocumentModel.CodingKeys : Swift.Equatable {}
+extension DocumentsDocumentModel.CodingKeys : Swift.Hashable {}
+extension DocumentsDocumentModel.CodingKeys : Swift.RawRepresentable {}
+extension VerifySignedMessageCallVideoMobileAddRequest.CodingKeys : Swift.Equatable {}
+extension VerifySignedMessageCallVideoMobileAddRequest.CodingKeys : Swift.Hashable {}
+extension VerifySignedMessageCallVideoMobileAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension Model : Swift.Equatable {}
+extension Model : Swift.Hashable {}
+extension Model : Swift.RawRepresentable {}
+extension VerifyCallLogAddRequest.CodingKeys : Swift.Equatable {}
+extension VerifyCallLogAddRequest.CodingKeys : Swift.Hashable {}
+extension VerifyCallLogAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallResultResponse.CodingKeys : Swift.Equatable {}
+extension VerifyCallResultResponse.CodingKeys : Swift.Hashable {}
+extension VerifyCallResultResponse.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallSessionCloseRequest.CodingKeys : Swift.Equatable {}
+extension VerifyCallSessionCloseRequest.CodingKeys : Swift.Hashable {}
+extension VerifyCallSessionCloseRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallIDDocModel.CodingKeys : Swift.Equatable {}
+extension VerifyCallIDDocModel.CodingKeys : Swift.Hashable {}
+extension VerifyCallIDDocModel.CodingKeys : Swift.RawRepresentable {}
+extension VerifyAppointmentListMobileResponse.CodingKeys : Swift.Equatable {}
+extension VerifyAppointmentListMobileResponse.CodingKeys : Swift.Hashable {}
+extension VerifyAppointmentListMobileResponse.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallSessionAddResponse.CodingKeys : Swift.Equatable {}
+extension VerifyCallSessionAddResponse.CodingKeys : Swift.Hashable {}
+extension VerifyCallSessionAddResponse.CodingKeys : Swift.RawRepresentable {}
+extension SignedMessageVerifyDocumentSignSetMobileRequest.CodingKeys : Swift.Equatable {}
+extension SignedMessageVerifyDocumentSignSetMobileRequest.CodingKeys : Swift.Hashable {}
+extension SignedMessageVerifyDocumentSignSetMobileRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallIDChipAddResponse.CodingKeys : Swift.Equatable {}
+extension VerifyCallIDChipAddResponse.CodingKeys : Swift.Hashable {}
+extension VerifyCallIDChipAddResponse.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallSessionAddRequest.CodingKeys : Swift.Equatable {}
+extension VerifyCallSessionAddRequest.CodingKeys : Swift.Hashable {}
+extension VerifyCallSessionAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifyAppointmentCancelResponse.CodingKeys : Swift.Equatable {}
+extension VerifyAppointmentCancelResponse.CodingKeys : Swift.Hashable {}
+extension VerifyAppointmentCancelResponse.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallSessionCloseResponse.CodingKeys : Swift.Equatable {}
+extension VerifyCallSessionCloseResponse.CodingKeys : Swift.Hashable {}
+extension VerifyCallSessionCloseResponse.CodingKeys : Swift.RawRepresentable {}
+extension EntityStateTypeEnum : Swift.Equatable {}
+extension EntityStateTypeEnum : Swift.Hashable {}
+extension EntityStateTypeEnum : Swift.RawRepresentable {}
+extension EnVerifyCallSessionStatusTypeEnum : Swift.Equatable {}
+extension EnVerifyCallSessionStatusTypeEnum : Swift.Hashable {}
+extension EnVerifyCallSessionStatusTypeEnum : Swift.RawRepresentable {}
+extension AgentRequestType : Swift.Equatable {}
+extension AgentRequestType : Swift.Hashable {}
+extension SignedMessageAuthTokenRequest.CodingKeys : Swift.Equatable {}
+extension SignedMessageAuthTokenRequest.CodingKeys : Swift.Hashable {}
+extension SignedMessageAuthTokenRequest.CodingKeys : Swift.RawRepresentable {}
+extension SignedMessageVerifyAppointmentListMobileRequest.CodingKeys : Swift.Equatable {}
+extension SignedMessageVerifyAppointmentListMobileRequest.CodingKeys : Swift.Hashable {}
+extension SignedMessageVerifyAppointmentListMobileRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifySignedMessageCallIDChipAddRequest.CodingKeys : Swift.Equatable {}
+extension VerifySignedMessageCallIDChipAddRequest.CodingKeys : Swift.Hashable {}
+extension VerifySignedMessageCallIDChipAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifyAppointmentSaveMobileModel.CodingKeys : Swift.Equatable {}
+extension VerifyAppointmentSaveMobileModel.CodingKeys : Swift.Hashable {}
+extension VerifyAppointmentSaveMobileModel.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallLogTypeEnum : Swift.Equatable {}
+extension VerifyCallLogTypeEnum : Swift.Hashable {}
+extension VerifyCallLogTypeEnum : Swift.RawRepresentable {}
+extension VerifyCallSessionRoomResponse.CodingKeys : Swift.Equatable {}
+extension VerifyCallSessionRoomResponse.CodingKeys : Swift.Hashable {}
+extension VerifyCallSessionRoomResponse.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallTypeNameModel.CodingKeys : Swift.Equatable {}
+extension VerifyCallTypeNameModel.CodingKeys : Swift.Hashable {}
+extension VerifyCallTypeNameModel.CodingKeys : Swift.RawRepresentable {}
+extension SignedMessageVerifyCallSessionAddRequest.CodingKeys : Swift.Equatable {}
+extension SignedMessageVerifyCallSessionAddRequest.CodingKeys : Swift.Hashable {}
+extension SignedMessageVerifyCallSessionAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension MessageSignature.CodingKeys : Swift.Equatable {}
+extension MessageSignature.CodingKeys : Swift.Hashable {}
+extension MessageSignature.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallIntegrationAddResponse.CodingKeys : Swift.Equatable {}
+extension VerifyCallIntegrationAddResponse.CodingKeys : Swift.Hashable {}
+extension VerifyCallIntegrationAddResponse.CodingKeys : Swift.RawRepresentable {}
+extension ResultTypeEnum : Swift.Equatable {}
+extension ResultTypeEnum : Swift.Hashable {}
+extension ResultTypeEnum : Swift.RawRepresentable {}
+extension ResultInfo.CodingKeys : Swift.Equatable {}
+extension ResultInfo.CodingKeys : Swift.Hashable {}
+extension ResultInfo.CodingKeys : Swift.RawRepresentable {}
+extension SignedMessageVerifyCallIntegrationAddRequest.CodingKeys : Swift.Equatable {}
+extension SignedMessageVerifyCallIntegrationAddRequest.CodingKeys : Swift.Hashable {}
+extension SignedMessageVerifyCallIntegrationAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallIDRegistrationModel.CodingKeys : Swift.Equatable {}
+extension VerifyCallIDRegistrationModel.CodingKeys : Swift.Hashable {}
+extension VerifyCallIDRegistrationModel.CodingKeys : Swift.RawRepresentable {}
+extension DocumentsContent.CodingKeys : Swift.Equatable {}
+extension DocumentsContent.CodingKeys : Swift.Hashable {}
+extension DocumentsContent.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallIDBlockGetResponse.CodingKeys : Swift.Equatable {}
+extension VerifyCallIDBlockGetResponse.CodingKeys : Swift.Hashable {}
+extension VerifyCallIDBlockGetResponse.CodingKeys : Swift.RawRepresentable {}
+extension SignedMessageVerifyCallSessionCloseRequest.CodingKeys : Swift.Equatable {}
+extension SignedMessageVerifyCallSessionCloseRequest.CodingKeys : Swift.Hashable {}
+extension SignedMessageVerifyCallSessionCloseRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifySignedMessageCallIDDocAddRequest.CodingKeys : Swift.Equatable {}
+extension VerifySignedMessageCallIDDocAddRequest.CodingKeys : Swift.Hashable {}
+extension VerifySignedMessageCallIDDocAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension DocumentHashType : Swift.Equatable {}
+extension DocumentHashType : Swift.Hashable {}
+extension DocumentHashType : Swift.RawRepresentable {}
+extension AuthAuthenticatedUser.CodingKeys : Swift.Equatable {}
+extension AuthAuthenticatedUser.CodingKeys : Swift.Hashable {}
+extension AuthAuthenticatedUser.CodingKeys : Swift.RawRepresentable {}
+extension SignedMessageVerifyAppointmentCancelRequest.CodingKeys : Swift.Equatable {}
+extension SignedMessageVerifyAppointmentCancelRequest.CodingKeys : Swift.Hashable {}
+extension SignedMessageVerifyAppointmentCancelRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifyDocumentSignGetMobileResponse.CodingKeys : Swift.Equatable {}
+extension VerifyDocumentSignGetMobileResponse.CodingKeys : Swift.Hashable {}
+extension VerifyDocumentSignGetMobileResponse.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallIDChipModel.CodingKeys : Swift.Equatable {}
+extension VerifyCallIDChipModel.CodingKeys : Swift.Hashable {}
+extension VerifyCallIDChipModel.CodingKeys : Swift.RawRepresentable {}
+extension PartiesAuthTypeEnum : Swift.Equatable {}
+extension PartiesAuthTypeEnum : Swift.Hashable {}
+extension PartiesAuthTypeEnum : Swift.RawRepresentable {}
+extension VerifyCallIDChipAddRequest.CodingKeys : Swift.Equatable {}
+extension VerifyCallIDChipAddRequest.CodingKeys : Swift.Hashable {}
+extension VerifyCallIDChipAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension SignedMessageVerifyCallSessionRoomRequest.CodingKeys : Swift.Equatable {}
+extension SignedMessageVerifyCallSessionRoomRequest.CodingKeys : Swift.Hashable {}
+extension SignedMessageVerifyCallSessionRoomRequest.CodingKeys : Swift.RawRepresentable {}
+extension BaseResponse.CodingKeys : Swift.Equatable {}
+extension BaseResponse.CodingKeys : Swift.Hashable {}
+extension BaseResponse.CodingKeys : Swift.RawRepresentable {}
+extension AuthTokenRequest.CodingKeys : Swift.Equatable {}
+extension AuthTokenRequest.CodingKeys : Swift.Hashable {}
+extension AuthTokenRequest.CodingKeys : Swift.RawRepresentable {}
+extension IdentityType : Swift.Equatable {}
+extension IdentityType : Swift.Hashable {}
+extension IdentityType : Swift.RawRepresentable {}
+extension NFCStartResponseType : Swift.Equatable {}
+extension NFCStartResponseType : Swift.Hashable {}
+extension NFCStartResponseType : Swift.RawRepresentable {}
+extension EnLogLevel : Swift.Equatable {}
+extension EnLogLevel : Swift.Hashable {}
+extension EnLogLevel : Swift.RawRepresentable {}
+extension ConnectionType : Swift.Equatable {}
+extension ConnectionType : Swift.Hashable {}
+extension VerifyAvailableAppointmentListResponse.CodingKeys : Swift.Equatable {}
+extension VerifyAvailableAppointmentListResponse.CodingKeys : Swift.Hashable {}
+extension VerifyAvailableAppointmentListResponse.CodingKeys : Swift.RawRepresentable {}
+extension VerifyAvailableAppointmentListRequest.CodingKeys : Swift.Equatable {}
+extension VerifyAvailableAppointmentListRequest.CodingKeys : Swift.Hashable {}
+extension VerifyAvailableAppointmentListRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallSessionRoomRequest.CodingKeys : Swift.Equatable {}
+extension VerifyCallSessionRoomRequest.CodingKeys : Swift.Hashable {}
+extension VerifyCallSessionRoomRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallSessionStatusTypeEnum : Swift.Equatable {}
+extension VerifyCallSessionStatusTypeEnum : Swift.Hashable {}
+extension VerifyCallSessionStatusTypeEnum : Swift.RawRepresentable {}
+extension VerifyCallVideoMobileAddRequest.CodingKeys : Swift.Equatable {}
+extension VerifyCallVideoMobileAddRequest.CodingKeys : Swift.Hashable {}
+extension VerifyCallVideoMobileAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension SignedMessageVerifyDocumentSignGetMobileRequest.CodingKeys : Swift.Equatable {}
+extension SignedMessageVerifyDocumentSignGetMobileRequest.CodingKeys : Swift.Hashable {}
+extension SignedMessageVerifyDocumentSignGetMobileRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifyAppointmentAddResponse.CodingKeys : Swift.Equatable {}
+extension VerifyAppointmentAddResponse.CodingKeys : Swift.Hashable {}
+extension VerifyAppointmentAddResponse.CodingKeys : Swift.RawRepresentable {}
+extension VerifyAppointmentCancelRequest.CodingKeys : Swift.Equatable {}
+extension VerifyAppointmentCancelRequest.CodingKeys : Swift.Hashable {}
+extension VerifyAppointmentCancelRequest.CodingKeys : Swift.RawRepresentable {}
+extension CoreStatusResponse.CodingKeys : Swift.Equatable {}
+extension CoreStatusResponse.CodingKeys : Swift.Hashable {}
+extension CoreStatusResponse.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallDocumentModel.CodingKeys : Swift.Equatable {}
+extension VerifyCallDocumentModel.CodingKeys : Swift.Hashable {}
+extension VerifyCallDocumentModel.CodingKeys : Swift.RawRepresentable {}
+extension VerifyAvailableAppointmentModel.CodingKeys : Swift.Equatable {}
+extension VerifyAvailableAppointmentModel.CodingKeys : Swift.Hashable {}
+extension VerifyAvailableAppointmentModel.CodingKeys : Swift.RawRepresentable {}
+extension SignedMessageVerifyAppointmentSaveMobileRequest.CodingKeys : Swift.Equatable {}
+extension SignedMessageVerifyAppointmentSaveMobileRequest.CodingKeys : Swift.Hashable {}
+extension SignedMessageVerifyAppointmentSaveMobileRequest.CodingKeys : Swift.RawRepresentable {}
+extension SignedMessageVerifyAvailableAppointmentListRequest.CodingKeys : Swift.Equatable {}
+extension SignedMessageVerifyAvailableAppointmentListRequest.CodingKeys : Swift.Hashable {}
+extension SignedMessageVerifyAvailableAppointmentListRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallIDCheckAddRequest.CodingKeys : Swift.Equatable {}
+extension VerifyCallIDCheckAddRequest.CodingKeys : Swift.Hashable {}
+extension VerifyCallIDCheckAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension PartiesProfileModel.CodingKeys : Swift.Equatable {}
+extension PartiesProfileModel.CodingKeys : Swift.Hashable {}
+extension PartiesProfileModel.CodingKeys : Swift.RawRepresentable {}
+extension PartiesUserRoleTypeEnum : Swift.Equatable {}
+extension PartiesUserRoleTypeEnum : Swift.Hashable {}
+extension PartiesUserRoleTypeEnum : Swift.RawRepresentable {}
+extension AuthAuthenticationInfo.CodingKeys : Swift.Equatable {}
+extension AuthAuthenticationInfo.CodingKeys : Swift.Hashable {}
+extension AuthAuthenticationInfo.CodingKeys : Swift.RawRepresentable {}
+extension SignedMessageVerifyCallIDBlockGetRequest.CodingKeys : Swift.Equatable {}
+extension SignedMessageVerifyCallIDBlockGetRequest.CodingKeys : Swift.Hashable {}
+extension SignedMessageVerifyCallIDBlockGetRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifyMobileParameterGetResponse.CodingKeys : Swift.Equatable {}
+extension VerifyMobileParameterGetResponse.CodingKeys : Swift.Hashable {}
+extension VerifyMobileParameterGetResponse.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallFaceModel.CodingKeys : Swift.Equatable {}
+extension VerifyCallFaceModel.CodingKeys : Swift.Hashable {}
+extension VerifyCallFaceModel.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallLogAddResponse.CodingKeys : Swift.Equatable {}
+extension VerifyCallLogAddResponse.CodingKeys : Swift.Hashable {}
+extension VerifyCallLogAddResponse.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallIDBlockGetRequest.CodingKeys : Swift.Equatable {}
+extension VerifyCallIDBlockGetRequest.CodingKeys : Swift.Hashable {}
+extension VerifyCallIDBlockGetRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallTypeNameListResponse.CodingKeys : Swift.Equatable {}
+extension VerifyCallTypeNameListResponse.CodingKeys : Swift.Hashable {}
+extension VerifyCallTypeNameListResponse.CodingKeys : Swift.RawRepresentable {}
+extension SignedMessageVerifyCallIDCheckAddRequest.CodingKeys : Swift.Equatable {}
+extension SignedMessageVerifyCallIDCheckAddRequest.CodingKeys : Swift.Hashable {}
+extension SignedMessageVerifyCallIDCheckAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifyAppointmentMobileModel.CodingKeys : Swift.Equatable {}
+extension VerifyAppointmentMobileModel.CodingKeys : Swift.Hashable {}
+extension VerifyAppointmentMobileModel.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallIDCheckModel.CodingKeys : Swift.Equatable {}
+extension VerifyCallIDCheckModel.CodingKeys : Swift.Hashable {}
+extension VerifyCallIDCheckModel.CodingKeys : Swift.RawRepresentable {}
+extension VerifySignedMessageCallFaceAddRequest.CodingKeys : Swift.Equatable {}
+extension VerifySignedMessageCallFaceAddRequest.CodingKeys : Swift.Hashable {}
+extension VerifySignedMessageCallFaceAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallIntegrationAddRequest.CodingKeys : Swift.Equatable {}
+extension VerifyCallIntegrationAddRequest.CodingKeys : Swift.Hashable {}
+extension VerifyCallIntegrationAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifyDocumentSignSetMobileRequest.CodingKeys : Swift.Equatable {}
+extension VerifyDocumentSignSetMobileRequest.CodingKeys : Swift.Hashable {}
+extension VerifyDocumentSignSetMobileRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifyAppointmentListMobileRequest.CodingKeys : Swift.Equatable {}
+extension VerifyAppointmentListMobileRequest.CodingKeys : Swift.Hashable {}
+extension VerifyAppointmentListMobileRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallIDDocAddResponse.CodingKeys : Swift.Equatable {}
+extension VerifyCallIDDocAddResponse.CodingKeys : Swift.Hashable {}
+extension VerifyCallIDDocAddResponse.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallIDDocAddRequest.CodingKeys : Swift.Equatable {}
+extension VerifyCallIDDocAddRequest.CodingKeys : Swift.Hashable {}
+extension VerifyCallIDDocAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension PartiesPartyTypeEnum : Swift.Equatable {}
+extension PartiesPartyTypeEnum : Swift.Hashable {}
+extension PartiesPartyTypeEnum : Swift.RawRepresentable {}
+extension VerifyCallFaceAddRequest.CodingKeys : Swift.Equatable {}
+extension VerifyCallFaceAddRequest.CodingKeys : Swift.Hashable {}
+extension VerifyCallFaceAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallResultModel.CodingKeys : Swift.Equatable {}
+extension VerifyCallResultModel.CodingKeys : Swift.Hashable {}
+extension VerifyCallResultModel.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallAddressRegistrationModel.CodingKeys : Swift.Equatable {}
+extension VerifyCallAddressRegistrationModel.CodingKeys : Swift.Hashable {}
+extension VerifyCallAddressRegistrationModel.CodingKeys : Swift.RawRepresentable {}
+extension AuthAuthenticationValidationInfo.CodingKeys : Swift.Equatable {}
+extension AuthAuthenticationValidationInfo.CodingKeys : Swift.Hashable {}
+extension AuthAuthenticationValidationInfo.CodingKeys : Swift.RawRepresentable {}
+extension DocumentsDocumentTypeEnum : Swift.Equatable {}
+extension DocumentsDocumentTypeEnum : Swift.Hashable {}
+extension DocumentsDocumentTypeEnum : Swift.RawRepresentable {}
+extension SignedMessageBaseRequest.CodingKeys : Swift.Equatable {}
+extension SignedMessageBaseRequest.CodingKeys : Swift.Hashable {}
+extension SignedMessageBaseRequest.CodingKeys : Swift.RawRepresentable {}
+extension PartiesPartyRoleTypeEnum : Swift.Equatable {}
+extension PartiesPartyRoleTypeEnum : Swift.Hashable {}
+extension PartiesPartyRoleTypeEnum : Swift.RawRepresentable {}
+extension SignedMessageVerifyCallLogAddRequest.CodingKeys : Swift.Equatable {}
+extension SignedMessageVerifyCallLogAddRequest.CodingKeys : Swift.Hashable {}
+extension SignedMessageVerifyCallLogAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension AuthClientInfo.CodingKeys : Swift.Equatable {}
+extension AuthClientInfo.CodingKeys : Swift.Hashable {}
+extension AuthClientInfo.CodingKeys : Swift.RawRepresentable {}
+extension AuthRevokeTokenResponse.CodingKeys : Swift.Equatable {}
+extension AuthRevokeTokenResponse.CodingKeys : Swift.Hashable {}
+extension AuthRevokeTokenResponse.CodingKeys : Swift.RawRepresentable {}
+extension VerifyCallFaceAddResponse.CodingKeys : Swift.Equatable {}
+extension VerifyCallFaceAddResponse.CodingKeys : Swift.Hashable {}
+extension VerifyCallFaceAddResponse.CodingKeys : Swift.RawRepresentable {}
+extension VerifyAppointmentSaveMobileRequest.CodingKeys : Swift.Equatable {}
+extension VerifyAppointmentSaveMobileRequest.CodingKeys : Swift.Hashable {}
+extension VerifyAppointmentSaveMobileRequest.CodingKeys : Swift.RawRepresentable {}
