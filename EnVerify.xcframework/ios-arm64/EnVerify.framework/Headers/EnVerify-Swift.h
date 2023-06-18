@@ -601,6 +601,7 @@ SWIFT_CLASS("_TtC8EnVerify27EnVerifyCustomerIdentityDoc")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) EnVerifyCustomerIdentityDoc * _Nonnull shared;)
 + (EnVerifyCustomerIdentityDoc * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 + (void)setShared:(EnVerifyCustomerIdentityDoc * _Nonnull)value;
+- (NSString * _Nonnull)getID SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getOptionalData1 SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getOptionalData2 SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getCountry SWIFT_WARN_UNUSED_RESULT;
