@@ -18,7 +18,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<data>
-		wwRidcKRXXNaR+0CFEAoyK4OgBM=
+		9JPnqCQY1KaPzIgfGKA9IGBVJlE=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/Info.plist</key>
 		<data>
-		5COtmRt0heT6KMXkw9HnbN0Jouk=
+		iH93ZwLmzW1LcDuVHEmb42j1xsM=
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Headers/EnQualify-Swift.h</key>
 		<data>
-		SJCHYPI4x8p53oRVrQ5SvHHhuuo=
+		H3RXwCmI+fhIks03esFRsK1eSy4=
 		</data>
 		<key>Headers/EnVerify.h</key>
 		<data>
@@ -102,31 +102,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8bL7njNjc73Q2PHsviHd0f67QJI=
+		34+EUKGxqWaGwPoWZpW2l7KnDW4=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		z9wy1/Wf3aoLf4K2lcbtLmlPcTc=
+		HpDxVXJlwzFv1SXLCjQmaX3AKHc=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		B28Lg2eBnIowUs71D9FY6cFuc7g=
+		szoutekH4a3vDgp07k3jujjwuHE=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		sWnBpoCdLowF82piVICjRJiEnh4=
+		eLS9mdNLj23qLBb7hPXscW07jYs=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		5hJbXQowSdpzF++rF/abFvA154U=
+		YujpknktFft1S8J5E7h7huS9uy4=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		sWnBpoCdLowF82piVICjRJiEnh4=
+		eLS9mdNLj23qLBb7hPXscW07jYs=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Eh6cGoy+cgldkvQILxt4iAf5d7U=
+		F5c1HYphvUbiVQ0sv8wRMBKGu3A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -160,7 +160,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5yYSFtrP2osTFelWIo2UglAWXo9RC4qkc5e7Dm0K+jk=
+			+DYpR6iZB3txPU5Q5IalC3oqx6R45soiqWEjdDnmH5g=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
@@ -230,7 +230,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I8jVJKtLZd9SiqBS/DTZpzErPgNPZDElecA7X6lO3Iw=
+			EEusjWjQCK59ySzy6dII6Q715tH1RsD9zEo/tHCwheE=
 			</data>
 		</dict>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
@@ -293,7 +293,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UkEn5BN5xw0CNE+GUeuktGyMONbeumVSfm4/F8Hp8Wg=
+			VD48J6Wm0FVeoye2p8PxV1knEmIVYnnyOyzXAQ7K6Vg=
 			</data>
 		</dict>
 		<key>Headers/EnVerify.h</key>
@@ -307,42 +307,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0hnZKWAsjXV2ancogb230aN6f/zjPGEomRqngpzCV7M=
+			tWAgnb9cGtuafQxXZghH66kAw7EOlXYchE+BxjVLmds=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JYbPyJ1s0aTl+Fz+m/KOg6eokKkY06k1w5X8BmrgGIw=
+			mEQbB33XAhBwPqaz6Qat5DbRR76OFiYKky/evJCjBuM=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p5DbstUqo+DLWfeN/E0+04IN9qb/fIzXMXXcaqNSG3Q=
+			6eGIK7sC7wrxZXLVdb07jMWgnDP9qPax+9fRsnNcKEw=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rBWifoVoXiPUlufjPI4lVjtOp+FfNL6nZdS+8k/aEbA=
+			WToB4bfFr/qVpejUvnMawZb70D989Zeh8Iv3f/VOkUc=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p5DbstUqo+DLWfeN/E0+04IN9qb/fIzXMXXcaqNSG3Q=
+			6eGIK7sC7wrxZXLVdb07jMWgnDP9qPax+9fRsnNcKEw=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hN8kQNxfqnGvXkWQ7Jz/cskAixtAPZyYZOmleXGCqgc=
+			MuAkIAgYMNehIqXO7kQcR+BTdSaPMPiczjsMfEgovBY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

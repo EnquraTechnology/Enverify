@@ -466,6 +466,30 @@ public struct VerifyCallTypeNameListResponse : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
+@_inheritsConvenienceInitializers @objc public class EnVerifyCustomerIdentityDoc : ObjectiveC.NSObject {
+  @objc public static var shared: EnQualify.EnVerifyCustomerIdentityDoc
+  @objc public func getOptionalData1() -> Swift.String
+  @objc public func getOptionalData2() -> Swift.String
+  @objc public func getBarcodeValue() -> Swift.String
+  @objc public func getCountry() -> Swift.String
+  @objc public func getIdIssuer() -> Swift.String
+  @objc public func getIdType() -> Swift.String
+  @objc public func getIdentityNo() -> Swift.String
+  @objc public func getIdentityType() -> Swift.String
+  @objc public func getDocumentNo() -> Swift.String
+  @objc public func getName() -> Swift.String
+  @objc public func getSurname() -> Swift.String
+  @objc public func getGender() -> Swift.String
+  @objc public func getBirthday() -> Swift.String
+  @objc public func getNationality() -> Swift.String
+  @objc public func getExpiryDate() -> Swift.String
+  @objc public func getFace() -> UIKit.UIImage
+  @objc public func getFrontpage() -> UIKit.UIImage
+  @objc public func getBackpage() -> UIKit.UIImage
+  @objc public func getHolopage() -> UIKit.UIImage
+  @objc override dynamic public init()
+  @objc deinit
+}
 public struct LogsApplicationLogAddRequest : Swift.Codable {
   public var data: EnQualify.LogsApplicationLogModel?
   public init(data: EnQualify.LogsApplicationLogModel? = nil)
@@ -688,6 +712,30 @@ public struct LogsApplicationLogAddResponse : Swift.Codable {
   }
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc public class EnVerifyCustomerChip : ObjectiveC.NSObject {
+  @objc public static var shared: EnQualify.EnVerifyCustomerChip
+  @objc public func getID() -> Swift.String
+  @objc public func getIdentityNo() -> Swift.String
+  @objc public func getIdentityType() -> Swift.String
+  @objc public func getDocumentNo() -> Swift.String
+  @objc public func getName() -> Swift.String
+  @objc public func getSurname() -> Swift.String
+  @objc public func getGender() -> Swift.String
+  @objc public func getBirthday() -> Swift.String
+  @objc public func getNationality() -> Swift.String
+  @objc public func getExpiryDate() -> Swift.String
+  @objc public func getFace() -> UIKit.UIImage
+  @objc public func getNameOfHolder() -> Swift.String
+  @objc public func getSurnameOfHolder() -> Swift.String
+  @objc public func getPlaceOfBirth() -> Swift.String
+  @objc public func getFullDateOfBirth() -> Swift.String
+  @objc public func isChipAuthSucceeded() -> Swift.AnyObject?
+  @objc public func isActiveAuthSucceed() -> Swift.AnyObject?
+  @objc public func isPassiveAuthSucceeded() -> Swift.AnyObject?
+  @objc public func isDataValidated() -> Swift.AnyObject?
+  @objc override dynamic public init()
+  @objc deinit
 }
 public struct VerifyCallSessionHandicappedResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -1436,270 +1484,6 @@ public struct LogsAuditLogGetResponse : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
-public struct VerifyAppointmentCancelRequest : Swift.Codable {
-  public var callType: Swift.String?
-  public var identityType: Swift.String?
-  public var identityNo: Swift.String?
-  public init(callType: Swift.String? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil)
-  public enum CodingKeys : Swift.String, Swift.CodingKey {
-    case callType
-    case identityType
-    case identityNo
-    public init?(rawValue: Swift.String)
-    public init?(stringValue: Swift.String)
-    public init?(intValue: Swift.Int)
-    public typealias RawValue = Swift.String
-    public var intValue: Swift.Int? {
-      get
-    }
-    public var rawValue: Swift.String {
-      get
-    }
-    public var stringValue: Swift.String {
-      get
-    }
-  }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
-}
-public struct SignedMessageVerifyAvailableAppointmentListRequest : Swift.Codable {
-  public var message: EnQualify.VerifyAvailableAppointmentListRequest?
-  public var signature: EnQualify.MessageSignature?
-  public init(message: EnQualify.VerifyAvailableAppointmentListRequest? = nil, signature: EnQualify.MessageSignature? = nil)
-  public enum CodingKeys : Swift.String, Swift.CodingKey {
-    case message
-    case signature
-    public init?(rawValue: Swift.String)
-    public init?(stringValue: Swift.String)
-    public init?(intValue: Swift.Int)
-    public typealias RawValue = Swift.String
-    public var intValue: Swift.Int? {
-      get
-    }
-    public var rawValue: Swift.String {
-      get
-    }
-    public var stringValue: Swift.String {
-      get
-    }
-  }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
-}
-public struct LogsRequestLogAddResponse : Swift.Codable {
-  public var isSuccessful: Swift.Bool?
-  public var result: EnQualify.ResultInfo?
-  public var warning: EnQualify.ResultInfo?
-  public var referenceId: Foundation.UUID?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil)
-  public enum CodingKeys : Swift.String, Swift.CodingKey {
-    case isSuccessful
-    case result
-    case warning
-    case referenceId
-    public init?(rawValue: Swift.String)
-    public init?(stringValue: Swift.String)
-    public init?(intValue: Swift.Int)
-    public typealias RawValue = Swift.String
-    public var intValue: Swift.Int? {
-      get
-    }
-    public var rawValue: Swift.String {
-      get
-    }
-    public var stringValue: Swift.String {
-      get
-    }
-  }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
-}
-@objc @_inheritsConvenienceInitializers public class EnVSession : ObjectiveC.NSObject {
-  @objc public static func checkFrontCameraOpen()
-  @objc public static func isFrontCameraOpen() -> Swift.Bool
-  @objc public static func setDebugMode(_ mode: Swift.Bool)
-  @objc public static func setUserId(_ value: Swift.String)
-  @objc public static func setUserName(_ value: Swift.String)
-  @objc public static func setUserSurname(_ value: Swift.String)
-  @objc public static func getUserId() -> Swift.String
-  @objc public static func getUserName() -> Swift.String
-  @objc public static func getUserSurname() -> Swift.String
-  @objc public static func getRoomId() -> Swift.String
-  @objc public static func getId() -> Swift.String
-  @objc public static func getVideoSize() -> CoreFoundation.CGSize
-  @objc override dynamic public init()
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class EnVerify : ObjectiveC.NSObject, UIKit.UIApplicationDelegate {
-  @_Concurrency.MainActor(unsafe) public static var releaseNumber: Swift.String
-  @objc @_Concurrency.MainActor(unsafe) public static var screenRecordAssets: [AVFoundation.AVAsset]
-  @objc @_Concurrency.MainActor(unsafe) public static var screenRecordingParts: Swift.String
-  @objc @_Concurrency.MainActor(unsafe) public static var screenRecordingData: EnQualify.EnverifyScreenRecordingData
-  @objc @_Concurrency.MainActor(unsafe) public static var timerLiveLog: Foundation.Timer?
-  @objc @_Concurrency.MainActor(unsafe) public static var enverify_accessToken: Swift.String?
-  @objc @_Concurrency.MainActor(unsafe) public static var callType: Swift.String
-  @objc @_Concurrency.MainActor(unsafe) public static var handicapped: Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) public static var identityType: Swift.String?
-  @objc @_Concurrency.MainActor(unsafe) public static var identityNo: Swift.String?
-  @objc @_Concurrency.MainActor(unsafe) public static var canAutoClose: Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) public static var _continue: Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) public static var agentDummyImage: UIKit.UIImage?
-  @objc @_Concurrency.MainActor(unsafe) public static var agentDummyVideoPlayer: AVFoundation.AVPlayer?
-  @objc @_Concurrency.MainActor(unsafe) public static var isAgentDummyShown: Swift.Bool {
-    @objc get
-    @objc set
-  }
-  @objc @_Concurrency.MainActor(unsafe) public static var isCallAnswered: Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) public static var isCallCancelled: Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) public static var calibrationValues: EnQualify.CalibrationValues
-  @objc @_Concurrency.MainActor(unsafe) public static func incomingCallObserver(callChanged call: CallKit.CXCall)
-  @objc @_Concurrency.MainActor(unsafe) public static func integrationAdd(type: Swift.String, reference: Swift.String, callType: Swift.String?, phone: Swift.String?, email: Swift.String?, data: Swift.String, addressRegistration: EnQualify.EnVerifyCallAddressRegistrationModel?, iDRegistration: EnQualify.EnVerifyCallIDRegistrationModel?)
-  @objc @_Concurrency.MainActor(unsafe) public static func getAuthToken(_ userNameForToken: Swift.String? = nil, _ backOfficeBasePath: Swift.String, completion: @escaping (Swift.Bool) -> ())
-  @objc @_Concurrency.MainActor(unsafe) public static func sessionUpdateForHandicapped(handicapped: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public static func logInfoAdd(code: Swift.String?, message: Swift.String?)
-  @objc @_Concurrency.MainActor(unsafe) public static func callSessionClose(finished: Swift.Bool = true)
-  @_Concurrency.MainActor(unsafe) public static func connectionType() -> EnQualify.ConnectionType
-  @objc @_Concurrency.MainActor(unsafe) public static func setTCIDTypeInternational()
-  @objc @_Concurrency.MainActor(unsafe) public static func idVerifyStart(_ sender: Any) -> Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) public static func videoCallStart(_ sender: Any) -> Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) public static func selfServiceStart(_ sender: Any) -> Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) public static func startLuminosityAnalyzer()
-  @objc @_Concurrency.MainActor(unsafe) public static func invalidateTimerRoomId()
-  @objc @_Concurrency.MainActor(unsafe) public static func idFakeCheckStart()
-  @objc @_Concurrency.MainActor(unsafe) public static func idFrontStart()
-  @objc @_Concurrency.MainActor(unsafe) public static func idBackStart()
-  @objc @_Concurrency.MainActor(unsafe) public static func idViewStart(vc: UIKit.UIViewController)
-  @objc @_Concurrency.MainActor(unsafe) public static func idDocStore()
-  @available(iOS 13.0, *)
-  @objc @_Concurrency.MainActor(unsafe) public static func nfcStart() -> Swift.Int
-  @available(iOS 13.0, *)
-  @objc @_Concurrency.MainActor(unsafe) public static func nfcStart(with documentNo: Swift.String, birthday: Swift.String, expiryDate: Swift.String) -> Swift.Int
-  @objc @_Concurrency.MainActor(unsafe) public static func nfcViewStart(vc: UIKit.UIViewController)
-  @objc @_Concurrency.MainActor(unsafe) public static func nfcStore()
-  @objc @_Concurrency.MainActor(unsafe) public static func faceDetectStart()
-  @objc @_Concurrency.MainActor(unsafe) public static func idTypeCheckSet()
-  @objc @_Concurrency.MainActor(unsafe) public static func onStartSelfService()
-  @objc @_Concurrency.MainActor(unsafe) public static func idTypeBackCheckSet()
-  @objc @_Concurrency.MainActor(unsafe) public static func faceDetectSet()
-  @available(iOS 13.0, *)
-  @objc @_Concurrency.MainActor(unsafe) public static func nfcVerifySet()
-  @objc @_Concurrency.MainActor(unsafe) public static func chatSet()
-  @objc @_Concurrency.MainActor(unsafe) public static func smileDetectStart()
-  @objc @_Concurrency.MainActor(unsafe) public static func eyeCloseStart()
-  @objc @_Concurrency.MainActor(unsafe) public static func eyeCloseIntervalStart()
-  @objc @_Concurrency.MainActor(unsafe) public static func faceUpStart()
-  @objc @_Concurrency.MainActor(unsafe) public static func faceLeftStart()
-  @objc @_Concurrency.MainActor(unsafe) public static func faceRightStart()
-  @objc @_Concurrency.MainActor(unsafe) public static func faceCompleteStart()
-  @objc @_Concurrency.MainActor(unsafe) public static func eyeOpenIntervalStart()
-  @objc @_Concurrency.MainActor(unsafe) public static func faceViewStart(vc: UIKit.UIViewController)
-  @objc @_Concurrency.MainActor(unsafe) public static func faceStore()
-  @objc @_Concurrency.MainActor(unsafe) public static func noConnectionAction()
-  @objc @_Concurrency.MainActor(unsafe) public static func handleCallFail()
-  @objc @_Concurrency.MainActor(unsafe) public static func onRetryFace()
-  @available(iOS 13.0, *)
-  @objc @_Concurrency.MainActor(unsafe) public static func pauseForNFC()
-  @objc @_Concurrency.MainActor(unsafe) public static func pauseForFace()
-  @objc @_Concurrency.MainActor(unsafe) public static func videoCallRestart()
-  @objc @_Concurrency.MainActor(unsafe) public static func selfServiceRestart()
-  @objc @_Concurrency.MainActor(unsafe) public static func onConfirmFace()
-  @objc @_Concurrency.MainActor(unsafe) public static func onConfirmFaceWithOutPop()
-  @objc @_Concurrency.MainActor(unsafe) public static func onRetryNFC()
-  @objc @_Concurrency.MainActor(unsafe) public static func uploadFaceData()
-  @objc @_Concurrency.MainActor(unsafe) public static func onConfirmNFC()
-  @objc @_Concurrency.MainActor(unsafe) public static func onConfirmNFCWithoutPop()
-  @objc @_Concurrency.MainActor(unsafe) public static func idTypeCheckBackStart()
-  @objc @_Concurrency.MainActor(unsafe) public static func idTypeCheckFrontStart()
-  @objc @_Concurrency.MainActor(unsafe) public static func onRetryDoc()
-  @objc @_Concurrency.MainActor(unsafe) public static func onConfirmDoc()
-  @objc @_Concurrency.MainActor(unsafe) public static func onConfirmDocWithoutPop()
-  @objc @_Concurrency.MainActor(unsafe) public static func startLivenessDetect()
-  @objc @_Concurrency.MainActor(unsafe) public static func setSSStartButtons(buttonState: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public static func idvSettings(domainName: Swift.String?, certificateNames: [Swift.String], aiUsername: Swift.String?, aiPassword: Swift.String?, signalingServer: Swift.String?, stunServer: Swift.String?, turnServer: Swift.String?, turnUsername: Swift.String?, turnPassword: Swift.String?, backOfficeBasePath: Swift.String?, referenceId: Swift.String? = nil, userNameForToken: Swift.String? = nil) -> Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) public static func agentRequestCompleted()
-  @objc @_Concurrency.MainActor(unsafe) public static func stopSSStartVC(_ sender: Any)
-  @objc @_Concurrency.MainActor(unsafe) public static func setNavigationController(navigator: UIKit.UINavigationController)
-  @objc @_Concurrency.MainActor(unsafe) public static func getNavigationController() -> UIKit.UINavigationController?
-  @objc @_Concurrency.MainActor(unsafe) public static func setOrientationLock(orientation: UIKit.UIInterfaceOrientationMask)
-  @objc @_Concurrency.MainActor(unsafe) public static func setNFCBACData(docNo: Swift.String, birthday: Swift.String, expiryDate: Swift.String) -> Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) public static func handleFail()
-  @objc @_Concurrency.MainActor(unsafe) public static func idVerifyRestart()
-  @objc @_Concurrency.MainActor(unsafe) public static func startVideoChat()
-  @objc @_Concurrency.MainActor(unsafe) public static func onExitCall()
-  @objc @_Concurrency.MainActor(unsafe) public static func onExitCallWithoutPop()
-  @objc @_Concurrency.MainActor(unsafe) public static func onExitSelfService()
-  @objc @_Concurrency.MainActor(unsafe) public static func onHangupCall()
-  @objc @_Concurrency.MainActor(unsafe) public static func onStartCall()
-  @available(iOS 11.0, *)
-  @objc @_Concurrency.MainActor(unsafe) public static func startAVRecording()
-  @available(iOS 11.0, *)
-  @objc @_Concurrency.MainActor(unsafe) public static func stopAVRecording()
-  @objc @_Concurrency.MainActor(unsafe) public static func setMessage(message: Swift.String, index: Swift.Int)
-  @objc @_Concurrency.MainActor(unsafe) public static func checkPermissions() -> Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) public static func requestVideoAudioPermissions()
-  @objc @_Concurrency.MainActor(unsafe) public static func setAgentFullScreen(agentFullScreenState: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public static func setSpeaker(soundOn: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public static func setMediaServer(mediaServerState: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public static func setMSPrivateKey(value: Swift.String)
-  @objc @_Concurrency.MainActor(unsafe) public static func setTimerForAliveness(timerCountInSeconds: Swift.Int)
-  @objc @_Concurrency.MainActor(unsafe) public static func setLivenessCalibration(value: Swift.Int)
-  @objc @_Concurrency.MainActor(unsafe) public static func setEyeCloseMaxTime(value: Swift.Int)
-  @objc @_Concurrency.MainActor(unsafe) public static func setFaceAngleCalibration(value: Swift.Int)
-  @objc @_Concurrency.MainActor(unsafe) public static func setOCRMode(value: Swift.Int)
-  @objc @_Concurrency.MainActor(unsafe) public static func setOCRCheckSize(value: Swift.Int)
-  @objc @_Concurrency.MainActor(unsafe) public static func setCallWaitTimeout(value: Swift.Int)
-  @objc @_Concurrency.MainActor(unsafe) public static func setIceCheckingTimeout(value: Swift.Int)
-  @objc @_Concurrency.MainActor(unsafe) public static func setICERelay(iceRelayState: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public static func setSSLPinning(required: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public static func setEyeCloseCalibration(value: Swift.Float)
-  @objc @_Concurrency.MainActor(unsafe) public static func setSmilingCalibration(value: Swift.Float)
-  @objc @_Concurrency.MainActor(unsafe) public static func setICEHost(iceHostState: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public static func setEyeCloseTolerance(value: Swift.Int)
-  @objc @_Concurrency.MainActor(unsafe) public static func setHashCheck(hashCheck: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public static func setViewerWidthRatio(local: Swift.Float, remote: Swift.Float)
-  @objc @_Concurrency.MainActor(unsafe) public static func setViewerLocationRatio(x: Swift.Float, y: Swift.Float)
-  @objc @_Concurrency.MainActor(unsafe) public static func setScreenRecordAudioEnabled(state: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public static func setVideoBitrate(rate: Swift.Int)
-  @objc @_Concurrency.MainActor(unsafe) public static func getScreenRecordFilePath() -> Swift.String?
-  @objc @_Concurrency.MainActor(unsafe) public static func setShowLogs(value: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public static func setCertificateBase64(str: Swift.String)
-  @objc @_Concurrency.MainActor(unsafe) public static func setShowMobileSpeed(state: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public static func saveRecordAsset(filePath: Swift.String)
-  @objc @_Concurrency.MainActor(unsafe) public static func setBarcodeReader(state: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public static func startCardFrontDetect()
-  @objc @_Concurrency.MainActor(unsafe) public static func startCardHoloDetect()
-  @objc @_Concurrency.MainActor(unsafe) public static func startCardBackDetect()
-  @objc @_Concurrency.MainActor(unsafe) public static func idCardDetectSet()
-  @objc @_Concurrency.MainActor(unsafe) public static func sendVideoToBackOffice(path: Swift.String)
-  @objc @_Concurrency.MainActor(unsafe) public static func iconStartButton(_ button: UIKit.UIButton)
-  @objc @_Concurrency.MainActor(unsafe) public static func iconExitButton(_ button: UIKit.UIButton)
-  @objc @_Concurrency.MainActor(unsafe) public static func iconRetryButton(_ button: UIKit.UIButton)
-  @objc @_Concurrency.MainActor(unsafe) public static func iconExitRetryButton(_ button: UIKit.UIButton)
-  @objc @_Concurrency.MainActor(unsafe) public static func iconHangupRetryButton(_ button: UIKit.UIButton)
-  @objc @_Concurrency.MainActor(unsafe) public static func iconHangupChatButton(_ button: UIKit.UIButton)
-  @objc @_Concurrency.MainActor(unsafe) public static func iconCallButton(_ button: UIKit.UIButton)
-  @objc @_Concurrency.MainActor(unsafe) public static func iconHangupButton(_ button: UIKit.UIButton)
-  @objc @_Concurrency.MainActor(unsafe) public static func iconRotateButton(_ button: UIKit.UIButton)
-  @objc @_Concurrency.MainActor(unsafe) public static func iconChatRotateButton(_ button: UIKit.UIButton)
-  @objc @_Concurrency.MainActor(unsafe) public static func rotateButtonAct()
-  @objc @_Concurrency.MainActor(unsafe) public static func toggleFlash(state: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public static func getAvailableAppointment(startDate: Foundation.Date, endDate: Foundation.Date, callType: Swift.String?, completion: @escaping ((_ data: [EnQualify.EnverifyVerifyAvailableAppointmentResult]?, _ error: Swift.Error?) -> Swift.Void))
-  @objc @_Concurrency.MainActor(unsafe) public static func saveAppointment(data: EnQualify.EnverifyVerifyAppointmentSaveMobileModel, completion: @escaping ((_ data: EnQualify.EnverifyVerifySaveMobileAppointmentResult?, _ error: Swift.Error?) -> Swift.Void))
-  @objc @_Concurrency.MainActor(unsafe) public static func cancelAppointment(identityType: Swift.String?, identityNo: Swift.String?, callType: Swift.String?, completion: @escaping ((_ data: EnQualify.EnverifyVerifyCancelAppointmentResult?, _ error: Swift.Error?) -> Swift.Void))
-  @objc @_Concurrency.MainActor(unsafe) public static func setAgentRequest()
-  @objc @_Concurrency.MainActor(unsafe) public static func getAppointment(identityNo: Swift.String?, identityType: Swift.String?, completion: @escaping ((_ data: [EnQualify.EnverifyVerifyAppointmentResult]?, _ error: Swift.Error?) -> Swift.Void))
-  @objc @_Concurrency.MainActor(unsafe) public static func getCallTypes(completion: @escaping ((_ data: [EnQualify.EnverifyVerifyCallTypeResult]?, _ error: Swift.Error?) -> Swift.Void))
-  @_Concurrency.MainActor(unsafe) public static func getSettings(completion: @escaping () -> ())
-  @objc @_Concurrency.MainActor(unsafe) public static func appMovedToForeground()
-  @objc @_Concurrency.MainActor(unsafe) public static func appMovedToBackground()
-  @objc @_Concurrency.MainActor(unsafe) public static func speedCheck()
-  @_Concurrency.MainActor(unsafe) public static func signDocument(data: Foundation.Data)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
-  @objc deinit
-}
-extension EnQualify.EnVerify {
-  @_Concurrency.MainActor(unsafe) public static func startTimer()
-}
 @objc public protocol EnVerifyDelegate {
   @objc func luminosityAnalyzed(result: Swift.String)
   @objc func agentRequest(eventData: Swift.String)
@@ -1795,101 +1579,253 @@ extension EnQualify.EnVerify {
   @objc func videoUploadFailure()
   @objc func maximumCallTimeExpired()
 }
-@objc public enum EnVerifyCallSessionStatusTypeEnum : Swift.Int {
-  case _none
-  case ready
-  case started
-  case finished
-  case closed
-  case cancelled
-  case failure
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
+public struct VerifyAppointmentCancelRequest : Swift.Codable {
+  public var callType: Swift.String?
+  public var identityType: Swift.String?
+  public var identityNo: Swift.String?
+  public init(callType: Swift.String? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case callType
+    case identityType
+    case identityNo
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
   }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
-@_inheritsConvenienceInitializers @objc public class EnVerifyCustomerCard : ObjectiveC.NSObject {
-  @objc public static var shared: EnQualify.EnVerifyCustomerCard
-  @objc public static var customerCard: IDVerification.CustomerCard
-  @objc public func setHoloDetectionType(holoDetectionType: Swift.String)
-  @objc public func setDetectionThreshold(threshold: Swift.Float)
-  @objc override dynamic public init()
+public struct SignedMessageVerifyAvailableAppointmentListRequest : Swift.Codable {
+  public var message: EnQualify.VerifyAvailableAppointmentListRequest?
+  public var signature: EnQualify.MessageSignature?
+  public init(message: EnQualify.VerifyAvailableAppointmentListRequest? = nil, signature: EnQualify.MessageSignature? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case message
+    case signature
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct LogsRequestLogAddResponse : Swift.Codable {
+  public var isSuccessful: Swift.Bool?
+  public var result: EnQualify.ResultInfo?
+  public var warning: EnQualify.ResultInfo?
+  public var referenceId: Foundation.UUID?
+  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case isSuccessful
+    case result
+    case warning
+    case referenceId
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class EnVerify : ObjectiveC.NSObject, UIKit.UIApplicationDelegate {
+  @_Concurrency.MainActor(unsafe) public static var releaseNumber: Swift.String
+  @objc @_Concurrency.MainActor(unsafe) public static var screenRecordAssets: [AVFoundation.AVAsset]
+  @objc @_Concurrency.MainActor(unsafe) public static var screenRecordingParts: Swift.String
+  @objc @_Concurrency.MainActor(unsafe) public static var screenRecordingData: EnQualify.EnverifyScreenRecordingData
+  @objc @_Concurrency.MainActor(unsafe) public static var timerLiveLog: Foundation.Timer?
+  @objc @_Concurrency.MainActor(unsafe) public static var enverify_accessToken: Swift.String?
+  @objc @_Concurrency.MainActor(unsafe) public static var callType: Swift.String
+  @objc @_Concurrency.MainActor(unsafe) public static var handicapped: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public static var identityType: Swift.String?
+  @objc @_Concurrency.MainActor(unsafe) public static var identityNo: Swift.String?
+  @objc @_Concurrency.MainActor(unsafe) public static var canAutoClose: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public static var isContinue: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public static var agentDummyImage: UIKit.UIImage?
+  @objc @_Concurrency.MainActor(unsafe) public static var agentDummyVideoPlayer: AVFoundation.AVPlayer?
+  @objc @_Concurrency.MainActor(unsafe) public static var isAgentDummyShown: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public static var isCallAnswered: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public static var isCallCancelled: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public static var calibrationValues: EnQualify.CalibrationValues
+  @objc @_Concurrency.MainActor(unsafe) public static func incomingCallObserver(callChanged call: CallKit.CXCall)
+  @objc @_Concurrency.MainActor(unsafe) public static func integrationAdd(type: Swift.String, callType: Swift.String?, phone: Swift.String?, email: Swift.String?, data: Swift.String, addressRegistration: EnQualify.EnVerifyCallAddressRegistrationModel?, iDRegistration: EnQualify.EnVerifyCallIDRegistrationModel?)
+  @objc @_Concurrency.MainActor(unsafe) public static func getAuthToken(_ userNameForToken: Swift.String? = nil, _ backOfficeBasePath: Swift.String, completion: @escaping (Swift.Bool) -> ())
+  @objc @_Concurrency.MainActor(unsafe) public static func sessionUpdateForHandicapped(handicapped: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public static func logInfoAdd(type: EnQualify.SessionInfoType, message: Swift.String? = "")
+  @objc @_Concurrency.MainActor(unsafe) public static func callSessionClose(finished: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) public static func connectionType() -> EnQualify.ConnectionType
+  @objc @_Concurrency.MainActor(unsafe) public static func setTCIDTypeInternational()
+  @objc @_Concurrency.MainActor(unsafe) public static func idVerifyStart(_ sender: Any) -> Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public static func videoCallStart(_ sender: Any) -> Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public static func selfServiceStart(_ sender: Any) -> Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public static func startLuminosityAnalyzer()
+  @objc @_Concurrency.MainActor(unsafe) public static func invalidateTimerRoomId()
+  @objc @_Concurrency.MainActor(unsafe) public static func idFakeCheckStart()
+  @objc @_Concurrency.MainActor(unsafe) public static func idFrontStart()
+  @objc @_Concurrency.MainActor(unsafe) public static func idBackStart()
+  @objc @_Concurrency.MainActor(unsafe) public static func idViewStart(vc: UIKit.UIViewController)
+  @objc @_Concurrency.MainActor(unsafe) public static func idDocStore()
+  @available(iOS 13.0, *)
+  @objc @_Concurrency.MainActor(unsafe) public static func nfcStart() -> Swift.Int
+  @available(iOS 13.0, *)
+  @objc @_Concurrency.MainActor(unsafe) public static func nfcStart(with documentNo: Swift.String, birthday: Swift.String, expiryDate: Swift.String) -> Swift.Int
+  @objc @_Concurrency.MainActor(unsafe) public static func nfcViewStart(vc: UIKit.UIViewController)
+  @objc @_Concurrency.MainActor(unsafe) public static func nfcStore()
+  @objc @_Concurrency.MainActor(unsafe) public static func faceDetectStart()
+  @objc @_Concurrency.MainActor(unsafe) public static func idTypeCheckSet()
+  @objc @_Concurrency.MainActor(unsafe) public static func onStartSelfService()
+  @objc @_Concurrency.MainActor(unsafe) public static func idTypeBackCheckSet()
+  @objc @_Concurrency.MainActor(unsafe) public static func faceDetectSet()
+  @available(iOS 13.0, *)
+  @objc @_Concurrency.MainActor(unsafe) public static func nfcVerifySet()
+  @objc @_Concurrency.MainActor(unsafe) public static func chatSet()
+  @objc @_Concurrency.MainActor(unsafe) public static func smileDetectStart()
+  @objc @_Concurrency.MainActor(unsafe) public static func eyeCloseStart()
+  @objc @_Concurrency.MainActor(unsafe) public static func eyeCloseIntervalStart()
+  @objc @_Concurrency.MainActor(unsafe) public static func faceUpStart()
+  @objc @_Concurrency.MainActor(unsafe) public static func faceLeftStart()
+  @objc @_Concurrency.MainActor(unsafe) public static func faceRightStart()
+  @objc @_Concurrency.MainActor(unsafe) public static func faceCompleteStart()
+  @objc @_Concurrency.MainActor(unsafe) public static func eyeOpenIntervalStart()
+  @objc @_Concurrency.MainActor(unsafe) public static func faceViewStart(vc: UIKit.UIViewController)
+  @objc @_Concurrency.MainActor(unsafe) public static func faceStore()
+  @objc @_Concurrency.MainActor(unsafe) public static func noConnectionAction()
+  @objc @_Concurrency.MainActor(unsafe) public static func handleCallFail()
+  @objc @_Concurrency.MainActor(unsafe) public static func onRetryFace()
+  @available(iOS 13.0, *)
+  @objc @_Concurrency.MainActor(unsafe) public static func pauseForNFC()
+  @objc @_Concurrency.MainActor(unsafe) public static func pauseForFace()
+  @objc @_Concurrency.MainActor(unsafe) public static func videoCallRestart()
+  @objc @_Concurrency.MainActor(unsafe) public static func selfServiceRestart()
+  @objc @_Concurrency.MainActor(unsafe) public static func onConfirmFace()
+  @objc @_Concurrency.MainActor(unsafe) public static func onConfirmFaceWithOutPop()
+  @objc @_Concurrency.MainActor(unsafe) public static func onRetryNFC()
+  @objc @_Concurrency.MainActor(unsafe) public static func uploadFaceData()
+  @objc @_Concurrency.MainActor(unsafe) public static func onConfirmNFC()
+  @objc @_Concurrency.MainActor(unsafe) public static func onConfirmNFCWithoutPop()
+  @objc @_Concurrency.MainActor(unsafe) public static func idTypeCheckBackStart()
+  @objc @_Concurrency.MainActor(unsafe) public static func idTypeCheckFrontStart()
+  @objc @_Concurrency.MainActor(unsafe) public static func onRetryDoc()
+  @objc @_Concurrency.MainActor(unsafe) public static func onConfirmDoc()
+  @objc @_Concurrency.MainActor(unsafe) public static func onConfirmDocWithoutPop()
+  @objc @_Concurrency.MainActor(unsafe) public static func startLivenessDetect()
+  @objc @_Concurrency.MainActor(unsafe) public static func setSSStartButtons(buttonState: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public static func idvSettings(domainName: Swift.String?, certificateNames: [Swift.String], aiUsername: Swift.String?, aiPassword: Swift.String?, signalingServer: Swift.String?, stunServer: Swift.String?, turnServer: Swift.String?, turnUsername: Swift.String?, turnPassword: Swift.String?, backOfficeBasePath: Swift.String?, userNameForToken: Swift.String? = nil, isContinue: Swift.Bool = false, referenceID: Swift.String? = nil) -> Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public static func agentRequestCompleted()
+  @objc @_Concurrency.MainActor(unsafe) public static func stopSSStartVC(_ sender: Any)
+  @objc @_Concurrency.MainActor(unsafe) public static func setNavigationController(navigator: UIKit.UINavigationController)
+  @objc @_Concurrency.MainActor(unsafe) public static func getNavigationController() -> UIKit.UINavigationController?
+  @objc @_Concurrency.MainActor(unsafe) public static func setOrientationLock(orientation: UIKit.UIInterfaceOrientationMask)
+  @objc @_Concurrency.MainActor(unsafe) public static func setNFCBACData(docNo: Swift.String, birthday: Swift.String, expiryDate: Swift.String) -> Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public static func handleFail()
+  @objc @_Concurrency.MainActor(unsafe) public static func idVerifyRestart()
+  @objc @_Concurrency.MainActor(unsafe) public static func startVideoChat()
+  @objc @_Concurrency.MainActor(unsafe) public static func onExitCall()
+  @objc @_Concurrency.MainActor(unsafe) public static func onExitCallWithoutPop()
+  @objc @_Concurrency.MainActor(unsafe) public static func onExitSelfService()
+  @objc @_Concurrency.MainActor(unsafe) public static func onHangupCall()
+  @objc @_Concurrency.MainActor(unsafe) public static func onStartCall()
+  @available(iOS 11.0, *)
+  @objc @_Concurrency.MainActor(unsafe) public static func startAVRecording()
+  @available(iOS 11.0, *)
+  @objc @_Concurrency.MainActor(unsafe) public static func stopAVRecording()
+  @objc @_Concurrency.MainActor(unsafe) public static func setMessage(message: Swift.String, index: Swift.Int)
+  @objc @_Concurrency.MainActor(unsafe) public static func checkPermissions() -> Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public static func requestVideoAudioPermissions()
+  @objc @_Concurrency.MainActor(unsafe) public static func setAgentFullScreen(agentFullScreenState: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public static func setSpeaker(soundOn: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public static func setMediaServer(mediaServerState: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public static func setMSPrivateKey(value: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public static func setTimerForAliveness(timerCountInSeconds: Swift.Int)
+  @objc @_Concurrency.MainActor(unsafe) public static func setLivenessCalibration(value: Swift.Int)
+  @objc @_Concurrency.MainActor(unsafe) public static func setEyeCloseMaxTime(value: Swift.Int)
+  @objc @_Concurrency.MainActor(unsafe) public static func setFaceAngleCalibration(value: Swift.Int)
+  @objc @_Concurrency.MainActor(unsafe) public static func setOCRMode(value: Swift.Int)
+  @objc @_Concurrency.MainActor(unsafe) public static func setOCRCheckSize(value: Swift.Int)
+  @objc @_Concurrency.MainActor(unsafe) public static func setCallWaitTimeout(value: Swift.Int)
+  @objc @_Concurrency.MainActor(unsafe) public static func setIceCheckingTimeout(value: Swift.Int)
+  @objc @_Concurrency.MainActor(unsafe) public static func setICERelay(iceRelayState: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public static func setSSLPinning(required: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public static func setEyeCloseCalibration(value: Swift.Float)
+  @objc @_Concurrency.MainActor(unsafe) public static func setSmilingCalibration(value: Swift.Float)
+  @objc @_Concurrency.MainActor(unsafe) public static func setICEHost(iceHostState: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public static func setEyeCloseTolerance(value: Swift.Int)
+  @objc @_Concurrency.MainActor(unsafe) public static func setHashCheck(hashCheck: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public static func setViewerWidthRatio(local: Swift.Float, remote: Swift.Float)
+  @objc @_Concurrency.MainActor(unsafe) public static func setViewerLocationRatio(x: Swift.Float, y: Swift.Float)
+  @objc @_Concurrency.MainActor(unsafe) public static func setScreenRecordAudioEnabled(state: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public static func setVideoBitrate(rate: Swift.Int)
+  @objc @_Concurrency.MainActor(unsafe) public static func getScreenRecordFilePath() -> Swift.String?
+  @objc @_Concurrency.MainActor(unsafe) public static func setShowLogs(value: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public static func setCertificateBase64(str: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public static func setShowMobileSpeed(state: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public static func saveRecordAsset(filePath: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public static func setBarcodeReader(state: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public static func startCardFrontDetect()
+  @objc @_Concurrency.MainActor(unsafe) public static func startCardHoloDetect()
+  @objc @_Concurrency.MainActor(unsafe) public static func startCardBackDetect()
+  @objc @_Concurrency.MainActor(unsafe) public static func idCardDetectSet()
+  @objc @_Concurrency.MainActor(unsafe) public static func sendVideoToBackOffice(path: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public static func iconStartButton(_ button: UIKit.UIButton)
+  @objc @_Concurrency.MainActor(unsafe) public static func iconExitButton(_ button: UIKit.UIButton)
+  @objc @_Concurrency.MainActor(unsafe) public static func iconRetryButton(_ button: UIKit.UIButton)
+  @objc @_Concurrency.MainActor(unsafe) public static func iconExitRetryButton(_ button: UIKit.UIButton)
+  @objc @_Concurrency.MainActor(unsafe) public static func iconHangupRetryButton(_ button: UIKit.UIButton)
+  @objc @_Concurrency.MainActor(unsafe) public static func iconHangupChatButton(_ button: UIKit.UIButton)
+  @objc @_Concurrency.MainActor(unsafe) public static func iconCallButton(_ button: UIKit.UIButton)
+  @objc @_Concurrency.MainActor(unsafe) public static func iconHangupButton(_ button: UIKit.UIButton)
+  @objc @_Concurrency.MainActor(unsafe) public static func iconRotateButton(_ button: UIKit.UIButton)
+  @objc @_Concurrency.MainActor(unsafe) public static func iconChatRotateButton(_ button: UIKit.UIButton)
+  @objc @_Concurrency.MainActor(unsafe) public static func rotateButtonAct()
+  @objc @_Concurrency.MainActor(unsafe) public static func toggleFlash(state: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public static func getAvailableAppointment(startDate: Foundation.Date, endDate: Foundation.Date, callType: Swift.String?, completion: @escaping ((_ data: [EnQualify.EnverifyVerifyAvailableAppointmentResult]?, _ error: Swift.Error?) -> Swift.Void))
+  @objc @_Concurrency.MainActor(unsafe) public static func saveAppointment(data: EnQualify.EnverifyVerifyAppointmentSaveMobileModel, completion: @escaping ((_ data: EnQualify.EnverifyVerifySaveMobileAppointmentResult?, _ error: Swift.Error?) -> Swift.Void))
+  @objc @_Concurrency.MainActor(unsafe) public static func cancelAppointment(identityType: Swift.String?, identityNo: Swift.String?, callType: Swift.String?, completion: @escaping ((_ data: EnQualify.EnverifyVerifyCancelAppointmentResult?, _ error: Swift.Error?) -> Swift.Void))
+  @objc @_Concurrency.MainActor(unsafe) public static func setAgentRequest()
+  @objc @_Concurrency.MainActor(unsafe) public static func getAppointment(identityNo: Swift.String?, identityType: Swift.String?, completion: @escaping ((_ data: [EnQualify.EnverifyVerifyAppointmentResult]?, _ error: Swift.Error?) -> Swift.Void))
+  @objc @_Concurrency.MainActor(unsafe) public static func getCallTypes(completion: @escaping ((_ data: [EnQualify.EnverifyVerifyCallTypeResult]?, _ error: Swift.Error?) -> Swift.Void))
+  @_Concurrency.MainActor(unsafe) public static func getSettings(completion: @escaping () -> ())
+  @objc @_Concurrency.MainActor(unsafe) public static func appMovedToForeground()
+  @objc @_Concurrency.MainActor(unsafe) public static func appMovedToBackground()
+  @objc @_Concurrency.MainActor(unsafe) public static func speedCheck()
+  @_Concurrency.MainActor(unsafe) public static func signDocument(data: Foundation.Data)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc public class EnverifyScreenRecordingData : ObjectiveC.NSObject {
-  @objc public var screenRecordParts: Swift.String?
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class EnVerifyCustomerChip : ObjectiveC.NSObject {
-  @objc public static var shared: EnQualify.EnVerifyCustomerChip
-  @objc public func getID() -> Swift.String
-  @objc public func getIdentityNo() -> Swift.String
-  @objc public func getIdentityType() -> Swift.String
-  @objc public func getDocumentNo() -> Swift.String
-  @objc public func getName() -> Swift.String
-  @objc public func getSurname() -> Swift.String
-  @objc public func getGender() -> Swift.String
-  @objc public func getBirthday() -> Swift.String
-  @objc public func getNationality() -> Swift.String
-  @objc public func getExpiryDate() -> Swift.String
-  @objc public func getFace() -> UIKit.UIImage
-  @objc public func getNameOfHolder() -> Swift.String
-  @objc public func getSurnameOfHolder() -> Swift.String
-  @objc public func getPlaceOfBirth() -> Swift.String
-  @objc public func getFullDateOfBirth() -> Swift.String
-  @objc public func isChipAuthSucceeded() -> Swift.AnyObject?
-  @objc public func isActiveAuthSucceed() -> Swift.AnyObject?
-  @objc public func isPassiveAuthSucceeded() -> Swift.AnyObject?
-  @objc public func isDataValidated() -> Swift.AnyObject?
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class EnVerifyCustomerFace : ObjectiveC.NSObject {
-  @objc public static var shared: EnQualify.EnVerifyCustomerFace
-  @objc public func getChipConfidence() -> Swift.Int
-  @objc public func getIdConfidence() -> Swift.Int
-  @objc public func getChipDistance() -> Swift.Float
-  @objc public func getIdDistance() -> Swift.Float
-  @objc public func getId() -> Swift.String
-  @objc public func getFace() -> UIKit.UIImage
-  @objc public func getSelfieAntispoofing() -> Swift.Float
-  @objc public func isHashSuccess() -> Swift.Bool
-  @objc public func getEyeFace() -> UIKit.UIImage
-  @objc public func getEyeDistance() -> Swift.Float
-  @objc public func getEyeConfidence() -> Swift.Int
-  @objc public func getLeftEyeCloseConfidence() -> Swift.Float
-  @objc public func getRightEyeCloseConfidence() -> Swift.Float
-  @objc public func getSmilingConfidence() -> Swift.Float
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers @objc public class EnVerifySuccessCustomerIdentityDoc : ObjectiveC.NSObject {
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class EnVerifyCustomerIdentityDoc : ObjectiveC.NSObject {
-  @objc public static var shared: EnQualify.EnVerifyCustomerIdentityDoc
-  @objc public func getOptionalData1() -> Swift.String
-  @objc public func getOptionalData2() -> Swift.String
-  @objc public func getBarcodeValue() -> Swift.String
-  @objc public func getCountry() -> Swift.String
-  @objc public func getIdIssuer() -> Swift.String
-  @objc public func getIdType() -> Swift.String
-  @objc public func getIdentityNo() -> Swift.String
-  @objc public func getIdentityType() -> Swift.String
-  @objc public func getDocumentNo() -> Swift.String
-  @objc public func getName() -> Swift.String
-  @objc public func getSurname() -> Swift.String
-  @objc public func getGender() -> Swift.String
-  @objc public func getBirthday() -> Swift.String
-  @objc public func getNationality() -> Swift.String
-  @objc public func getExpiryDate() -> Swift.String
-  @objc public func getFace() -> UIKit.UIImage
-  @objc public func getFrontpage() -> UIKit.UIImage
-  @objc public func getBackpage() -> UIKit.UIImage
-  @objc public func getHolopage() -> UIKit.UIImage
-  @objc override dynamic public init()
-  @objc deinit
+extension EnQualify.EnVerify {
+  @_Concurrency.MainActor(unsafe) public static func startTimer()
 }
 public struct VerifyCallIDBlockGetResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -2687,6 +2623,20 @@ public enum AlamofireDecodableRequestBuilderError : Swift.Error {
   required public init(method: Swift.String, URLString: Swift.String, parameters: [Swift.String : Any]?, isBody: Swift.Bool, headers: [Swift.String : Swift.String] = super, timeout: Swift.Int = super)
   @objc deinit
 }
+@objc public enum EnVerifyCallSessionStatusTypeEnum : Swift.Int {
+  case _none
+  case ready
+  case started
+  case finished
+  case closed
+  case cancelled
+  case failure
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 public struct SignedMessageVerifyCallIDCheckAddRequest : Swift.Codable {
   public var message: EnQualify.VerifyCallIDCheckAddRequest?
   public var signature: EnQualify.MessageSignature?
@@ -2990,6 +2940,22 @@ public struct SignedMessageVerifyDocumentSignSetMobileRequest : Swift.Codable {
   }
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers public class EnVSession : ObjectiveC.NSObject {
+  @objc public static func checkFrontCameraOpen()
+  @objc public static func isFrontCameraOpen() -> Swift.Bool
+  @objc public static func setDebugMode(_ mode: Swift.Bool)
+  @objc public static func setUserId(_ value: Swift.String)
+  @objc public static func setUserName(_ value: Swift.String)
+  @objc public static func setUserSurname(_ value: Swift.String)
+  @objc public static func getUserId() -> Swift.String
+  @objc public static func getUserName() -> Swift.String
+  @objc public static func getUserSurname() -> Swift.String
+  @objc public static func getRoomId() -> Swift.String
+  @objc public static func getId() -> Swift.String
+  @objc public static func getVideoSize() -> CoreFoundation.CGSize
+  @objc override dynamic public init()
+  @objc deinit
 }
 public struct AppsAppRunLiveRequest : Swift.Codable {
   public var uId: Foundation.UUID?
@@ -3734,6 +3700,10 @@ public struct VerifySignedMessageCallVideoMobileAddRequest : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
+@_hasMissingDesignatedInitializers @objc public class EnverifyScreenRecordingData : ObjectiveC.NSObject {
+  @objc public var screenRecordParts: Swift.String?
+  @objc deinit
+}
 public struct VerifyCallSessionHandicappedRequest : Swift.Codable {
   public var handicapped: Swift.Bool?
   public init(handicapped: Swift.Bool? = nil)
@@ -3755,6 +3725,25 @@ public struct VerifyCallSessionHandicappedRequest : Swift.Codable {
   }
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc public class EnVerifyCustomerFace : ObjectiveC.NSObject {
+  @objc public static var shared: EnQualify.EnVerifyCustomerFace
+  @objc public func getChipConfidence() -> Swift.Int
+  @objc public func getIdConfidence() -> Swift.Int
+  @objc public func getChipDistance() -> Swift.Float
+  @objc public func getIdDistance() -> Swift.Float
+  @objc public func getId() -> Swift.String
+  @objc public func getFace() -> UIKit.UIImage
+  @objc public func getSelfieAntispoofing() -> Swift.Float
+  @objc public func isHashSuccess() -> Swift.Bool
+  @objc public func getEyeFace() -> UIKit.UIImage
+  @objc public func getEyeDistance() -> Swift.Float
+  @objc public func getEyeConfidence() -> Swift.Int
+  @objc public func getLeftEyeCloseConfidence() -> Swift.Float
+  @objc public func getRightEyeCloseConfidence() -> Swift.Float
+  @objc public func getSmilingConfidence() -> Swift.Float
+  @objc override dynamic public init()
+  @objc deinit
 }
 public struct LogsActivityLogListRequest : Swift.Codable {
   public var paging: EnQualify.PagingOptions?
@@ -4105,6 +4094,8 @@ extension EnQualify.JSONValue : Swift.ExpressibleByArrayLiteral {
   open class func apiVerifySessionAddPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallSessionAddRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallSessionAddResponse>
   open class func apiVerifySessionClosePost(body: EnQualify.SignedMessageVerifyCallSessionCloseRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallSessionCloseResponse?, _ error: Swift.Error?) -> Swift.Void))
   open class func apiVerifySessionClosePostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallSessionCloseRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallSessionCloseResponse>
+  open class func apiVerifySessionInfoAddPost(body: EnQualify.SignedMessageVerifyCallSessionInfoAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallSessionInfoAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifySessionInfoAddPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallSessionInfoAddRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallSessionInfoAddResponse>
   open class func apiVerifySessionRoomPost(body: EnQualify.SignedMessageVerifyCallSessionRoomRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallSessionRoomResponse?, _ error: Swift.Error?) -> Swift.Void))
   open class func apiVerifySessionRoomPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallSessionRoomRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallSessionRoomResponse>
   open class func apiVerifySessionUpdatePost(body: EnQualify.SignedMessageVerifyCallSessionHandicappedRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallSessionHandicappedResponse?, _ error: Swift.Error?) -> Swift.Void))
@@ -4198,6 +4189,9 @@ public struct LogsAuditLogListResponse : Swift.Codable {
   }
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers @objc public class EnVerifySuccessCustomerIdentityDoc : ObjectiveC.NSObject {
+  @objc deinit
 }
 public struct VerifyCallIDDocAddResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -4372,6 +4366,88 @@ public enum VerifyCallLogTypeEnum : Swift.String, Swift.Codable {
   public var rawValue: Swift.String {
     get
   }
+}
+public struct VerifyCallSessionInfoAddRequest : Swift.Codable {
+  public var connectionType: Swift.String?
+  public var nFCIsOpen: Swift.Bool?
+  public var iDTypeCheckStart: Swift.Bool?
+  public var iDTypeCheckFinish: Swift.Bool?
+  public var hologramStart: Swift.Bool?
+  public var hologramFinish: Swift.Bool?
+  public var iDDocFrontStart: Swift.Bool?
+  public var iDDocFrontFinish: Swift.Bool?
+  public var iDDocBackStart: Swift.Bool?
+  public var iDDocBackFinish: Swift.Bool?
+  public var iDChipStart: Swift.Bool?
+  public var iDChipFinish: Swift.Bool?
+  public var faceStart: Swift.Bool?
+  public var faceFinish: Swift.Bool?
+  public var smileStart: Swift.Bool?
+  public var smileFinish: Swift.Bool?
+  public var eyeCloseIntervalStart: Swift.Bool?
+  public var eyeCloseIntervalFinish: Swift.Bool?
+  public var eyeCloseFinish: Swift.Bool?
+  public var eyeCloseStart: Swift.Bool?
+  public var faceRightStart: Swift.Bool?
+  public var faceRightFinish: Swift.Bool?
+  public var faceLeftStart: Swift.Bool?
+  public var faceLeftFinish: Swift.Bool?
+  public var faceUpStart: Swift.Bool?
+  public var faceUpFinish: Swift.Bool?
+  public var roomSendMobile: Swift.Bool?
+  public var callRequest: Swift.Bool?
+  public var waitCall: Swift.Bool?
+  public var startCall: Swift.Bool?
+  public var battery: Swift.Int?
+  public init(connectionType: Swift.String? = nil, nFCIsOpen: Swift.Bool? = nil, iDTypeCheckStart: Swift.Bool? = nil, iDTypeCheckFinish: Swift.Bool? = nil, hologramStart: Swift.Bool? = nil, hologramFinish: Swift.Bool? = nil, iDDocFrontStart: Swift.Bool? = nil, iDDocFrontFinish: Swift.Bool? = nil, iDDocBackStart: Swift.Bool? = nil, iDDocBackFinish: Swift.Bool? = nil, iDChipStart: Swift.Bool? = nil, iDChipFinish: Swift.Bool? = nil, faceStart: Swift.Bool? = nil, faceFinish: Swift.Bool? = nil, smileStart: Swift.Bool? = nil, smileFinish: Swift.Bool? = nil, eyeCloseIntervalStart: Swift.Bool? = nil, eyeCloseIntervalFinish: Swift.Bool? = nil, eyeCloseFinish: Swift.Bool? = nil, eyeCloseStart: Swift.Bool? = nil, faceRightStart: Swift.Bool? = nil, faceRightFinish: Swift.Bool? = nil, faceLeftStart: Swift.Bool? = nil, faceLeftFinish: Swift.Bool? = nil, faceUpStart: Swift.Bool? = nil, faceUpFinish: Swift.Bool? = nil, roomSendMobile: Swift.Bool? = nil, callRequest: Swift.Bool? = nil, waitCall: Swift.Bool? = nil, startCall: Swift.Bool? = nil, battery: Swift.Int? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case connectionType
+    case nFCIsOpen
+    case iDTypeCheckStart
+    case iDTypeCheckFinish
+    case hologramStart
+    case hologramFinish
+    case iDDocFrontStart
+    case iDDocFrontFinish
+    case iDDocBackStart
+    case iDDocBackFinish
+    case iDChipStart
+    case iDChipFinish
+    case faceStart
+    case faceFinish
+    case smileStart
+    case smileFinish
+    case eyeCloseIntervalStart
+    case eyeCloseIntervalFinish
+    case eyeCloseFinish
+    case eyeCloseStart
+    case faceRightStart
+    case faceRightFinish
+    case faceLeftStart
+    case faceLeftFinish
+    case faceUpStart
+    case faceUpFinish
+    case roomSendMobile
+    case callRequest
+    case waitCall
+    case startCall
+    case battery
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct VerifyMobileParameterGetResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -4658,6 +4734,14 @@ public struct VerifyCallSessionCloseResponse : Swift.Codable {
   }
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc public class EnVerifyCustomerCard : ObjectiveC.NSObject {
+  @objc public static var shared: EnQualify.EnVerifyCustomerCard
+  @objc public static var customerCard: IDVerification.CustomerCard
+  @objc public func setHoloDetectionType(holoDetectionType: Swift.String)
+  @objc public func setDetectionThreshold(threshold: Swift.Float)
+  @objc override dynamic public init()
+  @objc deinit
 }
 public struct VerifyAvailableAppointmentListResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -5044,6 +5128,30 @@ public struct VerifyCallFaceAddRequest : Swift.Codable {
     case uId
     case code
     case data
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SignedMessageVerifyCallSessionInfoAddRequest : Swift.Codable {
+  public var message: EnQualify.VerifyCallSessionInfoAddRequest?
+  public var signature: EnQualify.MessageSignature?
+  public init(message: EnQualify.VerifyCallSessionInfoAddRequest? = nil, signature: EnQualify.MessageSignature? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case message
+    case signature
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -5594,6 +5702,44 @@ public struct VerifyDocumentSignSetMobileRequest : Swift.Codable {
   }
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
+}
+@objc public enum SessionInfoType : Swift.Int {
+  case connectionType
+  case nFCIsOpen
+  case iDTypeCheckStart
+  case iDTypeCheckFinish
+  case hologramStart
+  case hologramFinish
+  case iDDocFrontStart
+  case iDDocFrontFinish
+  case iDDocBackStart
+  case iDDocBackFinish
+  case iDChipStart
+  case iDChipFinish
+  case faceStart
+  case faceFinish
+  case smileStart
+  case smileFinish
+  case eyeCloseIntervalStart
+  case eyeCloseIntervalFinish
+  case eyeCloseFinish
+  case eyeCloseStart
+  case faceRightStart
+  case faceRightFinish
+  case faceLeftStart
+  case faceLeftFinish
+  case faceUpStart
+  case faceUpFinish
+  case roomSendMobile
+  case callRequest
+  case waitCall
+  case startCall
+  case battery
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 public struct VerifyCallSessionRoomRequest : Swift.Codable {
   public var roomId: Swift.String
@@ -6184,6 +6330,36 @@ public enum VerifyCallSessionStatusTypeEnum : Swift.String, Swift.Codable {
     get
   }
 }
+public struct VerifyCallSessionInfoAddResponse : Swift.Codable {
+  public var isSuccessful: Swift.Bool?
+  public var result: EnQualify.ResultInfo?
+  public var warning: EnQualify.ResultInfo?
+  public var referenceId: Foundation.UUID?
+  public var status: EnQualify.VerifyCallSessionStatusTypeEnum?
+  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: EnQualify.VerifyCallSessionStatusTypeEnum? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case isSuccessful
+    case result
+    case warning
+    case referenceId
+    case status
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
 public struct AppsAppCheckVersionResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
   public var result: EnQualify.ResultInfo?
@@ -6703,9 +6879,6 @@ extension EnQualify.SignedMessageVerifyAvailableAppointmentListRequest.CodingKey
 extension EnQualify.LogsRequestLogAddResponse.CodingKeys : Swift.Equatable {}
 extension EnQualify.LogsRequestLogAddResponse.CodingKeys : Swift.Hashable {}
 extension EnQualify.LogsRequestLogAddResponse.CodingKeys : Swift.RawRepresentable {}
-extension EnQualify.EnVerifyCallSessionStatusTypeEnum : Swift.Equatable {}
-extension EnQualify.EnVerifyCallSessionStatusTypeEnum : Swift.Hashable {}
-extension EnQualify.EnVerifyCallSessionStatusTypeEnum : Swift.RawRepresentable {}
 extension EnQualify.VerifyCallIDBlockGetResponse.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifyCallIDBlockGetResponse.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifyCallIDBlockGetResponse.CodingKeys : Swift.RawRepresentable {}
@@ -6783,6 +6956,9 @@ extension EnQualify.AppsClockGetRequest.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.VerifyCallIDCheckModel.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifyCallIDCheckModel.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifyCallIDCheckModel.CodingKeys : Swift.RawRepresentable {}
+extension EnQualify.EnVerifyCallSessionStatusTypeEnum : Swift.Equatable {}
+extension EnQualify.EnVerifyCallSessionStatusTypeEnum : Swift.Hashable {}
+extension EnQualify.EnVerifyCallSessionStatusTypeEnum : Swift.RawRepresentable {}
 extension EnQualify.SignedMessageVerifyCallIDCheckAddRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.SignedMessageVerifyCallIDCheckAddRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.SignedMessageVerifyCallIDCheckAddRequest.CodingKeys : Swift.RawRepresentable {}
@@ -6932,6 +7108,9 @@ extension EnQualify.VerifyCallIDCheckAddResponse.CodingKeys : Swift.RawRepresent
 extension EnQualify.VerifyCallLogTypeEnum : Swift.Equatable {}
 extension EnQualify.VerifyCallLogTypeEnum : Swift.Hashable {}
 extension EnQualify.VerifyCallLogTypeEnum : Swift.RawRepresentable {}
+extension EnQualify.VerifyCallSessionInfoAddRequest.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifyCallSessionInfoAddRequest.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifyCallSessionInfoAddRequest.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.VerifyMobileParameterGetResponse.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifyMobileParameterGetResponse.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifyMobileParameterGetResponse.CodingKeys : Swift.RawRepresentable {}
@@ -6992,6 +7171,9 @@ extension EnQualify.DocumentsAppFolderGetTimestampResponse.CodingKeys : Swift.Ra
 extension EnQualify.VerifyCallFaceAddRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifyCallFaceAddRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifyCallFaceAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension EnQualify.SignedMessageVerifyCallSessionInfoAddRequest.CodingKeys : Swift.Equatable {}
+extension EnQualify.SignedMessageVerifyCallSessionInfoAddRequest.CodingKeys : Swift.Hashable {}
+extension EnQualify.SignedMessageVerifyCallSessionInfoAddRequest.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.CoreAppResourceGetTimestampResponse.CodingKeys : Swift.Equatable {}
 extension EnQualify.CoreAppResourceGetTimestampResponse.CodingKeys : Swift.Hashable {}
 extension EnQualify.CoreAppResourceGetTimestampResponse.CodingKeys : Swift.RawRepresentable {}
@@ -7022,6 +7204,9 @@ extension EnQualify.SignedMessageVerifyCallLogAddRequest.CodingKeys : Swift.RawR
 extension EnQualify.VerifyDocumentSignSetMobileRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifyDocumentSignSetMobileRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifyDocumentSignSetMobileRequest.CodingKeys : Swift.RawRepresentable {}
+extension EnQualify.SessionInfoType : Swift.Equatable {}
+extension EnQualify.SessionInfoType : Swift.Hashable {}
+extension EnQualify.SessionInfoType : Swift.RawRepresentable {}
 extension EnQualify.VerifyCallSessionRoomRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifyCallSessionRoomRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifyCallSessionRoomRequest.CodingKeys : Swift.RawRepresentable {}
@@ -7076,6 +7261,9 @@ extension EnQualify.PartiesAuthTypeEnum : Swift.RawRepresentable {}
 extension EnQualify.VerifyCallSessionStatusTypeEnum : Swift.Equatable {}
 extension EnQualify.VerifyCallSessionStatusTypeEnum : Swift.Hashable {}
 extension EnQualify.VerifyCallSessionStatusTypeEnum : Swift.RawRepresentable {}
+extension EnQualify.VerifyCallSessionInfoAddResponse.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifyCallSessionInfoAddResponse.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifyCallSessionInfoAddResponse.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.AppsAppCheckVersionResponse.CodingKeys : Swift.Equatable {}
 extension EnQualify.AppsAppCheckVersionResponse.CodingKeys : Swift.Hashable {}
 extension EnQualify.AppsAppCheckVersionResponse.CodingKeys : Swift.RawRepresentable {}
