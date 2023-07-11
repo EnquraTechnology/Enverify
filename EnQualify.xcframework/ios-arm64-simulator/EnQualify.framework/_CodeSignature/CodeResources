@@ -18,7 +18,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<data>
-		9JPnqCQY1KaPzIgfGKA9IGBVJlE=
+		wwRidcKRXXNaR+0CFEAoyK4OgBM=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/Info.plist</key>
 		<data>
-		iH93ZwLmzW1LcDuVHEmb42j1xsM=
+		5COtmRt0heT6KMXkw9HnbN0Jouk=
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Modules/EnQualify.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		LkxysRqHhV39j5StUT9tqq2yMbc=
+		xfboKqUKcRxvOBUL4TB6u04OMug=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		F5c1HYphvUbiVQ0sv8wRMBKGu3A=
+		9UUUWNiVTSLY9K6N011gtAxm8Ng=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -160,7 +160,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+DYpR6iZB3txPU5Q5IalC3oqx6R45soiqWEjdDnmH5g=
+			5yYSFtrP2osTFelWIo2UglAWXo9RC4qkc5e7Dm0K+jk=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
@@ -230,7 +230,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EEusjWjQCK59ySzy6dII6Q715tH1RsD9zEo/tHCwheE=
+			I8jVJKtLZd9SiqBS/DTZpzErPgNPZDElecA7X6lO3Iw=
 			</data>
 		</dict>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
@@ -307,7 +307,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			44nxDhvfx5aC94SUXBDq95J5hXTeNQkBeUxVloxsKd4=
+			ohcWzp2N+seM/JwYvm0mALwyzq+zxPjhV7h0wTrVBS0=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -342,7 +342,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MuAkIAgYMNehIqXO7kQcR+BTdSaPMPiczjsMfEgovBY=
+			x4S+lR5ROMTjrD+2BePI90ZDDouwounk5vRUief8g7g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
