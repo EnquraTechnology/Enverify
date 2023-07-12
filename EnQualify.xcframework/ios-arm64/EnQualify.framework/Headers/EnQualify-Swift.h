@@ -288,7 +288,6 @@ SWIFT_CLASS("_TtC9EnQualify10EnVSession")
 @class CXCall;
 @class EnVerifyCallAddressRegistrationModel;
 @class EnVerifyCallIDRegistrationModel;
-enum SessionInfoType : NSInteger;
 @class UIViewController;
 @class UINavigationController;
 @class UIButton;
@@ -332,9 +331,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable ide
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL canAutoClose;)
 + (BOOL)canAutoClose SWIFT_WARN_UNUSED_RESULT;
 + (void)setCanAutoClose:(BOOL)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isContinue;)
-+ (BOOL)isContinue SWIFT_WARN_UNUSED_RESULT;
-+ (void)setIsContinue:(BOOL)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL _continue;)
++ (BOOL)_continue SWIFT_WARN_UNUSED_RESULT;
++ (void)set_continue:(BOOL)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) UIImage * _Nullable agentDummyImage;)
 + (UIImage * _Nullable)agentDummyImage SWIFT_WARN_UNUSED_RESULT;
 + (void)setAgentDummyImage:(UIImage * _Nullable)value;
@@ -354,10 +353,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (CalibrationValues * _Nonnull)calibrationValues SWIFT_WARN_UNUSED_RESULT;
 + (void)setCalibrationValues:(CalibrationValues * _Nonnull)value;
 + (void)incomingCallObserverWithCallChanged:(CXCall * _Nonnull)call;
-+ (void)integrationAddWithType:(NSString * _Nonnull)type callType:(NSString * _Nullable)callType phone:(NSString * _Nullable)phone email:(NSString * _Nullable)email data:(NSString * _Nonnull)data addressRegistration:(EnVerifyCallAddressRegistrationModel * _Nullable)addressRegistration iDRegistration:(EnVerifyCallIDRegistrationModel * _Nullable)iDRegistration;
++ (void)integrationAddWithType:(NSString * _Nonnull)type reference:(NSString * _Nonnull)reference callType:(NSString * _Nullable)callType phone:(NSString * _Nullable)phone email:(NSString * _Nullable)email data:(NSString * _Nonnull)data addressRegistration:(EnVerifyCallAddressRegistrationModel * _Nullable)addressRegistration iDRegistration:(EnVerifyCallIDRegistrationModel * _Nullable)iDRegistration;
 + (void)getAuthToken:(NSString * _Nullable)userNameForToken :(NSString * _Nonnull)backOfficeBasePath completion:(void (^ _Nonnull)(BOOL))completion;
 + (void)sessionUpdateForHandicappedWithHandicapped:(BOOL)handicapped;
-+ (void)logInfoAddWithType:(enum SessionInfoType)type message:(NSString * _Nullable)message;
++ (void)logInfoAddWithCode:(NSString * _Nullable)code message:(NSString * _Nullable)message;
 /// self serviste işlemlerin başarılı şekilde bittiğini anlattması için session/close’u çağırıyorsanız finished=true
 /// bir de arama daha karşılanmamış ise mobilden kapatıldığında bu servisi false çağrılıyor
 /// Self servis ile başarılı bir sonlandırma var ise Finished alanı true gönderilmelidir. Self servisi bitirmek için gönderilmiyorsa false gönderilmelidir.
@@ -414,7 +413,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)onConfirmDocWithoutPop;
 + (void)startLivenessDetect;
 + (void)setSSStartButtonsWithButtonState:(BOOL)buttonState;
-+ (BOOL)idvSettingsWithDomainName:(NSString * _Nullable)domainName certificateNames:(NSArray<NSString *> * _Nonnull)certificateNames aiUsername:(NSString * _Nullable)aiUsername aiPassword:(NSString * _Nullable)aiPassword signalingServer:(NSString * _Nullable)signalingServer stunServer:(NSString * _Nullable)stunServer turnServer:(NSString * _Nullable)turnServer turnUsername:(NSString * _Nullable)turnUsername turnPassword:(NSString * _Nullable)turnPassword backOfficeBasePath:(NSString * _Nullable)backOfficeBasePath userNameForToken:(NSString * _Nullable)userNameForToken isContinue:(BOOL)isContinue referenceID:(NSString * _Nullable)referenceID SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)idvSettingsWithDomainName:(NSString * _Nullable)domainName certificateNames:(NSArray<NSString *> * _Nonnull)certificateNames aiUsername:(NSString * _Nullable)aiUsername aiPassword:(NSString * _Nullable)aiPassword signalingServer:(NSString * _Nullable)signalingServer stunServer:(NSString * _Nullable)stunServer turnServer:(NSString * _Nullable)turnServer turnUsername:(NSString * _Nullable)turnUsername turnPassword:(NSString * _Nullable)turnPassword backOfficeBasePath:(NSString * _Nullable)backOfficeBasePath referenceId:(NSString * _Nullable)referenceId userNameForToken:(NSString * _Nullable)userNameForToken SWIFT_WARN_UNUSED_RESULT;
 + (void)agentRequestCompleted;
 + (void)stopSSStartVC:(id _Nonnull)sender;
 + (void)setNavigationControllerWithNavigator:(UINavigationController * _Nonnull)navigator;
@@ -868,40 +867,6 @@ SWIFT_CLASS("_TtC9EnQualify41EnverifyVerifySaveMobileAppointmentResult")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
-typedef SWIFT_ENUM(NSInteger, SessionInfoType, open) {
-  SessionInfoTypeConnectionType = 0,
-  SessionInfoTypeNFCIsOpen = 1,
-  SessionInfoTypeIDTypeCheckStart = 2,
-  SessionInfoTypeIDTypeCheckFinish = 3,
-  SessionInfoTypeHologramStart = 4,
-  SessionInfoTypeHologramFinish = 5,
-  SessionInfoTypeIDDocFrontStart = 6,
-  SessionInfoTypeIDDocFrontFinish = 7,
-  SessionInfoTypeIDDocBackStart = 8,
-  SessionInfoTypeIDDocBackFinish = 9,
-  SessionInfoTypeIDChipStart = 10,
-  SessionInfoTypeIDChipFinish = 11,
-  SessionInfoTypeFaceStart = 12,
-  SessionInfoTypeFaceFinish = 13,
-  SessionInfoTypeSmileStart = 14,
-  SessionInfoTypeSmileFinish = 15,
-  SessionInfoTypeEyeCloseIntervalStart = 16,
-  SessionInfoTypeEyeCloseIntervalFinish = 17,
-  SessionInfoTypeEyeCloseFinish = 18,
-  SessionInfoTypeEyeCloseStart = 19,
-  SessionInfoTypeFaceRightStart = 20,
-  SessionInfoTypeFaceRightFinish = 21,
-  SessionInfoTypeFaceLeftStart = 22,
-  SessionInfoTypeFaceLeftFinish = 23,
-  SessionInfoTypeFaceUpStart = 24,
-  SessionInfoTypeFaceUpFinish = 25,
-  SessionInfoTypeRoomSendMobile = 26,
-  SessionInfoTypeCallRequest = 27,
-  SessionInfoTypeWaitCall = 28,
-  SessionInfoTypeStartCall = 29,
-  SessionInfoTypeBattery = 30,
-};
 
 
 
