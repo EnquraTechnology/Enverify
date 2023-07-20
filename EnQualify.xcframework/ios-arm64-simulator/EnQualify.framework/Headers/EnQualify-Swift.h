@@ -335,6 +335,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL canAutoClose;)
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isContinue;)
 + (BOOL)isContinue SWIFT_WARN_UNUSED_RESULT;
 + (void)setIsContinue:(BOOL)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sessionAddPhone;)
++ (NSString * _Nonnull)sessionAddPhone SWIFT_WARN_UNUSED_RESULT;
++ (void)setSessionAddPhone:(NSString * _Nonnull)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sessionAddEmail;)
++ (NSString * _Nonnull)sessionAddEmail SWIFT_WARN_UNUSED_RESULT;
++ (void)setSessionAddEmail:(NSString * _Nonnull)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) UIImage * _Nullable agentDummyImage;)
 + (UIImage * _Nullable)agentDummyImage SWIFT_WARN_UNUSED_RESULT;
 + (void)setAgentDummyImage:(UIImage * _Nullable)value;

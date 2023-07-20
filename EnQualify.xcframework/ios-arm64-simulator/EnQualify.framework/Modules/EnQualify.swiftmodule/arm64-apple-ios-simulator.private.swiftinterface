@@ -1670,6 +1670,8 @@ public struct LogsRequestLogAddResponse : Swift.Codable {
   @objc @_Concurrency.MainActor(unsafe) public static var identityNo: Swift.String?
   @objc @_Concurrency.MainActor(unsafe) public static var canAutoClose: Swift.Bool
   @objc @_Concurrency.MainActor(unsafe) public static var isContinue: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public static var sessionAddPhone: Swift.String
+  @objc @_Concurrency.MainActor(unsafe) public static var sessionAddEmail: Swift.String
   @objc @_Concurrency.MainActor(unsafe) public static var agentDummyImage: UIKit.UIImage?
   @objc @_Concurrency.MainActor(unsafe) public static var agentDummyVideoPlayer: AVFoundation.AVPlayer?
   @objc @_Concurrency.MainActor(unsafe) public static var isAgentDummyShown: Swift.Bool {
