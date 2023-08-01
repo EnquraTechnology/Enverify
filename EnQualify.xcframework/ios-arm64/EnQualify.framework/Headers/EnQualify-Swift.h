@@ -291,6 +291,7 @@ SWIFT_CLASS("_TtC9EnQualify10EnVSession")
 enum SessionInfoType : NSInteger;
 @class UIViewController;
 @class UINavigationController;
+@class UIView;
 @class UIButton;
 @class NSDate;
 @class EnverifyVerifyAvailableAppointmentResult;
@@ -430,6 +431,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)handleFail;
 + (void)idVerifyRestart;
 + (void)startVideoChat;
++ (UIView * _Nonnull)getRemoteView SWIFT_WARN_UNUSED_RESULT;
 + (void)onExitCall;
 + (void)onExitCallWithoutPop;
 + (void)onExitSelfService;

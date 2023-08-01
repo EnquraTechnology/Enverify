@@ -1754,6 +1754,7 @@ public struct LogsRequestLogAddResponse : Swift.Codable {
   @objc @_Concurrency.MainActor(unsafe) public static func handleFail()
   @objc @_Concurrency.MainActor(unsafe) public static func idVerifyRestart()
   @objc @_Concurrency.MainActor(unsafe) public static func startVideoChat()
+  @objc @_Concurrency.MainActor(unsafe) public static func getRemoteView() -> UIKit.UIView
   @objc @_Concurrency.MainActor(unsafe) public static func onExitCall()
   @objc @_Concurrency.MainActor(unsafe) public static func onExitCallWithoutPop()
   @objc @_Concurrency.MainActor(unsafe) public static func onExitSelfService()
