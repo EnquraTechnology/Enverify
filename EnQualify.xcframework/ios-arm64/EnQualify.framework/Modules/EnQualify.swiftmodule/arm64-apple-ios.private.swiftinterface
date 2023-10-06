@@ -1828,7 +1828,7 @@ public struct LogsRequestLogAddResponse : Swift.Codable {
   @objc deinit
 }
 extension EnQualify.EnVerify {
-  @_Concurrency.MainActor(unsafe) public static func startTimer()
+  @objc @_Concurrency.MainActor(unsafe) public static func startTimer()
 }
 public struct VerifyCallIDBlockGetResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?

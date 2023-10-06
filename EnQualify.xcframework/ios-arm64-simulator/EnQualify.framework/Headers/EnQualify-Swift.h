@@ -502,6 +502,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 
 
 
+@interface EnVerify (SWIFT_EXTENSION(EnQualify))
++ (void)startTimer;
+@end
+
 
 SWIFT_CLASS("_TtC9EnQualify36EnVerifyCallAddressRegistrationModel")
 @interface EnVerifyCallAddressRegistrationModel : NSObject
