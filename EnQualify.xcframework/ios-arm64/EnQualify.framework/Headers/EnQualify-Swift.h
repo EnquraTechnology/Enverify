@@ -530,6 +530,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@interface EnVerify (SWIFT_EXTENSION(EnQualify))
++ (void)startTimer;
+@end
 
 
 
