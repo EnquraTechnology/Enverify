@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name EnQualify
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -44,8 +44,8 @@ public struct VerifyCallIDBlockGetRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallLogAddRequest : Swift.Codable {
   public var sessionUId: Foundation.UUID?
@@ -74,8 +74,8 @@ public struct VerifyCallLogAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct DocumentsAppFolderGetDocumentResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -106,8 +106,8 @@ public struct DocumentsAppFolderGetDocumentResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignedMessageVerifyAppointmentSaveMobileRequest : Swift.Codable {
   public var message: EnQualify.VerifyAppointmentSaveMobileRequest?
@@ -130,8 +130,8 @@ public struct SignedMessageVerifyAppointmentSaveMobileRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsAuditLogRecord : Swift.Codable {
   public var _id: Swift.Int64?
@@ -172,8 +172,8 @@ public struct LogsAuditLogRecord : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsActivityLogGetRequest : Swift.Codable {
   public var _id: Swift.Int64?
@@ -198,8 +198,8 @@ public struct LogsActivityLogGetRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignedMessageBaseRequest : Swift.Codable {
   public var message: EnQualify.BaseRequest?
@@ -222,8 +222,8 @@ public struct SignedMessageBaseRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyAvailableAppointmentModel : Swift.Codable {
   public var date: Foundation.Date?
@@ -250,8 +250,8 @@ public struct VerifyAvailableAppointmentModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum MessagesMessageTypeEnum : Swift.String, Swift.Codable {
   case _none
@@ -287,8 +287,8 @@ public struct VerifySignedMessageCallIDChipAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AppsAppRunStoppedRequest : Swift.Codable {
   public var uId: Foundation.UUID?
@@ -309,8 +309,8 @@ public struct AppsAppRunStoppedRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignedMessageVerifyCallIDBlockGetRequest : Swift.Codable {
   public var message: EnQualify.VerifyCallIDBlockGetRequest?
@@ -333,8 +333,8 @@ public struct SignedMessageVerifyCallIDBlockGetRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyDocumentSignGetMobileResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -365,8 +365,8 @@ public struct VerifyDocumentSignGetMobileResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyAppointmentSaveMobileRequest : Swift.Codable {
   public var _id: Swift.Int64?
@@ -393,8 +393,8 @@ public struct VerifyAppointmentSaveMobileRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum PartiesPartyRoleTypeEnum : Swift.String, Swift.Codable {
   case _none
@@ -433,8 +433,8 @@ public struct VerifyCallSessionCloseRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallTypeNameListResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -463,8 +463,8 @@ public struct VerifyCallTypeNameListResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @objc public class EnVerifyCustomerIdentityDoc : ObjectiveC.NSObject {
   @objc public static var shared: EnQualify.EnVerifyCustomerIdentityDoc
@@ -509,8 +509,8 @@ public struct LogsApplicationLogAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class EnVerifyCallAddressRegistrationModel : ObjectiveC.NSObject {
   @objc public var addressType: Swift.String?
@@ -710,8 +710,8 @@ public struct LogsApplicationLogAddResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @objc public class EnVerifyCustomerChip : ObjectiveC.NSObject {
   @objc public static var shared: EnQualify.EnVerifyCustomerChip
@@ -764,8 +764,8 @@ public struct VerifyCallSessionHandicappedResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallVideoMobileAddRequest : Swift.Codable {
   public var fileName: Swift.String?
@@ -790,8 +790,8 @@ public struct VerifyCallVideoMobileAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct DocumentsDocumentModel : Swift.Codable {
   public var uId: Foundation.UUID?
@@ -834,8 +834,8 @@ public struct DocumentsDocumentModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct ResultInfo : Swift.Codable {
   public var code: Swift.String?
@@ -868,8 +868,8 @@ public struct ResultInfo : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsAuditLog : Swift.Codable {
   public var _id: Swift.Int64?
@@ -910,8 +910,8 @@ public struct LogsAuditLog : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsApplicationLogListResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -940,8 +940,8 @@ public struct LogsApplicationLogListResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum Model : Swift.String {
   case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPad5, iPad6, iPad7, iPad8, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, iPhone13Mini, iPhone13, iPhone13Pro, iPhone13ProMax, iPhone14, iPhone14Plus, iPhone14Pro, iPhone14ProMax, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, unrecognized
@@ -977,8 +977,8 @@ public struct VerifyCallTypeNameModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct CoreStatusResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -1007,8 +1007,8 @@ public struct CoreStatusResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AuthAuthenticationInfo : Swift.Codable {
   public var dateTime: Foundation.Date?
@@ -1033,8 +1033,8 @@ public struct AuthAuthenticationInfo : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct DocumentsAppFolderGetFolderRequest : Swift.Codable {
   public var app: Swift.String?
@@ -1067,8 +1067,8 @@ public struct DocumentsAppFolderGetFolderRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum AuthTokenValidationTypeEnum : Swift.String, Swift.Codable {
   case _none
@@ -1116,8 +1116,8 @@ public struct VerifyCallResultModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifySignedMessageCallIDDocAddRequest : Swift.Codable {
   public var frontDocumentContent: Swift.String?
@@ -1180,8 +1180,8 @@ public struct VerifySignedMessageCallIDDocAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallIDRegistrationModel : Swift.Codable {
   public var fatherName: Swift.String?
@@ -1238,8 +1238,8 @@ public struct VerifyCallIDRegistrationModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsRequestLogModel : Swift.Codable {
   public var uId: Foundation.UUID?
@@ -1324,8 +1324,8 @@ public struct LogsRequestLogModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyAppointmentListMobileResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -1354,8 +1354,8 @@ public struct VerifyAppointmentListMobileResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AppsAppModel : Swift.Codable {
   public var code: Swift.String?
@@ -1378,8 +1378,8 @@ public struct AppsAppModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AuthDeviceInfo : Swift.Codable {
   public var type: EnQualify.DevicesDeviceTypeEnum?
@@ -1420,13 +1420,13 @@ public struct AuthDeviceInfo : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers open class AuthAPI {
-  open class func apiAuthRevokePost(completion: @escaping ((_ data: EnQualify.AuthRevokeTokenResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAuthRevokePost(completion: @escaping ((_ data: EnQualify.AuthRevokeTokenResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiAuthRevokePostWithRequestBuilder() -> EnQualify.RequestBuilder<EnQualify.AuthRevokeTokenResponse>
-  open class func apiAuthTokenPost(body: EnQualify.AuthTokenRequest? = nil, completion: @escaping ((_ data: EnQualify.AuthTokenResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAuthTokenPost(body: EnQualify.AuthTokenRequest? = nil, completion: @escaping ((_ data: EnQualify.AuthTokenResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiAuthTokenPostWithRequestBuilder(body: EnQualify.AuthTokenRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.AuthTokenResponse>
   @objc deinit
 }
@@ -1451,8 +1451,8 @@ public struct SignedMessageDocumentsAppFolderGetRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsAuditLogGetResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -1481,8 +1481,8 @@ public struct LogsAuditLogGetResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc public protocol EnVerifyDelegate {
   @objc func luminosityAnalyzed(result: Swift.String)
@@ -1602,8 +1602,8 @@ public struct VerifyAppointmentCancelRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignedMessageVerifyAvailableAppointmentListRequest : Swift.Codable {
   public var message: EnQualify.VerifyAvailableAppointmentListRequest?
@@ -1626,8 +1626,8 @@ public struct SignedMessageVerifyAvailableAppointmentListRequest : Swift.Codable
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsRequestLogAddResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -1654,8 +1654,8 @@ public struct LogsRequestLogAddResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class EnVerify : ObjectiveC.NSObject, UIKit.UIApplicationDelegate {
   @_Concurrency.MainActor(unsafe) public static var releaseNumber: Swift.String
@@ -1813,12 +1813,12 @@ public struct LogsRequestLogAddResponse : Swift.Codable {
   @objc @_Concurrency.MainActor(unsafe) public static func iconChatRotateButton(_ button: UIKit.UIButton)
   @objc @_Concurrency.MainActor(unsafe) public static func rotateButtonAct()
   @objc @_Concurrency.MainActor(unsafe) public static func toggleFlash(state: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public static func getAvailableAppointment(startDate: Foundation.Date, endDate: Foundation.Date, callType: Swift.String?, completion: @escaping ((_ data: [EnQualify.EnverifyVerifyAvailableAppointmentResult]?, _ error: Swift.Error?) -> Swift.Void))
-  @objc @_Concurrency.MainActor(unsafe) public static func saveAppointment(data: EnQualify.EnverifyVerifyAppointmentSaveMobileModel, completion: @escaping ((_ data: EnQualify.EnverifyVerifySaveMobileAppointmentResult?, _ error: Swift.Error?) -> Swift.Void))
-  @objc @_Concurrency.MainActor(unsafe) public static func cancelAppointment(identityType: Swift.String?, identityNo: Swift.String?, callType: Swift.String?, completion: @escaping ((_ data: EnQualify.EnverifyVerifyCancelAppointmentResult?, _ error: Swift.Error?) -> Swift.Void))
+  @objc @_Concurrency.MainActor(unsafe) public static func getAvailableAppointment(startDate: Foundation.Date, endDate: Foundation.Date, callType: Swift.String?, completion: @escaping ((_ data: [EnQualify.EnverifyVerifyAvailableAppointmentResult]?, _ error: (any Swift.Error)?) -> Swift.Void))
+  @objc @_Concurrency.MainActor(unsafe) public static func saveAppointment(data: EnQualify.EnverifyVerifyAppointmentSaveMobileModel, completion: @escaping ((_ data: EnQualify.EnverifyVerifySaveMobileAppointmentResult?, _ error: (any Swift.Error)?) -> Swift.Void))
+  @objc @_Concurrency.MainActor(unsafe) public static func cancelAppointment(identityType: Swift.String?, identityNo: Swift.String?, callType: Swift.String?, completion: @escaping ((_ data: EnQualify.EnverifyVerifyCancelAppointmentResult?, _ error: (any Swift.Error)?) -> Swift.Void))
   @objc @_Concurrency.MainActor(unsafe) public static func setAgentRequest()
-  @objc @_Concurrency.MainActor(unsafe) public static func getAppointment(identityNo: Swift.String?, identityType: Swift.String?, completion: @escaping ((_ data: [EnQualify.EnverifyVerifyAppointmentResult]?, _ error: Swift.Error?) -> Swift.Void))
-  @objc @_Concurrency.MainActor(unsafe) public static func getCallTypes(completion: @escaping ((_ data: [EnQualify.EnverifyVerifyCallTypeResult]?, _ error: Swift.Error?) -> Swift.Void))
+  @objc @_Concurrency.MainActor(unsafe) public static func getAppointment(identityNo: Swift.String?, identityType: Swift.String?, completion: @escaping ((_ data: [EnQualify.EnverifyVerifyAppointmentResult]?, _ error: (any Swift.Error)?) -> Swift.Void))
+  @objc @_Concurrency.MainActor(unsafe) public static func getCallTypes(completion: @escaping ((_ data: [EnQualify.EnverifyVerifyCallTypeResult]?, _ error: (any Swift.Error)?) -> Swift.Void))
   @_Concurrency.MainActor(unsafe) public static func getSettings(completion: @escaping () -> ())
   @objc @_Concurrency.MainActor(unsafe) public static func appMovedToForeground()
   @objc @_Concurrency.MainActor(unsafe) public static func appMovedToBackground()
@@ -1828,7 +1828,7 @@ public struct LogsRequestLogAddResponse : Swift.Codable {
   @objc deinit
 }
 extension EnQualify.EnVerify {
-  @objc @_Concurrency.MainActor(unsafe) public static func startTimer()
+  @_Concurrency.MainActor(unsafe) public static func startTimer()
 }
 public struct VerifyCallIDBlockGetResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -1857,8 +1857,8 @@ public struct VerifyCallIDBlockGetResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyDocumentSignSetMobileResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -1885,8 +1885,8 @@ public struct VerifyDocumentSignSetMobileResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct DocumentsContentModel : Swift.Codable {
   public var uId: Foundation.UUID?
@@ -1925,17 +1925,17 @@ public struct DocumentsContentModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers open class AppFoldersAPI {
-  open class func apiAppFoldersDocumentGetPost(body: EnQualify.SignedMessageDocumentsAppFolderGetDocumentRequest? = nil, completion: @escaping ((_ data: EnQualify.DocumentsAppFolderGetDocumentResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAppFoldersDocumentGetPost(body: EnQualify.SignedMessageDocumentsAppFolderGetDocumentRequest? = nil, completion: @escaping ((_ data: EnQualify.DocumentsAppFolderGetDocumentResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiAppFoldersDocumentGetPostWithRequestBuilder(body: EnQualify.SignedMessageDocumentsAppFolderGetDocumentRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.DocumentsAppFolderGetDocumentResponse>
-  open class func apiAppFoldersFolderGetPost(body: EnQualify.SignedMessageDocumentsAppFolderGetFolderRequest? = nil, completion: @escaping ((_ data: EnQualify.DocumentsAppFolderGetFolderResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAppFoldersFolderGetPost(body: EnQualify.SignedMessageDocumentsAppFolderGetFolderRequest? = nil, completion: @escaping ((_ data: EnQualify.DocumentsAppFolderGetFolderResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiAppFoldersFolderGetPostWithRequestBuilder(body: EnQualify.SignedMessageDocumentsAppFolderGetFolderRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.DocumentsAppFolderGetFolderResponse>
-  open class func apiAppFoldersGetPost(body: EnQualify.SignedMessageDocumentsAppFolderGetRequest? = nil, completion: @escaping ((_ data: EnQualify.DocumentsAppFolderGetResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAppFoldersGetPost(body: EnQualify.SignedMessageDocumentsAppFolderGetRequest? = nil, completion: @escaping ((_ data: EnQualify.DocumentsAppFolderGetResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiAppFoldersGetPostWithRequestBuilder(body: EnQualify.SignedMessageDocumentsAppFolderGetRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.DocumentsAppFolderGetResponse>
-  open class func apiAppFoldersGetTimestampPost(body: EnQualify.SignedMessageDocumentsAppFolderGetTimestampRequest? = nil, completion: @escaping ((_ data: EnQualify.DocumentsAppFolderGetTimestampResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAppFoldersGetTimestampPost(body: EnQualify.SignedMessageDocumentsAppFolderGetTimestampRequest? = nil, completion: @escaping ((_ data: EnQualify.DocumentsAppFolderGetTimestampResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiAppFoldersGetTimestampPostWithRequestBuilder(body: EnQualify.SignedMessageDocumentsAppFolderGetTimestampRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.DocumentsAppFolderGetTimestampResponse>
   @objc deinit
 }
@@ -1964,8 +1964,8 @@ public struct VerifyAppointmentAddResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsAuditLogGetRequest : Swift.Codable {
   public var _id: Swift.Int64?
@@ -1990,12 +1990,12 @@ public struct LogsAuditLogGetRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AppsAppCheckRequest : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignedMessageVerifyCallSessionRoomRequest : Swift.Codable {
   public var message: EnQualify.VerifyCallSessionRoomRequest?
@@ -2018,13 +2018,13 @@ public struct SignedMessageVerifyCallSessionRoomRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers open class Auth2API {
-  open class func apiAuth2RevokePost(body: EnQualify.SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: EnQualify.AuthRevokeTokenResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAuth2RevokePost(body: EnQualify.SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: EnQualify.AuthRevokeTokenResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiAuth2RevokePostWithRequestBuilder(body: EnQualify.SignedMessageBaseRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.AuthRevokeTokenResponse>
-  open class func apiAuth2TokenPost(body: EnQualify.SignedMessageAuthTokenRequest? = nil, completion: @escaping ((_ data: EnQualify.AuthTokenResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAuth2TokenPost(body: EnQualify.SignedMessageAuthTokenRequest? = nil, completion: @escaping ((_ data: EnQualify.AuthTokenResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiAuth2TokenPostWithRequestBuilder(body: EnQualify.SignedMessageAuthTokenRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.AuthTokenResponse>
   @objc deinit
 }
@@ -2059,8 +2059,8 @@ public struct AuthClientInfo : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsApplicationLogListRequest : Swift.Codable {
   public var paging: EnQualify.PagingOptions?
@@ -2099,8 +2099,8 @@ public struct LogsApplicationLogListRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum DocumentsDocumentTypeEnum : Swift.String, Swift.Codable {
   case _none
@@ -2142,8 +2142,8 @@ public struct CoreAppResourceGetResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum AgentRequestType {
   case none
@@ -2159,10 +2159,10 @@ public enum AgentRequestType {
     get
   }
 }
-public typealias EncodeResult = (data: Foundation.Data?, error: Swift.Error?)
+public typealias EncodeResult = (data: Foundation.Data?, error: (any Swift.Error)?)
 @_hasMissingDesignatedInitializers open class CodableHelper {
   public static var dateformatter: Foundation.DateFormatter?
-  open class func decode<T>(_ type: T.Type, from data: Foundation.Data) -> (decodableObj: T?, error: Swift.Error?) where T : Swift.Decodable
+  open class func decode<T>(_ type: T.Type, from data: Foundation.Data) -> (decodableObj: T?, error: (any Swift.Error)?) where T : Swift.Decodable
   open class func encode<T>(_ value: T, prettyPrint: Swift.Bool = false) -> EnQualify.EncodeResult where T : Swift.Encodable
   @objc deinit
 }
@@ -2189,8 +2189,8 @@ public struct PartiesProfileModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum CoreResourceTypeEnum : Swift.String, Swift.Codable {
   case _none
@@ -2235,8 +2235,8 @@ public struct BaseResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsProcessLogListResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -2265,8 +2265,8 @@ public struct LogsProcessLogListResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum EntityStateTypeEnum : Swift.String, Swift.Codable {
   case _none
@@ -2298,8 +2298,8 @@ public struct DocumentsAppFolderGetTimestampRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallLogAddResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -2328,8 +2328,8 @@ public struct VerifyCallLogAddResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AuthSessionInfo : Swift.Codable {
   public var domain: Swift.String?
@@ -2378,8 +2378,8 @@ public struct AuthSessionInfo : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignedMessageDocumentsAppFolderGetDocumentRequest : Swift.Codable {
   public var message: EnQualify.DocumentsAppFolderGetDocumentRequest?
@@ -2402,8 +2402,8 @@ public struct SignedMessageDocumentsAppFolderGetDocumentRequest : Swift.Codable 
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsActivityLogListResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -2432,8 +2432,8 @@ public struct LogsActivityLogListResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AuthDeviceAppInfo : Swift.Codable {
   public var app: Swift.String?
@@ -2464,8 +2464,8 @@ public struct AuthDeviceAppInfo : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsActivityLogGetResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -2494,8 +2494,8 @@ public struct LogsActivityLogGetResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsRequestLogAddRequest : Swift.Codable {
   public var data: EnQualify.LogsRequestLogModel?
@@ -2516,8 +2516,8 @@ public struct LogsRequestLogAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AppsClockGetRequest : Swift.Codable {
   public var localDateTime: Foundation.Date?
@@ -2538,8 +2538,8 @@ public struct AppsClockGetRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallIDCheckModel : Swift.Codable {
   public var uId: Foundation.UUID?
@@ -2604,15 +2604,15 @@ public struct VerifyCallIDCheckModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers open class AlamofireRequestBuilder<T> : EnQualify.RequestBuilder<T> {
   required public init(method: Swift.String, URLString: Swift.String, parameters: [Swift.String : Any]?, isBody: Swift.Bool, headers: [Swift.String : Swift.String] = [:], timeout: Swift.Int = 30)
   open func createSessionManager() -> Alamofire.Session
   open func contentTypeForFormPart(fileURL: Foundation.URL) -> Swift.String?
-  open func makeRequest(manager: Alamofire.Session, method: Alamofire.HTTPMethod, encoding: Alamofire.ParameterEncoding, headers: [Swift.String : Swift.String]) -> Alamofire.DataRequest
-  override open func execute(_ completion: @escaping (_ response: EnQualify.Response<T>?, _ error: Swift.Error?) -> Swift.Void)
+  open func makeRequest(manager: Alamofire.Session, method: Alamofire.HTTPMethod, encoding: any Alamofire.ParameterEncoding, headers: [Swift.String : Swift.String]) -> Alamofire.DataRequest
+  override open func execute(_ completion: @escaping (_ response: EnQualify.Response<T>?, _ error: (any Swift.Error)?) -> Swift.Void)
   open func buildHeaders() -> Alamofire.HTTPHeaders
   @objc deinit
 }
@@ -2620,7 +2620,7 @@ public enum AlamofireDecodableRequestBuilderError : Swift.Error {
   case emptyDataResponse
   case nilHTTPResponse
   case jsonDecoding(Swift.DecodingError)
-  case generalError(Swift.Error)
+  case generalError(any Swift.Error)
 }
 @_inheritsConvenienceInitializers open class AlamofireDecodableRequestBuilder<T> : EnQualify.AlamofireRequestBuilder<T> where T : Swift.Decodable {
   required public init(method: Swift.String, URLString: Swift.String, parameters: [Swift.String : Any]?, isBody: Swift.Bool, headers: [Swift.String : Swift.String] = super, timeout: Swift.Int = super)
@@ -2661,8 +2661,8 @@ public struct SignedMessageVerifyCallIDCheckAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct DocumentsAppFolderGetDocumentRequest : Swift.Codable {
   public var app: Swift.String?
@@ -2697,8 +2697,8 @@ public struct DocumentsAppFolderGetDocumentRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignedMessageVerifyAppointmentListMobileRequest : Swift.Codable {
   public var message: EnQualify.VerifyAppointmentListMobileRequest?
@@ -2721,8 +2721,8 @@ public struct SignedMessageVerifyAppointmentListMobileRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsRequestLogListRequest : Swift.Codable {
   public var paging: EnQualify.PagingOptions?
@@ -2789,8 +2789,8 @@ public struct LogsRequestLogListRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct CoreAppResourceGetRequest : Swift.Codable {
   public var app: Swift.String?
@@ -2817,14 +2817,14 @@ public struct CoreAppResourceGetRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers open class SwaggerClientAPI {
   public static var basePath: Swift.String
   public static var credential: Foundation.URLCredential?
   public static var customHeaders: [Swift.String : Swift.String]
-  public static var requestBuilderFactory: EnQualify.RequestBuilderFactory
+  public static var requestBuilderFactory: any EnQualify.RequestBuilderFactory
   @objc deinit
 }
 open class RequestBuilder<T> {
@@ -2836,7 +2836,7 @@ open class RequestBuilder<T> {
   public var onProgressReady: ((Foundation.Progress) -> ())?
   required public init(method: Swift.String, URLString: Swift.String, parameters: [Swift.String : Any]?, isBody: Swift.Bool, headers: [Swift.String : Swift.String] = [:], timeout: Swift.Int = 30)
   open func addHeaders(_ aHeaders: [Swift.String : Swift.String])
-  open func execute(_ completion: @escaping (_ response: EnQualify.Response<T>?, _ error: Swift.Error?) -> Swift.Void)
+  open func execute(_ completion: @escaping (_ response: EnQualify.Response<T>?, _ error: (any Swift.Error)?) -> Swift.Void)
   public func addHeader(name: Swift.String, value: Swift.String) -> Self
   open func addCredential() -> Self
   @objc deinit
@@ -2879,8 +2879,8 @@ public struct VerifySignedMessageCallFaceAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsAuditLogListRequest : Swift.Codable {
   public var paging: EnQualify.PagingOptions?
@@ -2917,8 +2917,8 @@ public struct LogsAuditLogListRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignedMessageVerifyDocumentSignSetMobileRequest : Swift.Codable {
   public var message: EnQualify.VerifyDocumentSignSetMobileRequest?
@@ -2941,8 +2941,8 @@ public struct SignedMessageVerifyDocumentSignSetMobileRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc @_inheritsConvenienceInitializers public class EnVSession : ObjectiveC.NSObject {
   @objc public static func checkFrontCameraOpen()
@@ -2979,8 +2979,8 @@ public struct AppsAppRunLiveRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyAppointmentListMobileRequest : Swift.Codable {
   public var identityType: Swift.String?
@@ -3003,8 +3003,8 @@ public struct VerifyAppointmentListMobileRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallSessionRoomResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -3033,8 +3033,8 @@ public struct VerifyCallSessionRoomResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsApplicationLogGetRequest : Swift.Codable {
   public var _id: Swift.Int64?
@@ -3059,23 +3059,23 @@ public struct LogsApplicationLogGetRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers open class AppsAPI {
-  open class func apiAppsAppHostAddPost(body: EnQualify.AppsAppHostAddRequest? = nil, completion: @escaping ((_ data: EnQualify.AppsAppHostAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAppsAppHostAddPost(body: EnQualify.AppsAppHostAddRequest? = nil, completion: @escaping ((_ data: EnQualify.AppsAppHostAddResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiAppsAppHostAddPostWithRequestBuilder(body: EnQualify.AppsAppHostAddRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.AppsAppHostAddResponse>
-  open class func apiAppsAppRunAddPost(body: EnQualify.AppsAppRunAddRequest? = nil, completion: @escaping ((_ data: EnQualify.AppsAppRunAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAppsAppRunAddPost(body: EnQualify.AppsAppRunAddRequest? = nil, completion: @escaping ((_ data: EnQualify.AppsAppRunAddResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiAppsAppRunAddPostWithRequestBuilder(body: EnQualify.AppsAppRunAddRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.AppsAppRunAddResponse>
-  open class func apiAppsAppRunLivePost(body: EnQualify.AppsAppRunLiveRequest? = nil, completion: @escaping ((_ data: EnQualify.BaseResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAppsAppRunLivePost(body: EnQualify.AppsAppRunLiveRequest? = nil, completion: @escaping ((_ data: EnQualify.BaseResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiAppsAppRunLivePostWithRequestBuilder(body: EnQualify.AppsAppRunLiveRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.BaseResponse>
-  open class func apiAppsAppRunStoppedPost(body: EnQualify.AppsAppRunStoppedRequest? = nil, completion: @escaping ((_ data: EnQualify.BaseResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAppsAppRunStoppedPost(body: EnQualify.AppsAppRunStoppedRequest? = nil, completion: @escaping ((_ data: EnQualify.BaseResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiAppsAppRunStoppedPostWithRequestBuilder(body: EnQualify.AppsAppRunStoppedRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.BaseResponse>
-  open class func apiAppsCheckPost(body: EnQualify.AppsAppCheckRequest? = nil, completion: @escaping ((_ data: EnQualify.BaseResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAppsCheckPost(body: EnQualify.AppsAppCheckRequest? = nil, completion: @escaping ((_ data: EnQualify.BaseResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiAppsCheckPostWithRequestBuilder(body: EnQualify.AppsAppCheckRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.BaseResponse>
-  open class func apiAppsCheckVersionPost(body: EnQualify.AppsAppCheckVersionRequest? = nil, completion: @escaping ((_ data: EnQualify.AppsAppCheckVersionResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAppsCheckVersionPost(body: EnQualify.AppsAppCheckVersionRequest? = nil, completion: @escaping ((_ data: EnQualify.AppsAppCheckVersionResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiAppsCheckVersionPostWithRequestBuilder(body: EnQualify.AppsAppCheckVersionRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.AppsAppCheckVersionResponse>
-  open class func apiAppsClockPost(body: EnQualify.AppsClockGetRequest? = nil, completion: @escaping ((_ data: EnQualify.AppsClockGetResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAppsClockPost(body: EnQualify.AppsClockGetRequest? = nil, completion: @escaping ((_ data: EnQualify.AppsClockGetResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiAppsClockPostWithRequestBuilder(body: EnQualify.AppsClockGetRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.AppsClockGetResponse>
   @objc deinit
 }
@@ -3112,8 +3112,8 @@ public struct AppsAppRunModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AppsClockGetResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -3146,8 +3146,8 @@ public struct AppsClockGetResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum IdentityType : Swift.String {
   case PASSPORT
@@ -3273,8 +3273,8 @@ public struct AuthAuthenticatedUser : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignedMessageVerifyDocumentSignGetMobileRequest : Swift.Codable {
   public var message: EnQualify.VerifyDocumentSignGetMobileRequest?
@@ -3297,8 +3297,8 @@ public struct SignedMessageVerifyDocumentSignGetMobileRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AppsVersionCheck : Swift.Codable {
   public var allExacts: [EnQualify.AppsAppVersion]?
@@ -3337,8 +3337,8 @@ public struct AppsVersionCheck : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AppsAppVersion : Swift.Codable {
   public var app: Swift.String?
@@ -3387,8 +3387,8 @@ public struct AppsAppVersion : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsApplicationLogModel : Swift.Codable {
   public var uId: Foundation.UUID?
@@ -3431,8 +3431,8 @@ public struct LogsApplicationLogModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct DocumentsAppFolderGetFolderResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -3461,8 +3461,8 @@ public struct DocumentsAppFolderGetFolderResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsAuditLogRecordListRequest : Swift.Codable {
   public var auditUId: Foundation.UUID?
@@ -3483,8 +3483,8 @@ public struct LogsAuditLogRecordListRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallResultResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -3513,8 +3513,8 @@ public struct VerifyCallResultResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallIDDocAddRequest : Swift.Codable {
   public var frontDocumentContentHash: Swift.String?
@@ -3581,8 +3581,8 @@ public struct VerifyCallIDDocAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AuthRevokeTokenResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -3609,13 +3609,13 @@ public struct AuthRevokeTokenResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers open class StatusAPI {
-  open class func apiStatusCheckTimeoutGet(completion: @escaping ((_ data: Swift.Void?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiStatusCheckTimeoutGet(completion: @escaping ((_ data: Swift.Void?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiStatusCheckTimeoutGetWithRequestBuilder() -> EnQualify.RequestBuilder<Swift.Void>
-  open class func apiStatusGetGet(completion: @escaping ((_ data: EnQualify.CoreStatusResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiStatusGetGet(completion: @escaping ((_ data: EnQualify.CoreStatusResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiStatusGetGetWithRequestBuilder() -> EnQualify.RequestBuilder<EnQualify.CoreStatusResponse>
   @objc deinit
 }
@@ -3644,8 +3644,8 @@ public struct AppsAppVersionModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsAuditLogRecordListResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -3674,8 +3674,8 @@ public struct LogsAuditLogRecordListResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifySignedMessageCallVideoMobileAddRequest : Swift.Codable {
   public var content: Swift.String?
@@ -3700,8 +3700,8 @@ public struct VerifySignedMessageCallVideoMobileAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @objc public class EnverifyScreenRecordingData : ObjectiveC.NSObject {
   @objc public var screenRecordParts: Swift.String?
@@ -3726,8 +3726,8 @@ public struct VerifyCallSessionHandicappedRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @objc public class EnVerifyCustomerFace : ObjectiveC.NSObject {
   @objc public static var shared: EnQualify.EnVerifyCustomerFace
@@ -3799,8 +3799,8 @@ public struct LogsActivityLogListRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignedMessageVerifyCallIntegrationAddRequest : Swift.Codable {
   public var message: EnQualify.VerifyCallIntegrationAddRequest?
@@ -3823,8 +3823,8 @@ public struct SignedMessageVerifyCallIntegrationAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallIDChipAddResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -3853,8 +3853,8 @@ public struct VerifyCallIDChipAddResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsRequestLog : Swift.Codable {
   public var _id: Swift.Int64?
@@ -3943,8 +3943,8 @@ public struct LogsRequestLog : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallIntegrationAddRequest : Swift.Codable {
   public var type: Swift.String
@@ -3981,8 +3981,8 @@ public struct VerifyCallIntegrationAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsRequestLogListResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -4011,8 +4011,8 @@ public struct LogsRequestLogListResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum ResultTypeEnum : Swift.String, Swift.Codable {
   case unknown
@@ -4035,8 +4035,8 @@ public enum JSONValue : Swift.Codable, Swift.Equatable {
   case object([Swift.String : EnQualify.JSONValue])
   case array([EnQualify.JSONValue])
   case null
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
   public static func == (a: EnQualify.JSONValue, b: EnQualify.JSONValue) -> Swift.Bool
 }
 extension EnQualify.JSONValue : Swift.ExpressibleByStringLiteral {
@@ -4067,49 +4067,49 @@ extension EnQualify.JSONValue : Swift.ExpressibleByArrayLiteral {
   public typealias ArrayLiteralElement = EnQualify.JSONValue
 }
 @_hasMissingDesignatedInitializers open class VerifyAPI {
-  open class func apiVerifyAppointmentAvailableListPost(body: EnQualify.SignedMessageVerifyAvailableAppointmentListRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyAvailableAppointmentListResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyAppointmentAvailableListPost(body: EnQualify.SignedMessageVerifyAvailableAppointmentListRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyAvailableAppointmentListResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyAppointmentAvailableListPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyAvailableAppointmentListRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyAvailableAppointmentListResponse>
-  open class func apiVerifyAppointmentCancelPost(body: EnQualify.SignedMessageVerifyAppointmentCancelRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyAppointmentCancelResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyAppointmentCancelPost(body: EnQualify.SignedMessageVerifyAppointmentCancelRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyAppointmentCancelResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyAppointmentCancelPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyAppointmentCancelRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyAppointmentCancelResponse>
-  open class func apiVerifyAppointmentListPost(body: EnQualify.SignedMessageVerifyAppointmentListMobileRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyAppointmentListMobileResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyAppointmentListPost(body: EnQualify.SignedMessageVerifyAppointmentListMobileRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyAppointmentListMobileResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyAppointmentListPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyAppointmentListMobileRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyAppointmentListMobileResponse>
-  open class func apiVerifyAppointmentSavePost(body: EnQualify.SignedMessageVerifyAppointmentSaveMobileRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyAppointmentAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyAppointmentSavePost(body: EnQualify.SignedMessageVerifyAppointmentSaveMobileRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyAppointmentAddResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyAppointmentSavePostWithRequestBuilder(body: EnQualify.SignedMessageVerifyAppointmentSaveMobileRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyAppointmentAddResponse>
-  open class func apiVerifyCallTypeListPost(body: EnQualify.SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallTypeNameListResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyCallTypeListPost(body: EnQualify.SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallTypeNameListResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyCallTypeListPostWithRequestBuilder(body: EnQualify.SignedMessageBaseRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallTypeNameListResponse>
-  open class func apiVerifyFaceAddPost(body: EnQualify.VerifySignedMessageCallFaceAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallFaceAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyFaceAddPost(body: EnQualify.VerifySignedMessageCallFaceAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallFaceAddResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyFaceAddPostWithRequestBuilder(body: EnQualify.VerifySignedMessageCallFaceAddRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallFaceAddResponse>
-  open class func apiVerifyIDBlockGetPost(body: EnQualify.SignedMessageVerifyCallIDBlockGetRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallIDBlockGetResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyIDBlockGetPost(body: EnQualify.SignedMessageVerifyCallIDBlockGetRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallIDBlockGetResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyIDBlockGetPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallIDBlockGetRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallIDBlockGetResponse>
-  open class func apiVerifyIDCheckAddPost(body: EnQualify.SignedMessageVerifyCallIDCheckAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallIDCheckAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyIDCheckAddPost(body: EnQualify.SignedMessageVerifyCallIDCheckAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallIDCheckAddResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyIDCheckAddPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallIDCheckAddRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallIDCheckAddResponse>
-  open class func apiVerifyIDChipAddPost(body: EnQualify.VerifySignedMessageCallIDChipAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallIDChipAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyIDChipAddPost(body: EnQualify.VerifySignedMessageCallIDChipAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallIDChipAddResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyIDChipAddPostWithRequestBuilder(body: EnQualify.VerifySignedMessageCallIDChipAddRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallIDChipAddResponse>
-  open class func apiVerifyIDDocAddPost(body: EnQualify.VerifySignedMessageCallIDDocAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallIDDocAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyIDDocAddPost(body: EnQualify.VerifySignedMessageCallIDDocAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallIDDocAddResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyIDDocAddPostWithRequestBuilder(body: EnQualify.VerifySignedMessageCallIDDocAddRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallIDDocAddResponse>
-  open class func apiVerifyIntegrationAddPost(body: EnQualify.SignedMessageVerifyCallIntegrationAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallIntegrationAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyIntegrationAddPost(body: EnQualify.SignedMessageVerifyCallIntegrationAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallIntegrationAddResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyIntegrationAddPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallIntegrationAddRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallIntegrationAddResponse>
-  open class func apiVerifyLogAddPost(body: EnQualify.SignedMessageVerifyCallLogAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallLogAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyLogAddPost(body: EnQualify.SignedMessageVerifyCallLogAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallLogAddResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyLogAddPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallLogAddRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallLogAddResponse>
-  open class func apiVerifyResultGetPost(body: EnQualify.SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallResultResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyResultGetPost(body: EnQualify.SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallResultResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyResultGetPostWithRequestBuilder(body: EnQualify.SignedMessageBaseRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallResultResponse>
-  open class func apiVerifySessionAddPost(body: EnQualify.SignedMessageVerifyCallSessionAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallSessionAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifySessionAddPost(body: EnQualify.SignedMessageVerifyCallSessionAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallSessionAddResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifySessionAddPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallSessionAddRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallSessionAddResponse>
-  open class func apiVerifySessionClosePost(body: EnQualify.SignedMessageVerifyCallSessionCloseRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallSessionCloseResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifySessionClosePost(body: EnQualify.SignedMessageVerifyCallSessionCloseRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallSessionCloseResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifySessionClosePostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallSessionCloseRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallSessionCloseResponse>
-  open class func apiVerifySessionInfoAddPost(body: EnQualify.SignedMessageVerifyCallSessionInfoAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallSessionInfoAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifySessionInfoAddPost(body: EnQualify.SignedMessageVerifyCallSessionInfoAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallSessionInfoAddResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifySessionInfoAddPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallSessionInfoAddRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallSessionInfoAddResponse>
-  open class func apiVerifySessionRoomPost(body: EnQualify.SignedMessageVerifyCallSessionRoomRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallSessionRoomResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifySessionRoomPost(body: EnQualify.SignedMessageVerifyCallSessionRoomRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallSessionRoomResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifySessionRoomPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallSessionRoomRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallSessionRoomResponse>
-  open class func apiVerifySessionUpdatePost(body: EnQualify.SignedMessageVerifyCallSessionHandicappedRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallSessionHandicappedResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifySessionUpdatePost(body: EnQualify.SignedMessageVerifyCallSessionHandicappedRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallSessionHandicappedResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifySessionUpdatePostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallSessionHandicappedRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallSessionHandicappedResponse>
-  open class func apiVerifySettingGetPost(body: EnQualify.SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyMobileParameterGetResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifySettingGetPost(body: EnQualify.SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyMobileParameterGetResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifySettingGetPostWithRequestBuilder(body: EnQualify.SignedMessageBaseRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyMobileParameterGetResponse>
-  open class func apiVerifySigningGetPost(body: EnQualify.SignedMessageVerifyDocumentSignGetMobileRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyDocumentSignGetMobileResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifySigningGetPost(body: EnQualify.SignedMessageVerifyDocumentSignGetMobileRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyDocumentSignGetMobileResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifySigningGetPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyDocumentSignGetMobileRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyDocumentSignGetMobileResponse>
-  open class func apiVerifySigningSetPost(body: EnQualify.SignedMessageVerifyDocumentSignSetMobileRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyDocumentSignSetMobileResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifySigningSetPost(body: EnQualify.SignedMessageVerifyDocumentSignSetMobileRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyDocumentSignSetMobileResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifySigningSetPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyDocumentSignSetMobileRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyDocumentSignSetMobileResponse>
-  open class func apiVerifyVideoAddPost(timeOut: Swift.Int, body: EnQualify.VerifySignedMessageCallVideoMobileAddRequest? = nil, completion: @escaping ((_ data: EnQualify.BaseResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiVerifyVideoAddPost(timeOut: Swift.Int, body: EnQualify.VerifySignedMessageCallVideoMobileAddRequest? = nil, completion: @escaping ((_ data: EnQualify.BaseResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyVideoAddPostWithRequestBuilder(timeout: Swift.Int, body: EnQualify.VerifySignedMessageCallVideoMobileAddRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.BaseResponse>
   @objc deinit
 }
@@ -4142,8 +4142,8 @@ public struct DocumentsFolderModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension Swift.String {
   public func sha256FromBase64String() -> Swift.String
@@ -4190,8 +4190,8 @@ public struct LogsAuditLogListResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @objc public class EnVerifySuccessCustomerIdentityDoc : ObjectiveC.NSObject {
   @objc deinit
@@ -4223,8 +4223,8 @@ public struct VerifyCallIDDocAddResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignedMessageVerifyCallSessionCloseRequest : Swift.Codable {
   public var message: EnQualify.VerifyCallSessionCloseRequest?
@@ -4247,8 +4247,8 @@ public struct SignedMessageVerifyCallSessionCloseRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct CoreResource : Swift.Codable {
   public var type: EnQualify.CoreResourceTypeEnum?
@@ -4293,8 +4293,8 @@ public struct CoreResource : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallIDCheckAddResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -4323,19 +4323,19 @@ public struct VerifyCallIDCheckAddResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers open class AppResourcesAPI {
-  open class func apiAppResourcesGetPost(body: EnQualify.CoreAppResourceGetRequest? = nil, completion: @escaping ((_ data: EnQualify.CoreAppResourceGetResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAppResourcesGetPost(body: EnQualify.CoreAppResourceGetRequest? = nil, completion: @escaping ((_ data: EnQualify.CoreAppResourceGetResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiAppResourcesGetPostWithRequestBuilder(body: EnQualify.CoreAppResourceGetRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.CoreAppResourceGetResponse>
-  open class func apiAppResourcesGetTimestampPost(body: EnQualify.CoreAppResourceGetRequest? = nil, completion: @escaping ((_ data: EnQualify.CoreAppResourceGetTimestampResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiAppResourcesGetTimestampPost(body: EnQualify.CoreAppResourceGetRequest? = nil, completion: @escaping ((_ data: EnQualify.CoreAppResourceGetTimestampResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiAppResourcesGetTimestampPostWithRequestBuilder(body: EnQualify.CoreAppResourceGetRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.CoreAppResourceGetTimestampResponse>
   @objc deinit
 }
 public struct VerifyDocumentSignGetMobileRequest : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension Swift.String : Swift.CodingKey {
   public var stringValue: Swift.String {
@@ -4449,8 +4449,8 @@ public struct VerifyCallSessionInfoAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyMobileParameterGetResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -4551,8 +4551,8 @@ public struct VerifyMobileParameterGetResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct DocumentsAppFolderGetResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -4581,8 +4581,8 @@ public struct DocumentsAppFolderGetResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum AppsVersionCheckerResult : Swift.String, Swift.Codable {
   case _none
@@ -4627,8 +4627,8 @@ public struct LogsAuditLogRecordGetRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyAppointmentCancelResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -4655,8 +4655,8 @@ public struct VerifyAppointmentCancelResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallSessionAddRequest : Swift.Codable {
   public var type: Swift.String
@@ -4705,8 +4705,8 @@ public struct VerifyCallSessionAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallSessionCloseResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -4735,8 +4735,8 @@ public struct VerifyCallSessionCloseResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @objc public class EnVerifyCustomerCard : ObjectiveC.NSObject {
   @objc public static var shared: EnQualify.EnVerifyCustomerCard
@@ -4773,8 +4773,8 @@ public struct VerifyAvailableAppointmentListResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AppsAppHostModel : Swift.Codable {
   public var uId: Foundation.UUID?
@@ -4801,8 +4801,8 @@ public struct AppsAppHostModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsAuditLogRecordGetResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -4831,8 +4831,8 @@ public struct LogsAuditLogRecordGetResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct DocumentsAppFolderGetRequest : Swift.Codable {
   public var app: Swift.String?
@@ -4863,8 +4863,8 @@ public struct DocumentsAppFolderGetRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignedMessageDocumentsAppFolderGetFolderRequest : Swift.Codable {
   public var message: EnQualify.DocumentsAppFolderGetFolderRequest?
@@ -4887,8 +4887,8 @@ public struct SignedMessageDocumentsAppFolderGetFolderRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyAppointmentMobileModel : Swift.Codable {
   public var uId: Foundation.UUID?
@@ -4929,8 +4929,8 @@ public struct VerifyAppointmentMobileModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AppsAppCheckVersionRequest : Swift.Codable {
   public var app: EnQualify.AppsAppModel?
@@ -4951,8 +4951,8 @@ public struct AppsAppCheckVersionRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignedMessageVerifyCallSessionAddRequest : Swift.Codable {
   public var message: EnQualify.VerifyCallSessionAddRequest?
@@ -4975,8 +4975,8 @@ public struct SignedMessageVerifyCallSessionAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallAddressRegistrationModel : Swift.Codable {
   public var addressType: Swift.String?
@@ -5021,8 +5021,8 @@ public struct VerifyCallAddressRegistrationModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AuthTokenResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -5061,8 +5061,8 @@ public struct AuthTokenResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignedMessageDocumentsAppFolderGetTimestampRequest : Swift.Codable {
   public var message: EnQualify.DocumentsAppFolderGetTimestampRequest?
@@ -5085,8 +5085,8 @@ public struct SignedMessageDocumentsAppFolderGetTimestampRequest : Swift.Codable
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct DocumentsAppFolderGetTimestampResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -5115,8 +5115,8 @@ public struct DocumentsAppFolderGetTimestampResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallFaceAddRequest : Swift.Codable {
   public var faceDocumentContentHash: Swift.String?
@@ -5145,8 +5145,8 @@ public struct VerifyCallFaceAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignedMessageVerifyCallSessionInfoAddRequest : Swift.Codable {
   public var message: EnQualify.VerifyCallSessionInfoAddRequest?
@@ -5169,8 +5169,8 @@ public struct SignedMessageVerifyCallSessionInfoAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct CoreAppResourceGetTimestampResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -5199,8 +5199,8 @@ public struct CoreAppResourceGetTimestampResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallFaceAddResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -5229,8 +5229,8 @@ public struct VerifyCallFaceAddResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsApplicationLog : Swift.Codable {
   public var _id: Swift.Int64?
@@ -5275,8 +5275,8 @@ public struct LogsApplicationLog : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallDocumentModel : Swift.Codable {
   public var uId: Foundation.UUID?
@@ -5309,8 +5309,8 @@ public struct VerifyCallDocumentModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallIDDocModel : Swift.Codable {
   public var uId: Foundation.UUID?
@@ -5551,8 +5551,8 @@ public struct VerifyCallIDDocModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers open class JSONEncodingHelper {
   open class func encodingParameters<T>(forEncodableObject encodableObj: T?) -> Alamofire.Parameters? where T : Swift.Encodable
@@ -5655,8 +5655,8 @@ public struct LogsActivityLog : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignedMessageVerifyCallLogAddRequest : Swift.Codable {
   public var message: EnQualify.VerifyCallLogAddRequest?
@@ -5679,8 +5679,8 @@ public struct SignedMessageVerifyCallLogAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyDocumentSignSetMobileRequest : Swift.Codable {
   public var data: Swift.String?
@@ -5703,8 +5703,8 @@ public struct VerifyDocumentSignSetMobileRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc public enum SessionInfoType : Swift.Int {
   case connectionType
@@ -5765,11 +5765,11 @@ public struct VerifyCallSessionRoomRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct JSONDataEncoding : Alamofire.ParameterEncoding {
-  public func encode(_ urlRequest: Alamofire.URLRequestConvertible, with parameters: Alamofire.Parameters?) throws -> Foundation.URLRequest
+  public func encode(_ urlRequest: any Alamofire.URLRequestConvertible, with parameters: Alamofire.Parameters?) throws -> Foundation.URLRequest
   public static func encodingParameters(jsonData: Foundation.Data?) -> Alamofire.Parameters?
 }
 public struct AuthValidationInfo : Swift.Codable {
@@ -5797,8 +5797,8 @@ public struct AuthValidationInfo : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct MessageSignature : Swift.Codable {
   public var time: Foundation.Date?
@@ -5823,11 +5823,11 @@ public struct MessageSignature : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum ErrorResponse : Swift.Error {
-  case error(Swift.Int, Foundation.Data?, Swift.Error)
+  case error(Swift.Int, Foundation.Data?, any Swift.Error)
 }
 open class Response<T> {
   final public let statusCode: Swift.Int
@@ -5864,8 +5864,8 @@ public struct VerifyCallSessionAddResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsRequestLogGetResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -5894,8 +5894,8 @@ public struct LogsRequestLogGetResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallIDChipModel : Swift.Codable {
   public var uId: Foundation.UUID?
@@ -5972,8 +5972,8 @@ public struct VerifyCallIDChipModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AppsAppRunAddResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -6002,8 +6002,8 @@ public struct AppsAppRunAddResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyAppointmentSaveMobileModel : Swift.Codable {
   public var callType: Swift.String?
@@ -6040,8 +6040,8 @@ public struct VerifyAppointmentSaveMobileModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AppsAppHostAddResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -6070,8 +6070,8 @@ public struct AppsAppHostAddResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallFaceModel : Swift.Codable {
   public var uId: Foundation.UUID?
@@ -6146,8 +6146,8 @@ public struct VerifyCallFaceModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct DocumentsAppFolderModel : Swift.Codable {
   public var uId: Foundation.UUID?
@@ -6178,8 +6178,8 @@ public struct DocumentsAppFolderModel : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignedMessageVerifyAppointmentCancelRequest : Swift.Codable {
   public var message: EnQualify.VerifyAppointmentCancelRequest?
@@ -6202,8 +6202,8 @@ public struct SignedMessageVerifyAppointmentCancelRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum DocumentHashType : Swift.String {
   case SHA512
@@ -6233,8 +6233,8 @@ public struct AppsAppHostAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AuthTokenRequest : Swift.Codable {
   public var domain: Swift.String?
@@ -6271,8 +6271,8 @@ public struct AuthTokenRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsProcessLog : Swift.Codable {
   public var _id: Swift.Int64?
@@ -6305,8 +6305,8 @@ public struct LogsProcessLog : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum PartiesAuthTypeEnum : Swift.String, Swift.Codable {
   case _none
@@ -6360,8 +6360,8 @@ public struct VerifyCallSessionInfoAddResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AppsAppCheckVersionResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -6390,8 +6390,8 @@ public struct AppsAppCheckVersionResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyAvailableAppointmentListRequest : Swift.Codable {
   public var callType: Swift.String?
@@ -6416,8 +6416,8 @@ public struct VerifyAvailableAppointmentListRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct AppsAppRunAddRequest : Swift.Codable {
   public var data: EnQualify.AppsAppRunModel?
@@ -6438,8 +6438,8 @@ public struct AppsAppRunAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignedMessageAuthTokenRequest : Swift.Codable {
   public var message: EnQualify.AuthTokenRequest?
@@ -6462,8 +6462,8 @@ public struct SignedMessageAuthTokenRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignedMessageVerifyCallSessionHandicappedRequest : Swift.Codable {
   public var message: EnQualify.VerifyCallSessionHandicappedRequest?
@@ -6486,8 +6486,8 @@ public struct SignedMessageVerifyCallSessionHandicappedRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LogsRequestLogGetRequest : Swift.Codable {
   public var _id: Swift.Int64?
@@ -6512,8 +6512,8 @@ public struct LogsRequestLogGetRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct PagingOptions : Swift.Codable {
   public var pageSize: Swift.Int?
@@ -6548,8 +6548,8 @@ public struct PagingOptions : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum PartiesPartyTypeEnum : Swift.String, Swift.Codable {
   case _none
@@ -6596,41 +6596,41 @@ public struct LogsProcessLogListRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct BaseRequest : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers open class LogsAPI {
-  open class func apiLogsActivityLogGetPost(body: EnQualify.LogsActivityLogGetRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsActivityLogGetResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiLogsActivityLogGetPost(body: EnQualify.LogsActivityLogGetRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsActivityLogGetResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiLogsActivityLogGetPostWithRequestBuilder(body: EnQualify.LogsActivityLogGetRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.LogsActivityLogGetResponse>
-  open class func apiLogsActivityLogListPost(body: EnQualify.LogsActivityLogListRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsActivityLogListResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiLogsActivityLogListPost(body: EnQualify.LogsActivityLogListRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsActivityLogListResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiLogsActivityLogListPostWithRequestBuilder(body: EnQualify.LogsActivityLogListRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.LogsActivityLogListResponse>
-  open class func apiLogsApplicationLogAddPost(body: EnQualify.LogsApplicationLogAddRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsApplicationLogAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiLogsApplicationLogAddPost(body: EnQualify.LogsApplicationLogAddRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsApplicationLogAddResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiLogsApplicationLogAddPostWithRequestBuilder(body: EnQualify.LogsApplicationLogAddRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.LogsApplicationLogAddResponse>
-  open class func apiLogsApplicationLogGetPost(body: EnQualify.LogsApplicationLogGetRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsApplicationLogGetResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiLogsApplicationLogGetPost(body: EnQualify.LogsApplicationLogGetRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsApplicationLogGetResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiLogsApplicationLogGetPostWithRequestBuilder(body: EnQualify.LogsApplicationLogGetRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.LogsApplicationLogGetResponse>
-  open class func apiLogsApplicationLogListPost(body: EnQualify.LogsApplicationLogListRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsApplicationLogListResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiLogsApplicationLogListPost(body: EnQualify.LogsApplicationLogListRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsApplicationLogListResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiLogsApplicationLogListPostWithRequestBuilder(body: EnQualify.LogsApplicationLogListRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.LogsApplicationLogListResponse>
-  open class func apiLogsAuditLogGetPost(body: EnQualify.LogsAuditLogGetRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsAuditLogGetResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiLogsAuditLogGetPost(body: EnQualify.LogsAuditLogGetRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsAuditLogGetResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiLogsAuditLogGetPostWithRequestBuilder(body: EnQualify.LogsAuditLogGetRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.LogsAuditLogGetResponse>
-  open class func apiLogsAuditLogListPost(body: EnQualify.LogsAuditLogListRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsAuditLogListResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiLogsAuditLogListPost(body: EnQualify.LogsAuditLogListRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsAuditLogListResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiLogsAuditLogListPostWithRequestBuilder(body: EnQualify.LogsAuditLogListRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.LogsAuditLogListResponse>
-  open class func apiLogsAuditLogRecordGetPost(body: EnQualify.LogsAuditLogRecordGetRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsAuditLogRecordGetResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiLogsAuditLogRecordGetPost(body: EnQualify.LogsAuditLogRecordGetRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsAuditLogRecordGetResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiLogsAuditLogRecordGetPostWithRequestBuilder(body: EnQualify.LogsAuditLogRecordGetRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.LogsAuditLogRecordGetResponse>
-  open class func apiLogsAuditLogRecordListPost(body: EnQualify.LogsAuditLogRecordListRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsAuditLogRecordListResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiLogsAuditLogRecordListPost(body: EnQualify.LogsAuditLogRecordListRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsAuditLogRecordListResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiLogsAuditLogRecordListPostWithRequestBuilder(body: EnQualify.LogsAuditLogRecordListRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.LogsAuditLogRecordListResponse>
-  open class func apiLogsAuditLogRecordListTreePost(body: EnQualify.LogsAuditLogRecordListRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsAuditLogRecordListResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiLogsAuditLogRecordListTreePost(body: EnQualify.LogsAuditLogRecordListRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsAuditLogRecordListResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiLogsAuditLogRecordListTreePostWithRequestBuilder(body: EnQualify.LogsAuditLogRecordListRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.LogsAuditLogRecordListResponse>
-  open class func apiLogsProcessLogListPost(body: EnQualify.LogsProcessLogListRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsProcessLogListResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiLogsProcessLogListPost(body: EnQualify.LogsProcessLogListRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsProcessLogListResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiLogsProcessLogListPostWithRequestBuilder(body: EnQualify.LogsProcessLogListRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.LogsProcessLogListResponse>
-  open class func apiLogsRequestLogAddPost(body: EnQualify.LogsRequestLogAddRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsRequestLogAddResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiLogsRequestLogAddPost(body: EnQualify.LogsRequestLogAddRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsRequestLogAddResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiLogsRequestLogAddPostWithRequestBuilder(body: EnQualify.LogsRequestLogAddRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.LogsRequestLogAddResponse>
-  open class func apiLogsRequestLogGetPost(body: EnQualify.LogsRequestLogGetRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsRequestLogGetResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiLogsRequestLogGetPost(body: EnQualify.LogsRequestLogGetRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsRequestLogGetResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiLogsRequestLogGetPostWithRequestBuilder(body: EnQualify.LogsRequestLogGetRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.LogsRequestLogGetResponse>
-  open class func apiLogsRequestLogListPost(body: EnQualify.LogsRequestLogListRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsRequestLogListResponse?, _ error: Swift.Error?) -> Swift.Void))
+  open class func apiLogsRequestLogListPost(body: EnQualify.LogsRequestLogListRequest? = nil, completion: @escaping ((_ data: EnQualify.LogsRequestLogListResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiLogsRequestLogListPostWithRequestBuilder(body: EnQualify.LogsRequestLogListRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.LogsRequestLogListResponse>
   @objc deinit
 }
@@ -6661,8 +6661,8 @@ public struct LogsApplicationLogGetResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallIntegrationAddResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -6689,8 +6689,8 @@ public struct VerifyCallIntegrationAddResponse : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallIDChipAddRequest : Swift.Codable {
   public var faceDocumentContentHash: Swift.String?
@@ -6719,8 +6719,8 @@ public struct VerifyCallIDChipAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallIDCheckAddRequest : Swift.Codable {
   public var _id: Swift.Int64?
@@ -6747,8 +6747,8 @@ public struct VerifyCallIDCheckAddRequest : Swift.Codable {
       get
     }
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension EnQualify.VerifyCallIDBlockGetRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifyCallIDBlockGetRequest.CodingKeys : Swift.Hashable {}
