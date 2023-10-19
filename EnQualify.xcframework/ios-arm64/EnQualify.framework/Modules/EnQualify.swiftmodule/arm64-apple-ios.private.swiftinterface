@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name EnQualify
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -21,6 +21,7 @@ import SystemConfiguration
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public struct VerifyCallIDBlockGetRequest : Swift.Codable {
   public var identityNumber: Swift.String?
   public var phone: Swift.String?
@@ -1672,6 +1673,7 @@ public struct LogsRequestLogAddResponse : Swift.Codable {
   @objc @_Concurrency.MainActor(unsafe) public static var isContinue: Swift.Bool
   @objc @_Concurrency.MainActor(unsafe) public static var sessionAddPhone: Swift.String
   @objc @_Concurrency.MainActor(unsafe) public static var sessionAddEmail: Swift.String
+  @objc @_Concurrency.MainActor(unsafe) public static var sslPiningForIO: Swift.Bool
   @objc @_Concurrency.MainActor(unsafe) public static var agentDummyImage: UIKit.UIImage?
   @objc @_Concurrency.MainActor(unsafe) public static var agentDummyVideoPlayer: AVFoundation.AVPlayer?
   @objc @_Concurrency.MainActor(unsafe) public static var isAgentDummyShown: Swift.Bool {
@@ -1781,6 +1783,8 @@ public struct LogsRequestLogAddResponse : Swift.Codable {
   @objc @_Concurrency.MainActor(unsafe) public static func setIceCheckingTimeout(value: Swift.Int)
   @objc @_Concurrency.MainActor(unsafe) public static func setICERelay(iceRelayState: Swift.Bool)
   @objc @_Concurrency.MainActor(unsafe) public static func setSSLPinning(required: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public static func setSSLPiningForIO(required: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public static func setSSLPiningBase64(certificate: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) public static func setEyeCloseCalibration(value: Swift.Float)
   @objc @_Concurrency.MainActor(unsafe) public static func setSmilingCalibration(value: Swift.Float)
   @objc @_Concurrency.MainActor(unsafe) public static func setICEHost(iceHostState: Swift.Bool)
@@ -1828,7 +1832,7 @@ public struct LogsRequestLogAddResponse : Swift.Codable {
   @objc deinit
 }
 extension EnQualify.EnVerify {
-  @_Concurrency.MainActor(unsafe) public static func startTimer()
+  @objc @_Concurrency.MainActor(unsafe) public static func startTimer()
 }
 public struct VerifyCallIDBlockGetResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?

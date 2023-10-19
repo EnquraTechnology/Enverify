@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IDVerification
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IDVerification
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import AVKit
@@ -12,17 +12,21 @@ import CoreMedia
 import CoreNFC
 import CryptoKit
 import CryptoTokenKit
+import DeveloperToolsSupport
 import Foundation
+import MLKitTextRecognition
 import MediaPlayer
 import OpenSSL
 import ReplayKit
 import SocketIO
 import Starscream
 import Swift
+import SwiftUI
 import TensorFlowLite
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc public enum IDVerifyState : Swift.Int {
   case ID_VERIFY_START
   case ID_VERIFY_EXIT
@@ -423,6 +427,8 @@ public class DataGroup14 : IDVerification.DataGroup {
   @objc public static func setTCIDTypeNational()
   @objc public static func setFrameRateFrontCamera(frameRate: Swift.Double)
   @objc public static func setFrameRateBackCamera(frameRate: Swift.Double)
+  @objc public static func setSSLPinning(state: Swift.Bool)
+  @objc public static func setSSLCertificateBase64(certificate: Swift.String)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -1102,6 +1108,7 @@ public class X509Wrapper {
   public static func normalizeHeight() -> CoreFoundation.CGFloat
   public static func viewBoxRemoteWidth() -> CoreFoundation.CGFloat
   public static func viewBoxRemoteHeight() -> CoreFoundation.CGFloat
+  public static func viewBoxHeightStart() -> CoreFoundation.CGFloat
   public static func viewBoxLocalWidth() -> CoreFoundation.CGFloat
   public static func viewBoxLocalHeight() -> CoreFoundation.CGFloat
   public static func viewBoxX() -> CoreFoundation.CGFloat

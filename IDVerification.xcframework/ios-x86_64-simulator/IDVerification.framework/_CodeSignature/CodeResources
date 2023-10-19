@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		CXw8fnLK5kcTzw7u549NNZPv9II=
+		vZmWACAxy+EngyfhXWXVam+UvBA=
 		</data>
 		<key>Config.plist</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<data>
-		NG1zefoh/+6vG96Be5L1SfPlt1Q=
+		CC8wFfGVSvh9Iw7ndyV5Ga4jQIE=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/Info.plist</key>
 		<data>
-		TMvhYpiN59rkMCzzvicK+h+3FdA=
+		BU7qePZlKmZoMO3ex/uTn6UPV08=
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Headers/IDVerification-Swift.h</key>
 		<data>
-		EgAt7/JAX/e77wosGAatQbW17fU=
+		s2lVyR23lUggsNmrqBpNgnNU1hQ=
 		</data>
 		<key>Headers/IDVerify.h</key>
 		<data>
@@ -110,27 +110,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+uwLwxhqb6cjZFxjS8a1UygkSgc=
+		2kohSLNZiqRdhfKeqItUHlgXaAU=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		FoZFG9l810p3mUnM1Vu3x5RxZ68=
+		GriINyUQf0PvCUxYwn4CiCRuDss=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		U9cgfUPOeJv+f0+dRyKA+ig0ndw=
+		CIorpvX2j2dz1sdMP8U+tNheoTU=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		yFnjT3PPBhJjLNamCxuomB++BYw=
+		EOmmEieg78qaRN53qB61tq63qfw=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		U9cgfUPOeJv+f0+dRyKA+ig0ndw=
+		CIorpvX2j2dz1sdMP8U+tNheoTU=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0oLW5z3YHDps9NQDcrTwgQbFC5Y=
+		wFlheAoODEkKZ/mBI8IW7lhmcUA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -173,7 +173,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nr0f77dIyyUOPo8hqyIUr1cdo9lBI+xXJgD6Xj2dNXk=
+			r/CGLnhpMH63Dfv9GBM2Wy0WC9wnQJ6ga4nGVQMGLjY=
 			</data>
 		</dict>
 		<key>Config.plist</key>
@@ -208,7 +208,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k7mknQ7xwExXqsgUApDoRngnIxgFAbRJU/stO92BFFQ=
+			2hvQUEQAr1NqOHPGEIWgFxnuIHXjs5JvM5WzUm3Z8nI=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
@@ -278,7 +278,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tirHu5JRMusA6sZSK4krSmznFGYRSNUhwXCSNZrE5/A=
+			DvmxIz8aYklM3935c6KY/1BXjf/D2kkoEctiq80KNtQ=
 			</data>
 		</dict>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
@@ -341,7 +341,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qDM8SPy6oqpTe2lhKQdKyA6AuCT5VMwSSkycpD7exRI=
+			i3yP7TmG2OwCFBsy3keFK68uCuOFyXEiAeTo1gVDiuU=
 			</data>
 		</dict>
 		<key>Headers/IDVerify.h</key>
@@ -355,35 +355,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R1M1IBd+AQpukC6Ce/55waJ9Yr9dX2xfH8tyvHA/Z5Q=
+			/jiJl3KGDGT8UgIEey6ylWmb0IeUYQuV2NngEDqmmrA=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UkgclpeAoqopAKfOUvgbZEuyrNwoxjO0tujjOdhkc9E=
+			4QqkZIFcYmZ8lBX3sENJd779j7stFcWtUepa4SEFVks=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9fN0y53ziJXdQiO2SfRj4MlCpT4Puy0M96pDV5SFz/I=
+			nXEvL4J2NX4zuL15kueNQbPAaCrl+k/AuSR3iknQvn0=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UkgclpeAoqopAKfOUvgbZEuyrNwoxjO0tujjOdhkc9E=
+			4QqkZIFcYmZ8lBX3sENJd779j7stFcWtUepa4SEFVks=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1KFs4fQE3YrBp3EzG4sy0xYyTkkrHvCxgzDZVXpAhzE=
+			URodwbsZ+HJOWc/Onx/5ibBRjQmesyaLzWAmZUHngC0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
