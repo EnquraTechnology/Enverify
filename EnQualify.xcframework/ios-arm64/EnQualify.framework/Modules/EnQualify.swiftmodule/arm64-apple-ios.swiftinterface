@@ -16,7 +16,6 @@ import Photos
 import ReplayKit
 import Security
 import Swift
-import SwiftyJSON
 import SystemConfiguration
 import UIKit
 import _Concurrency
@@ -1029,7 +1028,7 @@ public struct AuthSessionInfo : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public enum Model : Swift.String {
-  case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPad5, iPad6, iPad7, iPad8, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, iPhone13Mini, iPhone13, iPhone13Pro, iPhone13ProMax, iPhone14, iPhone14Plus, iPhone14Pro, iPhone14ProMax, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, unrecognized
+  case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPad5, iPad6, iPad7, iPad8, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, iPhone13Mini, iPhone13, iPhone13Pro, iPhone13ProMax, iPhone14, iPhone14Plus, iPhone14Pro, iPhone14ProMax, iPhone15, iPhone15Plus, iPhone15Pro, iPhone15ProMax, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, unrecognized
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -1492,6 +1491,8 @@ public struct VerifyCallTypeNameListResponse : Swift.Codable {
   @objc func videoUploadFailure()
   @objc func maximumCallTimeExpired()
   @objc func currentThermalState(state: Swift.String)
+  @objc func documentSignSuccess()
+  @objc func documentSingFailure()
 }
 public struct SignedMessageVerifyAppointmentSaveMobileRequest : Swift.Codable {
   public var message: EnQualify.VerifyAppointmentSaveMobileRequest?
@@ -1686,10 +1687,11 @@ public struct SignedMessageVerifyAppointmentSaveMobileRequest : Swift.Codable {
   @objc @_Concurrency.MainActor(unsafe) public static func getAppointment(identityNo: Swift.String?, identityType: Swift.String?, completion: @escaping ((_ data: [EnQualify.EnverifyVerifyAppointmentResult]?, _ error: (any Swift.Error)?) -> Swift.Void))
   @objc @_Concurrency.MainActor(unsafe) public static func getCallTypes(completion: @escaping ((_ data: [EnQualify.EnverifyVerifyCallTypeResult]?, _ error: (any Swift.Error)?) -> Swift.Void))
   @_Concurrency.MainActor(unsafe) public static func getSettings()
+  @_Concurrency.MainActor(unsafe) public static func getSettingsBeforeSDK(completion: @escaping (Swift.Result<EnQualify.VerifyMobileParameterGetResponse?, any Swift.Error>) -> Swift.Void)
   @objc @_Concurrency.MainActor(unsafe) public static func appMovedToForeground()
   @objc @_Concurrency.MainActor(unsafe) public static func appMovedToBackground()
   @objc @_Concurrency.MainActor(unsafe) public static func speedCheck()
-  @_Concurrency.MainActor(unsafe) public static func signDocument(data: Foundation.Data)
+  @_Concurrency.MainActor(unsafe) public static func signDocument(data: Foundation.Data, reference: Swift.String? = nil)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
   @objc deinit
 }
@@ -5128,11 +5130,13 @@ public struct VerifyDocumentSignSetMobileRequest : Swift.Codable {
   public var data: Swift.String?
   public var signature: Swift.String?
   public var key: Swift.String?
-  public init(data: Swift.String? = nil, signature: Swift.String? = nil, key: Swift.String? = nil)
+  public var reference: Swift.String?
+  public init(data: Swift.String? = nil, signature: Swift.String? = nil, key: Swift.String? = nil, reference: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case data
     case signature
     case key
+    case reference
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -6680,6 +6684,24 @@ public struct VerifySignedMessageInfoDocumentAddRequest : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyDocumentSignGetMobileRequest : Swift.Codable {
+  public var reference: Swift.String?
+  public init(reference: Swift.String? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case reference
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -7554,6 +7576,9 @@ extension EnQualify.VerifyCallSessionInfoAddResponse.CodingKeys : Swift.RawRepre
 extension EnQualify.VerifySignedMessageInfoDocumentAddRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifySignedMessageInfoDocumentAddRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifySignedMessageInfoDocumentAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension EnQualify.VerifyDocumentSignGetMobileRequest.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifyDocumentSignGetMobileRequest.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifyDocumentSignGetMobileRequest.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.CoreStatusResponse.CodingKeys : Swift.Equatable {}
 extension EnQualify.CoreStatusResponse.CodingKeys : Swift.Hashable {}
 extension EnQualify.CoreStatusResponse.CodingKeys : Swift.RawRepresentable {}

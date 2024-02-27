@@ -810,6 +810,8 @@ SWIFT_PROTOCOL("_TtP9EnQualify16EnVerifyDelegate_")
 - (void)videoUploadFailure;
 - (void)maximumCallTimeExpired;
 - (void)currentThermalStateWithState:(NSString * _Nonnull)state;
+- (void)documentSignSuccess;
+- (void)documentSingFailure;
 @end
 
 
