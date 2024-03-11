@@ -15,7 +15,7 @@
     spec.xcconfig = { 'IPHONEOS_DEPLOYMENT_TARGET' => '12.0','ONLY_ACTIVE_ARCH' => 'YES' , 'VALID_ARCHS' => 'arm64' }
     
     spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64', 'OTHER_LDFLAGS[sdk=iphoneos*]' => '$(inherited) -ObjC -lc++ -framework EnQualify -framework FBLPromises -framework Alamofire -framework GTMSessionFetcher -framework GoogleAppMeasurement -framework GoogleAppMeasurementIdentitySupport -framework GoogleDataTransport -framework GoogleToolboxForMac -framework GoogleUtilities -framework GoogleUtilitiesComponents -framework Starscream -framework SocketIO -framework MLImage -framework MLKitBarcodeScanning -framework MLKitFaceDetection -framework MLKitTextRecognition -framework MLKitCommon -framework MLKitVision -framework WebRTC',
-'OTHER_LDFLAGS[sdk=iphonesimulator*]' => '-ObjC -lc++ -framework EnQualify -framework FBLPromises -framework Alamofire -framework GTMSessionFetcher -framework GoogleAppMeasurement -framework GoogleAppMeasurementIdentitySupport -framework GoogleDataTransport -framework GoogleToolboxForMac -framework GoogleUtilities -framework GoogleUtilitiesComponents -framework Starscream -framework SocketIO'
+'OTHER_LDFLAGS[sdk=iphonesimulator*]' => '-ObjC -lc++ -framework EnQualify -framework FBLPromises -framework Alamofire -framework GTMSessionFetcher -framework GoogleAppMeasurement -framework GoogleAppMeasurementIdentitySupport -framework GoogleDataTransport -framework GoogleToolboxForMac -framework GoogleUtilities -framework GoogleUtilitiesComponents -framework SocketIO'
 }
 
     spec.dependency 'Starscream', '~> 3.0.0'
