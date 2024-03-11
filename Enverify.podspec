@@ -8,7 +8,7 @@
     spec.platform     = :ios
     spec.ios.deployment_target = '12.0'
     spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/1.3.15.1.zip"}
-    spec.ios.vendored_frameworks = "EnVerify-1.3.15.1/EnVerify.xcframework" , "EnVerify-1.3.15.1/IDVerify.xcframework"
+    spec.ios.vendored_frameworks = "EnVerify-1.3.15.1/EnQualify.xcframework" , "EnVerify-1.3.15.1/IDVerification.xcframework"
     spec.ios.frameworks = "EnQualify"
     spec.requires_arc = true	
     spec.swift_versions = '5.0' 
