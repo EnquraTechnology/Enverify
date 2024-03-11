@@ -347,6 +347,7 @@ enum SessionInfoType : NSInteger;
 @class EnverifyVerifyCancelAppointmentResult;
 @class EnverifyVerifyAppointmentResult;
 @class EnverifyVerifyCallTypeResult;
+@class NSData;
 
 SWIFT_CLASS("_TtC9EnQualify8EnVerify")
 @interface EnVerify : NSObject <UIApplicationDelegate>
@@ -532,6 +533,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)startCardHoloDetect;
 + (void)startCardBackDetect;
 + (void)idCardDetectSet;
++ (void)setPassiveAuthenticationEnabledWithIsPassiveAuthenticatonEnabled:(BOOL)isPassiveAuthenticatonEnabled;
 + (void)sendVideoToBackOfficeWithPath:(NSString * _Nonnull)path;
 + (void)iconStartButton:(UIButton * _Nonnull)button;
 + (void)iconExitButton:(UIButton * _Nonnull)button;
@@ -551,9 +553,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)setAgentRequest;
 + (void)getAppointmentWithIdentityNo:(NSString * _Nullable)identityNo identityType:(NSString * _Nullable)identityType completion:(void (^ _Nonnull)(NSArray<EnverifyVerifyAppointmentResult *> * _Nullable, NSError * _Nullable))completion;
 + (void)getCallTypesWithCompletion:(void (^ _Nonnull)(NSArray<EnverifyVerifyCallTypeResult *> * _Nullable, NSError * _Nullable))completion;
++ (void)getSettings;
 + (void)appMovedToForeground;
 + (void)appMovedToBackground;
 + (void)speedCheck;
++ (void)signDocumentWithData:(NSData * _Nonnull)data;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -810,8 +814,7 @@ SWIFT_PROTOCOL("_TtP9EnQualify16EnVerifyDelegate_")
 - (void)videoUploadFailure;
 - (void)maximumCallTimeExpired;
 - (void)currentThermalStateWithState:(NSString * _Nonnull)state;
-- (void)documentSignSuccess;
-- (void)documentSingFailure;
+- (void)appointmentToleranceWithTime:(NSInteger)time;
 @end
 
 

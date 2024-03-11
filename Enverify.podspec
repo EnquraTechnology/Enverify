@@ -1,14 +1,14 @@
-Pod::Spec.new do |spec|
+   Pod::Spec.new do |spec|
     spec.name         = "EnVerify"
-    spec.version      = "1.3.14.6"
+    spec.version      = "1.3.15.1"
     spec.summary      = "EnVerify."
     spec.authors      = { "Enqura" => "http://www.enqura.com" }
     spec.homepage     = "http://www.enqura.com"
     spec.license          = { :type => 'MIT', :text => "MIT License" }
     spec.platform     = :ios
     spec.ios.deployment_target = '12.0'
-    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/1.3.14.6.zip"}
-    spec.vendored_frameworks = "EnVerify-1.3.14.6/EnQualify.xcframework" , "EnVerify-1.3.14.6/IDVerification.xcframework"
+    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/1.3.15.1.zip"}
+    spec.ios.vendored_frameworks = "EnVerify-1.3.15.1/EnVerify.xcframework" , "EnVerify-1.3.15.1/IDVerify.xcframework"
     spec.ios.frameworks = "EnQualify"
     spec.requires_arc = true	
     spec.swift_versions = '5.0' 
@@ -22,10 +22,9 @@ Pod::Spec.new do |spec|
     spec.dependency 'GoogleWebRTC'
     spec.dependency 'Socket.IO-Client-Swift', '14.0.0'
     spec.dependency 'Alamofire', '5.6.2'
-    spec.dependency 'GoogleMLKit/TextRecognition','2.2.0'
-    spec.dependency 'GoogleMLKit/FaceDetection'
-    spec.dependency 'GoogleMLKit/BarcodeScanning'
+    spec.dependency 'GoogleMLKit/TextRecognition', '4.0.0'
+    spec.dependency 'GoogleMLKit/FaceDetection', '4.0.0'
+    spec.dependency 'GoogleMLKit/BarcodeScanning', '4.0.0'
     spec.dependency 'OpenSSL-Universal','1.1.1900'
     spec.dependency 'TensorFlowLiteSwift'
   end
-

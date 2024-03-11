@@ -565,6 +565,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) UIButton * _Nonnull ic
 + (void)setFrameRateBackCameraWithFrameRate:(double)frameRate;
 + (void)setSSLPinningWithState:(BOOL)state;
 + (void)setSSLCertificateBase64WithCertificate:(NSString * _Nonnull)certificate;
++ (void)setPassiveAuthenticationEnabledWithIsPassiveAuthenticatonEnabled:(BOOL)isPassiveAuthenticatonEnabled;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
