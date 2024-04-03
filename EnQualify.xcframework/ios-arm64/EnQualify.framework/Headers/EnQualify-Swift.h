@@ -557,7 +557,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)appMovedToForeground;
 + (void)appMovedToBackground;
 + (void)speedCheck;
-+ (void)signDocumentWithData:(NSData * _Nonnull)data;
++ (void)signDocumentWithData:(NSData * _Nonnull)data reference:(NSString * _Nullable)reference;
++ (void)barcodeReadWithContent:(NSString * _Nonnull)content completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
++ (void)barcodeVerifyWithIdentityNo:(NSString * _Nonnull)identityNo barcode:(NSString * _Nonnull)barcode completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -814,7 +816,11 @@ SWIFT_PROTOCOL("_TtP9EnQualify16EnVerifyDelegate_")
 - (void)videoUploadFailure;
 - (void)maximumCallTimeExpired;
 - (void)currentThermalStateWithState:(NSString * _Nonnull)state;
+- (void)documentSignSuccess;
+- (void)documentSingFailure;
 - (void)appointmentToleranceWithTime:(NSInteger)time;
+- (void)infoDocumentAddSuccess;
+- (void)infoDocumentAddFailure;
 @end
 
 

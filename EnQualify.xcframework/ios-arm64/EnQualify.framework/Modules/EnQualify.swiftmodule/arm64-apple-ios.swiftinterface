@@ -1028,7 +1028,7 @@ public struct AuthSessionInfo : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public enum Model : Swift.String {
-  case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPad5, iPad6, iPad7, iPad8, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, iPhone13Mini, iPhone13, iPhone13Pro, iPhone13ProMax, iPhone14, iPhone14Plus, iPhone14Pro, iPhone14ProMax, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, unrecognized
+  case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPad5, iPad6, iPad7, iPad8, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, iPhone13Mini, iPhone13, iPhone13Pro, iPhone13ProMax, iPhone14, iPhone14Plus, iPhone14Pro, iPhone14ProMax, iPhone15, iPhone15Plus, iPhone15Pro, iPhone15ProMax, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, unrecognized
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -1491,7 +1491,11 @@ public struct VerifyCallTypeNameListResponse : Swift.Codable {
   @objc func videoUploadFailure()
   @objc func maximumCallTimeExpired()
   @objc func currentThermalState(state: Swift.String)
+  @objc func documentSignSuccess()
+  @objc func documentSingFailure()
   @objc func appointmentTolerance(time: Swift.Int)
+  @objc func infoDocumentAddSuccess()
+  @objc func infoDocumentAddFailure()
 }
 public struct SignedMessageVerifyAppointmentSaveMobileRequest : Swift.Codable {
   public var message: EnQualify.VerifyAppointmentSaveMobileRequest?
@@ -1691,7 +1695,10 @@ public struct SignedMessageVerifyAppointmentSaveMobileRequest : Swift.Codable {
   @objc @_Concurrency.MainActor(unsafe) public static func appMovedToForeground()
   @objc @_Concurrency.MainActor(unsafe) public static func appMovedToBackground()
   @objc @_Concurrency.MainActor(unsafe) public static func speedCheck()
-  @objc @_Concurrency.MainActor(unsafe) public static func signDocument(data: Foundation.Data)
+  @objc @_Concurrency.MainActor(unsafe) public static func signDocument(data: Foundation.Data, reference: Swift.String? = nil)
+  @objc @_Concurrency.MainActor(unsafe) public static func barcodeRead(content: Swift.String, completionHandler: @escaping (Swift.String?) -> ())
+  @objc @_Concurrency.MainActor(unsafe) public static func barcodeVerify(identityNo: Swift.String, barcode: Swift.String, completionHandler: @escaping (Swift.Bool) -> ())
+  @_Concurrency.MainActor(unsafe) public static func documentAdd(category: Swift.String, documents: [EnQualify.VerifyInfoDocumentArray])
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
   @objc deinit
 }
@@ -2907,7 +2914,8 @@ public struct VerifyCallSessionInfoAddRequest : Swift.Codable {
   public var waitCall: Swift.Bool?
   public var startCall: Swift.Bool?
   public var battery: Swift.Int?
-  public init(connectionType: Swift.String? = nil, nFCIsOpen: Swift.Bool? = nil, iDTypeCheckStart: Swift.Bool? = nil, iDTypeCheckFinish: Swift.Bool? = nil, hologramStart: Swift.Bool? = nil, hologramFinish: Swift.Bool? = nil, iDDocFrontStart: Swift.Bool? = nil, iDDocFrontFinish: Swift.Bool? = nil, iDDocBackStart: Swift.Bool? = nil, iDDocBackFinish: Swift.Bool? = nil, iDChipStart: Swift.Bool? = nil, iDChipFinish: Swift.Bool? = nil, faceStart: Swift.Bool? = nil, faceFinish: Swift.Bool? = nil, smileStart: Swift.Bool? = nil, smileFinish: Swift.Bool? = nil, eyeCloseIntervalStart: Swift.Bool? = nil, eyeCloseIntervalFinish: Swift.Bool? = nil, eyeCloseFinish: Swift.Bool? = nil, eyeCloseStart: Swift.Bool? = nil, faceRightStart: Swift.Bool? = nil, faceRightFinish: Swift.Bool? = nil, faceLeftStart: Swift.Bool? = nil, faceLeftFinish: Swift.Bool? = nil, faceUpStart: Swift.Bool? = nil, faceUpFinish: Swift.Bool? = nil, roomSendMobile: Swift.Bool? = nil, callRequest: Swift.Bool? = nil, waitCall: Swift.Bool? = nil, startCall: Swift.Bool? = nil, battery: Swift.Int? = nil)
+  public var hologramExists: Swift.Bool?
+  public init(connectionType: Swift.String? = nil, nFCIsOpen: Swift.Bool? = nil, iDTypeCheckStart: Swift.Bool? = nil, iDTypeCheckFinish: Swift.Bool? = nil, hologramStart: Swift.Bool? = nil, hologramFinish: Swift.Bool? = nil, iDDocFrontStart: Swift.Bool? = nil, iDDocFrontFinish: Swift.Bool? = nil, iDDocBackStart: Swift.Bool? = nil, iDDocBackFinish: Swift.Bool? = nil, iDChipStart: Swift.Bool? = nil, iDChipFinish: Swift.Bool? = nil, faceStart: Swift.Bool? = nil, faceFinish: Swift.Bool? = nil, smileStart: Swift.Bool? = nil, smileFinish: Swift.Bool? = nil, eyeCloseIntervalStart: Swift.Bool? = nil, eyeCloseIntervalFinish: Swift.Bool? = nil, eyeCloseFinish: Swift.Bool? = nil, eyeCloseStart: Swift.Bool? = nil, faceRightStart: Swift.Bool? = nil, faceRightFinish: Swift.Bool? = nil, faceLeftStart: Swift.Bool? = nil, faceLeftFinish: Swift.Bool? = nil, faceUpStart: Swift.Bool? = nil, faceUpFinish: Swift.Bool? = nil, roomSendMobile: Swift.Bool? = nil, callRequest: Swift.Bool? = nil, waitCall: Swift.Bool? = nil, startCall: Swift.Bool? = nil, battery: Swift.Int? = nil, hologramExists: Swift.Bool? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case connectionType
     case nFCIsOpen
@@ -2940,6 +2948,7 @@ public struct VerifyCallSessionInfoAddRequest : Swift.Codable {
     case waitCall
     case startCall
     case battery
+    case hologramExists
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -3516,10 +3525,16 @@ public struct VerifyCallFaceModel : Swift.Codable {
   public var antiSpoofingValidityLevel: Swift.Int?
   public var antiSpoofingMin: Swift.Double?
   public var antiSpoofingMax: Swift.Double?
+  public var degreeFaceRight: Swift.Float?
+  public var degreeFaceLeft: Swift.Float?
+  public var degreeFaceUp: Swift.Float?
+  public var faceRightConfidence: Swift.Float?
+  public var faceLeftConfidence: Swift.Float?
+  public var faceUpConfidence: Swift.Float?
   public var faceDocumentContent: Swift.String?
   public var faceDocument: EnQualify.VerifyCallDocumentModel?
   public var modifyDate: Foundation.Date?
-  public init(uId: Foundation.UUID? = nil, sessionUId: Foundation.UUID? = nil, dateTime: Foundation.Date? = nil, faceDocumentUId: Foundation.UUID? = nil, distance: Swift.Double? = nil, confidence: Swift.Int? = nil, chipDistance: Swift.Double? = nil, chipConfidence: Swift.Int? = nil, leftEyeCloseConfidence: Swift.Double? = nil, rightEyeCloseConfidence: Swift.Double? = nil, smilingConfidence: Swift.Double? = nil, livenessScore: Swift.Double? = nil, distanceMin: Swift.Double? = nil, distanceMax: Swift.Double? = nil, distanceValidityLevel: Swift.Int? = nil, chipDistanceMin: Swift.Double? = nil, chipDistanceMax: Swift.Double? = nil, chipDistanceValidityLevel: Swift.Int? = nil, livenessScoreValue: Swift.Double? = nil, livenessScoreValidityLevel: Swift.Int? = nil, validityLevel: Swift.Int? = nil, antiSpoofing: Swift.Float? = nil, antiSpoofingValidityLevel: Swift.Int? = nil, antiSpoofingMin: Swift.Double? = nil, antiSpoofingMax: Swift.Double? = nil, faceDocumentContent: Swift.String? = nil, faceDocument: EnQualify.VerifyCallDocumentModel? = nil, modifyDate: Foundation.Date? = nil)
+  public init(uId: Foundation.UUID? = nil, sessionUId: Foundation.UUID? = nil, dateTime: Foundation.Date? = nil, faceDocumentUId: Foundation.UUID? = nil, distance: Swift.Double? = nil, confidence: Swift.Int? = nil, chipDistance: Swift.Double? = nil, chipConfidence: Swift.Int? = nil, leftEyeCloseConfidence: Swift.Double? = nil, rightEyeCloseConfidence: Swift.Double? = nil, smilingConfidence: Swift.Double? = nil, livenessScore: Swift.Double? = nil, distanceMin: Swift.Double? = nil, distanceMax: Swift.Double? = nil, distanceValidityLevel: Swift.Int? = nil, chipDistanceMin: Swift.Double? = nil, chipDistanceMax: Swift.Double? = nil, chipDistanceValidityLevel: Swift.Int? = nil, livenessScoreValue: Swift.Double? = nil, livenessScoreValidityLevel: Swift.Int? = nil, validityLevel: Swift.Int? = nil, antiSpoofing: Swift.Float? = nil, antiSpoofingValidityLevel: Swift.Int? = nil, antiSpoofingMin: Swift.Double? = nil, antiSpoofingMax: Swift.Double? = nil, degreeFaceRight: Swift.Float? = nil, degreeFaceLeft: Swift.Float? = nil, degreeFaceUp: Swift.Float? = nil, faceRightConfidence: Swift.Float? = nil, faceLeftConfidence: Swift.Float? = nil, faceUpConfidence: Swift.Float? = nil, faceDocumentContent: Swift.String? = nil, faceDocument: EnQualify.VerifyCallDocumentModel? = nil, modifyDate: Foundation.Date? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case uId
     case sessionUId
@@ -3546,6 +3561,12 @@ public struct VerifyCallFaceModel : Swift.Codable {
     case antiSpoofingValidityLevel
     case antiSpoofingMin
     case antiSpoofingMax
+    case degreeFaceRight
+    case degreeFaceLeft
+    case degreeFaceUp
+    case faceRightConfidence
+    case faceLeftConfidence
+    case faceUpConfidence
     case faceDocumentContent
     case faceDocument
     case modifyDate
@@ -4513,6 +4534,10 @@ public struct LogsApplicationLogListResponse : Swift.Codable {
   open class func apiVerifyAppointmentListPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyAppointmentListMobileRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyAppointmentListMobileResponse>
   open class func apiVerifyAppointmentSavePost(body: EnQualify.SignedMessageVerifyAppointmentSaveMobileRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyAppointmentAddResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyAppointmentSavePostWithRequestBuilder(body: EnQualify.SignedMessageVerifyAppointmentSaveMobileRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyAppointmentAddResponse>
+  open class func apiVerifyBarcodeReadPost(body: EnQualify.VerifyMobileSignedMessagDocumentBarcodeReadRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyMobileDocumentBarcodeReadResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
+  open class func apiVerifyBarcodeReadPostWithRequestBuilder(body: EnQualify.VerifyMobileSignedMessagDocumentBarcodeReadRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyMobileDocumentBarcodeReadResponse>
+  open class func apiVerifyBarcodeVerifyPost(body: EnQualify.SignedMessageVerifyMobileDocumentBarcodeVerifyRequest? = nil, completion: @escaping ((_ data: EnQualify.BaseResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
+  open class func apiVerifyBarcodeVerifyPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyMobileDocumentBarcodeVerifyRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.BaseResponse>
   open class func apiVerifyCallTypeListPost(body: EnQualify.SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallTypeNameListResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyCallTypeListPostWithRequestBuilder(body: EnQualify.SignedMessageBaseRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallTypeNameListResponse>
   open class func apiVerifyDocumentAddPost(body: EnQualify.VerifySignedMessageInfoDocumentAddRequest? = nil, completion: @escaping ((_ data: EnQualify.BaseResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
@@ -4826,6 +4851,28 @@ public struct AppsAppCheckVersionResponse : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct VerifyMobileDocumentBarcodeRead : Swift.Codable {
+  public var barcode: Swift.String?
+  public init(barcode: Swift.String? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case barcode
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct LogsRequestLogListRequest : Swift.Codable {
   public var paging: EnQualify.PagingOptions?
   public var startDate: Foundation.Date?
@@ -4968,6 +5015,30 @@ public enum VerifyCallSessionStatusTypeEnum : Swift.String, Swift.Codable {
     get
   }
 }
+public struct VerifyDocumentBarcodeReadRequest : Swift.Codable {
+  public var content: Swift.String?
+  public var contentHash: Swift.String?
+  public init(content: Swift.String? = nil, contentHash: Swift.String? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case content
+    case contentHash
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct VerifyMobileParameterGetResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
   public var result: EnQualify.ResultInfo?
@@ -5010,9 +5081,10 @@ public struct VerifyMobileParameterGetResponse : Swift.Codable {
   public var turnServerKey: Swift.String?
   public var mediaServer: Swift.Bool?
   public var oCRFrontReader: Swift.Bool?
+  public var addressVerification: Swift.Bool?
   public var readBarcodeIdentityNo: Swift.Bool?
   public var toleranceTime: Swift.Int?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, livenessScore: Swift.Double? = nil, faceRecognitionThreshold: Swift.Double? = nil, timeout: Swift.Int? = nil, maxCallStartErrorTime: Swift.Int? = nil, maxCallStartWaitTime: Swift.Int? = nil, screenRecordBitrate: Swift.Int? = nil, screenRecord: Swift.Bool? = nil, screenRecordPart: Swift.String? = nil, screenRecordUploadRetryCount: Swift.Int? = nil, screenRecordUploadTimeout: Swift.Int? = nil, oCRMode: Swift.String? = nil, oCRDifficultyLevel: Swift.Int? = nil, livenessCalibration: Swift.Int? = nil, eyeDetectionTimeout: Swift.Int? = nil, headCalibration: Swift.Int? = nil, smileCalibration: Swift.Double? = nil, eyeCalibration: Swift.Double? = nil, livenessTimeOut: Swift.Int? = nil, distanceMin: Swift.Double? = nil, distanceMax: Swift.Double? = nil, chipDistanceMin: Swift.Double? = nil, chipDistanceMax: Swift.Double? = nil, maxCallTime: Swift.Int? = nil, setIceCheckingTimeout: Swift.Int? = nil, setCallWaitTimeout: Swift.Int? = nil, showMobileSpeed: Swift.Bool? = nil, getDG1Name: Swift.Bool? = nil, domainName: Swift.String? = nil, aIUsername: Swift.String? = nil, aIPassword: Swift.String? = nil, signalServer: Swift.String? = nil, stunServer: Swift.String? = nil, turnServer: Swift.String? = nil, turnServerUser: Swift.String? = nil, turnServerKey: Swift.String? = nil, mediaServer: Swift.Bool? = nil, oCRFrontReader: Swift.Bool? = nil, readBarcodeIdentityNo: Swift.Bool? = nil, toleranceTime: Swift.Int? = nil)
+  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, livenessScore: Swift.Double? = nil, faceRecognitionThreshold: Swift.Double? = nil, timeout: Swift.Int? = nil, maxCallStartErrorTime: Swift.Int? = nil, maxCallStartWaitTime: Swift.Int? = nil, screenRecordBitrate: Swift.Int? = nil, screenRecord: Swift.Bool? = nil, screenRecordPart: Swift.String? = nil, screenRecordUploadRetryCount: Swift.Int? = nil, screenRecordUploadTimeout: Swift.Int? = nil, oCRMode: Swift.String? = nil, oCRDifficultyLevel: Swift.Int? = nil, livenessCalibration: Swift.Int? = nil, eyeDetectionTimeout: Swift.Int? = nil, headCalibration: Swift.Int? = nil, smileCalibration: Swift.Double? = nil, eyeCalibration: Swift.Double? = nil, livenessTimeOut: Swift.Int? = nil, distanceMin: Swift.Double? = nil, distanceMax: Swift.Double? = nil, chipDistanceMin: Swift.Double? = nil, chipDistanceMax: Swift.Double? = nil, maxCallTime: Swift.Int? = nil, setIceCheckingTimeout: Swift.Int? = nil, setCallWaitTimeout: Swift.Int? = nil, showMobileSpeed: Swift.Bool? = nil, getDG1Name: Swift.Bool? = nil, domainName: Swift.String? = nil, aIUsername: Swift.String? = nil, aIPassword: Swift.String? = nil, signalServer: Swift.String? = nil, stunServer: Swift.String? = nil, turnServer: Swift.String? = nil, turnServerUser: Swift.String? = nil, turnServerKey: Swift.String? = nil, mediaServer: Swift.Bool? = nil, oCRFrontReader: Swift.Bool? = nil, addressVerification: Swift.Bool? = nil, readBarcodeIdentityNo: Swift.Bool? = nil, toleranceTime: Swift.Int? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -5055,6 +5127,7 @@ public struct VerifyMobileParameterGetResponse : Swift.Codable {
     case turnServerKey
     case mediaServer
     case oCRFrontReader
+    case addressVerification
     case readBarcodeIdentityNo
     case toleranceTime
     public init?(rawValue: Swift.String)
@@ -5132,11 +5205,13 @@ public struct VerifyDocumentSignSetMobileRequest : Swift.Codable {
   public var data: Swift.String?
   public var signature: Swift.String?
   public var key: Swift.String?
-  public init(data: Swift.String? = nil, signature: Swift.String? = nil, key: Swift.String? = nil)
+  public var reference: Swift.String?
+  public init(data: Swift.String? = nil, signature: Swift.String? = nil, key: Swift.String? = nil, reference: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case data
     case signature
     case key
+    case reference
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -5166,6 +5241,30 @@ public struct PartiesProfileModel : Swift.Codable {
     case locale
     case image
     case securityImage
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct VerifyMobileDocumentBarcodeVerifyRequest : Swift.Codable {
+  public var identityNo: Swift.String?
+  public var barcode: Swift.String?
+  public init(identityNo: Swift.String? = nil, barcode: Swift.String? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case identityNo
+    case barcode
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -5375,6 +5474,36 @@ public struct VerifyAppointmentSaveMobileModel : Swift.Codable {
     case surname
     case phone
     case email
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct VerifyMobileDocumentBarcodeReadResponse : Swift.Codable {
+  public var isSuccessful: Swift.Bool?
+  public var result: EnQualify.ResultInfo?
+  public var warning: EnQualify.ResultInfo?
+  public var referenceId: Foundation.UUID?
+  public var data: EnQualify.VerifyMobileDocumentBarcodeRead?
+  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, data: EnQualify.VerifyMobileDocumentBarcodeRead? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case isSuccessful
+    case result
+    case warning
+    case referenceId
+    case data
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -6260,6 +6389,30 @@ public struct VerifyDocumentSignGetMobileResponse : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct SignedMessageVerifyMobileDocumentBarcodeVerifyRequest : Swift.Codable {
+  public var message: EnQualify.VerifyMobileDocumentBarcodeVerifyRequest?
+  public var signature: EnQualify.MessageSignature?
+  public init(message: EnQualify.VerifyMobileDocumentBarcodeVerifyRequest? = nil, signature: EnQualify.MessageSignature? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case message
+    case signature
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct LogsProcessLogListRequest : Swift.Codable {
   public var paging: EnQualify.PagingOptions?
   public var startDate: Foundation.Date?
@@ -6331,6 +6484,32 @@ public struct SignedMessageVerifyCallSessionRoomRequest : Swift.Codable {
   public var signature: EnQualify.MessageSignature?
   public init(message: EnQualify.VerifyCallSessionRoomRequest? = nil, signature: EnQualify.MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case message
+    case signature
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct VerifyMobileSignedMessagDocumentBarcodeReadRequest : Swift.Codable {
+  public var content: Swift.String?
+  public var message: EnQualify.VerifyDocumentBarcodeReadRequest?
+  public var signature: EnQualify.MessageSignature?
+  public init(content: Swift.String? = nil, message: EnQualify.VerifyDocumentBarcodeReadRequest? = nil, signature: EnQualify.MessageSignature? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case content
     case message
     case signature
     public init?(rawValue: Swift.String)
@@ -6571,7 +6750,8 @@ public struct VerifyAppointmentMobileModel : Swift.Codable {
   public var email: Swift.String?
   public var startDate: Foundation.Date?
   public var endDate: Foundation.Date?
-  public init(uId: Foundation.UUID? = nil, callType: Swift.String? = nil, callTypeValue: Swift.String? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil, startDate: Foundation.Date? = nil, endDate: Foundation.Date? = nil)
+  public var isPriorityCustomer: Swift.Bool?
+  public init(uId: Foundation.UUID? = nil, callType: Swift.String? = nil, callTypeValue: Swift.String? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil, startDate: Foundation.Date? = nil, endDate: Foundation.Date? = nil, isPriorityCustomer: Swift.Bool? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case uId
     case callType
@@ -6584,6 +6764,7 @@ public struct VerifyAppointmentMobileModel : Swift.Codable {
     case email
     case startDate
     case endDate
+    case isPriorityCustomer
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -6684,6 +6865,24 @@ public struct VerifySignedMessageInfoDocumentAddRequest : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyDocumentSignGetMobileRequest : Swift.Codable {
+  public var reference: Swift.String?
+  public init(reference: Swift.String? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case reference
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -7408,6 +7607,9 @@ extension EnQualify.VerifyCallIDBlockGetResponse.CodingKeys : Swift.RawRepresent
 extension EnQualify.AppsAppCheckVersionResponse.CodingKeys : Swift.Equatable {}
 extension EnQualify.AppsAppCheckVersionResponse.CodingKeys : Swift.Hashable {}
 extension EnQualify.AppsAppCheckVersionResponse.CodingKeys : Swift.RawRepresentable {}
+extension EnQualify.VerifyMobileDocumentBarcodeRead.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifyMobileDocumentBarcodeRead.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifyMobileDocumentBarcodeRead.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.LogsRequestLogListRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.LogsRequestLogListRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.LogsRequestLogListRequest.CodingKeys : Swift.RawRepresentable {}
@@ -7423,6 +7625,9 @@ extension EnQualify.SignedMessageBaseRequest.CodingKeys : Swift.RawRepresentable
 extension EnQualify.VerifyCallSessionStatusTypeEnum : Swift.Equatable {}
 extension EnQualify.VerifyCallSessionStatusTypeEnum : Swift.Hashable {}
 extension EnQualify.VerifyCallSessionStatusTypeEnum : Swift.RawRepresentable {}
+extension EnQualify.VerifyDocumentBarcodeReadRequest.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifyDocumentBarcodeReadRequest.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifyDocumentBarcodeReadRequest.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.VerifyMobileParameterGetResponse.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifyMobileParameterGetResponse.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifyMobileParameterGetResponse.CodingKeys : Swift.RawRepresentable {}
@@ -7438,6 +7643,9 @@ extension EnQualify.VerifyDocumentSignSetMobileRequest.CodingKeys : Swift.RawRep
 extension EnQualify.PartiesProfileModel.CodingKeys : Swift.Equatable {}
 extension EnQualify.PartiesProfileModel.CodingKeys : Swift.Hashable {}
 extension EnQualify.PartiesProfileModel.CodingKeys : Swift.RawRepresentable {}
+extension EnQualify.VerifyMobileDocumentBarcodeVerifyRequest.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifyMobileDocumentBarcodeVerifyRequest.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifyMobileDocumentBarcodeVerifyRequest.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.DocumentsAppFolderGetRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.DocumentsAppFolderGetRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.DocumentsAppFolderGetRequest.CodingKeys : Swift.RawRepresentable {}
@@ -7459,6 +7667,9 @@ extension EnQualify.CoreResource.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.VerifyAppointmentSaveMobileModel.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifyAppointmentSaveMobileModel.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifyAppointmentSaveMobileModel.CodingKeys : Swift.RawRepresentable {}
+extension EnQualify.VerifyMobileDocumentBarcodeReadResponse.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifyMobileDocumentBarcodeReadResponse.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifyMobileDocumentBarcodeReadResponse.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.LogsApplicationLogModel.CodingKeys : Swift.Equatable {}
 extension EnQualify.LogsApplicationLogModel.CodingKeys : Swift.Hashable {}
 extension EnQualify.LogsApplicationLogModel.CodingKeys : Swift.RawRepresentable {}
@@ -7516,6 +7727,9 @@ extension EnQualify.VerifyCallIDChipModel.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.VerifyDocumentSignGetMobileResponse.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifyDocumentSignGetMobileResponse.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifyDocumentSignGetMobileResponse.CodingKeys : Swift.RawRepresentable {}
+extension EnQualify.SignedMessageVerifyMobileDocumentBarcodeVerifyRequest.CodingKeys : Swift.Equatable {}
+extension EnQualify.SignedMessageVerifyMobileDocumentBarcodeVerifyRequest.CodingKeys : Swift.Hashable {}
+extension EnQualify.SignedMessageVerifyMobileDocumentBarcodeVerifyRequest.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.LogsProcessLogListRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.LogsProcessLogListRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.LogsProcessLogListRequest.CodingKeys : Swift.RawRepresentable {}
@@ -7525,6 +7739,9 @@ extension EnQualify.LogsActivityLogGetResponse.CodingKeys : Swift.RawRepresentab
 extension EnQualify.SignedMessageVerifyCallSessionRoomRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.SignedMessageVerifyCallSessionRoomRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.SignedMessageVerifyCallSessionRoomRequest.CodingKeys : Swift.RawRepresentable {}
+extension EnQualify.VerifyMobileSignedMessagDocumentBarcodeReadRequest.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifyMobileSignedMessagDocumentBarcodeReadRequest.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifyMobileSignedMessagDocumentBarcodeReadRequest.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.VerifyCallIDDocAddResponse.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifyCallIDDocAddResponse.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifyCallIDDocAddResponse.CodingKeys : Swift.RawRepresentable {}
@@ -7558,6 +7775,9 @@ extension EnQualify.VerifyCallSessionInfoAddResponse.CodingKeys : Swift.RawRepre
 extension EnQualify.VerifySignedMessageInfoDocumentAddRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifySignedMessageInfoDocumentAddRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifySignedMessageInfoDocumentAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension EnQualify.VerifyDocumentSignGetMobileRequest.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifyDocumentSignGetMobileRequest.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifyDocumentSignGetMobileRequest.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.CoreStatusResponse.CodingKeys : Swift.Equatable {}
 extension EnQualify.CoreStatusResponse.CodingKeys : Swift.Hashable {}
 extension EnQualify.CoreStatusResponse.CodingKeys : Swift.RawRepresentable {}
