@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name EnQualify
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -529,6 +529,7 @@ public struct AppsAppVersion : Swift.Codable {
 @objc public class EnverifyVerifyAppointmentResult : ObjectiveC.NSObject {
   @objc public var uId: Foundation.UUID?
   @objc public var callType: Swift.String?
+  @objc public var callTypeValue: Swift.String?
   @objc public var identityType: Swift.String?
   @objc public var identityNo: Swift.String?
   @objc public var name: Swift.String?
@@ -537,7 +538,8 @@ public struct AppsAppVersion : Swift.Codable {
   @objc public var email: Swift.String?
   @objc public var startDate: Foundation.Date?
   @objc public var endDate: Foundation.Date?
-  @objc public init(uId: Foundation.UUID? = nil, callType: Swift.String? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil, startDate: Foundation.Date? = nil, endDate: Foundation.Date? = nil)
+  @objc public var isPriorityCustomer: Swift.Bool
+  @objc public init(uId: Foundation.UUID? = nil, callType: Swift.String? = nil, callTypeValue: Swift.String? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil, startDate: Foundation.Date? = nil, endDate: Foundation.Date? = nil, isPriorityCustomer: Swift.Bool = false)
   @objc deinit
 }
 @objc public class EnverifyVerifyCallTypeResult : ObjectiveC.NSObject {
