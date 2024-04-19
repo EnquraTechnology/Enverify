@@ -539,7 +539,7 @@ public struct AppsAppVersion : Swift.Codable {
   @objc public var startDate: Foundation.Date?
   @objc public var endDate: Foundation.Date?
   @objc public var isPriorityCustomer: Swift.Bool
-  @objc public init(uId: Foundation.UUID? = nil, callType: Swift.String? = nil, callTypeValue: Swift.String? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil, startDate: Foundation.Date? = nil, endDate: Foundation.Date? = nil, isPriorityCustomer: Swift.Bool = false)
+  @objc public init(uId: Foundation.UUID? = nil, callType: Swift.String? = nil, callTypeValue: Swift.String? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil, startDate: Foundation.Date? = nil, endDate: Foundation.Date? = nil, isPriorityCustomer: Swift.Bool)
   @objc deinit
 }
 @objc public class EnverifyVerifyCallTypeResult : ObjectiveC.NSObject {
