@@ -156,7 +156,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<data>
-		vBERW8Ya3lx9Nb5u2UzwrcDAhC8=
+		s/zdGJE+82OkKPrvxii1ZPmY4cg=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<data>
@@ -196,7 +196,7 @@
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/Info.plist</key>
 		<data>
-		dD+W6UrT/nvpKW20W+1g/XeCt9c=
+		pJnwClqX6VUgxP+T3tCdgb+aLn4=
 		</data>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
 		<data>
@@ -232,7 +232,7 @@
 		</data>
 		<key>Headers/EnQualify-Swift.h</key>
 		<data>
-		AyhD8BJ5dz8WaFpPcQ9c+4QzjQE=
+		zBYZNt+eLx4OtkPRbBb5et2GO6M=
 		</data>
 		<key>Headers/EnVerify.h</key>
 		<data>
@@ -240,11 +240,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		y+WM2UbBW9TzdHM1DfJ+kDWWvOk=
+		vWV04mvEVdLyhMTAHedg5rQJBAA=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		TUTqnpsgfcLx8BhO49SzUPFrSHg=
+		JPSAFgCWJXoV5xo7vq49p6y2afw=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -252,19 +252,19 @@
 		</data>
 		<key>Modules/EnQualify.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		LzoE8/k6QkHncTJm47Q2Sx3e4DQ=
+		hYGEXiGiEpxPokhPzm6SDjOvp/E=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Rsh8YA/S2fsEI92qMvWvaHBXREw=
+		A/asybhEQnfPGFgbH2dePWHbz1Q=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		LzoE8/k6QkHncTJm47Q2Sx3e4DQ=
+		hYGEXiGiEpxPokhPzm6SDjOvp/E=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		eZfBozzWH5acCErCBpjUORmbtfM=
+		YB8GdTqTCHvKihnaWM6iti9SzIQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -526,7 +526,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			09+luKNjgUFTeIMXbHKMIC+VtZ9ojV213hxtYyjR4u8=
+			WG2DQH9J+xPjdjBsLHQAeo+coPBkt8Y28ZwPbZr5RA8=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
@@ -596,7 +596,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FHGID4QUC84o6PJNNarfq2gYWPGBA+ySvSfZasRacF4=
+			58s3zQd8w7zEK1m9vA/9x+vHNDB0YsGYh07lp/MEmGw=
 			</data>
 		</dict>
 		<key>GoogleMVTextDetectorResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
@@ -659,7 +659,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UOnDgrCcOORS2vEGWJoWSeFCfL2SQC7NYf7dXCPY7Tc=
+			eAHX1R6vnRlDVtJ3mT6yn4QXE44oJaX5Y3YhZ0kc22E=
 			</data>
 		</dict>
 		<key>Headers/EnVerify.h</key>
@@ -673,7 +673,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mQ9Ak8k5gjCpnoR4cf8vDC4ssLE7DwruwDST/l1RVhM=
+			MQgpJfuMURwOnm7CSwJebraHRQTMJuTTkY8g+5a3fck=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -687,28 +687,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UfOLCFuJycQKW1ssPuJyC48j9s6sNlEh0ZXrL3pphs4=
+			H9ci/bjhVKYwT1Z/a3p2yQLDJEP60Rf2T1p59JaGvTQ=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sHNpga19AIhVbS3Q+wYa9GKzjj3J129rBHdd7OnVoLk=
+			1JNz+jPfevG3Y0jyyS05y3xnRyfuW/UHxglBSWRVEh0=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UfOLCFuJycQKW1ssPuJyC48j9s6sNlEh0ZXrL3pphs4=
+			H9ci/bjhVKYwT1Z/a3p2yQLDJEP60Rf2T1p59JaGvTQ=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l/qZZuFrrp53zq8/GQOY121VGK8cqOnPb7VF+e10f9Q=
+			CJR2NEsE1kzXyk8gvDkR/zzHcM+qjYVuKZ+1eicvNRE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
