@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name EnQualify
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name EnQualify
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import AVKit
@@ -16,11 +16,11 @@ import Photos
 import ReplayKit
 import Security
 import Swift
-import SwiftyJSON
 import SystemConfiguration
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public struct VerifyCallIDBlockGetRequest : Swift.Codable {
   public var identityNumber: Swift.String?
   public var phone: Swift.String?
@@ -663,7 +663,7 @@ public struct LogsApplicationLogAddRequest : Swift.Codable {
   public var screenRecordBitrate: Swift.Int?
   public var screenRecord: Swift.Bool?
   public var screenRecordPart: Swift.String?
-  public var screenRecordRetryCount: Swift.Int?
+  public var screenRecordUploadRetryCount: Swift.Int?
   public var screenRecordUploadTimeout: Swift.Int?
   public var oCRMode: Swift.String?
   public var oCRDifficultyLevel: Swift.Int?
@@ -1552,6 +1552,8 @@ public struct LogsAuditLogGetResponse : Swift.Codable {
   @objc func sessionStartCompleted(sessionUid: Swift.String)
   @objc func getAuthTokenFailure()
   @objc func getAuthTokenCompleted()
+  @objc func getSettingsCompleted()
+  @objc func getSettingsFailure()
   @objc func roomIDSendFailure()
   @objc func roomIDSendCompleted()
   @objc func idDocStoreFailure()
@@ -1683,7 +1685,8 @@ public struct LogsRequestLogAddResponse : Swift.Codable {
   @objc @_Concurrency.MainActor(unsafe) public static var calibrationValues: EnQualify.CalibrationValues
   @objc @_Concurrency.MainActor(unsafe) public static func incomingCallObserver(callChanged call: CallKit.CXCall)
   @objc @_Concurrency.MainActor(unsafe) public static func integrationAdd(type: Swift.String, callType: Swift.String?, phone: Swift.String?, email: Swift.String?, data: Swift.String, addressRegistration: EnQualify.EnVerifyCallAddressRegistrationModel?, iDRegistration: EnQualify.EnVerifyCallIDRegistrationModel?)
-  @objc @_Concurrency.MainActor(unsafe) public static func getAuthToken(_ userNameForToken: Swift.String? = nil, _ backOfficeBasePath: Swift.String, completion: @escaping (Swift.Bool) -> ())
+  @objc @_Concurrency.MainActor(unsafe) public static func getAuthToken()
+  @objc @_Concurrency.MainActor(unsafe) public static func getAuthTokenBeforeSDK(_ userNameForToken: Swift.String? = nil, _ backOfficeBasePath: Swift.String, completion: @escaping (Swift.Bool) -> ())
   @objc @_Concurrency.MainActor(unsafe) public static func sessionUpdateForHandicapped(handicapped: Swift.Bool)
   @objc @_Concurrency.MainActor(unsafe) public static func logInfoAdd(type: EnQualify.SessionInfoType, message: Swift.String? = "")
   @objc @_Concurrency.MainActor(unsafe) public static func callSessionClose(finished: Swift.Bool = true)
@@ -1819,7 +1822,7 @@ public struct LogsRequestLogAddResponse : Swift.Codable {
   @objc @_Concurrency.MainActor(unsafe) public static func setAgentRequest()
   @objc @_Concurrency.MainActor(unsafe) public static func getAppointment(identityNo: Swift.String?, identityType: Swift.String?, completion: @escaping ((_ data: [EnQualify.EnverifyVerifyAppointmentResult]?, _ error: (any Swift.Error)?) -> Swift.Void))
   @objc @_Concurrency.MainActor(unsafe) public static func getCallTypes(completion: @escaping ((_ data: [EnQualify.EnverifyVerifyCallTypeResult]?, _ error: (any Swift.Error)?) -> Swift.Void))
-  @_Concurrency.MainActor(unsafe) public static func getSettings(completion: @escaping () -> ())
+  @_Concurrency.MainActor(unsafe) public static func getSettings()
   @objc @_Concurrency.MainActor(unsafe) public static func appMovedToForeground()
   @objc @_Concurrency.MainActor(unsafe) public static func appMovedToBackground()
   @objc @_Concurrency.MainActor(unsafe) public static func speedCheck()
@@ -1828,7 +1831,7 @@ public struct LogsRequestLogAddResponse : Swift.Codable {
   @objc deinit
 }
 extension EnQualify.EnVerify {
-  @_Concurrency.MainActor(unsafe) public static func startTimer()
+  @objc @_Concurrency.MainActor(unsafe) public static func startTimer()
 }
 public struct VerifyCallIDBlockGetResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
@@ -4465,7 +4468,7 @@ public struct VerifyMobileParameterGetResponse : Swift.Codable {
   public var screenRecordBitrate: Swift.Int?
   public var screenRecord: Swift.Bool?
   public var screenRecordPart: Swift.String?
-  public var screenRecordRetryCount: Swift.Int?
+  public var screenRecordUploadRetryCount: Swift.Int?
   public var screenRecordUploadTimeout: Swift.Int?
   public var oCRMode: Swift.String?
   public var oCRDifficultyLevel: Swift.Int?
@@ -4494,7 +4497,7 @@ public struct VerifyMobileParameterGetResponse : Swift.Codable {
   public var turnServerKey: Swift.String?
   public var mediaServer: Swift.Bool?
   public var oCRFrontReader: Swift.Bool?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, livenessScore: Swift.Double? = nil, faceRecognitionThreshold: Swift.Double? = nil, timeout: Swift.Int? = nil, maxCallStartErrorTime: Swift.Int? = nil, maxCallStartWaitTime: Swift.Int? = nil, screenRecordBitrate: Swift.Int? = nil, screenRecord: Swift.Bool? = nil, screenRecordPart: Swift.String? = nil, screenRecordRetryCount: Swift.Int? = nil, screenRecordUploadTimeout: Swift.Int? = nil, oCRMode: Swift.String? = nil, oCRDifficultyLevel: Swift.Int? = nil, livenessCalibration: Swift.Int? = nil, eyeDetectionTimeout: Swift.Int? = nil, headCalibration: Swift.Int? = nil, smileCalibration: Swift.Double? = nil, eyeCalibration: Swift.Double? = nil, livenessTimeOut: Swift.Int? = nil, distanceMin: Swift.Double? = nil, distanceMax: Swift.Double? = nil, chipDistanceMin: Swift.Double? = nil, chipDistanceMax: Swift.Double? = nil, maxCallTime: Swift.Int? = nil, setIceCheckingTimeout: Swift.Int? = nil, setCallWaitTimeout: Swift.Int? = nil, showMobileSpeed: Swift.Bool? = nil, getDG1Name: Swift.Bool? = nil, domainName: Swift.String? = nil, aIUsername: Swift.String? = nil, aIPassword: Swift.String? = nil, signalServer: Swift.String? = nil, stunServer: Swift.String? = nil, turnServer: Swift.String? = nil, turnServerUser: Swift.String? = nil, turnServerKey: Swift.String? = nil, mediaServer: Swift.Bool? = nil, oCRFrontReader: Swift.Bool? = nil)
+  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, livenessScore: Swift.Double? = nil, faceRecognitionThreshold: Swift.Double? = nil, timeout: Swift.Int? = nil, maxCallStartErrorTime: Swift.Int? = nil, maxCallStartWaitTime: Swift.Int? = nil, screenRecordBitrate: Swift.Int? = nil, screenRecord: Swift.Bool? = nil, screenRecordPart: Swift.String? = nil, screenRecordUploadRetryCount: Swift.Int? = nil, screenRecordUploadTimeout: Swift.Int? = nil, oCRMode: Swift.String? = nil, oCRDifficultyLevel: Swift.Int? = nil, livenessCalibration: Swift.Int? = nil, eyeDetectionTimeout: Swift.Int? = nil, headCalibration: Swift.Int? = nil, smileCalibration: Swift.Double? = nil, eyeCalibration: Swift.Double? = nil, livenessTimeOut: Swift.Int? = nil, distanceMin: Swift.Double? = nil, distanceMax: Swift.Double? = nil, chipDistanceMin: Swift.Double? = nil, chipDistanceMax: Swift.Double? = nil, maxCallTime: Swift.Int? = nil, setIceCheckingTimeout: Swift.Int? = nil, setCallWaitTimeout: Swift.Int? = nil, showMobileSpeed: Swift.Bool? = nil, getDG1Name: Swift.Bool? = nil, domainName: Swift.String? = nil, aIUsername: Swift.String? = nil, aIPassword: Swift.String? = nil, signalServer: Swift.String? = nil, stunServer: Swift.String? = nil, turnServer: Swift.String? = nil, turnServerUser: Swift.String? = nil, turnServerKey: Swift.String? = nil, mediaServer: Swift.Bool? = nil, oCRFrontReader: Swift.Bool? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -4508,7 +4511,7 @@ public struct VerifyMobileParameterGetResponse : Swift.Codable {
     case screenRecordBitrate
     case screenRecord
     case screenRecordPart
-    case screenRecordRetryCount
+    case screenRecordUploadRetryCount
     case screenRecordUploadTimeout
     case oCRMode
     case oCRDifficultyLevel
