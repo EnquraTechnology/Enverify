@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name IDVerification
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -434,6 +434,7 @@ public class DataGroup14 : IDVerification.DataGroup {
   @objc public static func setSSLPinning(state: Swift.Bool)
   @objc public static func setSSLCertificateBase64(certificate: Swift.String)
   @objc public static func setPassiveAuthenticationEnabled(isPassiveAuthenticatonEnabled: Swift.Bool)
+  @objc public static func setFaceCaptureEnabled(isFaceCaptureEnabled: Swift.Bool)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -577,16 +578,26 @@ public protocol CFace {
   @objc public func getChipDistance() -> Swift.Float
   @objc public func getIdDistance() -> Swift.Float
   @objc public func getEyeDistance() -> Swift.Float
-  @objc public func getSmilingConfidence() -> Swift.Float
-  @objc public func getRightEyeCloseConfidence() -> Swift.Float
-  @objc public func getLeftEyeCloseConfidence() -> Swift.Float
-  @objc public func getRightEyeOpenConfidence() -> Swift.Float
-  @objc public func getLeftEyeOpenConfidence() -> Swift.Float
+  @objc public func getSmilingConfidence() -> Swift.AnyObject?
+  @objc public func getRightEyeCloseConfidence() -> Swift.AnyObject?
+  @objc public func getLeftEyeCloseConfidence() -> Swift.AnyObject?
+  @objc public func getRightEyeOpenConfidence() -> Swift.AnyObject?
+  @objc public func getLeftEyeOpenConfidence() -> Swift.AnyObject?
   @objc public func getId() -> Swift.String
   @objc public func getFace() -> UIKit.UIImage
   @objc public func getEyeFace() -> UIKit.UIImage
   @objc public func getSelfiAntispoofing() -> Swift.Float
   @objc public func isHashSuccess() -> Swift.Bool
+  @objc public func getSmilingFaceCapture() -> Swift.AnyObject?
+  @objc public func getFaceUpFaceCapture() -> Swift.AnyObject?
+  @objc public func getFaceLeftFaceCapture() -> Swift.AnyObject?
+  @objc public func getFaceRightFaceCapture() -> Swift.AnyObject?
+  @objc public func getEyeCloseFaceCapture() -> Swift.AnyObject?
+  @objc public func getEyeCloseIntervalFaceCapture() -> Swift.AnyObject?
+  @objc public func getEyeOpenIntervalFaceCapture() -> Swift.AnyObject?
+  @objc public func getFaceUpAngle() -> Swift.AnyObject?
+  @objc public func getFaceLeftAngle() -> Swift.AnyObject?
+  @objc public func getFaceRightAngle() -> Swift.AnyObject?
   @objc deinit
 }
 @available(iOS 13, macOS 10.15, *)

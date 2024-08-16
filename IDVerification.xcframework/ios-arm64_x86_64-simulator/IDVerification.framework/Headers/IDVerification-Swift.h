@@ -361,16 +361,26 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CustomerFace * _Nonnul
 - (float)getChipDistance SWIFT_WARN_UNUSED_RESULT;
 - (float)getIdDistance SWIFT_WARN_UNUSED_RESULT;
 - (float)getEyeDistance SWIFT_WARN_UNUSED_RESULT;
-- (float)getSmilingConfidence SWIFT_WARN_UNUSED_RESULT;
-- (float)getRightEyeCloseConfidence SWIFT_WARN_UNUSED_RESULT;
-- (float)getLeftEyeCloseConfidence SWIFT_WARN_UNUSED_RESULT;
-- (float)getRightEyeOpenConfidence SWIFT_WARN_UNUSED_RESULT;
-- (float)getLeftEyeOpenConfidence SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getSmilingConfidence SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getRightEyeCloseConfidence SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getLeftEyeCloseConfidence SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getRightEyeOpenConfidence SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getLeftEyeOpenConfidence SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getId SWIFT_WARN_UNUSED_RESULT;
 - (UIImage * _Nonnull)getFace SWIFT_WARN_UNUSED_RESULT;
 - (UIImage * _Nonnull)getEyeFace SWIFT_WARN_UNUSED_RESULT;
 - (float)getSelfiAntispoofing SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)isHashSuccess SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getSmilingFaceCapture SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getFaceUpFaceCapture SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getFaceLeftFaceCapture SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getFaceRightFaceCapture SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getEyeCloseFaceCapture SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getEyeCloseIntervalFaceCapture SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getEyeOpenIntervalFaceCapture SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getFaceUpAngle SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getFaceLeftAngle SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getFaceRightAngle SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -566,6 +576,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) UIButton * _Nonnull ic
 + (void)setSSLPinningWithState:(BOOL)state;
 + (void)setSSLCertificateBase64WithCertificate:(NSString * _Nonnull)certificate;
 + (void)setPassiveAuthenticationEnabledWithIsPassiveAuthenticatonEnabled:(BOOL)isPassiveAuthenticatonEnabled;
++ (void)setFaceCaptureEnabledWithIsFaceCaptureEnabled:(BOOL)isFaceCaptureEnabled;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1152,16 +1163,26 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CustomerFace * _Nonnul
 - (float)getChipDistance SWIFT_WARN_UNUSED_RESULT;
 - (float)getIdDistance SWIFT_WARN_UNUSED_RESULT;
 - (float)getEyeDistance SWIFT_WARN_UNUSED_RESULT;
-- (float)getSmilingConfidence SWIFT_WARN_UNUSED_RESULT;
-- (float)getRightEyeCloseConfidence SWIFT_WARN_UNUSED_RESULT;
-- (float)getLeftEyeCloseConfidence SWIFT_WARN_UNUSED_RESULT;
-- (float)getRightEyeOpenConfidence SWIFT_WARN_UNUSED_RESULT;
-- (float)getLeftEyeOpenConfidence SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getSmilingConfidence SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getRightEyeCloseConfidence SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getLeftEyeCloseConfidence SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getRightEyeOpenConfidence SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getLeftEyeOpenConfidence SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getId SWIFT_WARN_UNUSED_RESULT;
 - (UIImage * _Nonnull)getFace SWIFT_WARN_UNUSED_RESULT;
 - (UIImage * _Nonnull)getEyeFace SWIFT_WARN_UNUSED_RESULT;
 - (float)getSelfiAntispoofing SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)isHashSuccess SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getSmilingFaceCapture SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getFaceUpFaceCapture SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getFaceLeftFaceCapture SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getFaceRightFaceCapture SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getEyeCloseFaceCapture SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getEyeCloseIntervalFaceCapture SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getEyeOpenIntervalFaceCapture SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getFaceUpAngle SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getFaceLeftAngle SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)getFaceRightAngle SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -1357,6 +1378,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) UIButton * _Nonnull ic
 + (void)setSSLPinningWithState:(BOOL)state;
 + (void)setSSLCertificateBase64WithCertificate:(NSString * _Nonnull)certificate;
 + (void)setPassiveAuthenticationEnabledWithIsPassiveAuthenticatonEnabled:(BOOL)isPassiveAuthenticatonEnabled;
++ (void)setFaceCaptureEnabledWithIsFaceCaptureEnabled:(BOOL)isFaceCaptureEnabled;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

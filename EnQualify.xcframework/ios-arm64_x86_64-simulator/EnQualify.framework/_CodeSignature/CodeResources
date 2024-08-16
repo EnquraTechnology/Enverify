@@ -4,148 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/IDVerification.framework/Assets.car</key>
-		<data>
-		6FpYB0L2LAtcmfYcUq/NmVRxUkg=
-		</data>
-		<key>Frameworks/IDVerification.framework/Config.plist</key>
-		<data>
-		G3fZEyQca4yMnbmTwSVyrMdR0bo=
-		</data>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
-		<data>
-		96Uw5p4tLIiDbN11Du0p0c5xqE8=
-		</data>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/BCLlefteyeclosed_200.emd</key>
-		<data>
-		KBTvwnLXsoe2PIlGUwZzMUOp5k8=
-		</data>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/BCLrighteyeclosed_200.emd</key>
-		<data>
-		fW6O7h6Je5DNmNrbOeCGmAixyLI=
-		</data>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/Info.plist</key>
-		<data>
-		8gCiizDZn06rOKv+lNZq5F6wpBQ=
-		</data>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
-		<data>
-		trY9XrpS4DxHzs3eHljZHIJNHrI=
-		</data>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/MFT_fssd_accgray.pb</key>
-		<data>
-		tq7fRawRQ359i/c0FEVvpQ6Oee0=
-		</data>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/MFT_fssd_fastgray.pb</key>
-		<data>
-		DP+qJf0czliL6znGLVx90ASNzCY=
-		</data>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/blazeface.tfl</key>
-		<data>
-		oseYQ/EQxo7JsNpdNgo4YVLh7a4=
-		</data>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/contours.tfl</key>
-		<data>
-		PaAh9+zFw3Is4fLMn5iQsLG5M34=
-		</data>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/fssd_100_8bit_gray_v1.tflite</key>
-		<data>
-		VCp0NyrYJWQnYbGaxVv0Vzy0IeA=
-		</data>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/fssd_100_8bit_v1.tflite</key>
-		<data>
-		AHaxev+fV4YGoIDboAUFlxfISmY=
-		</data>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/fssd_25_8bit_gray_v1.tflite</key>
-		<data>
-		Rd53RFFpKHZNvbiDaE2p4XxjbY0=
-		</data>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/fssd_25_8bit_v1.tflite</key>
-		<data>
-		RxtbTN3LjpFChp3tmniX3KD+dsE=
-		</data>
-		<key>Frameworks/IDVerification.framework/IDVerification</key>
-		<data>
-		3Qn2gjHYocdjcPSky64koUAqFyU=
-		</data>
-		<key>Frameworks/IDVerification.framework/Info.plist</key>
-		<data>
-		LF0SS8uBTjEZCPwJq48Brv83pqQ=
-		</data>
-		<key>Frameworks/IDVerification.framework/LatinOCRResources.bundle/Info.plist</key>
-		<data>
-		l0Pn/+Xgadnvfm53ASQAqBKPFlM=
-		</data>
-		<key>Frameworks/IDVerification.framework/LatinOCRResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
-		<data>
-		V2ROSYH9TDZ87SKQfYmC78jkabg=
-		</data>
-		<key>Frameworks/IDVerification.framework/LatinOCRResources.bundle/rpn_lstm_engine_tflite_latin.bincfg</key>
-		<data>
-		W+TF/C0djllwb4ejtlbbwoqIOaA=
-		</data>
-		<key>Frameworks/IDVerification.framework/LatinOCRResources.bundle/rpn_text_detector_mobile_space_to_depth_quantized_v2.tflite</key>
-		<data>
-		6ny23cax5EGQNgpJKSnhJUhpxtQ=
-		</data>
-		<key>Frameworks/IDVerification.framework/LatinOCRResources.bundle/tflite_langid.tflite</key>
-		<data>
-		/LcQXDvm1hHXPLE3IVulrhpZePE=
-		</data>
-		<key>Frameworks/IDVerification.framework/LatinOCRResources.bundle/tflite_lstm_recognizer_latin_0.3.bincfg</key>
-		<data>
-		66UmXr+gf7XJ71vLnqjAwes9Mnw=
-		</data>
-		<key>Frameworks/IDVerification.framework/LatinOCRResources.bundle/tflite_lstm_recognizer_latin_0.3.class_lst</key>
-		<data>
-		68PK2+uslXMmEpqkRadeVy2t0PE=
-		</data>
-		<key>Frameworks/IDVerification.framework/LatinOCRResources.bundle/tflite_lstm_recognizer_latin_0.3.conv_model</key>
-		<data>
-		BQIj06B3MVer0TIFCE1lwPQqAQ8=
-		</data>
-		<key>Frameworks/IDVerification.framework/LatinOCRResources.bundle/tflite_lstm_recognizer_latin_0.3.lstm_model</key>
-		<data>
-		oYS7+p9yJEEy3UOE1YgjDNNbLAM=
-		</data>
-		<key>Frameworks/IDVerification.framework/Resource/Privacy/PrivacyInfo.xcprivacy</key>
-		<data>
-		IINR6FCVVx6m7+VxE853wUJWqa4=
-		</data>
-		<key>Frameworks/IDVerification.framework/_CodeSignature/CodeResources</key>
-		<data>
-		0n7GSUMEGsDfvGUYti0J+C1xoEI=
-		</data>
-		<key>Frameworks/IDVerification.framework/en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			KeNbnhetUsQ3ltq5uGLVoqwYQDw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/IDVerification.framework/labels.txt</key>
-		<data>
-		EC+wWFNIrxc9YBm35qIC6CBXmOU=
-		</data>
-		<key>Frameworks/IDVerification.framework/masterList.pem</key>
-		<data>
-		Tt0bcdSiiWDR0oTEexc4f7JdiZg=
-		</data>
-		<key>Frameworks/IDVerification.framework/model.enc</key>
-		<data>
-		qocrxEqBRHxVEH3KY+eX9XzCwuc=
-		</data>
-		<key>Frameworks/IDVerification.framework/tr.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			KeNbnhetUsQ3ltq5uGLVoqwYQDw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
 		<data>
 		96Uw5p4tLIiDbN11Du0p0c5xqE8=
@@ -160,7 +18,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<data>
-		HPDZnFyjlb5TOfM27fhYiUtnAi8=
+		LXbNhyVkPt4CazGySBf4p8UQe7g=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<data>
@@ -200,7 +58,7 @@
 		</data>
 		<key>Headers/EnQualify-Swift.h</key>
 		<data>
-		XoU1NPMLRGMWnJNzB+eT86aQpsk=
+		e/wF/LVczs16wR3in/NLbuh/YL8=
 		</data>
 		<key>Headers/EnVerify.h</key>
 		<data>
@@ -208,11 +66,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		y+WM2UbBW9TzdHM1DfJ+kDWWvOk=
+		m3mWxGBBSgqrhK0WpNiRMrU7JaM=
 		</data>
 		<key>LatinOCRResources.bundle/Info.plist</key>
 		<data>
-		CCnIveRujUjm7dO6H3G58Atm9F8=
+		YC7EC1Pu/wnI+4vgfryokIkqxtk=
 		</data>
 		<key>LatinOCRResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
 		<data>
@@ -248,294 +106,71 @@
 		</data>
 		<key>Modules/EnQualify.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		A9UUpXGZaXypB3gXj7SoXJIl3ng=
+		rMGuz2KVgnn/RJWeVwYQnYzUiOw=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		9TQVC0EZCxeQBxK4EgUzi+gW8ig=
+		KlVKGLnL7475oxIopU3BPb9+kuI=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		L1VScBW8mKbxhcyEAFdMPF+5pts=
+		L3ppDRROpzQA33Obqk0bvT4PNS8=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ziZbvZ372xOWK34UxfR0/npfUK0=
+		CkzOhNFnwjhFJqBJeKkw4V5GlcQ=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		sy/uSX5/cfKK4FmkTve4G9OYV3M=
+		v+c8lg4WVO4r5Xv3laz/cxKF/wE=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ziZbvZ372xOWK34UxfR0/npfUK0=
+		CkzOhNFnwjhFJqBJeKkw4V5GlcQ=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		biDWI6diRiAM5mT0TaiVkBZaKXY=
+		GruSSyXMvtQ6CskoAi8+cCM24WI=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		L1VScBW8mKbxhcyEAFdMPF+5pts=
+		L3ppDRROpzQA33Obqk0bvT4PNS8=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		qjmuWD1UGoYTP3UFMoEPdZoOUE0=
+		qZ+tzeOs6dbfJFeyq5AHcGU8Qvc=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xsmsT/Gxe05bKTgPY+Pwcb3p55M=
+		baELYAq3kSgyi8yoJGb8JrfxWNw=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qjmuWD1UGoYTP3UFMoEPdZoOUE0=
+		qZ+tzeOs6dbfJFeyq5AHcGU8Qvc=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7HlLdu2XfM0cee+/zoGwiCOeHJM=
+		nUEbQAOo0Eig03DjEo4eULkyO4g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		W3xOPgzi9B1zLJC4WPnoPYNPFDE=
 		</data>
+		<key>VerifyCallBusinessAddRequest.swift.orig</key>
+		<data>
+		96xAxz81h93LjEpP5/cHzWyDrT4=
+		</data>
+		<key>VerifyCallBusinessCheckResponse.swift.orig</key>
+		<data>
+		YTbgkuGtGeZIhziXKklRb/ejdAE=
+		</data>
+		<key>VerifyCallBusinessStaffAddRequest.swift.orig</key>
+		<data>
+		G4J4t7Gd8E0LcyhaAtLBzTUX4Ow=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/IDVerification.framework/Assets.car</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			o5thSvSwdJGnYcy3CD5QWm/ZFlqXJ4Uks7SSC+fHDIc=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/Config.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0Fr5WU+93jDtP8DRRZxbipu61X/so5mKBAxQZ0h0uO4=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8A8lZEpijnOMFV9JPQcq8UPyU8v5nwi/SCnL5dT0NRw=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/BCLlefteyeclosed_200.emd</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0xIT5PJf+LIXgeeG/YnO3lkX75s/vlC99V1IOvE27e0=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/BCLrighteyeclosed_200.emd</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Y8oL2DjlGXdImtrbgKC+AWxaoLe2kPvDiaBkWqzP5P8=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			lc+qGbUn6DSxaGqbzIN1dgGUqvzy0cLirdbylX4tOGE=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DtXIUoL5QNFKVyOmwK8F+cKr1Okww8TwvloHI203QRE=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/MFT_fssd_accgray.pb</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8K2wTXshtNmImTKmLw7/En7tsn0vhTQqkBRBU8oLgbE=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/MFT_fssd_fastgray.pb</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CUNCXfGzUODFinvmaL4flC6sM4wZjhpPFoWco+Eif0U=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/blazeface.tfl</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			TyXMFC6WtfIbMjbSFmwuZikgaB8dI5QtJRDpjIr27Nw=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/contours.tfl</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hBYLwMSnSVF+Yvk8ssaKuP9J3lcfcOttFgJUypoHicA=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/fssd_100_8bit_gray_v1.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ekzwnGrkp1gUTUK/NbmiapWYfjxYQdDcORCVaYKZ2as=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/fssd_100_8bit_v1.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			OvuTDu3I0dQENEgCgdO16M7EwwTlLTT9/IqVCDQLtxk=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/fssd_25_8bit_gray_v1.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			IVEbvtJxoKkri5ORjg+I9u+70RWjbRVV8GHO4TH2qzw=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/GoogleMVFaceDetectorResources.bundle/fssd_25_8bit_v1.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2pAlL0mzu5QuX4gBgKFFYfZpKW5/s+3s3quqi2u3gio=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/IDVerification</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hWlUCvbXI8rZMNoAenI2d5StAkhLoad2OHkKomxRbrI=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			wjoyyktrjrL1pNzbfFDo4H6OXe+fwOigLgKuHam5xn4=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/LatinOCRResources.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			b4z5xp/lSy1aCPx4/Ie6NtNGmmrnj9mxh6cB93Fcb7Y=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/LatinOCRResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Gji2RtEJwU3YrjDV8SqQNvYPnpI8kwEzeqJQd1nysJg=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/LatinOCRResources.bundle/rpn_lstm_engine_tflite_latin.bincfg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EPDNQpLTZ7J3ggU9/BhgwGKbEwmAWLOsHW7KYoi7+wQ=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/LatinOCRResources.bundle/rpn_text_detector_mobile_space_to_depth_quantized_v2.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KQajsAlTNRgTxJFzQeGXEH7SqqwtF2UIkHWNwZAnHe4=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/LatinOCRResources.bundle/tflite_langid.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			f5Mfb3wd0OxZGs53gN+RZFpFD6/INQXz/0XOXvfIRBs=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/LatinOCRResources.bundle/tflite_lstm_recognizer_latin_0.3.bincfg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			oFDru3MHCMhVaoh3k7h/zhLun/pRevxSBccdRiS9e8c=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/LatinOCRResources.bundle/tflite_lstm_recognizer_latin_0.3.class_lst</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VRUPJ3nQeTbJ+/i+y7hWf+PqWta22UQkWClpWorpaPo=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/LatinOCRResources.bundle/tflite_lstm_recognizer_latin_0.3.conv_model</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZKunGbTtHuWz1IhsWq8LGsBRv1h56bCOhh4OKeIKCKc=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/LatinOCRResources.bundle/tflite_lstm_recognizer_latin_0.3.lstm_model</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DtYuT74PxcQJCuxHOxNuGI+ChZB2XAKDgjWNrds8y24=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/Resource/Privacy/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			lBj3xq7qta6E1qtj5stsO+Wx4Dqa/S9IBuOGGXatdqk=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			71MSkUsadrW0IUDBuycEAOLk3DAhRIBTtZfOwhIONS4=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Wc2sh+nUKcoaGqWlsFGZ37X/HcDao5cpBNSc4rR1oNI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/IDVerification.framework/labels.txt</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			vk3MOzDdN+Is5/G/mBaVPxnE8V0POfww9cKESCWIuII=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/masterList.pem</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			W5kKumAKpLTD3aZon6QdKWXippdkzFVz1CT7OkNDnqs=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/model.enc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			oD/kU4QXJinBjRswuZ22CwsQMEtL9xB/BBSdApDoiz4=
-			</data>
-		</dict>
-		<key>Frameworks/IDVerification.framework/tr.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Wc2sh+nUKcoaGqWlsFGZ37X/HcDao5cpBNSc4rR1oNI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
 		<dict>
 			<key>hash2</key>
@@ -561,7 +196,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cd80Z+LX2OSpenlca/0DoL0SURDXRmIVm3jHEoj4iQo=
+			ugg0s4a+MghmmKV51HEb2tiWqbrvdfTzGyU8zVAUBq8=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
@@ -631,7 +266,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FsNZLe+09+qb6w9/9USVBwj3z59SWa/n57XRssiKEAY=
+			+77h6u0AULcUgy4Q9QS7FSJog31M8Bzta+rtRx8H7jc=
 			</data>
 		</dict>
 		<key>Headers/EnVerify.h</key>
@@ -645,7 +280,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PNH3SBMVOqe6jAysJ9CFuSlirj51NoCyoQLowiMnZII=
+			8wOfpGdjuTEZC96GI918qVL44SxHBhPwRevkGShUAFE=
 			</data>
 		</dict>
 		<key>LatinOCRResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
@@ -708,84 +343,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1vsNmerMdMsGt0GZF3jeiBF6BFKrOmVcsvRDsPWKbiM=
+			pnwCpAkKevSwvDeP4WsFFxc9JXwgT5PmbXp2GR9IT14=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G0RN0EPMJt0lsmzEy80dzs31fcDEnQvewv9P7ejVgW0=
+			x/mS49s/QMPHXNQIkC8C0Klt7xms5zlOgdF/hIPF7Vk=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1QJMVKoIrfPLMLg/IRuuYw040ggbdc5sGoNHmhxvyW4=
+			9+If37/OiCJusqXDJQgOralvQP1Z7gfvdPI+nRybByM=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fUXkFekQGQSHEbh4dL9WvN3w54WvlCom7L9sFlOiQ6M=
+			/9El3KwIhqIShhyALst+7mW49cHexRdXsVQh1sz0kzc=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b1ppNwpiKmBsLUNFe4QUBqcxsaPyw14H4byXZhcxitY=
+			oBEqD0/UgueeEze5r3OJS16QQ3pgj4mUxpUoLcx/RPQ=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fUXkFekQGQSHEbh4dL9WvN3w54WvlCom7L9sFlOiQ6M=
+			/9El3KwIhqIShhyALst+7mW49cHexRdXsVQh1sz0kzc=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4ClxW4SuhZWHJjlOXCbkU8Y9W5ak7sJE7KkgOYG/AY0=
+			FF2/RdhNDDkCeTyluNWHVXZHtTPdIi2AyT80ejMfEZA=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1QJMVKoIrfPLMLg/IRuuYw040ggbdc5sGoNHmhxvyW4=
+			9+If37/OiCJusqXDJQgOralvQP1Z7gfvdPI+nRybByM=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FX1FfvRkw2+oVSzmbGUvKrArNyjM1sY36YM7KvJ7z1M=
+			pe5QzQUtWq1u15+jXeXBzG8N3DSHSlxnvRCDNE54kMI=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2qkIBI7J5hJaFmnnpNomRIcKI9Dia4xXCGCtrdz1kTU=
+			1eqDgtM3mZCCwwGv6wZKtasCfyJoAJSxzvWaf0EOz1U=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FX1FfvRkw2+oVSzmbGUvKrArNyjM1sY36YM7KvJ7z1M=
+			pe5QzQUtWq1u15+jXeXBzG8N3DSHSlxnvRCDNE54kMI=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xgjPzdYG3bp5FVANmAPrB6CHW6RngjZ1kyKzJVjISdM=
+			y1/j3PJOxRSWbmlhy8qE3ge9sUTWDCdHVasM7oTkrW4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -793,6 +428,27 @@
 			<key>hash2</key>
 			<data>
 			Fdyva4T5lXINE0VjaFTc3X/YFOa00OofoutTzg2G36o=
+			</data>
+		</dict>
+		<key>VerifyCallBusinessAddRequest.swift.orig</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Qo/73XwbS0UBEJZXgSGfjMvzYzBBoNHbcGB/5SwZ7bQ=
+			</data>
+		</dict>
+		<key>VerifyCallBusinessCheckResponse.swift.orig</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mL3416CcgMOa9qLDoie4uarim8l6tgOAon6oimqWh9Y=
+			</data>
+		</dict>
+		<key>VerifyCallBusinessStaffAddRequest.swift.orig</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tvzk36DB5JtRjZ6CBcScKZHRvmEmKVwo5T4n5OJV+CI=
 			</data>
 		</dict>
 	</dict>

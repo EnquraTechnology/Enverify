@@ -6,7 +6,7 @@
 	<dict>
 		<key>.DS_Store</key>
 		<data>
-		IeGKPo/cdOxvs+KP+YzVBwHnJTQ=
+		gijegikhQv0neglkrCSpk7mQ/eI=
 		</data>
 		<key>Assets.car</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/IDVerification-Swift.h</key>
 		<data>
-		J+cwVt1YhPRLoQEwc40wFpJ3bvQ=
+		tSrDrMR+f8OBB63npE44GM+jOTM=
 		</data>
 		<key>Headers/IDVerify.h</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LF0SS8uBTjEZCPwJq48Brv83pqQ=
+		67X1DdDqijRz6Yv2f+TDtXcXJ+8=
 		</data>
 		<key>LatinOCRResources.bundle/Info.plist</key>
 		<data>
@@ -118,19 +118,19 @@
 		</data>
 		<key>Modules/IDVerification.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		/F5bVo4CDjLYy7HjZtX+vikDxQE=
+		gLME32B3kTI0ZSkUNss19bKvFhQ=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		GL4WMFnF7irSRa8ZM0R6twurvlY=
+		xtYx4OVGPhKGqgzQ+N68rewAZfY=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		QKjjnuIbJjPJHcVFnXjPJLxWlYw=
+		Z2eRzVDae7vMmT+yg2oobUlPJBM=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		VzKKjC07Ssxxq9Oj/8eu7p0r6Qc=
+		I2Ay//KU+WNuG+29qo8G79OIUno=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -138,19 +138,19 @@
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		VzKKjC07Ssxxq9Oj/8eu7p0r6Qc=
+		I2Ay//KU+WNuG+29qo8G79OIUno=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OF9W9WlHjNe1CF+/pTWGrkqu0mU=
+		KuFyuPLinhDuTjXS9Uq1ZkrtBAo=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		QKjjnuIbJjPJHcVFnXjPJLxWlYw=
+		Z2eRzVDae7vMmT+yg2oobUlPJBM=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		hiMq1mB5oSf6WCTVoonZ4Uwwd38=
+		Jyiw8KHxQ5pWd2efrX3PBUchw4o=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -158,11 +158,11 @@
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		hiMq1mB5oSf6WCTVoonZ4Uwwd38=
+		Jyiw8KHxQ5pWd2efrX3PBUchw4o=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PKWhqhvmfCYSjcqdSoEc3gpuk5s=
+		++AL9sKFfxSBqpokL6hrSNLLgl8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -310,7 +310,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d1I0zJZopkz4Spg8HcCBwYYGhm8K9PsHXYMZnqaGPXA=
+			Xm2rlk9cWWWViMo9ftN7QIqA5YKQUpnrKHLzBOFl1HM=
 			</data>
 		</dict>
 		<key>Headers/IDVerify.h</key>
@@ -387,28 +387,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NQKXn4inVy9PiBQ9F9AghL0qcVlXa0iZtPfPtxYyPlA=
+			4D68CL3a80uysj4pKzqzN8peiLgSds5q8MfjJUPYJCk=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CNWAkLykagcTpBk8jzsYw4nnev2DRl0L5iB2HC8JZNY=
+			JEIjvWygoILyi50cscdfjnBIzyEEaYCKrbdEvEjnE+Y=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ulu81E4sX1s0xj0Lt4cD8ErMEqINbEvGiSLFVHoXO0g=
+			Ra6aj495uFmubxvec32dRfy3SMac2JcKrqz1hHe7i0o=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yOGjreKFEA1iHjNDNY3fnRQTfBoGm5aqL9M9rZsljQQ=
+			pTHx9s3u7DL9bCbJwK9KL1GnuAwbCj1VaZENlyRMXAo=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -422,28 +422,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yOGjreKFEA1iHjNDNY3fnRQTfBoGm5aqL9M9rZsljQQ=
+			pTHx9s3u7DL9bCbJwK9KL1GnuAwbCj1VaZENlyRMXAo=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rPBZ5j41zH6+phNzOrJaPFJr5ft+kOTpsl+sQiWxGSc=
+			rURFb/lr1U5g8m5lCiD9wAKJrIcBzBQ9NyPcqxizSbk=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ulu81E4sX1s0xj0Lt4cD8ErMEqINbEvGiSLFVHoXO0g=
+			Ra6aj495uFmubxvec32dRfy3SMac2JcKrqz1hHe7i0o=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UDrdGMB4A77Bxr1HFLsz9JXzJMkUzeQrBDupu/qB49M=
+			omZ/5tppw8I3sYqdWl+NiWhWqHzyH4Lxl27Mnno/oPA=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -457,14 +457,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UDrdGMB4A77Bxr1HFLsz9JXzJMkUzeQrBDupu/qB49M=
+			omZ/5tppw8I3sYqdWl+NiWhWqHzyH4Lxl27Mnno/oPA=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z/Yd37bO9O/OIw2AXLjBqlf6cJBEb5+XTK9sPYREq3c=
+			gPfDvEz6TIl5iG5SU/8hhzCl5loPqqCSjYDyCM85wXQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
