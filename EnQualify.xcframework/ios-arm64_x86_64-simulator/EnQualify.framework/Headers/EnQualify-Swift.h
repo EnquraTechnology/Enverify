@@ -452,6 +452,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)assignEnVerifyDelegate:(id _Nonnull)sender;
 + (BOOL)videoCallStart:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)selfServiceStart:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)selfServiceStartWithoutSession:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)videoCallStartWithoutSession:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 + (void)startLuminosityAnalyzer;
 + (void)invalidateTimerRoomId;
 + (void)idFakeCheckStart;
@@ -1523,6 +1525,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)assignEnVerifyDelegate:(id _Nonnull)sender;
 + (BOOL)videoCallStart:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)selfServiceStart:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)selfServiceStartWithoutSession:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)videoCallStartWithoutSession:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 + (void)startLuminosityAnalyzer;
 + (void)invalidateTimerRoomId;
 + (void)idFakeCheckStart;
