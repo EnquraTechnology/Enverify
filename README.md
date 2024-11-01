@@ -1,2 +1,2 @@
-# EnVerify
-EnVerify KYC
+# EnQualify
+EnQualify KYC
