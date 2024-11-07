@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name IDVerification
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name IDVerification
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 import AVKit
 import Accelerate
@@ -29,6 +29,7 @@ import TensorFlowLite
 import UIKit
 import WebRTC
 import _Concurrency
+import _CoreNFC_UIKit
 import _StringProcessing
 import _SwiftConcurrencyShims
 @objc public enum IDVerifyState : Swift.Int {
@@ -260,9 +261,7 @@ public class BACHandler {
   public var kifd: [Swift.UInt8]
   public init()
   public init(tagReader: IDVerification.TagReader)
-  #if compiler(>=5.3) && $AsyncAwait
   public func performBACAndGetSessionKeys(mrzKey: Swift.String) async throws
-  #endif
   public func sessionKeys(data: [Swift.UInt8]) throws -> ([Swift.UInt8], [Swift.UInt8], [Swift.UInt8])
   @objc deinit
 }
@@ -377,6 +376,7 @@ public class DataGroup14 : IDVerification.DataGroup {
   @objc public static func setHashCheck(hashCheck: Swift.Bool)
   @objc public static func onStartSelfService()
   @objc public static func onExitSelfService()
+  @objc public static func onExitSelfServiceWithoutPop()
   @objc public static func onRetrySelfService()
   @objc public static func onStartCall()
   @objc public static func onExitCall()
@@ -435,6 +435,8 @@ public class DataGroup14 : IDVerification.DataGroup {
   @objc public static func setSSLCertificateBase64(certificate: Swift.String)
   @objc public static func setPassiveAuthenticationEnabled(isPassiveAuthenticatonEnabled: Swift.Bool)
   @objc public static func setFaceCaptureEnabled(isFaceCaptureEnabled: Swift.Bool)
+  @objc public static func setFlexibleTabReader(enabled: Swift.Bool)
+  @objc public static func setFaceOverlayAngleCount(count: Swift.Int)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -744,9 +746,7 @@ public class NFCReader : ObjectiveC.NSObject {
   public func setMasterListURL(_ masterListURL: Foundation.URL)
   public func overrideNFCDataAmountToRead(amount: Swift.Int)
   public func loadPassport(data: [Swift.String : Swift.String])
-  #if compiler(>=5.3) && $AsyncAwait
   public func readPassport(mrzKey: Swift.String, tags: [IDVerification.DataGroupId] = [], skipSecureElements: Swift.Bool = true, skipCA: Swift.Bool = false, skipPACE: Swift.Bool = false, customDisplayMessage: ((IDVerification.NFCViewDisplayMessage) -> Swift.String?)? = nil) async throws -> IDVerification.NFCModel
-  #endif
   @objc deinit
 }
 @available(iOS 13, *)
@@ -819,7 +819,7 @@ public enum LogLevel : Swift.Int, Swift.CaseIterable {
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [IDVerification.LogLevel]
   public typealias RawValue = Swift.Int
-  public static var allCases: [IDVerification.LogLevel] {
+  nonisolated public static var allCases: [IDVerification.LogLevel] {
     get
   }
   public var rawValue: Swift.Int {
@@ -840,7 +840,7 @@ public enum LogLevel : Swift.Int, Swift.CaseIterable {
   @objc deinit
 }
 extension UIKit.UIDevice {
-  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
+  @_Concurrency.MainActor @preconcurrency public static let modelName: Swift.String
 }
 public func binToHexRep(_ val: [Swift.UInt8], asArray: Swift.Bool = false) -> Swift.String
 public func binToHexRep(_ val: Swift.UInt8) -> Swift.String
@@ -987,6 +987,7 @@ public enum CertificateItem : Swift.String {
   case notBefore
   case notAfter
   public init?(rawValue: Swift.String)
+  @available(iOS 13, *)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -1067,7 +1068,7 @@ public class X509Wrapper {
   @objc func eyeOpenIntervalDetected()
   @objc func screenRecorderOnStart()
   @objc func screenRecorderOnComplete()
-  @objc func screenRecorderOnError(eventData: Swift.String)
+  @objc func screenRecorderOnError(eventData: Foundation.NSError?)
   @objc func screenRecorderOnAppend()
   @objc func cardFrontDetectStarted()
   @objc func cardFrontDetected()
@@ -1195,9 +1196,7 @@ public enum IDVerifyEvent : Swift.Int {
 @available(iOS 13, *)
 public class PACEHandler {
   public init(cardAccess: IDVerification.CardAccess, tagReader: IDVerification.TagReader) throws
-  #if compiler(>=5.3) && $AsyncAwait
   public func doPACE(mrzKey: Swift.String) async throws
-  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, *)
@@ -1294,9 +1293,11 @@ public enum DataGroupId : Swift.Int, Swift.CaseIterable {
   public func getName() -> Swift.String
   public static func getIDFromName(name: Swift.String) -> IDVerification.DataGroupId
   public init?(rawValue: Swift.Int)
+  @available(iOS 13, *)
   public typealias AllCases = [IDVerification.DataGroupId]
+  @available(iOS 13, *)
   public typealias RawValue = Swift.Int
-  public static var allCases: [IDVerification.DataGroupId] {
+  nonisolated public static var allCases: [IDVerification.DataGroupId] {
     get
   }
   public var rawValue: Swift.Int {
@@ -1323,6 +1324,7 @@ public enum DocTypeEnum : Swift.String {
   case TD2
   case OTHER
   public init?(rawValue: Swift.String)
+  @available(iOS 13, *)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get

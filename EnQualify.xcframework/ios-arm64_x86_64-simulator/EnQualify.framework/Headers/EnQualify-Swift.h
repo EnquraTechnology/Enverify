@@ -356,7 +356,6 @@ enum SessionInfoType : NSInteger;
 @class UINavigationController;
 @class UIView;
 @class UIButton;
-@class NSDate;
 @class EnverifyVerifyAvailableAppointmentResult;
 @class EnverifyVerifyAppointmentSaveMobileModel;
 @class EnverifyVerifySaveMobileAppointmentResult;
@@ -417,6 +416,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable ref
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable taxNumber;)
 + (NSString * _Nullable)taxNumber SWIFT_WARN_UNUSED_RESULT;
 + (void)setTaxNumber:(NSString * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id _Nullable isSameIdentityFromDoc;)
++ (id _Nullable)isSameIdentityFromDoc SWIFT_WARN_UNUSED_RESULT;
++ (void)setIsSameIdentityFromDoc:(id _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id _Nullable isSameIdentityFromChip;)
++ (id _Nullable)isSameIdentityFromChip SWIFT_WARN_UNUSED_RESULT;
++ (void)setIsSameIdentityFromChip:(id _Nullable)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) UIImage * _Nullable agentDummyImage;)
 + (UIImage * _Nullable)agentDummyImage SWIFT_WARN_UNUSED_RESULT;
 + (void)setAgentDummyImage:(UIImage * _Nullable)value;
@@ -435,12 +440,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isCallCancelled;)
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _Nonnull calibrationValues;)
 + (CalibrationValues * _Nonnull)calibrationValues SWIFT_WARN_UNUSED_RESULT;
 + (void)setCalibrationValues:(CalibrationValues * _Nonnull)value;
++ (void)screenRecordPermission;
 + (void)incomingCallObserverWithCallChanged:(CXCall * _Nonnull)call;
 + (void)integrationAddWithType:(NSString * _Nonnull)type callType:(NSString * _Nullable)callType phone:(NSString * _Nullable)phone email:(NSString * _Nullable)email data:(NSString * _Nonnull)data addressRegistration:(EnVerifyCallAddressRegistrationModel * _Nullable)addressRegistration iDRegistration:(EnVerifyCallIDRegistrationModel * _Nullable)iDRegistration;
 + (void)getAuthToken;
++ (void)authTokenRevokeWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 + (void)getAuthTokenBeforeSDK:(NSString * _Nullable)userNameForToken :(NSString * _Nonnull)backOfficeBasePath completion:(void (^ _Nonnull)(BOOL))completion;
 + (void)sessionAddWithRoomId:(NSString * _Nullable)roomId;
-+ (void)sessionUpdateForHandicappedWithHandicapped:(BOOL)handicapped;
++ (void)sessionUpdateForHandicappedWithHandicapped:(BOOL)handicapped completionHandler:(void (^ _Nonnull)(BOOL, NSString * _Nullable))completionHandler;
 + (void)logInfoAddWithType:(enum SessionInfoType)type message:(NSString * _Nullable)message;
 /// self serviste işlemlerin başarılı şekilde bittiğini anlattması için session/close’u çağırıyorsanız finished=true
 /// bir de arama daha karşılanmamış ise mobilden kapatıldığında bu servisi false çağrılıyor
@@ -517,6 +524,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)onExitCall;
 + (void)onExitCallWithoutPop;
 + (void)onExitSelfService;
++ (void)onExitSelfServiceWithoutPop;
 + (void)onHangupCall;
 + (void)onStartCall;
 + (void)startAVRecording SWIFT_AVAILABILITY(ios,introduced=11.0);
@@ -555,11 +563,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)setShowMobileSpeedWithState:(BOOL)state;
 + (void)saveRecordAssetWithFilePath:(NSString * _Nonnull)filePath;
 + (void)setBarcodeReaderWithState:(BOOL)state;
++ (void)setFaceOverlayAngleCountWithCount:(NSInteger)count;
 + (void)startCardFrontDetect;
 + (void)startCardHoloDetect;
 + (void)startCardBackDetect;
 + (void)idCardDetectSet;
 + (void)setPassiveAuthenticationEnabledWithIsPassiveAuthenticatonEnabled:(BOOL)isPassiveAuthenticatonEnabled;
++ (void)setWhereScreenRecordAskPermissionCertainPartWithEnable:(BOOL)enable;
 + (void)sendVideoToBackOfficeWithPath:(NSString * _Nonnull)path;
 + (void)iconStartButton:(UIButton * _Nonnull)button;
 + (void)iconExitButton:(UIButton * _Nonnull)button;
@@ -573,7 +583,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)iconChatRotateButton:(UIButton * _Nonnull)button;
 + (void)rotateButtonAct;
 + (void)toggleFlashWithState:(BOOL)state;
-+ (void)getAvailableAppointmentWithStartDate:(NSDate * _Nonnull)startDate endDate:(NSDate * _Nonnull)endDate callType:(NSString * _Nullable)callType completion:(void (^ _Nonnull)(NSArray<EnverifyVerifyAvailableAppointmentResult *> * _Nullable, NSError * _Nullable))completion;
++ (void)getAvailableAppointmentWithStartDate:(NSString * _Nonnull)startDate endDate:(NSString * _Nonnull)endDate callType:(NSString * _Nullable)callType completion:(void (^ _Nonnull)(NSArray<EnverifyVerifyAvailableAppointmentResult *> * _Nullable, NSError * _Nullable))completion;
 + (void)saveAppointmentWithData:(EnverifyVerifyAppointmentSaveMobileModel * _Nonnull)data completion:(void (^ _Nonnull)(EnverifyVerifySaveMobileAppointmentResult * _Nullable, NSError * _Nullable))completion;
 + (void)cancelAppointmentWithIdentityType:(NSString * _Nullable)identityType identityNo:(NSString * _Nullable)identityNo callType:(NSString * _Nullable)callType completion:(void (^ _Nonnull)(EnverifyVerifyCancelAppointmentResult * _Nullable, NSError * _Nullable))completion;
 + (void)setAgentRequest;
@@ -587,6 +597,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)signDocumentWithData:(NSData * _Nonnull)data reference:(NSString * _Nullable)reference;
 + (void)barcodeReadWithContent:(NSString * _Nonnull)content completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
 + (void)barcodeVerifyWithIdentityNo:(NSString * _Nonnull)identityNo barcode:(NSString * _Nonnull)barcode completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
++ (void)startBase64CameraOn:(UIViewController * _Nonnull)viewController withImageNamed:(NSString * _Nonnull)imageName;
++ (void)startGenericPassportCameraOn:(UIViewController * _Nonnull)viewController withImageNamed:(NSString * _Nonnull)imageName;
++ (id _Nullable)getIsSameIdentityFromDoc SWIFT_WARN_UNUSED_RESULT;
++ (id _Nullable)getIsSameIdentityFromChip SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -764,6 +778,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) EnVerifyCustomerIdenti
 @end
 
 @class EnverifyVerifyCallResult;
+@class NSError;
 
 SWIFT_PROTOCOL("_TtP9EnQualify16EnVerifyDelegate_")
 @protocol EnVerifyDelegate
@@ -851,7 +866,7 @@ SWIFT_PROTOCOL("_TtP9EnQualify16EnVerifyDelegate_")
 - (void)dismissCallWait;
 - (void)screenRecorderOnStart;
 - (void)screenRecorderOnComplete;
-- (void)screenRecorderOnErrorWithEventData:(NSString * _Nonnull)eventData;
+- (void)screenRecorderOnErrorWithEventData:(NSError * _Nullable)eventData;
 - (void)screenRecorderOnAppend;
 - (void)cardFrontDetectStarted;
 - (void)cardFrontDetected;
@@ -866,6 +881,16 @@ SWIFT_PROTOCOL("_TtP9EnQualify16EnVerifyDelegate_")
 - (void)documentSignSuccess;
 - (void)documentSingFailure;
 - (void)appointmentToleranceWithTime:(NSInteger)time;
+- (void)agentMessageRequestWithMessage:(NSString * _Nonnull)message;
+- (void)addGenericIdDocCompletedWith:(NSDictionary<NSString *, NSString *> * _Nonnull)data;
+- (void)addGenericIdDocFailure;
+- (void)capturePhotoCompleted;
+- (void)capturePhotoFailure;
+- (void)captureVideoCompleted;
+- (void)captureVideoFailure;
+- (void)photoLibraryAuthorizationWithStatus:(NSString * _Nonnull)status;
+- (void)addGenericPassportCompleted;
+- (void)addGenericPassportFailure;
 @end
 
 
@@ -884,6 +909,7 @@ SWIFT_CLASS("_TtC9EnQualify27EnverifyScreenRecordingData")
 @end
 
 @class NSUUID;
+@class NSDate;
 
 SWIFT_CLASS("_TtC9EnQualify31EnverifyVerifyAppointmentResult")
 @interface EnverifyVerifyAppointmentResult : NSObject
@@ -898,8 +924,8 @@ SWIFT_CLASS("_TtC9EnQualify31EnverifyVerifyAppointmentResult")
 @property (nonatomic, copy) NSString * _Nullable email;
 @property (nonatomic, copy) NSDate * _Nullable startDate;
 @property (nonatomic, copy) NSDate * _Nullable endDate;
-@property (nonatomic) BOOL isPriorityCustomer;
-- (nonnull instancetype)initWithUId:(NSUUID * _Nullable)uId callType:(NSString * _Nullable)callType callTypeValue:(NSString * _Nullable)callTypeValue identityType:(NSString * _Nullable)identityType identityNo:(NSString * _Nullable)identityNo name:(NSString * _Nullable)name surname:(NSString * _Nullable)surname phone:(NSString * _Nullable)phone email:(NSString * _Nullable)email startDate:(NSDate * _Nullable)startDate endDate:(NSDate * _Nullable)endDate isPriorityCustomer:(BOOL)isPriorityCustomer OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, strong) id _Nullable isPriorityCustomer;
+- (nonnull instancetype)initWithUId:(NSUUID * _Nullable)uId callType:(NSString * _Nullable)callType callTypeValue:(NSString * _Nullable)callTypeValue identityType:(NSString * _Nullable)identityType identityNo:(NSString * _Nullable)identityNo name:(NSString * _Nullable)name surname:(NSString * _Nullable)surname phone:(NSString * _Nullable)phone email:(NSString * _Nullable)email startDate:(NSDate * _Nullable)startDate endDate:(NSDate * _Nullable)endDate isPriorityCustomer:(id _Nullable)isPriorityCustomer OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -909,7 +935,7 @@ SWIFT_CLASS("_TtC9EnQualify40EnverifyVerifyAppointmentSaveMobileModel")
 @interface EnverifyVerifyAppointmentSaveMobileModel : NSObject
 @property (nonatomic, copy) NSUUID * _Nullable uId;
 @property (nonatomic, copy) NSString * _Nullable callType;
-@property (nonatomic, copy) NSDate * _Nullable date;
+@property (nonatomic, copy) NSString * _Nullable date;
 @property (nonatomic, copy) NSString * _Nullable startTime;
 @property (nonatomic, copy) NSString * _Nullable identityType;
 @property (nonatomic, copy) NSString * _Nullable identityNo;
@@ -1007,14 +1033,25 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) UINavigationController
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
+- (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+@class UIDocumentPickerViewController;
+@class NSURL;
+
+@interface KYBController (SWIFT_EXTENSION(EnQualify)) <UIDocumentPickerDelegate>
+- (void)documentPicker:(UIDocumentPickerViewController * _Nonnull)controller didPickDocumentsAtURLs:(NSArray<NSURL *> * _Nonnull)urls;
+- (void)documentPickerWasCancelled:(UIDocumentPickerViewController * _Nonnull)controller;
 @end
 
 
 SWIFT_PROTOCOL("_TtP9EnQualify11KYBDelegate_")
 @protocol KYBDelegate
 - (void)captureStarted;
-- (void)imageCapturedWithImage:(NSString * _Nullable)image captureState:(NSString * _Nullable)captureState;
+- (void)imageCapturedWithImage:(NSString * _Nullable)image fileName:(NSString * _Nullable)fileName captureState:(NSString * _Nullable)captureState;
+- (void)documentSelectedWithDocument:(NSString * _Nullable)document documentSize:(NSString * _Nonnull)documentSize fileName:(NSString * _Nullable)fileName captureState:(NSString * _Nullable)captureState;
+- (void)documentSizeExceededWithDocumentSize:(NSString * _Nullable)documentSize;
 @end
 
 
@@ -1429,7 +1466,6 @@ enum SessionInfoType : NSInteger;
 @class UINavigationController;
 @class UIView;
 @class UIButton;
-@class NSDate;
 @class EnverifyVerifyAvailableAppointmentResult;
 @class EnverifyVerifyAppointmentSaveMobileModel;
 @class EnverifyVerifySaveMobileAppointmentResult;
@@ -1490,6 +1526,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable ref
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable taxNumber;)
 + (NSString * _Nullable)taxNumber SWIFT_WARN_UNUSED_RESULT;
 + (void)setTaxNumber:(NSString * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id _Nullable isSameIdentityFromDoc;)
++ (id _Nullable)isSameIdentityFromDoc SWIFT_WARN_UNUSED_RESULT;
++ (void)setIsSameIdentityFromDoc:(id _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id _Nullable isSameIdentityFromChip;)
++ (id _Nullable)isSameIdentityFromChip SWIFT_WARN_UNUSED_RESULT;
++ (void)setIsSameIdentityFromChip:(id _Nullable)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) UIImage * _Nullable agentDummyImage;)
 + (UIImage * _Nullable)agentDummyImage SWIFT_WARN_UNUSED_RESULT;
 + (void)setAgentDummyImage:(UIImage * _Nullable)value;
@@ -1508,12 +1550,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isCallCancelled;)
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _Nonnull calibrationValues;)
 + (CalibrationValues * _Nonnull)calibrationValues SWIFT_WARN_UNUSED_RESULT;
 + (void)setCalibrationValues:(CalibrationValues * _Nonnull)value;
++ (void)screenRecordPermission;
 + (void)incomingCallObserverWithCallChanged:(CXCall * _Nonnull)call;
 + (void)integrationAddWithType:(NSString * _Nonnull)type callType:(NSString * _Nullable)callType phone:(NSString * _Nullable)phone email:(NSString * _Nullable)email data:(NSString * _Nonnull)data addressRegistration:(EnVerifyCallAddressRegistrationModel * _Nullable)addressRegistration iDRegistration:(EnVerifyCallIDRegistrationModel * _Nullable)iDRegistration;
 + (void)getAuthToken;
++ (void)authTokenRevokeWithCompletion:(void (^ _Nonnull)(BOOL))completion;
 + (void)getAuthTokenBeforeSDK:(NSString * _Nullable)userNameForToken :(NSString * _Nonnull)backOfficeBasePath completion:(void (^ _Nonnull)(BOOL))completion;
 + (void)sessionAddWithRoomId:(NSString * _Nullable)roomId;
-+ (void)sessionUpdateForHandicappedWithHandicapped:(BOOL)handicapped;
++ (void)sessionUpdateForHandicappedWithHandicapped:(BOOL)handicapped completionHandler:(void (^ _Nonnull)(BOOL, NSString * _Nullable))completionHandler;
 + (void)logInfoAddWithType:(enum SessionInfoType)type message:(NSString * _Nullable)message;
 /// self serviste işlemlerin başarılı şekilde bittiğini anlattması için session/close’u çağırıyorsanız finished=true
 /// bir de arama daha karşılanmamış ise mobilden kapatıldığında bu servisi false çağrılıyor
@@ -1590,6 +1634,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)onExitCall;
 + (void)onExitCallWithoutPop;
 + (void)onExitSelfService;
++ (void)onExitSelfServiceWithoutPop;
 + (void)onHangupCall;
 + (void)onStartCall;
 + (void)startAVRecording SWIFT_AVAILABILITY(ios,introduced=11.0);
@@ -1628,11 +1673,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)setShowMobileSpeedWithState:(BOOL)state;
 + (void)saveRecordAssetWithFilePath:(NSString * _Nonnull)filePath;
 + (void)setBarcodeReaderWithState:(BOOL)state;
++ (void)setFaceOverlayAngleCountWithCount:(NSInteger)count;
 + (void)startCardFrontDetect;
 + (void)startCardHoloDetect;
 + (void)startCardBackDetect;
 + (void)idCardDetectSet;
 + (void)setPassiveAuthenticationEnabledWithIsPassiveAuthenticatonEnabled:(BOOL)isPassiveAuthenticatonEnabled;
++ (void)setWhereScreenRecordAskPermissionCertainPartWithEnable:(BOOL)enable;
 + (void)sendVideoToBackOfficeWithPath:(NSString * _Nonnull)path;
 + (void)iconStartButton:(UIButton * _Nonnull)button;
 + (void)iconExitButton:(UIButton * _Nonnull)button;
@@ -1646,7 +1693,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)iconChatRotateButton:(UIButton * _Nonnull)button;
 + (void)rotateButtonAct;
 + (void)toggleFlashWithState:(BOOL)state;
-+ (void)getAvailableAppointmentWithStartDate:(NSDate * _Nonnull)startDate endDate:(NSDate * _Nonnull)endDate callType:(NSString * _Nullable)callType completion:(void (^ _Nonnull)(NSArray<EnverifyVerifyAvailableAppointmentResult *> * _Nullable, NSError * _Nullable))completion;
++ (void)getAvailableAppointmentWithStartDate:(NSString * _Nonnull)startDate endDate:(NSString * _Nonnull)endDate callType:(NSString * _Nullable)callType completion:(void (^ _Nonnull)(NSArray<EnverifyVerifyAvailableAppointmentResult *> * _Nullable, NSError * _Nullable))completion;
 + (void)saveAppointmentWithData:(EnverifyVerifyAppointmentSaveMobileModel * _Nonnull)data completion:(void (^ _Nonnull)(EnverifyVerifySaveMobileAppointmentResult * _Nullable, NSError * _Nullable))completion;
 + (void)cancelAppointmentWithIdentityType:(NSString * _Nullable)identityType identityNo:(NSString * _Nullable)identityNo callType:(NSString * _Nullable)callType completion:(void (^ _Nonnull)(EnverifyVerifyCancelAppointmentResult * _Nullable, NSError * _Nullable))completion;
 + (void)setAgentRequest;
@@ -1660,6 +1707,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)signDocumentWithData:(NSData * _Nonnull)data reference:(NSString * _Nullable)reference;
 + (void)barcodeReadWithContent:(NSString * _Nonnull)content completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
 + (void)barcodeVerifyWithIdentityNo:(NSString * _Nonnull)identityNo barcode:(NSString * _Nonnull)barcode completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
++ (void)startBase64CameraOn:(UIViewController * _Nonnull)viewController withImageNamed:(NSString * _Nonnull)imageName;
++ (void)startGenericPassportCameraOn:(UIViewController * _Nonnull)viewController withImageNamed:(NSString * _Nonnull)imageName;
++ (id _Nullable)getIsSameIdentityFromDoc SWIFT_WARN_UNUSED_RESULT;
++ (id _Nullable)getIsSameIdentityFromChip SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1837,6 +1888,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) EnVerifyCustomerIdenti
 @end
 
 @class EnverifyVerifyCallResult;
+@class NSError;
 
 SWIFT_PROTOCOL("_TtP9EnQualify16EnVerifyDelegate_")
 @protocol EnVerifyDelegate
@@ -1924,7 +1976,7 @@ SWIFT_PROTOCOL("_TtP9EnQualify16EnVerifyDelegate_")
 - (void)dismissCallWait;
 - (void)screenRecorderOnStart;
 - (void)screenRecorderOnComplete;
-- (void)screenRecorderOnErrorWithEventData:(NSString * _Nonnull)eventData;
+- (void)screenRecorderOnErrorWithEventData:(NSError * _Nullable)eventData;
 - (void)screenRecorderOnAppend;
 - (void)cardFrontDetectStarted;
 - (void)cardFrontDetected;
@@ -1939,6 +1991,16 @@ SWIFT_PROTOCOL("_TtP9EnQualify16EnVerifyDelegate_")
 - (void)documentSignSuccess;
 - (void)documentSingFailure;
 - (void)appointmentToleranceWithTime:(NSInteger)time;
+- (void)agentMessageRequestWithMessage:(NSString * _Nonnull)message;
+- (void)addGenericIdDocCompletedWith:(NSDictionary<NSString *, NSString *> * _Nonnull)data;
+- (void)addGenericIdDocFailure;
+- (void)capturePhotoCompleted;
+- (void)capturePhotoFailure;
+- (void)captureVideoCompleted;
+- (void)captureVideoFailure;
+- (void)photoLibraryAuthorizationWithStatus:(NSString * _Nonnull)status;
+- (void)addGenericPassportCompleted;
+- (void)addGenericPassportFailure;
 @end
 
 
@@ -1957,6 +2019,7 @@ SWIFT_CLASS("_TtC9EnQualify27EnverifyScreenRecordingData")
 @end
 
 @class NSUUID;
+@class NSDate;
 
 SWIFT_CLASS("_TtC9EnQualify31EnverifyVerifyAppointmentResult")
 @interface EnverifyVerifyAppointmentResult : NSObject
@@ -1971,8 +2034,8 @@ SWIFT_CLASS("_TtC9EnQualify31EnverifyVerifyAppointmentResult")
 @property (nonatomic, copy) NSString * _Nullable email;
 @property (nonatomic, copy) NSDate * _Nullable startDate;
 @property (nonatomic, copy) NSDate * _Nullable endDate;
-@property (nonatomic) BOOL isPriorityCustomer;
-- (nonnull instancetype)initWithUId:(NSUUID * _Nullable)uId callType:(NSString * _Nullable)callType callTypeValue:(NSString * _Nullable)callTypeValue identityType:(NSString * _Nullable)identityType identityNo:(NSString * _Nullable)identityNo name:(NSString * _Nullable)name surname:(NSString * _Nullable)surname phone:(NSString * _Nullable)phone email:(NSString * _Nullable)email startDate:(NSDate * _Nullable)startDate endDate:(NSDate * _Nullable)endDate isPriorityCustomer:(BOOL)isPriorityCustomer OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, strong) id _Nullable isPriorityCustomer;
+- (nonnull instancetype)initWithUId:(NSUUID * _Nullable)uId callType:(NSString * _Nullable)callType callTypeValue:(NSString * _Nullable)callTypeValue identityType:(NSString * _Nullable)identityType identityNo:(NSString * _Nullable)identityNo name:(NSString * _Nullable)name surname:(NSString * _Nullable)surname phone:(NSString * _Nullable)phone email:(NSString * _Nullable)email startDate:(NSDate * _Nullable)startDate endDate:(NSDate * _Nullable)endDate isPriorityCustomer:(id _Nullable)isPriorityCustomer OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1982,7 +2045,7 @@ SWIFT_CLASS("_TtC9EnQualify40EnverifyVerifyAppointmentSaveMobileModel")
 @interface EnverifyVerifyAppointmentSaveMobileModel : NSObject
 @property (nonatomic, copy) NSUUID * _Nullable uId;
 @property (nonatomic, copy) NSString * _Nullable callType;
-@property (nonatomic, copy) NSDate * _Nullable date;
+@property (nonatomic, copy) NSString * _Nullable date;
 @property (nonatomic, copy) NSString * _Nullable startTime;
 @property (nonatomic, copy) NSString * _Nullable identityType;
 @property (nonatomic, copy) NSString * _Nullable identityNo;
@@ -2080,14 +2143,25 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) UINavigationController
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
+- (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+@class UIDocumentPickerViewController;
+@class NSURL;
+
+@interface KYBController (SWIFT_EXTENSION(EnQualify)) <UIDocumentPickerDelegate>
+- (void)documentPicker:(UIDocumentPickerViewController * _Nonnull)controller didPickDocumentsAtURLs:(NSArray<NSURL *> * _Nonnull)urls;
+- (void)documentPickerWasCancelled:(UIDocumentPickerViewController * _Nonnull)controller;
 @end
 
 
 SWIFT_PROTOCOL("_TtP9EnQualify11KYBDelegate_")
 @protocol KYBDelegate
 - (void)captureStarted;
-- (void)imageCapturedWithImage:(NSString * _Nullable)image captureState:(NSString * _Nullable)captureState;
+- (void)imageCapturedWithImage:(NSString * _Nullable)image fileName:(NSString * _Nullable)fileName captureState:(NSString * _Nullable)captureState;
+- (void)documentSelectedWithDocument:(NSString * _Nullable)document documentSize:(NSString * _Nonnull)documentSize fileName:(NSString * _Nullable)fileName captureState:(NSString * _Nullable)captureState;
+- (void)documentSizeExceededWithDocumentSize:(NSString * _Nullable)documentSize;
 @end
 
 

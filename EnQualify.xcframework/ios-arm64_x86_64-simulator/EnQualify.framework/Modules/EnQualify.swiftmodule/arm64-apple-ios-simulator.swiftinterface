@@ -45,6 +45,8 @@ import _SwiftConcurrencyShims
   open class func apiVerifyCallBusinessStaffAddPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallBusinessStaffAddRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallBusinessStaffAddResponse>
   open class func apiVerifyCallBusinessStaffCheckPost(body: EnQualify.SignedMessageVerifyCallBusinessStaffCheckRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallBusinessStaffCheckResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyCallBusinessStaffCheckPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallBusinessStaffCheckRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallBusinessStaffCheckResponse>
+  open class func apiVerifyCallBusinessStaffRemovePost(body: EnQualify.SignedMessageVerifyMobileCallBusinessRemoveRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyMobileCallBusinessStaffRemoveResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
+  open class func apiVerifyCallBusinessStaffRemovePostWithRequestBuilder(body: EnQualify.SignedMessageVerifyMobileCallBusinessRemoveRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyMobileCallBusinessStaffRemoveResponse>
   open class func apiVerifyCallBusinessUpdatePost(body: EnQualify.SignedMessageVerifyMobileCallBusinessUpdateRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyMobileCallBusinessUpdateResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyCallBusinessUpdatePostWithRequestBuilder(body: EnQualify.SignedMessageVerifyMobileCallBusinessUpdateRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyMobileCallBusinessUpdateResponse>
   open class func apiVerifyCallTypeListPost(body: EnQualify.SignedMessageVerifyCallTypeNameListRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallTypeNameListResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
@@ -57,6 +59,10 @@ import _SwiftConcurrencyShims
   open class func apiVerifyDocumentKYBCategoryListPostWithRequestBuilder(body: EnQualify.SignedMessageBaseRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyInfoDocumentKYBCategoryListResponse>
   open class func apiVerifyFaceAddPost(body: EnQualify.VerifySignedMessageCallFaceAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallFaceAddResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyFaceAddPostWithRequestBuilder(body: EnQualify.VerifySignedMessageCallFaceAddRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallFaceAddResponse>
+  open class func apiVerifyGenericIdDocAddPost(body: EnQualify.VerifySignedMessageCallGenericIdDocAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallGenericIdDocAddResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
+  open class func apiVerifyGenericIdDocAddPostWithRequestBuilder(body: EnQualify.VerifySignedMessageCallGenericIdDocAddRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallGenericIdDocAddResponse>
+  open class func apiVerifyGenericPassportAddPost(body: EnQualify.VerifySignedMessageCallGenericIdVideoAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallGenericIdVideoAddResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
+  open class func apiVerifyGenericPassportAddPostWithRequestBuilder(body: EnQualify.VerifySignedMessageCallGenericIdVideoAddRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallGenericIdVideoAddResponse>
   open class func apiVerifyIDBlockGetPost(body: EnQualify.SignedMessageVerifyCallIDBlockGetRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallIDBlockGetResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifyIDBlockGetPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallIDBlockGetRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallIDBlockGetResponse>
   open class func apiVerifyIDCheckAddPost(body: EnQualify.SignedMessageVerifyCallIDCheckAddRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyCallIDCheckAddResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
@@ -182,7 +188,7 @@ import _SwiftConcurrencyShims
 @objc public class EnverifyVerifyAppointmentSaveMobileModel : ObjectiveC.NSObject {
   @objc public var uId: Foundation.UUID?
   @objc public var callType: Swift.String?
-  @objc public var date: Foundation.Date?
+  @objc public var date: Swift.String?
   @objc public var startTime: Swift.String?
   @objc public var identityType: Swift.String?
   @objc public var identityNo: Swift.String?
@@ -190,7 +196,7 @@ import _SwiftConcurrencyShims
   @objc public var surname: Swift.String?
   @objc public var phone: Swift.String?
   @objc public var email: Swift.String?
-  public init(uId: Foundation.UUID?, callType: Swift.String? = nil, date: Foundation.Date? = nil, startTime: Swift.String? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil)
+  public init(uId: Foundation.UUID?, callType: Swift.String? = nil, date: Swift.String? = nil, startTime: Swift.String? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case uId
     case callType
@@ -248,8 +254,8 @@ import _SwiftConcurrencyShims
   @objc public var email: Swift.String?
   @objc public var startDate: Foundation.Date?
   @objc public var endDate: Foundation.Date?
-  @objc public var isPriorityCustomer: Swift.Bool
-  @objc public init(uId: Foundation.UUID? = nil, callType: Swift.String? = nil, callTypeValue: Swift.String? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil, startDate: Foundation.Date? = nil, endDate: Foundation.Date? = nil, isPriorityCustomer: Swift.Bool = false)
+  @objc public var isPriorityCustomer: Swift.AnyObject?
+  @objc public init(uId: Foundation.UUID? = nil, callType: Swift.String? = nil, callTypeValue: Swift.String? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil, startDate: Foundation.Date? = nil, endDate: Foundation.Date? = nil, isPriorityCustomer: Swift.AnyObject? = nil)
   @objc deinit
 }
 @objc public class EnverifyVerifyCallTypeResult : ObjectiveC.NSObject {
@@ -316,7 +322,7 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 public enum Model : Swift.String {
-  case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPad5, iPad6, iPad7, iPad8, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, iPhone13Mini, iPhone13, iPhone13Pro, iPhone13ProMax, iPhone14, iPhone14Plus, iPhone14Pro, iPhone14ProMax, iPhone15, iPhone15Plus, iPhone15Pro, iPhone15ProMax, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, unrecognized
+  case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPad5, iPad6, iPad7, iPad8, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, iPhone13Mini, iPhone13, iPhone13Pro, iPhone13ProMax, iPhone14, iPhone14Plus, iPhone14Pro, iPhone14ProMax, iPhone15, iPhone15Plus, iPhone15Pro, iPhone15ProMax, iPhone16, iPhone16Plus, iPhone16Pro, iPhone16ProMax, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, unrecognized
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -880,13 +886,39 @@ public struct VerifyCallIDChipAddResponse : Swift.Codable {
   public var warning: EnQualify.ResultInfo?
   public var referenceId: Foundation.UUID?
   public var status: EnQualify.VerifyCallSessionStatusTypeEnum?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: EnQualify.VerifyCallSessionStatusTypeEnum? = nil)
+  public var isSameIdentity: Swift.Bool?
+  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: EnQualify.VerifyCallSessionStatusTypeEnum? = nil, isSameIdentity: Swift.Bool? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
     case warning
     case referenceId
     case status
+    case isSameIdentity
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct VerifyMobileCallBusinessRemoveRequest : Swift.Codable {
+  public var callBusinessUId: Foundation.UUID
+  public var identityNo: Swift.String
+  public init(callBusinessUId: Foundation.UUID, identityNo: Swift.String)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case callBusinessUId
+    case identityNo
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -1069,7 +1101,7 @@ public struct DocumentsAppFolderGetFolderRequest : Swift.Codable {
   @objc func dismissCallWait()
   @objc func screenRecorderOnStart()
   @objc func screenRecorderOnComplete()
-  @objc func screenRecorderOnError(eventData: Swift.String)
+  @objc func screenRecorderOnError(eventData: Foundation.NSError?)
   @objc func screenRecorderOnAppend()
   @objc func cardFrontDetectStarted()
   @objc func cardFrontDetected()
@@ -1084,6 +1116,16 @@ public struct DocumentsAppFolderGetFolderRequest : Swift.Codable {
   @objc func documentSignSuccess()
   @objc func documentSingFailure()
   @objc func appointmentTolerance(time: Swift.Int)
+  @objc func agentMessageRequest(message: Swift.String)
+  @objc func addGenericIdDocCompleted(with data: [Swift.String : Swift.String])
+  @objc func addGenericIdDocFailure()
+  @objc func capturePhotoCompleted()
+  @objc func capturePhotoFailure()
+  @objc func captureVideoCompleted()
+  @objc func captureVideoFailure()
+  @objc func photoLibraryAuthorization(status: Swift.String)
+  @objc func addGenericPassportCompleted()
+  @objc func addGenericPassportFailure()
 }
 public struct AppsAppCheckVersionRequest : Swift.Codable {
   public var app: EnQualify.AppsAppModel?
@@ -1214,6 +1256,8 @@ public struct VerifyCallResultResponse : Swift.Codable {
   @objc @_Concurrency.MainActor @preconcurrency public static var sslPiningForIO: Swift.Bool
   @objc @_Concurrency.MainActor @preconcurrency public static var referenceId: Swift.String?
   @objc @_Concurrency.MainActor @preconcurrency public static var taxNumber: Swift.String?
+  @objc @_Concurrency.MainActor @preconcurrency public static var isSameIdentityFromDoc: Swift.AnyObject?
+  @objc @_Concurrency.MainActor @preconcurrency public static var isSameIdentityFromChip: Swift.AnyObject?
   @objc @_Concurrency.MainActor @preconcurrency public static var agentDummyImage: UIKit.UIImage?
   @objc @_Concurrency.MainActor @preconcurrency public static var agentDummyVideoPlayer: AVFoundation.AVPlayer?
   @objc @_Concurrency.MainActor @preconcurrency public static var isAgentDummyShown: Swift.Bool {
@@ -1223,12 +1267,14 @@ public struct VerifyCallResultResponse : Swift.Codable {
   @objc @_Concurrency.MainActor @preconcurrency public static var isCallAnswered: Swift.Bool
   @objc @_Concurrency.MainActor @preconcurrency public static var isCallCancelled: Swift.Bool
   @objc @_Concurrency.MainActor @preconcurrency public static var calibrationValues: EnQualify.CalibrationValues
+  @objc @_Concurrency.MainActor @preconcurrency public static func screenRecordPermission()
   @objc @_Concurrency.MainActor @preconcurrency public static func incomingCallObserver(callChanged call: CallKit.CXCall)
   @objc @_Concurrency.MainActor @preconcurrency public static func integrationAdd(type: Swift.String, callType: Swift.String?, phone: Swift.String?, email: Swift.String?, data: Swift.String, addressRegistration: EnQualify.EnVerifyCallAddressRegistrationModel?, iDRegistration: EnQualify.EnVerifyCallIDRegistrationModel?)
   @objc @_Concurrency.MainActor @preconcurrency public static func getAuthToken()
+  @objc @_Concurrency.MainActor @preconcurrency public static func authTokenRevoke(completion: @escaping (Swift.Bool) -> ())
   @objc @_Concurrency.MainActor @preconcurrency public static func getAuthTokenBeforeSDK(_ userNameForToken: Swift.String? = nil, _ backOfficeBasePath: Swift.String, completion: @escaping (Swift.Bool) -> ())
   @objc @_Concurrency.MainActor @preconcurrency public static func sessionAdd(roomId: Swift.String?)
-  @objc @_Concurrency.MainActor @preconcurrency public static func sessionUpdateForHandicapped(handicapped: Swift.Bool)
+  @objc @_Concurrency.MainActor @preconcurrency public static func sessionUpdateForHandicapped(handicapped: Swift.Bool, completionHandler: @escaping (_ isSuccess: Swift.Bool, _ status: Swift.String?) -> ())
   @objc @_Concurrency.MainActor @preconcurrency public static func logInfoAdd(type: EnQualify.SessionInfoType, message: Swift.String? = "")
   @_Concurrency.MainActor @preconcurrency public static func sendProcessPerformanceAnalysis(section: EnQualify.ProcessSection)
   @objc @_Concurrency.MainActor @preconcurrency public static func callSessionClose(finished: Swift.Bool = true)
@@ -1308,6 +1354,7 @@ public struct VerifyCallResultResponse : Swift.Codable {
   @objc @_Concurrency.MainActor @preconcurrency public static func onExitCall()
   @objc @_Concurrency.MainActor @preconcurrency public static func onExitCallWithoutPop()
   @objc @_Concurrency.MainActor @preconcurrency public static func onExitSelfService()
+  @objc @_Concurrency.MainActor @preconcurrency public static func onExitSelfServiceWithoutPop()
   @objc @_Concurrency.MainActor @preconcurrency public static func onHangupCall()
   @objc @_Concurrency.MainActor @preconcurrency public static func onStartCall()
   @available(iOS 11.0, *)
@@ -1348,11 +1395,13 @@ public struct VerifyCallResultResponse : Swift.Codable {
   @objc @_Concurrency.MainActor @preconcurrency public static func setShowMobileSpeed(state: Swift.Bool)
   @objc @_Concurrency.MainActor @preconcurrency public static func saveRecordAsset(filePath: Swift.String)
   @objc @_Concurrency.MainActor @preconcurrency public static func setBarcodeReader(state: Swift.Bool)
+  @objc @_Concurrency.MainActor @preconcurrency public static func setFaceOverlayAngleCount(count: Swift.Int)
   @objc @_Concurrency.MainActor @preconcurrency public static func startCardFrontDetect()
   @objc @_Concurrency.MainActor @preconcurrency public static func startCardHoloDetect()
   @objc @_Concurrency.MainActor @preconcurrency public static func startCardBackDetect()
   @objc @_Concurrency.MainActor @preconcurrency public static func idCardDetectSet()
   @objc @_Concurrency.MainActor @preconcurrency public static func setPassiveAuthenticationEnabled(isPassiveAuthenticatonEnabled: Swift.Bool)
+  @objc @_Concurrency.MainActor @preconcurrency public static func setWhereScreenRecordAskPermissionCertainPart(enable: Swift.Bool)
   @objc @_Concurrency.MainActor @preconcurrency public static func sendVideoToBackOffice(path: Swift.String)
   @objc @_Concurrency.MainActor @preconcurrency public static func iconStartButton(_ button: UIKit.UIButton)
   @objc @_Concurrency.MainActor @preconcurrency public static func iconExitButton(_ button: UIKit.UIButton)
@@ -1366,7 +1415,7 @@ public struct VerifyCallResultResponse : Swift.Codable {
   @objc @_Concurrency.MainActor @preconcurrency public static func iconChatRotateButton(_ button: UIKit.UIButton)
   @objc @_Concurrency.MainActor @preconcurrency public static func rotateButtonAct()
   @objc @_Concurrency.MainActor @preconcurrency public static func toggleFlash(state: Swift.Bool)
-  @objc @_Concurrency.MainActor @preconcurrency public static func getAvailableAppointment(startDate: Foundation.Date, endDate: Foundation.Date, callType: Swift.String?, completion: @escaping ((_ data: [EnQualify.EnverifyVerifyAvailableAppointmentResult]?, _ error: (any Swift.Error)?) -> Swift.Void))
+  @objc @_Concurrency.MainActor @preconcurrency public static func getAvailableAppointment(startDate: Swift.String, endDate: Swift.String, callType: Swift.String?, completion: @escaping ((_ data: [EnQualify.EnverifyVerifyAvailableAppointmentResult]?, _ error: (any Swift.Error)?) -> Swift.Void))
   @objc @_Concurrency.MainActor @preconcurrency public static func saveAppointment(data: EnQualify.EnverifyVerifyAppointmentSaveMobileModel, completion: @escaping ((_ data: EnQualify.EnverifyVerifySaveMobileAppointmentResult?, _ error: (any Swift.Error)?) -> Swift.Void))
   @objc @_Concurrency.MainActor @preconcurrency public static func cancelAppointment(identityType: Swift.String?, identityNo: Swift.String?, callType: Swift.String?, completion: @escaping ((_ data: EnQualify.EnverifyVerifyCancelAppointmentResult?, _ error: (any Swift.Error)?) -> Swift.Void))
   @objc @_Concurrency.MainActor @preconcurrency public static func setAgentRequest()
@@ -1376,6 +1425,7 @@ public struct VerifyCallResultResponse : Swift.Codable {
   @_Concurrency.MainActor @preconcurrency public static func getSettingsBeforeSDK(completion: @escaping (Swift.Result<EnQualify.VerifyMobileParameterGetResponse?, any Swift.Error>) -> Swift.Void)
   @objc @_Concurrency.MainActor @preconcurrency public static func appMovedToForeground()
   @objc @_Concurrency.MainActor @preconcurrency public static func appMovedToBackground()
+  @_Concurrency.MainActor @preconcurrency public static func screenRecordDefaultSettings()
   @objc @_Concurrency.MainActor @preconcurrency public static func speedCheck()
   @objc @_Concurrency.MainActor @preconcurrency public static func signDocument(data: Foundation.Data, reference: Swift.String? = nil)
   @objc @_Concurrency.MainActor @preconcurrency public static func barcodeRead(content: Swift.String, completionHandler: @escaping (Swift.String?) -> ())
@@ -1383,10 +1433,17 @@ public struct VerifyCallResultResponse : Swift.Codable {
   @_Concurrency.MainActor @preconcurrency public static func documentAdd(category: Swift.String, documents: [EnQualify.VerifyInfoDocumentArray], completionHandler: @escaping (Swift.Bool) -> ())
   @_Concurrency.MainActor @preconcurrency public static func callBusinessAdd(taxNumber: Swift.String, name: Swift.String, completionHandler: @escaping (EnQualify.VerifyCallBusinessAddResponse?) -> ())
   @_Concurrency.MainActor @preconcurrency public static func callBusinessCheck(taxNumber: Swift.String, completionHandler: @escaping (EnQualify.VerifyCallBusinessCheckResponse?) -> ())
-  @_Concurrency.MainActor @preconcurrency public static func callBusinessStaffAdd(name: Swift.String, surname: Swift.String, identityNo: Swift.String, birthDate: Swift.String, phone: Swift.String, completionHandler: @escaping (Swift.Bool) -> ())
+  @_Concurrency.MainActor @preconcurrency public static func callBusinessStaffAdd(callBusinessUID: Swift.String?, name: Swift.String, surname: Swift.String, identityNo: Swift.String, birthDate: Swift.String, phone: Swift.String, completionHandler: @escaping (Swift.Bool) -> ())
   @_Concurrency.MainActor @preconcurrency public static func callBusinessStaffCheck(identityNo: Swift.String, completionHandler: @escaping (EnQualify.VerifyCallBusinessStaffCheckResponse?) -> ())
   @_Concurrency.MainActor @preconcurrency public static func getDocumentKYBCategoryList(completionHandler: @escaping (([EnQualify.VerifyInfoDocumentKYBCategoryArray]?) -> Swift.Void))
   @_Concurrency.MainActor @preconcurrency public static func callBusinessUpdate(callBusinessUID: Swift.String?, reference: Swift.String?, isInProgress: Swift.Bool?, completionHandler: @escaping (Swift.Bool) -> ())
+  @_Concurrency.MainActor @preconcurrency public static func callBusinessDocumentAdd(category: Swift.String?, documents: [EnQualify.VerifyMobileCallBusinessDocumentArray]?, callBusinessUID: Swift.String?, reference: Swift.String?, completion: @escaping (Swift.Bool) -> ())
+  @_Concurrency.MainActor @preconcurrency public static func addGenericIdDoc(documentContent: Swift.String?, completionHandler: @escaping (Swift.Bool, [Swift.String : Swift.String?]?) -> ())
+  @objc @_Concurrency.MainActor @preconcurrency public static func startBase64Camera(on viewController: UIKit.UIViewController, withImageNamed imageName: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public static func addGenericPassport(documentContent: Swift.String?, completionHandler: @escaping (Swift.Bool) -> ())
+  @objc @_Concurrency.MainActor @preconcurrency public static func startGenericPassportCamera(on viewController: UIKit.UIViewController, withImageNamed imageName: Swift.String)
+  @objc @_Concurrency.MainActor @preconcurrency public static func getIsSameIdentityFromDoc() -> Swift.AnyObject?
+  @objc @_Concurrency.MainActor @preconcurrency public static func getIsSameIdentityFromChip() -> Swift.AnyObject?
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init()
   @objc deinit
 }
@@ -1736,7 +1793,6 @@ public struct VerifyMobileParameterGetResponse : Swift.Codable {
   public var maxCallTime: Swift.Int?
   public var setIceCheckingTimeout: Swift.Int?
   public var setCallWaitTimeout: Swift.Int?
-  public var showMobileSpeed: Swift.Bool?
   public var getDG1Name: Swift.Bool?
   public var domainName: Swift.String?
   public var aIUsername: Swift.String?
@@ -1751,7 +1807,9 @@ public struct VerifyMobileParameterGetResponse : Swift.Codable {
   public var addressVerification: Swift.Bool?
   public var readBarcodeIdentityNo: Swift.Bool?
   public var toleranceTime: Swift.Int?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, livenessScore: Swift.Double? = nil, faceRecognitionThreshold: Swift.Double? = nil, timeout: Swift.Int? = nil, maxCallStartErrorTime: Swift.Int? = nil, maxCallStartWaitTime: Swift.Int? = nil, screenRecordBitrate: Swift.Int? = nil, screenRecord: Swift.Bool? = nil, screenRecordPart: Swift.String? = nil, screenRecordUploadRetryCount: Swift.Int? = nil, screenRecordUploadTimeout: Swift.Int? = nil, oCRMode: Swift.String? = nil, oCRDifficultyLevel: Swift.Int? = nil, livenessCalibration: Swift.Int? = nil, eyeDetectionTimeout: Swift.Int? = nil, headCalibration: Swift.Int? = nil, smileCalibration: Swift.Double? = nil, eyeCalibration: Swift.Double? = nil, livenessTimeOut: Swift.Int? = nil, distanceMin: Swift.Double? = nil, distanceMax: Swift.Double? = nil, chipDistanceMin: Swift.Double? = nil, chipDistanceMax: Swift.Double? = nil, maxCallTime: Swift.Int? = nil, setIceCheckingTimeout: Swift.Int? = nil, setCallWaitTimeout: Swift.Int? = nil, showMobileSpeed: Swift.Bool? = nil, getDG1Name: Swift.Bool? = nil, domainName: Swift.String? = nil, aIUsername: Swift.String? = nil, aIPassword: Swift.String? = nil, signalServer: Swift.String? = nil, stunServer: Swift.String? = nil, turnServer: Swift.String? = nil, turnServerUser: Swift.String? = nil, turnServerKey: Swift.String? = nil, mediaServer: Swift.Bool? = nil, oCRFrontReader: Swift.Bool? = nil, addressVerification: Swift.Bool? = nil, readBarcodeIdentityNo: Swift.Bool? = nil, toleranceTime: Swift.Int? = nil)
+  public var antiSpoofingMax: Swift.Double?
+  public var antiSpoofingMin: Swift.Double?
+  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, livenessScore: Swift.Double? = nil, faceRecognitionThreshold: Swift.Double? = nil, timeout: Swift.Int? = nil, maxCallStartErrorTime: Swift.Int? = nil, maxCallStartWaitTime: Swift.Int? = nil, screenRecordBitrate: Swift.Int? = nil, screenRecord: Swift.Bool? = nil, screenRecordPart: Swift.String? = nil, screenRecordUploadRetryCount: Swift.Int? = nil, screenRecordUploadTimeout: Swift.Int? = nil, oCRMode: Swift.String? = nil, oCRDifficultyLevel: Swift.Int? = nil, livenessCalibration: Swift.Int? = nil, eyeDetectionTimeout: Swift.Int? = nil, headCalibration: Swift.Int? = nil, smileCalibration: Swift.Double? = nil, eyeCalibration: Swift.Double? = nil, livenessTimeOut: Swift.Int? = nil, distanceMin: Swift.Double? = nil, distanceMax: Swift.Double? = nil, chipDistanceMin: Swift.Double? = nil, chipDistanceMax: Swift.Double? = nil, maxCallTime: Swift.Int? = nil, setIceCheckingTimeout: Swift.Int? = nil, setCallWaitTimeout: Swift.Int? = nil, getDG1Name: Swift.Bool? = nil, domainName: Swift.String? = nil, aIUsername: Swift.String? = nil, aIPassword: Swift.String? = nil, signalServer: Swift.String? = nil, stunServer: Swift.String? = nil, turnServer: Swift.String? = nil, turnServerUser: Swift.String? = nil, turnServerKey: Swift.String? = nil, mediaServer: Swift.Bool? = nil, oCRFrontReader: Swift.Bool? = nil, addressVerification: Swift.Bool? = nil, readBarcodeIdentityNo: Swift.Bool? = nil, toleranceTime: Swift.Int? = nil, antiSpoofingMax: Swift.Double? = nil, antiSpoofingMin: Swift.Double? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -1782,7 +1840,6 @@ public struct VerifyMobileParameterGetResponse : Swift.Codable {
     case maxCallTime
     case setIceCheckingTimeout
     case setCallWaitTimeout
-    case showMobileSpeed
     case getDG1Name
     case domainName
     case aIUsername
@@ -1797,6 +1854,8 @@ public struct VerifyMobileParameterGetResponse : Swift.Codable {
     case addressVerification
     case readBarcodeIdentityNo
     case toleranceTime
+    case antiSpoofingMax
+    case antiSpoofingMin
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -2204,9 +2263,9 @@ public enum PartiesAuthTypeEnum : Swift.String, Swift.Codable {
 public struct VerifyMobileCallBusinessDocumentAddRequest : Swift.Codable {
   public var category: Swift.String?
   public var reference: Swift.String?
-  public var callBusinessUId: Foundation.UUID?
+  public var callBusinessUId: Swift.String?
   public var documents: [EnQualify.VerifyMobileCallBusinessDocumentArray]?
-  public init(category: Swift.String? = nil, reference: Swift.String? = nil, callBusinessUId: Foundation.UUID? = nil, documents: [EnQualify.VerifyMobileCallBusinessDocumentArray]? = nil)
+  public init(category: Swift.String? = nil, reference: Swift.String? = nil, callBusinessUId: Swift.String? = nil, documents: [EnQualify.VerifyMobileCallBusinessDocumentArray]? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case category
     case reference
@@ -2401,6 +2460,38 @@ public struct VerifySignedMessageInfoDocumentAddRequest : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct VerifyCallGenericIdVideoAddRequest : Swift.Codable {
+  public var contentHash: Swift.String?
+  public var content: Swift.String?
+  public var _id: Swift.Int64?
+  public var uId: Foundation.UUID?
+  public var code: Swift.String?
+  public var data: EnQualify.VerifyCallGenericIdVideoModel
+  public init(contentHash: Swift.String? = nil, content: Swift.String? = nil, _id: Swift.Int64? = nil, uId: Foundation.UUID? = nil, code: Swift.String? = nil, data: EnQualify.VerifyCallGenericIdVideoModel)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case contentHash
+    case content
+    case _id
+    case uId
+    case code
+    case data
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct LogsRequestLogGetResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
   public var result: EnQualify.ResultInfo?
@@ -2455,6 +2546,36 @@ open class RequestBuilder<T> {
 public protocol RequestBuilderFactory {
   func getNonDecodableBuilder<T>() -> EnQualify.RequestBuilder<T>.Type
   func getBuilder<T>() -> EnQualify.RequestBuilder<T>.Type where T : Swift.Decodable
+}
+public struct VerifyCallGenericIdDocAddRequest : Swift.Codable {
+  public var documentContentHash: Swift.String?
+  public var _id: Swift.Int64?
+  public var uId: Foundation.UUID?
+  public var code: Swift.String?
+  public var data: EnQualify.VerifyCallGenericIdDocModel
+  public init(documentContentHash: Swift.String? = nil, _id: Swift.Int64? = nil, uId: Foundation.UUID? = nil, code: Swift.String? = nil, data: EnQualify.VerifyCallGenericIdDocModel)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case documentContentHash
+    case _id
+    case uId
+    case code
+    case data
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallTypeNameListRequest : Swift.Codable {
   public var handler: Swift.String?
@@ -2641,7 +2762,8 @@ public struct VerifyCallSessionAddRequest : Swift.Codable {
   public var category: Swift.String?
   public var taxNumber: Swift.String?
   public var businessReference: Swift.String?
-  public init(type: Swift.String, roomId: Swift.String? = nil, videoId: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil, nFCExists: Swift.Bool? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, reference: Swift.String? = nil, data: Swift.String? = nil, handicapped: Swift.Bool? = nil, canAutoClose: Swift.Bool? = nil, _continue: Swift.Bool? = nil, category: Swift.String? = nil, taxNumber: Swift.String? = nil, businessReference: Swift.String? = nil)
+  public var callBusinessUId: Swift.String?
+  public init(type: Swift.String, roomId: Swift.String? = nil, videoId: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil, nFCExists: Swift.Bool? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, reference: Swift.String? = nil, data: Swift.String? = nil, handicapped: Swift.Bool? = nil, canAutoClose: Swift.Bool? = nil, _continue: Swift.Bool? = nil, category: Swift.String? = nil, taxNumber: Swift.String? = nil, businessReference: Swift.String? = nil, callBusinessUId: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case type
     case roomId
@@ -2661,6 +2783,7 @@ public struct VerifyCallSessionAddRequest : Swift.Codable {
     case category
     case taxNumber
     case businessReference
+    case callBusinessUId
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -2740,13 +2863,15 @@ public struct VerifyCallIDDocAddResponse : Swift.Codable {
   public var warning: EnQualify.ResultInfo?
   public var referenceId: Foundation.UUID?
   public var status: EnQualify.VerifyCallSessionStatusTypeEnum?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: EnQualify.VerifyCallSessionStatusTypeEnum? = nil)
+  public var isSameIdentity: Swift.Bool?
+  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: EnQualify.VerifyCallSessionStatusTypeEnum? = nil, isSameIdentity: Swift.Bool? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
     case warning
     case referenceId
     case status
+    case isSameIdentity
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -2816,6 +2941,32 @@ public struct SignedMessageVerifyCallLogAddRequest : Swift.Codable {
   public var signature: EnQualify.MessageSignature?
   public init(message: EnQualify.VerifyCallLogAddRequest? = nil, signature: EnQualify.MessageSignature? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case message
+    case signature
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct VerifySignedMessageCallGenericIdVideoAddRequest : Swift.Codable {
+  public var content: Swift.String?
+  public var message: EnQualify.VerifyCallGenericIdVideoAddRequest?
+  public var signature: EnQualify.MessageSignature?
+  public init(content: Swift.String? = nil, message: EnQualify.VerifyCallGenericIdVideoAddRequest? = nil, signature: EnQualify.MessageSignature? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case content
     case message
     case signature
     public init?(rawValue: Swift.String)
@@ -3225,10 +3376,32 @@ public struct SignedMessageVerifyMobileDocumentBarcodeVerifyRequest : Swift.Coda
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct VerifyCallGenericIdVideoModel : Swift.Codable {
+  public var content: Swift.String?
+  public init(content: Swift.String? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case content
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 @objc @_inheritsConvenienceInitializers public class KYBManager : ObjectiveC.NSObject {
   @objc public static var navC: UIKit.UINavigationController?
   public static func kybStart(sender: Any)
-  public static func startCaptureImage(state: EnQualify.KYBCaptureState)
+  public static func startCaptureImage(state: Swift.String, sourceType: UIKit.UIImagePickerController.SourceType?)
   public static func setNavigationController(nav: UIKit.UINavigationController?)
   @objc override dynamic public init()
   @objc deinit
@@ -3236,25 +3409,22 @@ public struct SignedMessageVerifyMobileDocumentBarcodeVerifyRequest : Swift.Coda
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class KYBController : UIKit.UIViewController, UIKit.UIImagePickerControllerDelegate, UIKit.UINavigationControllerDelegate {
   @objc @_Concurrency.MainActor @preconcurrency public static var navC: UIKit.UINavigationController?
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency public func captureImage(sourceType: UIKit.UIImagePickerController.SourceType?)
+  @_Concurrency.MainActor @preconcurrency public func selectDocument()
   @_Concurrency.MainActor @preconcurrency public func captureImage()
   @_Concurrency.MainActor @preconcurrency @objc public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
+  @_Concurrency.MainActor @preconcurrency @objc public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
   @objc deinit
+}
+extension EnQualify.KYBController : UIKit.UIDocumentPickerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func documentPicker(_ controller: UIKit.UIDocumentPickerViewController, didPickDocumentsAt urls: [Foundation.URL])
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func documentPickerWasCancelled(_ controller: UIKit.UIDocumentPickerViewController)
 }
 @objc public protocol KYBDelegate {
   @objc func captureStarted()
-  @objc func imageCaptured(image: Swift.String?, captureState: Swift.String?)
-}
-public enum KYBCaptureState : Swift.String {
-  case taxCertificate
-  case circularOfSignature
-  case commercialRegistryGazette
-  case contractOfAssociation
-  case certificateOfActivity
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
+  @objc func imageCaptured(image: Swift.String?, fileName: Swift.String?, captureState: Swift.String?)
+  @objc func documentSelected(document: Swift.String?, documentSize: Swift.String, fileName: Swift.String?, captureState: Swift.String?)
+  @objc func documentSizeExceeded(documentSize: Swift.String?)
 }
 public struct VerifyCallFaceModel : Swift.Codable {
   public var uId: Foundation.UUID?
@@ -3592,9 +3762,9 @@ public struct VerifyCallBusinessAddResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
   public var result: EnQualify.ResultInfo?
   public var warning: EnQualify.ResultInfo?
-  public var referenceId: Foundation.UUID?
-  public var callBusinessUId: Foundation.UUID?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, callBusinessUId: Foundation.UUID? = nil)
+  public var referenceId: Swift.String?
+  public var callBusinessUId: Swift.String?
+  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Swift.String? = nil, callBusinessUId: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -3781,6 +3951,34 @@ public struct VerifyCallIDCheckAddRequest : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct VerifyMobileCallBusinessStaffRemoveResponse : Swift.Codable {
+  public var isSuccessful: Swift.Bool?
+  public var result: EnQualify.ResultInfo?
+  public var warning: EnQualify.ResultInfo?
+  public var referenceId: Foundation.UUID?
+  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case isSuccessful
+    case result
+    case warning
+    case referenceId
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public enum IdentityType : Swift.String {
   case PASSPORT
   case IDENTITY
@@ -3859,6 +4057,28 @@ public struct LogsAuditLogGetRequest : Swift.Codable {
     case _id
     case uId
     case code
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct VerifyCallGenericIdDocModel : Swift.Codable {
+  public var documentContent: Swift.String?
+  public init(documentContent: Swift.String? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case documentContent
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -4549,6 +4769,32 @@ public enum MessagesMessageTypeEnum : Swift.String, Swift.Codable {
     get
   }
 }
+public struct VerifySignedMessageCallGenericIdDocAddRequest : Swift.Codable {
+  public var documentContent: Swift.String?
+  public var message: EnQualify.VerifyCallGenericIdDocAddRequest?
+  public var signature: EnQualify.MessageSignature?
+  public init(documentContent: Swift.String? = nil, message: EnQualify.VerifyCallGenericIdDocAddRequest? = nil, signature: EnQualify.MessageSignature? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case documentContent
+    case message
+    case signature
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct VerifyAppointmentSaveMobileRequest : Swift.Codable {
   public var _id: Swift.Int64?
   public var uId: Foundation.UUID?
@@ -4635,7 +4881,7 @@ public struct AuthAuthenticationInfo : Swift.Codable {
 }
 public struct VerifyAppointmentSaveMobileModel : Swift.Codable {
   public var callType: Swift.String?
-  public var date: Foundation.Date?
+  public var date: Swift.String?
   public var startTime: Swift.String?
   public var identityType: Swift.String?
   public var identityNo: Swift.String?
@@ -4643,7 +4889,7 @@ public struct VerifyAppointmentSaveMobileModel : Swift.Codable {
   public var surname: Swift.String?
   public var phone: Swift.String?
   public var email: Swift.String?
-  public init(callType: Swift.String? = nil, date: Foundation.Date? = nil, startTime: Swift.String? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil)
+  public init(callType: Swift.String? = nil, date: Swift.String? = nil, startTime: Swift.String? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case callType
     case date
@@ -4750,9 +4996,9 @@ public enum VerifyCallLogTypeEnum : Swift.String, Swift.Codable {
 }
 public struct VerifyAvailableAppointmentListRequest : Swift.Codable {
   public var callType: Swift.String?
-  public var startDate: Foundation.Date?
-  public var endDate: Foundation.Date?
-  public init(callType: Swift.String? = nil, startDate: Foundation.Date? = nil, endDate: Foundation.Date? = nil)
+  public var startDate: Swift.String?
+  public var endDate: Swift.String?
+  public init(callType: Swift.String? = nil, startDate: Swift.String? = nil, endDate: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case callType
     case startDate
@@ -4926,10 +5172,11 @@ public struct VerifyCallBusinessCheckResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
   public var result: EnQualify.ResultInfo?
   public var warning: EnQualify.ResultInfo?
-  public var referenceId: Foundation.UUID?
+  public var referenceId: Swift.String?
   public var checkRecord: Swift.Bool?
-  public var callBusinessUId: Foundation.UUID?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, checkRecord: Swift.Bool? = nil, callBusinessUId: Foundation.UUID? = nil)
+  public var callBusinessUId: Swift.String?
+  public var type: Swift.String?
+  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Swift.String? = nil, checkRecord: Swift.Bool? = nil, callBusinessUId: Swift.String? = nil, type: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -4937,6 +5184,7 @@ public struct VerifyCallBusinessCheckResponse : Swift.Codable {
     case referenceId
     case checkRecord
     case callBusinessUId
+    case type
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -5219,8 +5467,8 @@ public struct VerifyCallBusinessStaffAddResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
   public var result: EnQualify.ResultInfo?
   public var warning: EnQualify.ResultInfo?
-  public var referenceId: Foundation.UUID?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil)
+  public var referenceId: Swift.String?
+  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -5780,9 +6028,9 @@ public struct VerifyCallBusinessStaffCheckResponse : Swift.Codable {
   public var isSuccessful: Swift.Bool?
   public var result: EnQualify.ResultInfo?
   public var warning: EnQualify.ResultInfo?
-  public var referenceId: Foundation.UUID?
+  public var referenceId: Swift.String?
   public var checkRecord: Swift.Bool?
-  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, checkRecord: Swift.Bool? = nil)
+  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Swift.String? = nil, checkRecord: Swift.Bool? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case isSuccessful
     case result
@@ -6259,9 +6507,11 @@ public struct LogsAuditLogRecordListRequest : Swift.Codable {
 }
 public struct VerifyDocumentCategoryGetRequest : Swift.Codable {
   public var subjectType: Swift.String?
-  public init(subjectType: Swift.String? = nil)
+  public var callType: Swift.String?
+  public init(subjectType: Swift.String? = nil, callType: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case subjectType
+    case callType
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -6392,11 +6642,13 @@ public struct LogsActivityLogListResponse : Swift.Codable {
 }
 public struct VerifyMobileCallBusinessUpdateRequest : Swift.Codable {
   public var callBusinesUId: Swift.String?
+  public var type: Swift.String?
   public var reference: Swift.String?
   public var isInProgress: Swift.Bool?
-  public init(callBusinesUId: Swift.String? = nil, reference: Swift.String? = nil, isInProgress: Swift.Bool? = nil)
+  public init(callBusinesUId: Swift.String? = nil, type: Swift.String? = nil, reference: Swift.String? = nil, isInProgress: Swift.Bool? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case callBusinesUId
+    case type
     case reference
     case isInProgress
     public init?(rawValue: Swift.String)
@@ -6946,14 +7198,14 @@ public struct VerifyMobileCallBusinessDocumentArray : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct VerifyCallBusinessStaffAddRequest : Swift.Codable {
-  public var callBusinessUId: Foundation.UUID?
-  public var sessionUId: Foundation.UUID?
+  public var callBusinessUId: Swift.String?
+  public var sessionUId: Swift.String?
   public var name: Swift.String
   public var surname: Swift.String
   public var identityNo: Swift.String
   public var birthDate: Swift.String
   public var phone: Swift.String
-  public init(callBusinessUId: Foundation.UUID? = nil, sessionUId: Foundation.UUID? = nil, name: Swift.String, surname: Swift.String, identityNo: Swift.String, birthDate: Swift.String, phone: Swift.String)
+  public init(callBusinessUId: Swift.String? = nil, sessionUId: Swift.String? = nil, name: Swift.String, surname: Swift.String, identityNo: Swift.String, birthDate: Swift.String, phone: Swift.String)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case callBusinessUId
     case sessionUId
@@ -7007,6 +7259,30 @@ public struct BaseResponse : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct SignedMessageVerifyMobileCallBusinessRemoveRequest : Swift.Codable {
+  public var message: EnQualify.VerifyMobileCallBusinessRemoveRequest?
+  public var signature: EnQualify.MessageSignature?
+  public init(message: EnQualify.VerifyMobileCallBusinessRemoveRequest? = nil, signature: EnQualify.MessageSignature? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case message
+    case signature
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct AppsAppRunModel : Swift.Codable {
   public var uId: Foundation.UUID?
   public var app: Swift.String?
@@ -7026,6 +7302,36 @@ public struct AppsAppRunModel : Swift.Codable {
     case processId
     case info
     case settings
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct VerifyCallGenericIdVideoAddResponse : Swift.Codable {
+  public var isSuccessful: Swift.Bool?
+  public var result: EnQualify.ResultInfo?
+  public var warning: EnQualify.ResultInfo?
+  public var referenceId: Foundation.UUID?
+  public var status: Swift.Bool?
+  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, status: Swift.Bool? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case isSuccessful
+    case result
+    case warning
+    case referenceId
+    case status
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -7181,6 +7487,36 @@ public enum ProcessSection : Swift.String {
     get
   }
 }
+public struct VerifyCallGenericIdDocAddResponse : Swift.Codable {
+  public var isSuccessful: Swift.Bool?
+  public var result: EnQualify.ResultInfo?
+  public var warning: EnQualify.ResultInfo?
+  public var referenceId: Foundation.UUID?
+  public var dataJson: [Swift.String : Swift.String?]?
+  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, dataJson: [Swift.String : Swift.String?]? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case isSuccessful
+    case result
+    case warning
+    case referenceId
+    case dataJson
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct SignedMessageVerifyAppointmentListMobileRequest : Swift.Codable {
   public var message: EnQualify.VerifyAppointmentListMobileRequest?
   public var signature: EnQualify.MessageSignature?
@@ -7212,10 +7548,12 @@ public struct JSONDataEncoding : Alamofire.ParameterEncoding {
 public struct VerifyInfoDocumentAddRequest : Swift.Codable {
   public var category: Swift.String?
   public var documents: [EnQualify.VerifyInfoDocumentArray]?
-  public init(category: Swift.String? = nil, documents: [EnQualify.VerifyInfoDocumentArray]? = nil)
+  public var sessionUId: Foundation.UUID?
+  public init(category: Swift.String? = nil, documents: [EnQualify.VerifyInfoDocumentArray]? = nil, sessionUId: Foundation.UUID? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case category
     case documents
+    case sessionUId
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -8041,6 +8379,9 @@ extension EnQualify.SignedMessageVerifyMobileCallBusinessUpdateRequest.CodingKey
 extension EnQualify.VerifyCallIDChipAddResponse.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifyCallIDChipAddResponse.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifyCallIDChipAddResponse.CodingKeys : Swift.RawRepresentable {}
+extension EnQualify.VerifyMobileCallBusinessRemoveRequest.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifyMobileCallBusinessRemoveRequest.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifyMobileCallBusinessRemoveRequest.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.VerifyCallAddressRegistrationModel.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifyCallAddressRegistrationModel.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifyCallAddressRegistrationModel.CodingKeys : Swift.RawRepresentable {}
@@ -8152,9 +8493,15 @@ extension EnQualify.VerifyMobileDocumentBarcodeReadRequest.CodingKeys : Swift.Ra
 extension EnQualify.VerifySignedMessageInfoDocumentAddRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifySignedMessageInfoDocumentAddRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifySignedMessageInfoDocumentAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension EnQualify.VerifyCallGenericIdVideoAddRequest.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifyCallGenericIdVideoAddRequest.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifyCallGenericIdVideoAddRequest.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.LogsRequestLogGetResponse.CodingKeys : Swift.Equatable {}
 extension EnQualify.LogsRequestLogGetResponse.CodingKeys : Swift.Hashable {}
 extension EnQualify.LogsRequestLogGetResponse.CodingKeys : Swift.RawRepresentable {}
+extension EnQualify.VerifyCallGenericIdDocAddRequest.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifyCallGenericIdDocAddRequest.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifyCallGenericIdDocAddRequest.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.VerifyCallTypeNameListRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifyCallTypeNameListRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifyCallTypeNameListRequest.CodingKeys : Swift.RawRepresentable {}
@@ -8191,6 +8538,9 @@ extension EnQualify.SignedMessageVerifyCallSessionAddRequest.CodingKeys : Swift.
 extension EnQualify.SignedMessageVerifyCallLogAddRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.SignedMessageVerifyCallLogAddRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.SignedMessageVerifyCallLogAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension EnQualify.VerifySignedMessageCallGenericIdVideoAddRequest.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifySignedMessageCallGenericIdVideoAddRequest.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifySignedMessageCallGenericIdVideoAddRequest.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.CoreResource.CodingKeys : Swift.Equatable {}
 extension EnQualify.CoreResource.CodingKeys : Swift.Hashable {}
 extension EnQualify.CoreResource.CodingKeys : Swift.RawRepresentable {}
@@ -8206,9 +8556,9 @@ extension EnQualify.LogsProcessLogListRequest.CodingKeys : Swift.RawRepresentabl
 extension EnQualify.SignedMessageVerifyMobileDocumentBarcodeVerifyRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.SignedMessageVerifyMobileDocumentBarcodeVerifyRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.SignedMessageVerifyMobileDocumentBarcodeVerifyRequest.CodingKeys : Swift.RawRepresentable {}
-extension EnQualify.KYBCaptureState : Swift.Equatable {}
-extension EnQualify.KYBCaptureState : Swift.Hashable {}
-extension EnQualify.KYBCaptureState : Swift.RawRepresentable {}
+extension EnQualify.VerifyCallGenericIdVideoModel.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifyCallGenericIdVideoModel.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifyCallGenericIdVideoModel.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.VerifyCallFaceModel.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifyCallFaceModel.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifyCallFaceModel.CodingKeys : Swift.RawRepresentable {}
@@ -8254,6 +8604,9 @@ extension EnQualify.SignedMessageVerifyAppointmentCancelRequest.CodingKeys : Swi
 extension EnQualify.VerifyCallIDCheckAddRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifyCallIDCheckAddRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifyCallIDCheckAddRequest.CodingKeys : Swift.RawRepresentable {}
+extension EnQualify.VerifyMobileCallBusinessStaffRemoveResponse.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifyMobileCallBusinessStaffRemoveResponse.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifyMobileCallBusinessStaffRemoveResponse.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.IdentityType : Swift.Equatable {}
 extension EnQualify.IdentityType : Swift.Hashable {}
 extension EnQualify.IdentityType : Swift.RawRepresentable {}
@@ -8274,6 +8627,9 @@ extension EnQualify.ConnectionType : Swift.Hashable {}
 extension EnQualify.LogsAuditLogGetRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.LogsAuditLogGetRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.LogsAuditLogGetRequest.CodingKeys : Swift.RawRepresentable {}
+extension EnQualify.VerifyCallGenericIdDocModel.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifyCallGenericIdDocModel.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifyCallGenericIdDocModel.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.SignedMessageDocumentsAppFolderGetRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.SignedMessageDocumentsAppFolderGetRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.SignedMessageDocumentsAppFolderGetRequest.CodingKeys : Swift.RawRepresentable {}
@@ -8343,6 +8699,9 @@ extension EnQualify.AuthTokenValidationTypeEnum : Swift.RawRepresentable {}
 extension EnQualify.MessagesMessageTypeEnum : Swift.Equatable {}
 extension EnQualify.MessagesMessageTypeEnum : Swift.Hashable {}
 extension EnQualify.MessagesMessageTypeEnum : Swift.RawRepresentable {}
+extension EnQualify.VerifySignedMessageCallGenericIdDocAddRequest.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifySignedMessageCallGenericIdDocAddRequest.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifySignedMessageCallGenericIdDocAddRequest.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.VerifyAppointmentSaveMobileRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifyAppointmentSaveMobileRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifyAppointmentSaveMobileRequest.CodingKeys : Swift.RawRepresentable {}
@@ -8583,9 +8942,15 @@ extension EnQualify.VerifyCallBusinessStaffAddRequest.CodingKeys : Swift.RawRepr
 extension EnQualify.BaseResponse.CodingKeys : Swift.Equatable {}
 extension EnQualify.BaseResponse.CodingKeys : Swift.Hashable {}
 extension EnQualify.BaseResponse.CodingKeys : Swift.RawRepresentable {}
+extension EnQualify.SignedMessageVerifyMobileCallBusinessRemoveRequest.CodingKeys : Swift.Equatable {}
+extension EnQualify.SignedMessageVerifyMobileCallBusinessRemoveRequest.CodingKeys : Swift.Hashable {}
+extension EnQualify.SignedMessageVerifyMobileCallBusinessRemoveRequest.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.AppsAppRunModel.CodingKeys : Swift.Equatable {}
 extension EnQualify.AppsAppRunModel.CodingKeys : Swift.Hashable {}
 extension EnQualify.AppsAppRunModel.CodingKeys : Swift.RawRepresentable {}
+extension EnQualify.VerifyCallGenericIdVideoAddResponse.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifyCallGenericIdVideoAddResponse.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifyCallGenericIdVideoAddResponse.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.SignedMessageVerifyCallIDBlockGetRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.SignedMessageVerifyCallIDBlockGetRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.SignedMessageVerifyCallIDBlockGetRequest.CodingKeys : Swift.RawRepresentable {}
@@ -8601,6 +8966,9 @@ extension EnQualify.SessionInfoType : Swift.RawRepresentable {}
 extension EnQualify.ProcessSection : Swift.Equatable {}
 extension EnQualify.ProcessSection : Swift.Hashable {}
 extension EnQualify.ProcessSection : Swift.RawRepresentable {}
+extension EnQualify.VerifyCallGenericIdDocAddResponse.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifyCallGenericIdDocAddResponse.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifyCallGenericIdDocAddResponse.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.SignedMessageVerifyAppointmentListMobileRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.SignedMessageVerifyAppointmentListMobileRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.SignedMessageVerifyAppointmentListMobileRequest.CodingKeys : Swift.RawRepresentable {}
