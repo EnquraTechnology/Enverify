@@ -362,6 +362,7 @@ enum SessionInfoType : NSInteger;
 @class EnverifyVerifyCancelAppointmentResult;
 @class EnverifyVerifyAppointmentResult;
 @class EnverifyVerifyCallTypeResult;
+@class VerifyMobileParameterGetResponseOBJC;
 
 SWIFT_CLASS("_TtC9EnQualify8EnVerify")
 @interface EnVerify : NSObject <UIApplicationDelegate>
@@ -590,6 +591,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)getAppointmentWithIdentityNo:(NSString * _Nullable)identityNo identityType:(NSString * _Nullable)identityType completion:(void (^ _Nonnull)(NSArray<EnverifyVerifyAppointmentResult *> * _Nullable, NSError * _Nullable))completion;
 + (void)getCallTypesWithHandler:(NSString * _Nullable)handler completion:(void (^ _Nonnull)(NSArray<EnverifyVerifyCallTypeResult *> * _Nullable, NSError * _Nullable))completion;
 + (void)getSettings;
++ (void)getSettingsBeforeSDKOBJCWithCompletion:(void (^ _Nonnull)(VerifyMobileParameterGetResponseOBJC * _Nullable))completion;
 + (void)appMovedToForeground;
 + (void)appMovedToBackground;
 /// /                    setScreenRecordingSettingsResult(res)
@@ -1099,6 +1101,60 @@ typedef SWIFT_ENUM(NSInteger, SessionInfoType, open) {
 
 
 
+
+@class NSNumber;
+
+SWIFT_CLASS("_TtC9EnQualify36VerifyMobileParameterGetResponseOBJC")
+@interface VerifyMobileParameterGetResponseOBJC : NSObject
+/// True if response is successful.
+@property (nonatomic, strong) id _Nullable isSuccessful;
+/// Request Reference Id.
+@property (nonatomic, copy) NSUUID * _Nullable referenceId;
+@property (nonatomic, strong) NSNumber * _Nullable livenessScore;
+@property (nonatomic, strong) NSNumber * _Nullable faceRecognitionThreshold;
+@property (nonatomic, strong) NSNumber * _Nullable timeout;
+/// Mobilden veri gelmemesi durumu ve agenta ataması yapılamayan kayıtların durumu kapalıya alınır.
+@property (nonatomic, strong) NSNumber * _Nullable maxCallStartErrorTime;
+/// Atama otomatik olarak kaldırılır ve agent ataması yeniden yapılır.
+@property (nonatomic, strong) NSNumber * _Nullable maxCallStartWaitTime;
+@property (nonatomic, strong) NSNumber * _Nullable screenRecordBitrate;
+@property (nonatomic, strong) id _Nullable screenRecord;
+@property (nonatomic, copy) NSString * _Nullable screenRecordPart;
+@property (nonatomic, strong) NSNumber * _Nullable screenRecordUploadRetryCount;
+@property (nonatomic, strong) NSNumber * _Nullable screenRecordUploadTimeout;
+@property (nonatomic, copy) NSString * _Nullable oCRMode;
+@property (nonatomic, strong) NSNumber * _Nullable oCRDifficultyLevel;
+@property (nonatomic, strong) NSNumber * _Nullable livenessCalibration;
+@property (nonatomic, strong) NSNumber * _Nullable eyeDetectionTimeout;
+@property (nonatomic, strong) NSNumber * _Nullable headCalibration;
+@property (nonatomic, strong) NSNumber * _Nullable smileCalibration;
+@property (nonatomic, strong) NSNumber * _Nullable eyeCalibration;
+@property (nonatomic, strong) NSNumber * _Nullable livenessTimeOut;
+@property (nonatomic, strong) NSNumber * _Nullable distanceMin;
+@property (nonatomic, strong) NSNumber * _Nullable distanceMax;
+@property (nonatomic, strong) NSNumber * _Nullable chipDistanceMin;
+@property (nonatomic, strong) NSNumber * _Nullable chipDistanceMax;
+@property (nonatomic, strong) NSNumber * _Nullable maxCallTime;
+@property (nonatomic, strong) NSNumber * _Nullable setIceCheckingTimeout;
+@property (nonatomic, strong) NSNumber * _Nullable setCallWaitTimeout;
+@property (nonatomic, strong) id _Nullable getDG1Name;
+@property (nonatomic, copy) NSString * _Nullable domainName;
+@property (nonatomic, copy) NSString * _Nullable aIUsername;
+@property (nonatomic, copy) NSString * _Nullable aIPassword;
+@property (nonatomic, copy) NSString * _Nullable signalServer;
+@property (nonatomic, copy) NSString * _Nullable stunServer;
+@property (nonatomic, copy) NSString * _Nullable turnServer;
+@property (nonatomic, copy) NSString * _Nullable turnServerUser;
+@property (nonatomic, copy) NSString * _Nullable turnServerKey;
+@property (nonatomic, strong) id _Nullable mediaServer;
+@property (nonatomic, strong) id _Nullable oCRFrontReader;
+@property (nonatomic, strong) id _Nullable addressVerification;
+@property (nonatomic, strong) id _Nullable readBarcodeIdentityNo;
+@property (nonatomic, strong) NSNumber * _Nullable toleranceTime;
+- (nonnull instancetype)initWithIsSuccessful:(id _Nullable)isSuccessful referenceId:(NSUUID * _Nullable)referenceId livenessScore:(NSNumber * _Nullable)livenessScore faceRecognitionThreshold:(NSNumber * _Nullable)faceRecognitionThreshold timeout:(NSNumber * _Nullable)timeout maxCallStartErrorTime:(NSNumber * _Nullable)maxCallStartErrorTime maxCallStartWaitTime:(NSNumber * _Nullable)maxCallStartWaitTime screenRecordBitrate:(NSNumber * _Nullable)screenRecordBitrate screenRecord:(id _Nullable)screenRecord screenRecordPart:(NSString * _Nullable)screenRecordPart screenRecordUploadRetryCount:(NSNumber * _Nullable)screenRecordUploadRetryCount screenRecordUploadTimeout:(NSNumber * _Nullable)screenRecordUploadTimeout oCRMode:(NSString * _Nullable)oCRMode oCRDifficultyLevel:(NSNumber * _Nullable)oCRDifficultyLevel livenessCalibration:(NSNumber * _Nullable)livenessCalibration eyeDetectionTimeout:(NSNumber * _Nullable)eyeDetectionTimeout headCalibration:(NSNumber * _Nullable)headCalibration smileCalibration:(NSNumber * _Nullable)smileCalibration eyeCalibration:(NSNumber * _Nullable)eyeCalibration livenessTimeOut:(NSNumber * _Nullable)livenessTimeOut distanceMin:(NSNumber * _Nullable)distanceMin distanceMax:(NSNumber * _Nullable)distanceMax chipDistanceMin:(NSNumber * _Nullable)chipDistanceMin chipDistanceMax:(NSNumber * _Nullable)chipDistanceMax maxCallTime:(NSNumber * _Nullable)maxCallTime setIceCheckingTimeout:(NSNumber * _Nullable)setIceCheckingTimeout setCallWaitTimeout:(NSNumber * _Nullable)setCallWaitTimeout getDG1Name:(id _Nullable)getDG1Name domainName:(NSString * _Nullable)domainName aIUsername:(NSString * _Nullable)aIUsername aIPassword:(NSString * _Nullable)aIPassword signalServer:(NSString * _Nullable)signalServer stunServer:(NSString * _Nullable)stunServer turnServer:(NSString * _Nullable)turnServer turnServerUser:(NSString * _Nullable)turnServerUser turnServerKey:(NSString * _Nullable)turnServerKey mediaServer:(id _Nullable)mediaServer oCRFrontReader:(id _Nullable)oCRFrontReader addressVerification:(id _Nullable)addressVerification readBarcodeIdentityNo:(id _Nullable)readBarcodeIdentityNo toleranceTime:(NSNumber * _Nullable)toleranceTime OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 #endif
 #if __has_attribute(external_source_symbol)

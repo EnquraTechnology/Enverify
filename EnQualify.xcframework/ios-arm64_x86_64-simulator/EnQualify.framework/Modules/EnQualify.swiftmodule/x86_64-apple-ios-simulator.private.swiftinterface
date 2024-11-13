@@ -1423,6 +1423,7 @@ public struct VerifyCallResultResponse : Swift.Codable {
   @objc @_Concurrency.MainActor @preconcurrency public static func getCallTypes(handler: Swift.String? = nil, completion: @escaping ((_ data: [EnQualify.EnverifyVerifyCallTypeResult]?, _ error: (any Swift.Error)?) -> Swift.Void))
   @objc @_Concurrency.MainActor @preconcurrency public static func getSettings()
   @_Concurrency.MainActor @preconcurrency public static func getSettingsBeforeSDK(completion: @escaping (Swift.Result<EnQualify.VerifyMobileParameterGetResponse?, any Swift.Error>) -> Swift.Void)
+  @objc @_Concurrency.MainActor @preconcurrency public static func getSettingsBeforeSDKOBJC(completion: @escaping (EnQualify.VerifyMobileParameterGetResponseOBJC?) -> Swift.Void)
   @objc @_Concurrency.MainActor @preconcurrency public static func appMovedToForeground()
   @objc @_Concurrency.MainActor @preconcurrency public static func appMovedToBackground()
   @_Concurrency.MainActor @preconcurrency public static func screenRecordDefaultSettings()
@@ -5831,6 +5832,51 @@ public struct CoreAppResourceGetRequest : Swift.Codable {
   }
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+@objc public class VerifyMobileParameterGetResponseOBJC : ObjectiveC.NSObject {
+  @objc public var isSuccessful: Swift.AnyObject?
+  @objc public var referenceId: Foundation.UUID?
+  @objc public var livenessScore: Foundation.NSNumber?
+  @objc public var faceRecognitionThreshold: Foundation.NSNumber?
+  @objc public var timeout: Foundation.NSNumber?
+  @objc public var maxCallStartErrorTime: Foundation.NSNumber?
+  @objc public var maxCallStartWaitTime: Foundation.NSNumber?
+  @objc public var screenRecordBitrate: Foundation.NSNumber?
+  @objc public var screenRecord: Swift.AnyObject?
+  @objc public var screenRecordPart: Swift.String?
+  @objc public var screenRecordUploadRetryCount: Foundation.NSNumber?
+  @objc public var screenRecordUploadTimeout: Foundation.NSNumber?
+  @objc public var oCRMode: Swift.String?
+  @objc public var oCRDifficultyLevel: Foundation.NSNumber?
+  @objc public var livenessCalibration: Foundation.NSNumber?
+  @objc public var eyeDetectionTimeout: Foundation.NSNumber?
+  @objc public var headCalibration: Foundation.NSNumber?
+  @objc public var smileCalibration: Foundation.NSNumber?
+  @objc public var eyeCalibration: Foundation.NSNumber?
+  @objc public var livenessTimeOut: Foundation.NSNumber?
+  @objc public var distanceMin: Foundation.NSNumber?
+  @objc public var distanceMax: Foundation.NSNumber?
+  @objc public var chipDistanceMin: Foundation.NSNumber?
+  @objc public var chipDistanceMax: Foundation.NSNumber?
+  @objc public var maxCallTime: Foundation.NSNumber?
+  @objc public var setIceCheckingTimeout: Foundation.NSNumber?
+  @objc public var setCallWaitTimeout: Foundation.NSNumber?
+  @objc public var getDG1Name: Swift.AnyObject?
+  @objc public var domainName: Swift.String?
+  @objc public var aIUsername: Swift.String?
+  @objc public var aIPassword: Swift.String?
+  @objc public var signalServer: Swift.String?
+  @objc public var stunServer: Swift.String?
+  @objc public var turnServer: Swift.String?
+  @objc public var turnServerUser: Swift.String?
+  @objc public var turnServerKey: Swift.String?
+  @objc public var mediaServer: Swift.AnyObject?
+  @objc public var oCRFrontReader: Swift.AnyObject?
+  @objc public var addressVerification: Swift.AnyObject?
+  @objc public var readBarcodeIdentityNo: Swift.AnyObject?
+  @objc public var toleranceTime: Foundation.NSNumber?
+  @objc public init(isSuccessful: Swift.AnyObject? = nil, referenceId: Foundation.UUID? = nil, livenessScore: Foundation.NSNumber? = nil, faceRecognitionThreshold: Foundation.NSNumber? = nil, timeout: Foundation.NSNumber? = nil, maxCallStartErrorTime: Foundation.NSNumber? = nil, maxCallStartWaitTime: Foundation.NSNumber? = nil, screenRecordBitrate: Foundation.NSNumber? = nil, screenRecord: Swift.AnyObject? = nil, screenRecordPart: Swift.String? = nil, screenRecordUploadRetryCount: Foundation.NSNumber? = nil, screenRecordUploadTimeout: Foundation.NSNumber? = nil, oCRMode: Swift.String? = nil, oCRDifficultyLevel: Foundation.NSNumber? = nil, livenessCalibration: Foundation.NSNumber? = nil, eyeDetectionTimeout: Foundation.NSNumber? = nil, headCalibration: Foundation.NSNumber? = nil, smileCalibration: Foundation.NSNumber? = nil, eyeCalibration: Foundation.NSNumber? = nil, livenessTimeOut: Foundation.NSNumber? = nil, distanceMin: Foundation.NSNumber? = nil, distanceMax: Foundation.NSNumber? = nil, chipDistanceMin: Foundation.NSNumber? = nil, chipDistanceMax: Foundation.NSNumber? = nil, maxCallTime: Foundation.NSNumber? = nil, setIceCheckingTimeout: Foundation.NSNumber? = nil, setCallWaitTimeout: Foundation.NSNumber? = nil, getDG1Name: Swift.AnyObject? = nil, domainName: Swift.String? = nil, aIUsername: Swift.String? = nil, aIPassword: Swift.String? = nil, signalServer: Swift.String? = nil, stunServer: Swift.String? = nil, turnServer: Swift.String? = nil, turnServerUser: Swift.String? = nil, turnServerKey: Swift.String? = nil, mediaServer: Swift.AnyObject? = nil, oCRFrontReader: Swift.AnyObject? = nil, addressVerification: Swift.AnyObject? = nil, readBarcodeIdentityNo: Swift.AnyObject? = nil, toleranceTime: Foundation.NSNumber? = nil)
+  @objc deinit
 }
 public struct SignedMessageVerifyAppointmentSaveMobileRequest : Swift.Codable {
   public var message: EnQualify.VerifyAppointmentSaveMobileRequest?

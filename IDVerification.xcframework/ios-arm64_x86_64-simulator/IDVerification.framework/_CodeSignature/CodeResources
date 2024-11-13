@@ -4,6 +4,14 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Alamofire.bundle/Info.plist</key>
+		<data>
+		KCRlo1L7m2SRVT/ERFz0udiUjzw=
+		</data>
+		<key>Alamofire.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		ovFJMFOLMjzh8DLJKmXncj8JIgU=
+		</data>
 		<key>Assets.car</key>
 		<data>
 		fyrXjTInDR3zv/N/6Q4ScwzyWeQ=
@@ -114,11 +122,11 @@
 		</data>
 		<key>Modules/IDVerification.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		JxjmH0AEKZ1Ky5ymQg/jpfOgdKE=
+		giPJ611EOF7ntAVjlOMXUXuL/Ks=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		IvFL/KG/hksvxghmspsEHVndUKM=
+		JPYwkmqdmSmZhEiI6RCOfqdK9Kg=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -138,7 +146,7 @@
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DLafgdFs7GbqvSTGwI3yC8E60r8=
+		zbGcn/bCO2hI7j0sLpRp/fL8q8c=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -158,7 +166,7 @@
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		pYbk1zQUXf3n3NNW6BxGMMuiGqc=
+		XHhf4icbdaLsz8fOrj4FuZ6BUdU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -197,6 +205,20 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Alamofire.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ksssjyZPSjkosP9FAjr8mSvGSmIoSe6s6k7afmZB6Us=
+			</data>
+		</dict>
+		<key>Alamofire.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CNkOaUbb/qDQtbF/tlnXfu0j5EO3Rdjntbn6N4y3RHc=
+			</data>
+		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
@@ -383,14 +405,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BzsEqpPEr8Xz2lK3SmtY9w/Ks+pC0AVb++5x3iiszlU=
+			QkeFW6f1k8HDv28X5qZ1W7dihCGHPL2xKTyScUTeYDM=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			npfHDmvrflj+k8mNqrZODrdMtU1UYnSzwj25h4bMaXs=
+			6emAFt6kv42ryqF2A+ruFQ8cN0Ow0L4ksaG6KbFYA90=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -425,7 +447,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OBi9yQ0yEVaxf54u3W/3FOlpg37+UN2Ae7OCYWS5960=
+			DFz3hS9W9NNkEEnFNT96zg+y9fXhIc45eKFxllkd0SI=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -460,7 +482,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cy+PnBd+9HHsfk/hY/h+oAx+rV3raB9w07hSjRpCXNw=
+			8m5yGtZh5p1v9oCJ1a1txdEwY9KsO2ySzCQL+X8lS9M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
