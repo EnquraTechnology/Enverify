@@ -20991,6 +20991,226 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "antiSpoofingMax",
+            "printedName": "antiSpoofingMax",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9EnQualify17CalibrationValuesC15antiSpoofingMaxSdSgvp",
+            "mangledName": "$s9EnQualify17CalibrationValuesC15antiSpoofingMaxSdSgvp",
+            "moduleName": "EnQualify",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EnQualify17CalibrationValuesC15antiSpoofingMaxSdSgvg",
+                "mangledName": "$s9EnQualify17CalibrationValuesC15antiSpoofingMaxSdSgvg",
+                "moduleName": "EnQualify",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EnQualify17CalibrationValuesC15antiSpoofingMaxSdSgvs",
+                "mangledName": "$s9EnQualify17CalibrationValuesC15antiSpoofingMaxSdSgvs",
+                "moduleName": "EnQualify",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EnQualify17CalibrationValuesC15antiSpoofingMaxSdSgvM",
+                "mangledName": "$s9EnQualify17CalibrationValuesC15antiSpoofingMaxSdSgvM",
+                "moduleName": "EnQualify",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "antiSpoofingMin",
+            "printedName": "antiSpoofingMin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9EnQualify17CalibrationValuesC15antiSpoofingMinSdSgvp",
+            "mangledName": "$s9EnQualify17CalibrationValuesC15antiSpoofingMinSdSgvp",
+            "moduleName": "EnQualify",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EnQualify17CalibrationValuesC15antiSpoofingMinSdSgvg",
+                "mangledName": "$s9EnQualify17CalibrationValuesC15antiSpoofingMinSdSgvg",
+                "moduleName": "EnQualify",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EnQualify17CalibrationValuesC15antiSpoofingMinSdSgvs",
+                "mangledName": "$s9EnQualify17CalibrationValuesC15antiSpoofingMinSdSgvs",
+                "moduleName": "EnQualify",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EnQualify17CalibrationValuesC15antiSpoofingMinSdSgvM",
+                "mangledName": "$s9EnQualify17CalibrationValuesC15antiSpoofingMinSdSgvM",
+                "moduleName": "EnQualify",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -72147,7 +72367,8 @@
               "Preconcurrency",
               "Custom",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -74164,8 +74385,8 @@
           },
           {
             "kind": "Function",
-            "name": "onStartCall",
-            "printedName": "onStartCall()",
+            "name": "startVideoAgentCall",
+            "printedName": "startVideoAgentCall()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -74174,8 +74395,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@EnQualify@objc(cs)EnVerify(cm)onStartCall",
-            "mangledName": "$s9EnQualify0A6VerifyC11onStartCallyyFZ",
+            "usr": "c:@M@EnQualify@objc(cs)EnVerify(cm)startVideoAgentCall",
+            "mangledName": "$s9EnQualify0A6VerifyC19startVideoAgentCallyyFZ",
             "moduleName": "EnQualify",
             "static": true,
             "declAttributes": [
@@ -74183,7 +74404,8 @@
               "Preconcurrency",
               "Custom",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -398403,21 +398625,21 @@
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "StringLiteral",
-      "offset": 64266,
+      "offset": 64633,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 72350,
+      "offset": 72717,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 93961,
+      "offset": 94682,
       "length": 5,
       "value": "false"
     },

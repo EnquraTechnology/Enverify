@@ -527,7 +527,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)onExitSelfService;
 + (void)onExitSelfServiceWithoutPop;
 + (void)onHangupCall;
-+ (void)onStartCall;
++ (void)startVideoAgentCall;
 + (void)startAVRecording SWIFT_AVAILABILITY(ios,introduced=11.0);
 + (void)stopAVRecording SWIFT_AVAILABILITY(ios,introduced=11.0);
 + (void)setMessageWithMessage:(NSString * _Nonnull)message index:(NSInteger)index;

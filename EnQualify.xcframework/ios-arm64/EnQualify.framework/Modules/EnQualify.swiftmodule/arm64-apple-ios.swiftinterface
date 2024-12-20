@@ -294,6 +294,8 @@ import _SwiftConcurrencyShims
   public var showMobileSpeed: Swift.Bool?
   public var getDG1Name: Swift.Bool?
   public var readBarcodeIdentityNo: Swift.Bool?
+  public var antiSpoofingMax: Swift.Double?
+  public var antiSpoofingMin: Swift.Double?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -1356,7 +1358,7 @@ public struct VerifyCallResultResponse : Swift.Codable {
   @objc @_Concurrency.MainActor @preconcurrency public static func onExitSelfService()
   @objc @_Concurrency.MainActor @preconcurrency public static func onExitSelfServiceWithoutPop()
   @objc @_Concurrency.MainActor @preconcurrency public static func onHangupCall()
-  @objc @_Concurrency.MainActor @preconcurrency public static func onStartCall()
+  @objc @_Concurrency.MainActor @preconcurrency public static func startVideoAgentCall()
   @available(iOS 11.0, *)
   @objc @_Concurrency.MainActor @preconcurrency public static func startAVRecording()
   @available(iOS 11.0, *)

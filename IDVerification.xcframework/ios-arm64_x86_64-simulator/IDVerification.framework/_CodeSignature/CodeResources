@@ -4,17 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Alamofire.bundle/Info.plist</key>
-		<data>
-		KCRlo1L7m2SRVT/ERFz0udiUjzw=
-		</data>
-		<key>Alamofire.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		ovFJMFOLMjzh8DLJKmXncj8JIgU=
-		</data>
 		<key>Assets.car</key>
 		<data>
-		fyrXjTInDR3zv/N/6Q4ScwzyWeQ=
+		TSeNAvs0gyOFHexPanzmW1L5HHI=
 		</data>
 		<key>Config.plist</key>
 		<data>
@@ -34,7 +26,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<data>
-		M+KREbqBrm74IVzZL3V/o7eOrGY=
+		XsE+YAzqx3PYIuxTAMP32s4Rrh0=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<data>
@@ -74,7 +66,7 @@
 		</data>
 		<key>Headers/IDVerification-Swift.h</key>
 		<data>
-		FFaPDuf2qtIIynSggUmQTf7OQfI=
+		eIHlXdPhLTAzw4Qyl8j/8/03G64=
 		</data>
 		<key>Headers/IDVerify.h</key>
 		<data>
@@ -82,11 +74,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4Cq70ukocOQGLjVyzaXI7b7IQYs=
+		5EitVj9f+slAi4uF0suZD9nDjbA=
 		</data>
 		<key>LatinOCRResources.bundle/Info.plist</key>
 		<data>
-		FfpBcr1WGZPPcHISKdjI69vwM8k=
+		dmNOyfDdxChL6C9ApkgbUCZzsBc=
 		</data>
 		<key>LatinOCRResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
 		<data>
@@ -122,51 +114,51 @@
 		</data>
 		<key>Modules/IDVerification.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		giPJ611EOF7ntAVjlOMXUXuL/Ks=
+		0tozq+/ifLNOIwwQBG7WCSvN5Fo=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		JPYwkmqdmSmZhEiI6RCOfqdK9Kg=
+		8fvTsPWOkJJKv79Uv4ojHgFTWCc=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		hs4t2jxSNUTMGfcjWIp5Eubrwhc=
+		IRlp9XdA62tdixjtRoocwD/HgC4=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		8XzXDC8iC9Q9ipOt63XlmwfkE2w=
+		u7HJHqkauc4FuQch2m9lJB75MGE=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		zBLqrQm690FOE6ehF45TaVG3/rI=
+		cFf6POFBKAQ7UBSfbvY417xIcR0=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8XzXDC8iC9Q9ipOt63XlmwfkE2w=
+		u7HJHqkauc4FuQch2m9lJB75MGE=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zbGcn/bCO2hI7j0sLpRp/fL8q8c=
+		ViDnoiMors2sG8lSipKb0kvyeSM=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		hs4t2jxSNUTMGfcjWIp5Eubrwhc=
+		IRlp9XdA62tdixjtRoocwD/HgC4=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ZhNiwPIOJ0Xvg8BcuQoKAJZoXqI=
+		V0YV4oEmsS5d38hrTm1wkk8xoPQ=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		wBColRqXyZn10aqoWwowxXTU/es=
+		aTm2i05jjlnFi9BYjRncoE2jQ0c=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ZhNiwPIOJ0Xvg8BcuQoKAJZoXqI=
+		V0YV4oEmsS5d38hrTm1wkk8xoPQ=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XHhf4icbdaLsz8fOrj4FuZ6BUdU=
+		TRdfLiLJFeRpOvjakAPGIS5tR14=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -187,7 +179,7 @@
 		</data>
 		<key>masterList.pem</key>
 		<data>
-		Tt0bcdSiiWDR0oTEexc4f7JdiZg=
+		MC4YVEFoJ/SJlzFG937UYuQ6GqA=
 		</data>
 		<key>model.enc</key>
 		<data>
@@ -205,25 +197,11 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Alamofire.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ksssjyZPSjkosP9FAjr8mSvGSmIoSe6s6k7afmZB6Us=
-			</data>
-		</dict>
-		<key>Alamofire.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CNkOaUbb/qDQtbF/tlnXfu0j5EO3Rdjntbn6N4y3RHc=
-			</data>
-		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			irBDWjibTBG4ZNtDR37HzaaqbQcqmMQ6Ah+/g8e3iD4=
+			Th76CIrAjQVExBy5ILAHVz/Gb1CMbPVOAq1J2p6wjp4=
 			</data>
 		</dict>
 		<key>Config.plist</key>
@@ -258,7 +236,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1cOrSjYKd73Tz5n3i3eBCtqv1tAfFsyYCEl3+pS6ZUY=
+			1nJ7YvfbwHSU5dVupbXXKvdx44Fyme1NBdFeV7fkfto=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
@@ -328,7 +306,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SsqRoThQ9caR2cfUu04HS/N660LHwvbcNWSlB3SVR44=
+			H8LrDd6iBQke7f4qFcbNs9XTm7WRAxDKcL2swRYvM1k=
 			</data>
 		</dict>
 		<key>Headers/IDVerify.h</key>
@@ -342,7 +320,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KgUFoX5Q5TJ0YDwR14ngcD6KV7pcEdurw6XaoVmIW9c=
+			i5jmQiRsTW57N5Z8wQzG8nTsWv61g4Z1umeGjqMUvh4=
 			</data>
 		</dict>
 		<key>LatinOCRResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
@@ -405,84 +383,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QkeFW6f1k8HDv28X5qZ1W7dihCGHPL2xKTyScUTeYDM=
+			dl2DlQhQr01oMCDZtTcwvrjfgpf9e19wtRaMYJUCXsY=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6emAFt6kv42ryqF2A+ruFQ8cN0Ow0L4ksaG6KbFYA90=
+			BRoTesOeW8p095x78sy6/e9xHvW3skijSCAYE1qXMz4=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nI7HTbbiqC9FzWTHnAzt9v6hgNtfGv38uPJSedT0JDo=
+			zUi1qeBSoFBOAot6fVUTePa5ci0ynZjCwo72hmkiQuM=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oBrY+HA7zWhUFu3L2Jnb7kaaPa1iO9SV7hmMvn8Hyl4=
+			l4p38FhnlXxHpRrbH04cquTUyUC1JjNXDAZjAZCakHs=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vH2uNb2DDtz7e396yDMjaMklKM29xn8ptrUytMD77Ro=
+			7iOcut671Zbl+5EezPnksCJTnNhgab22Fj+76Ao88Po=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oBrY+HA7zWhUFu3L2Jnb7kaaPa1iO9SV7hmMvn8Hyl4=
+			l4p38FhnlXxHpRrbH04cquTUyUC1JjNXDAZjAZCakHs=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DFz3hS9W9NNkEEnFNT96zg+y9fXhIc45eKFxllkd0SI=
+			GRj/ReFRMfylqcu1X8sixvEQ4UrlJQ6zRNpqbrRdpuQ=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nI7HTbbiqC9FzWTHnAzt9v6hgNtfGv38uPJSedT0JDo=
+			zUi1qeBSoFBOAot6fVUTePa5ci0ynZjCwo72hmkiQuM=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r0GOJnz7arxTYzF2M4MFKLJagYrxeiWLqsQx5FjvSdo=
+			BrvCtzLUZnSZ0mpRzVFGmoG84ctbZuNhvD07sWA5/Rs=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U87op41s3CELMbiTqCmGbwI/sfKwHaZoguEBuvccwHs=
+			njlfg39y/EGW9VBFX0lDTpIe05yD3CDeKJBxyKkil/c=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r0GOJnz7arxTYzF2M4MFKLJagYrxeiWLqsQx5FjvSdo=
+			BrvCtzLUZnSZ0mpRzVFGmoG84ctbZuNhvD07sWA5/Rs=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8m5yGtZh5p1v9oCJ1a1txdEwY9KsO2ySzCQL+X8lS9M=
+			ErMmOaBSMaYHE2eaF5RwUsydzJlXHKcmHZb3wgw7zLc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -512,7 +490,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W5kKumAKpLTD3aZon6QdKWXippdkzFVz1CT7OkNDnqs=
+			vt/z2lmDm4gA5n6xWQUKDXFJDtmYOLV7JnU1Dvcz9Io=
 			</data>
 		</dict>
 		<key>model.enc</key>
