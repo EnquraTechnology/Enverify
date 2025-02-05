@@ -74,7 +74,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5EitVj9f+slAi4uF0suZD9nDjbA=
+		TP2pNbw8yU0DNS9CltmcsbsdcQg=
 		</data>
 		<key>LatinOCRResources.bundle/Info.plist</key>
 		<data>
@@ -114,11 +114,11 @@
 		</data>
 		<key>Modules/IDVerification.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		0tozq+/ifLNOIwwQBG7WCSvN5Fo=
+		Bj3s0Xll7eLZEPOfVksSfsV+EGE=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		8fvTsPWOkJJKv79Uv4ojHgFTWCc=
+		plnhY65TQShszsm5isUDPBm0Hcs=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -383,14 +383,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dl2DlQhQr01oMCDZtTcwvrjfgpf9e19wtRaMYJUCXsY=
+			H4mMlHL1Fux8L9W0KsJnMxZ746VUguqOez2zkhxwWkw=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BRoTesOeW8p095x78sy6/e9xHvW3skijSCAYE1qXMz4=
+			oyi4pHWdK/rRDsQneat1ak62ooYt6JcV2c54qbB4Pfg=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.abi.json</key>

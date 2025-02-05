@@ -396,6 +396,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable ide
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable identityNo;)
 + (NSString * _Nullable)identityNo SWIFT_WARN_UNUSED_RESULT;
 + (void)setIdentityNo:(NSString * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable businessReference;)
++ (NSString * _Nullable)businessReference SWIFT_WARN_UNUSED_RESULT;
++ (void)setBusinessReference:(NSString * _Nullable)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL canAutoClose;)
 + (BOOL)canAutoClose SWIFT_WARN_UNUSED_RESULT;
 + (void)setCanAutoClose:(BOOL)value;
@@ -536,7 +539,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)setAgentFullScreenWithAgentFullScreenState:(BOOL)agentFullScreenState;
 + (void)setSpeakerWithSoundOn:(BOOL)soundOn;
 + (void)setMediaServerWithMediaServerState:(BOOL)mediaServerState;
-+ (void)setMSPrivateKeyWithValue:(NSString * _Nonnull)value;
 + (void)setTimerForAlivenessWithTimerCountInSeconds:(NSInteger)timerCountInSeconds;
 + (void)setLivenessCalibrationWithValue:(NSInteger)value;
 + (void)setEyeCloseMaxTimeWithValue:(NSInteger)value;
@@ -596,7 +598,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)appMovedToBackground;
 /// /                    setScreenRecordingSettingsResult(res)
 + (void)speedCheck;
-+ (void)signDocumentWithData:(NSData * _Nonnull)data reference:(NSString * _Nullable)reference;
++ (void)signDocumentWithData:(NSData * _Nonnull)data reference:(NSString * _Nullable)reference completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
++ (void)signDocumentFinishWithCompletionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 + (void)barcodeReadWithContent:(NSString * _Nonnull)content completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
 + (void)barcodeVerifyWithIdentityNo:(NSString * _Nonnull)identityNo barcode:(NSString * _Nonnull)barcode completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 + (void)startBase64CameraOn:(UIViewController * _Nonnull)viewController withImageNamed:(NSString * _Nonnull)imageName;
@@ -880,8 +883,6 @@ SWIFT_PROTOCOL("_TtP9EnQualify16EnVerifyDelegate_")
 - (void)videoUploadFailure;
 - (void)maximumCallTimeExpired;
 - (void)currentThermalStateWithState:(NSString * _Nonnull)state;
-- (void)documentSignSuccess;
-- (void)documentSingFailure;
 - (void)appointmentToleranceWithTime:(NSInteger)time;
 - (void)agentMessageRequestWithMessage:(NSString * _Nonnull)message;
 - (void)addGenericIdDocCompletedWith:(NSDictionary<NSString *, NSString *> * _Nonnull)data;
