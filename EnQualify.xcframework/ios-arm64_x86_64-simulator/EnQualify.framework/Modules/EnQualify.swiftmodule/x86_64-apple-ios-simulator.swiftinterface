@@ -1206,6 +1206,8 @@ public struct SignedMessageDocumentsAppFolderGetFolderRequest : Swift.Codable {
   open class func apiVerifySettingGetPost(body: EnQualify.SignedMessageVerifyCallParameterGetRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyMobileParameterGetResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifySettingGetPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallParameterGetRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyMobileParameterGetResponse>
   open class func apiVerifySigningFinishPost(body: EnQualify.SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: EnQualify.BaseResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
+  open class func apiVerifySettingGetV2Post(body: EnQualify.SignedMessageVerifyCallParameterGetRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyEncryptedMobileParameterResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
+  open class func apiVerifySettingGetV2PostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallParameterGetRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyEncryptedMobileParameterResponse>
   open class func apiVerifySigningFinishPostWithRequestBuilder(body: EnQualify.SignedMessageBaseRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.BaseResponse>
   open class func apiVerifySigningGetPost(body: EnQualify.SignedMessageVerifyDocumentSignGetMobileRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyDocumentSignGetMobileResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifySigningGetPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyDocumentSignGetMobileRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyDocumentSignGetMobileResponse>
@@ -6011,6 +6013,36 @@ public struct VerifyMobileCallBusinessUpdateRequest : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct VerifyEncryptedMobileParameterResponse : Swift.Codable {
+  public var isSuccessful: Swift.Bool?
+  public var result: EnQualify.ResultInfo?
+  public var warning: EnQualify.ResultInfo?
+  public var referenceId: Foundation.UUID?
+  public var encryptedModel: Swift.String?
+  public init(isSuccessful: Swift.Bool? = nil, result: EnQualify.ResultInfo? = nil, warning: EnQualify.ResultInfo? = nil, referenceId: Foundation.UUID? = nil, encryptedModel: Swift.String? = nil)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case isSuccessful
+    case result
+    case warning
+    case referenceId
+    case encryptedModel
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public enum VerifyHandicappedSupportTypeEnum : Swift.String, Swift.Codable {
   case _none
   case handicapped
@@ -9206,6 +9238,9 @@ extension EnQualify.EntityStateTypeEnum : Swift.RawRepresentable {}
 extension EnQualify.VerifyMobileCallBusinessUpdateRequest.CodingKeys : Swift.Equatable {}
 extension EnQualify.VerifyMobileCallBusinessUpdateRequest.CodingKeys : Swift.Hashable {}
 extension EnQualify.VerifyMobileCallBusinessUpdateRequest.CodingKeys : Swift.RawRepresentable {}
+extension EnQualify.VerifyEncryptedMobileParameterResponse.CodingKeys : Swift.Equatable {}
+extension EnQualify.VerifyEncryptedMobileParameterResponse.CodingKeys : Swift.Hashable {}
+extension EnQualify.VerifyEncryptedMobileParameterResponse.CodingKeys : Swift.RawRepresentable {}
 extension EnQualify.VerifyHandicappedSupportTypeEnum : Swift.Equatable {}
 extension EnQualify.VerifyHandicappedSupportTypeEnum : Swift.Hashable {}
 extension EnQualify.VerifyHandicappedSupportTypeEnum : Swift.RawRepresentable {}
