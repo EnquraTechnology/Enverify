@@ -1,14 +1,14 @@
    Pod::Spec.new do |spec|
     spec.name         = "EnVerify"
-    spec.version      = "1.3.18.4"
+    spec.version      = "1.3.19.1"
     spec.summary      = "EnVerify."
     spec.authors      = { "Enqura" => "http://www.enqura.com" }
     spec.homepage     = "http://www.enqura.com"
     spec.license      = { :type => 'MIT', :text => "MIT License" }
     spec.platform     = :ios
     spec.ios.deployment_target = '12.0'
-    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/1.3.18.4.zip"}
-    spec.ios.vendored_frameworks = "EnVerify-1.3.18.4/EnQualify.xcframework" , "EnVerify-1.3.18.4/IDVerification.xcframework"
+    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/1.3.19.1.zip"}
+    spec.ios.vendored_frameworks = "EnVerify-1.3.19.1/EnQualify.xcframework" , "EnVerify-1.3.19.1/IDVerification.xcframework"
     spec.ios.frameworks = "EnQualify"
     spec.requires_arc = true	
     spec.swift_versions = '5.0' 
@@ -27,4 +27,5 @@
     spec.dependency 'GoogleMLKit/BarcodeScanning', '4.0.0'
     spec.dependency 'OpenSSL-Universal', '3.3.2000'
     spec.dependency 'TensorFlowLiteSwift', '~> 2.12.0'
+    spec.dependency 'GoogleMLKit/ImageLabeling'
   end

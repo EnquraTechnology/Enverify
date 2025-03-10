@@ -438,7 +438,6 @@ SWIFT_CLASS("_TtC14IDVerification8IDVerify")
 + (BOOL)idVerifyOCRStart:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)idVerifyNFCStart:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)checkPermissions SWIFT_WARN_UNUSED_RESULT;
-+ (BOOL)mainVCStart:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)videoCallStart:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)selfServiceStart:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 + (void)idFakeCheckStart;
@@ -508,7 +507,7 @@ SWIFT_CLASS("_TtC14IDVerification8IDVerify")
 + (void)onExitSelfService;
 + (void)onExitSelfServiceWithoutPop;
 + (void)onRetrySelfService;
-+ (void)onStartVideoCall;
++ (void)onStartCall;
 + (void)onExitCall;
 + (void)onExitCallWithoutPop;
 + (void)onHangupCall;
@@ -585,6 +584,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) UIButton * _Nonnull ic
 + (void)setFaceCaptureEnabledWithIsFaceCaptureEnabled:(BOOL)isFaceCaptureEnabled;
 + (void)setFlexibleTabReaderWithEnabled:(BOOL)enabled;
 + (void)setFaceOverlayAngleCountWithCount:(NSInteger)count;
++ (void)setFaceAntispoofingWithEnabled:(BOOL)enabled;
++ (void)setPassiveLivenessAlgorithmModeWithMode:(NSInteger)mode;
++ (void)setBackofficeIntegrationWithEnabled:(BOOL)enabled;
++ (void)setFaceAnimationWithEnabled:(BOOL)enabled;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -771,6 +774,7 @@ SWIFT_CLASS("_TtC14IDVerification9NFCReader") SWIFT_AVAILABILITY(ios,introduced=
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 
@@ -1250,7 +1254,6 @@ SWIFT_CLASS("_TtC14IDVerification8IDVerify")
 + (BOOL)idVerifyOCRStart:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)idVerifyNFCStart:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)checkPermissions SWIFT_WARN_UNUSED_RESULT;
-+ (BOOL)mainVCStart:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)videoCallStart:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)selfServiceStart:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 + (void)idFakeCheckStart;
@@ -1320,7 +1323,7 @@ SWIFT_CLASS("_TtC14IDVerification8IDVerify")
 + (void)onExitSelfService;
 + (void)onExitSelfServiceWithoutPop;
 + (void)onRetrySelfService;
-+ (void)onStartVideoCall;
++ (void)onStartCall;
 + (void)onExitCall;
 + (void)onExitCallWithoutPop;
 + (void)onHangupCall;
@@ -1397,6 +1400,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) UIButton * _Nonnull ic
 + (void)setFaceCaptureEnabledWithIsFaceCaptureEnabled:(BOOL)isFaceCaptureEnabled;
 + (void)setFlexibleTabReaderWithEnabled:(BOOL)enabled;
 + (void)setFaceOverlayAngleCountWithCount:(NSInteger)count;
++ (void)setFaceAntispoofingWithEnabled:(BOOL)enabled;
++ (void)setPassiveLivenessAlgorithmModeWithMode:(NSInteger)mode;
++ (void)setBackofficeIntegrationWithEnabled:(BOOL)enabled;
++ (void)setFaceAnimationWithEnabled:(BOOL)enabled;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1583,6 +1590,7 @@ SWIFT_CLASS("_TtC14IDVerification9NFCReader") SWIFT_AVAILABILITY(ios,introduced=
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 

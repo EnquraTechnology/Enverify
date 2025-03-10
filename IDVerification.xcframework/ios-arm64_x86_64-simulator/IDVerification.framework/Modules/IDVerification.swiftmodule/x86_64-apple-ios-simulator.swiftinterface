@@ -1,30 +1,34 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name IDVerification
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -enable-bare-slash-regex -module-name IDVerification
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 import AVKit
 import Accelerate
-import Alamofire
 import CommonCrypto
 import CoreImage
+import CoreML
 import CoreMedia
 import CoreNFC
 import CryptoKit
 import CryptoTokenKit
 import DeveloperToolsSupport
 import Foundation
-import MLKitFaceDetection
-import MLKitTextRecognition
+import MLKitImageLabeling
+import MLKitVision
 import MediaPlayer
+import MetalKit
+import MetalPerformanceShaders
 import OpenSSL
 import ReplayKit
+import SceneKit
 import SocketIO
 import Starscream
 import Swift
 import SwiftUI
 import TensorFlowLite
 import UIKit
+import Vision
 import _Concurrency
 import _CoreNFC_UIKit
 import _StringProcessing
@@ -303,7 +307,6 @@ public class DataGroup14 : IDVerification.DataGroup {
   @objc public static func idVerifyOCRStart(_ sender: Any) -> Swift.Bool
   @objc public static func idVerifyNFCStart(_ sender: Any) -> Swift.Bool
   @objc public static func checkPermissions() -> Swift.Bool
-  @objc public static func mainVCStart(_ sender: Any) -> Swift.Bool
   @objc public static func videoCallStart(_ sender: Any) -> Swift.Bool
   @objc public static func selfServiceStart(_ sender: Any) -> Swift.Bool
   @objc public static func idFakeCheckStart()
@@ -376,7 +379,7 @@ public class DataGroup14 : IDVerification.DataGroup {
   @objc public static func onExitSelfService()
   @objc public static func onExitSelfServiceWithoutPop()
   @objc public static func onRetrySelfService()
-  @objc public static func onStartVideoCall()
+  @objc public static func onStartCall()
   @objc public static func onExitCall()
   @objc public static func onExitCallWithoutPop()
   @objc public static func onHangupCall()
@@ -435,6 +438,10 @@ public class DataGroup14 : IDVerification.DataGroup {
   @objc public static func setFaceCaptureEnabled(isFaceCaptureEnabled: Swift.Bool)
   @objc public static func setFlexibleTabReader(enabled: Swift.Bool)
   @objc public static func setFaceOverlayAngleCount(count: Swift.Int)
+  @objc public static func setFaceAntispoofing(enabled: Swift.Bool)
+  @objc public static func setPassiveLivenessAlgorithmMode(mode: Swift.Int)
+  @objc public static func setBackofficeIntegration(enabled: Swift.Bool)
+  @objc public static func setFaceAnimation(enabled: Swift.Bool)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -830,7 +837,7 @@ public enum LogLevel : Swift.Int, Swift.CaseIterable {
   public static var logData: [Swift.String]
   public class func verbose(_ msg: Swift.String...)
   public class func debug(_ msg: Swift.String...)
-  public class func info(_ msg: Swift.String...)
+  public class func info(_ msg: Swift.String..., arg1: Swift.String? = nil, arg2: Swift.String? = nil)
   public class func warning(_ msg: Swift.String...)
   public class func error(_ msg: Swift.String...)
   public class func clearStoredLogs()
@@ -943,17 +950,6 @@ public struct CustomerIdentityDocData : Swift.Decodable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public enum Constants {
-}
-@_hasMissingDesignatedInitializers public class LogTxn {
-  public static var logLevel: IDVerification.LogLevel
-  public class func verbose(_ code: Swift.Int, _ msg: Swift.String? = nil)
-  public class func debug(_ code: Swift.Int, _ msg: Swift.String? = nil)
-  public class func info(_ code: Swift.Int, _ msg: Swift.String? = nil)
-  public class func warning(_ code: Swift.Int, _ msg: Swift.String? = nil)
-  public class func txn(_ code: Swift.Int, _ msg: Swift.String? = nil)
-  public class func error(_ code: Swift.Int, _ msg: Swift.String? = nil)
-  public class func log(_ logLevel: IDVerification.LogLevel, _ code: Swift.Int, _ msg: Swift.String)
-  @objc deinit
 }
 @available(iOS 13, *)
 public enum CertificateType {

@@ -469,6 +469,7 @@ public struct SignedMessageDocumentsAppFolderGetDocumentRequest : Swift.Codable 
   @objc @_Concurrency.MainActor @preconcurrency public static var sslPiningForIO: Swift.Bool
   @objc @_Concurrency.MainActor @preconcurrency public static var referenceId: Swift.String?
   @objc @_Concurrency.MainActor @preconcurrency public static var taxNumber: Swift.String?
+  @objc @_Concurrency.MainActor @preconcurrency public static var callBusinessUId: Swift.String?
   @objc @_Concurrency.MainActor @preconcurrency public static var isSameIdentityFromDoc: Swift.AnyObject?
   @objc @_Concurrency.MainActor @preconcurrency public static var isSameIdentityFromChip: Swift.AnyObject?
   @objc @_Concurrency.MainActor @preconcurrency public static var agentDummyImage: UIKit.UIImage?
@@ -569,6 +570,7 @@ public struct SignedMessageDocumentsAppFolderGetDocumentRequest : Swift.Codable 
   @objc @_Concurrency.MainActor @preconcurrency public static func onExitSelfService()
   @objc @_Concurrency.MainActor @preconcurrency public static func onExitSelfServiceWithoutPop()
   @objc @_Concurrency.MainActor @preconcurrency public static func onHangupCall()
+  @objc @_Concurrency.MainActor @preconcurrency public static func onStartCall()
   @objc @_Concurrency.MainActor @preconcurrency public static func startVideoAgentCall()
   @available(iOS 11.0, *)
   @objc @_Concurrency.MainActor @preconcurrency public static func startAVRecording()
@@ -613,6 +615,9 @@ public struct SignedMessageDocumentsAppFolderGetDocumentRequest : Swift.Codable 
   @objc @_Concurrency.MainActor @preconcurrency public static func startCardBackDetect()
   @objc @_Concurrency.MainActor @preconcurrency public static func idCardDetectSet()
   @objc @_Concurrency.MainActor @preconcurrency public static func setPassiveAuthenticationEnabled(isPassiveAuthenticatonEnabled: Swift.Bool)
+  @objc @_Concurrency.MainActor @preconcurrency public static func setFaceAntispoofing(enabled: Swift.Bool)
+  @objc @_Concurrency.MainActor @preconcurrency public static func setFaceAnimation(enabled: Swift.Bool)
+  @objc @_Concurrency.MainActor @preconcurrency public static func setPassiveLivenessAlgorithmMode(mode: Swift.Int)
   @objc @_Concurrency.MainActor @preconcurrency public static func setWhereScreenRecordAskPermissionCertainPart(enable: Swift.Bool)
   @objc @_Concurrency.MainActor @preconcurrency public static func sendVideoToBackOffice(path: Swift.String)
   @objc @_Concurrency.MainActor @preconcurrency public static func iconStartButton(_ button: UIKit.UIButton)
@@ -645,12 +650,13 @@ public struct SignedMessageDocumentsAppFolderGetDocumentRequest : Swift.Codable 
   @objc @_Concurrency.MainActor @preconcurrency public static func barcodeRead(content: Swift.String, completionHandler: @escaping (Swift.String?) -> ())
   @objc @_Concurrency.MainActor @preconcurrency public static func barcodeVerify(identityNo: Swift.String, barcode: Swift.String, completionHandler: @escaping (Swift.Bool) -> ())
   @_Concurrency.MainActor @preconcurrency public static func documentAdd(category: Swift.String, documents: [EnQualify.VerifyInfoDocumentArray], completionHandler: @escaping (Swift.Bool) -> ())
+  @objc @_Concurrency.MainActor @preconcurrency public static func documentAddObjc(category: Swift.String, documents: [[Swift.String : Swift.String]], completionHandler: @escaping (Swift.Bool) -> ())
   @_Concurrency.MainActor @preconcurrency public static func callBusinessAdd(taxNumber: Swift.String, name: Swift.String, completionHandler: @escaping (EnQualify.VerifyCallBusinessAddResponse?) -> ())
   @_Concurrency.MainActor @preconcurrency public static func callBusinessCheck(taxNumber: Swift.String, completionHandler: @escaping (EnQualify.VerifyCallBusinessCheckResponse?) -> ())
   @_Concurrency.MainActor @preconcurrency public static func callBusinessStaffAdd(callBusinessUID: Swift.String?, name: Swift.String, surname: Swift.String, identityNo: Swift.String, birthDate: Swift.String, phone: Swift.String, completionHandler: @escaping (Swift.Bool) -> ())
   @_Concurrency.MainActor @preconcurrency public static func callBusinessStaffCheck(identityNo: Swift.String, completionHandler: @escaping (EnQualify.VerifyCallBusinessStaffCheckResponse?) -> ())
   @_Concurrency.MainActor @preconcurrency public static func getDocumentKYBCategoryList(completionHandler: @escaping (([EnQualify.VerifyInfoDocumentKYBCategoryArray]?) -> Swift.Void))
-  @_Concurrency.MainActor @preconcurrency public static func callBusinessUpdate(callBusinessUID: Swift.String?, reference: Swift.String?, isInProgress: Swift.Bool?, completionHandler: @escaping (Swift.Bool) -> ())
+  @_Concurrency.MainActor @preconcurrency public static func callBusinessUpdate(callBusinessUID: Swift.String?, reference: Swift.String?, isInProgress: Swift.Bool?, type: Swift.String?, completionHandler: @escaping (Swift.Bool) -> ())
   @_Concurrency.MainActor @preconcurrency public static func callBusinessDocumentAdd(category: Swift.String?, documents: [EnQualify.VerifyMobileCallBusinessDocumentArray]?, callBusinessUID: Swift.String?, reference: Swift.String?, completion: @escaping (Swift.Bool) -> ())
   @_Concurrency.MainActor @preconcurrency public static func addGenericIdDoc(documentContent: Swift.String?, completionHandler: @escaping (Swift.Bool, [Swift.String : Swift.String?]?) -> ())
   @objc @_Concurrency.MainActor @preconcurrency public static func startBase64Camera(on viewController: UIKit.UIViewController, withImageNamed imageName: Swift.String)
@@ -1205,9 +1211,9 @@ public struct SignedMessageDocumentsAppFolderGetFolderRequest : Swift.Codable {
   open class func apiVerifySessionUpdatePostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallSessionHandicappedRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyCallSessionHandicappedResponse>
   open class func apiVerifySettingGetPost(body: EnQualify.SignedMessageVerifyCallParameterGetRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyMobileParameterGetResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifySettingGetPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallParameterGetRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyMobileParameterGetResponse>
-  open class func apiVerifySigningFinishPost(body: EnQualify.SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: EnQualify.BaseResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifySettingGetV2Post(body: EnQualify.SignedMessageVerifyCallParameterGetRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyEncryptedMobileParameterResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifySettingGetV2PostWithRequestBuilder(body: EnQualify.SignedMessageVerifyCallParameterGetRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyEncryptedMobileParameterResponse>
+  open class func apiVerifySigningFinishPost(body: EnQualify.SignedMessageBaseRequest? = nil, completion: @escaping ((_ data: EnQualify.BaseResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifySigningFinishPostWithRequestBuilder(body: EnQualify.SignedMessageBaseRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.BaseResponse>
   open class func apiVerifySigningGetPost(body: EnQualify.SignedMessageVerifyDocumentSignGetMobileRequest? = nil, completion: @escaping ((_ data: EnQualify.VerifyDocumentSignGetMobileResponse?, _ error: (any Swift.Error)?) -> Swift.Void))
   open class func apiVerifySigningGetPostWithRequestBuilder(body: EnQualify.SignedMessageVerifyDocumentSignGetMobileRequest? = nil) -> EnQualify.RequestBuilder<EnQualify.VerifyDocumentSignGetMobileResponse>
@@ -6583,9 +6589,9 @@ public struct VerifyCallSessionAddRequest : Swift.Codable {
   public var category: Swift.String?
   public var taxNumber: Swift.String?
   public var businessReference: Swift.String?
-  public var callBusinessUId: Foundation.UUID?
+  public var callBusinessUId: Swift.String?
   public var infoData: Swift.String?
-  public init(type: Swift.String, roomId: Swift.String? = nil, videoId: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil, nFCExists: Swift.Bool? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, reference: Swift.String? = nil, data: Swift.String? = nil, handicapped: Swift.Bool? = nil, canAutoClose: Swift.Bool? = nil, _continue: Swift.Bool? = nil, category: Swift.String? = nil, taxNumber: Swift.String? = nil, businessReference: Swift.String? = nil, callBusinessUId: Foundation.UUID? = nil, infoData: Swift.String? = nil)
+  public init(type: Swift.String, roomId: Swift.String? = nil, videoId: Swift.String? = nil, name: Swift.String? = nil, surname: Swift.String? = nil, phone: Swift.String? = nil, email: Swift.String? = nil, nFCExists: Swift.Bool? = nil, identityType: Swift.String? = nil, identityNo: Swift.String? = nil, reference: Swift.String? = nil, data: Swift.String? = nil, handicapped: Swift.Bool? = nil, canAutoClose: Swift.Bool? = nil, _continue: Swift.Bool? = nil, category: Swift.String? = nil, taxNumber: Swift.String? = nil, businessReference: Swift.String? = nil, callBusinessUId: Swift.String? = nil, infoData: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case type
     case roomId

@@ -1,0 +1,73 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float32",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "linear_1",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 4,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "visionOS" : "1.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "8.0",
+      "com.github.apple.coremltools.source" : "torch==2.4.1+cu121",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript"
+    },
+    "inputSchema" : [
+      {
+        "height" : "128",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "128",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 128 × 128)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "input"
+      }
+    ],
+    "generatedClassName" : "AntiSpoofingBin128",
+    "neuralNetworkLayerTypeHistogram" : {
+      "InnerProduct" : 2,
+      "Convolution" : 55,
+      "ActivationSigmoid" : 3,
+      "ReshapeStatic" : 1,
+      "ActivationPReLU" : 33,
+      "Squeeze" : 2,
+      "BatchNorm" : 1,
+      "Multiply" : 3,
+      "Add" : 12,
+      "ExpandDims" : 2,
+      "ActivationReLU" : 3,
+      "PoolingAverage" : 3
+    },
+    "method" : "predict"
+  }
+]

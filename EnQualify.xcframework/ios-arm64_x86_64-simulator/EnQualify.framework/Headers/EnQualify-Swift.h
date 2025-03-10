@@ -420,6 +420,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable ref
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable taxNumber;)
 + (NSString * _Nullable)taxNumber SWIFT_WARN_UNUSED_RESULT;
 + (void)setTaxNumber:(NSString * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable callBusinessUId;)
++ (NSString * _Nullable)callBusinessUId SWIFT_WARN_UNUSED_RESULT;
++ (void)setCallBusinessUId:(NSString * _Nullable)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id _Nullable isSameIdentityFromDoc;)
 + (id _Nullable)isSameIdentityFromDoc SWIFT_WARN_UNUSED_RESULT;
 + (void)setIsSameIdentityFromDoc:(id _Nullable)value;
@@ -530,6 +533,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)onExitSelfService;
 + (void)onExitSelfServiceWithoutPop;
 + (void)onHangupCall;
++ (void)onStartCall;
 + (void)startVideoAgentCall;
 + (void)startAVRecording SWIFT_AVAILABILITY(ios,introduced=11.0);
 + (void)stopAVRecording SWIFT_AVAILABILITY(ios,introduced=11.0);
@@ -572,6 +576,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)startCardBackDetect;
 + (void)idCardDetectSet;
 + (void)setPassiveAuthenticationEnabledWithIsPassiveAuthenticatonEnabled:(BOOL)isPassiveAuthenticatonEnabled;
++ (void)setFaceAntispoofingWithEnabled:(BOOL)enabled;
++ (void)setFaceAnimationWithEnabled:(BOOL)enabled;
++ (void)setPassiveLivenessAlgorithmModeWithMode:(NSInteger)mode;
 + (void)setWhereScreenRecordAskPermissionCertainPartWithEnable:(BOOL)enable;
 + (void)sendVideoToBackOfficeWithPath:(NSString * _Nonnull)path;
 + (void)iconStartButton:(UIButton * _Nonnull)button;
@@ -602,6 +609,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)signDocumentFinishWithCompletionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 + (void)barcodeReadWithContent:(NSString * _Nonnull)content completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
 + (void)barcodeVerifyWithIdentityNo:(NSString * _Nonnull)identityNo barcode:(NSString * _Nonnull)barcode completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
++ (void)documentAddObjcWithCategory:(NSString * _Nonnull)category documents:(NSArray<NSDictionary<NSString *, NSString *> *> * _Nonnull)documents completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 + (void)startBase64CameraOn:(UIViewController * _Nonnull)viewController withImageNamed:(NSString * _Nonnull)imageName;
 + (void)startGenericPassportCameraOn:(UIViewController * _Nonnull)viewController withImageNamed:(NSString * _Nonnull)imageName;
 + (id _Nullable)getIsSameIdentityFromDoc SWIFT_WARN_UNUSED_RESULT;
@@ -1587,6 +1595,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable ref
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable taxNumber;)
 + (NSString * _Nullable)taxNumber SWIFT_WARN_UNUSED_RESULT;
 + (void)setTaxNumber:(NSString * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable callBusinessUId;)
++ (NSString * _Nullable)callBusinessUId SWIFT_WARN_UNUSED_RESULT;
++ (void)setCallBusinessUId:(NSString * _Nullable)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id _Nullable isSameIdentityFromDoc;)
 + (id _Nullable)isSameIdentityFromDoc SWIFT_WARN_UNUSED_RESULT;
 + (void)setIsSameIdentityFromDoc:(id _Nullable)value;
@@ -1697,6 +1708,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)onExitSelfService;
 + (void)onExitSelfServiceWithoutPop;
 + (void)onHangupCall;
++ (void)onStartCall;
 + (void)startVideoAgentCall;
 + (void)startAVRecording SWIFT_AVAILABILITY(ios,introduced=11.0);
 + (void)stopAVRecording SWIFT_AVAILABILITY(ios,introduced=11.0);
@@ -1739,6 +1751,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)startCardBackDetect;
 + (void)idCardDetectSet;
 + (void)setPassiveAuthenticationEnabledWithIsPassiveAuthenticatonEnabled:(BOOL)isPassiveAuthenticatonEnabled;
++ (void)setFaceAntispoofingWithEnabled:(BOOL)enabled;
++ (void)setFaceAnimationWithEnabled:(BOOL)enabled;
++ (void)setPassiveLivenessAlgorithmModeWithMode:(NSInteger)mode;
 + (void)setWhereScreenRecordAskPermissionCertainPartWithEnable:(BOOL)enable;
 + (void)sendVideoToBackOfficeWithPath:(NSString * _Nonnull)path;
 + (void)iconStartButton:(UIButton * _Nonnull)button;
@@ -1769,6 +1784,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)signDocumentFinishWithCompletionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 + (void)barcodeReadWithContent:(NSString * _Nonnull)content completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
 + (void)barcodeVerifyWithIdentityNo:(NSString * _Nonnull)identityNo barcode:(NSString * _Nonnull)barcode completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
++ (void)documentAddObjcWithCategory:(NSString * _Nonnull)category documents:(NSArray<NSDictionary<NSString *, NSString *> *> * _Nonnull)documents completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 + (void)startBase64CameraOn:(UIViewController * _Nonnull)viewController withImageNamed:(NSString * _Nonnull)imageName;
 + (void)startGenericPassportCameraOn:(UIViewController * _Nonnull)viewController withImageNamed:(NSString * _Nonnull)imageName;
 + (id _Nullable)getIsSameIdentityFromDoc SWIFT_WARN_UNUSED_RESULT;
