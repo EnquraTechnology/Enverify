@@ -11591,6 +11591,545 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "TypeDecl",
+            "name": "FaceActionGroup",
+            "printedName": "FaceActionGroup",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "actions",
+                "printedName": "actions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.NSNumber]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14IDVerification8IDVerifyC15FaceActionGroupC7actionsSaySo8NSNumberCGvp",
+                "mangledName": "$s14IDVerification8IDVerifyC15FaceActionGroupC7actionsSaySo8NSNumberCGvp",
+                "moduleName": "IDVerification",
+                "declAttributes": [
+                  "Final",
+                  "HasStorage",
+                  "AccessControl",
+                  "ObjC"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Foundation.NSNumber]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSNumber",
+                            "printedName": "Foundation.NSNumber",
+                            "usr": "c:objc(cs)NSNumber"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14IDVerification8IDVerifyC15FaceActionGroupC7actionsSaySo8NSNumberCGvg",
+                    "mangledName": "$s14IDVerification8IDVerifyC15FaceActionGroupC7actionsSaySo8NSNumberCGvg",
+                    "moduleName": "IDVerification",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final",
+                      "ObjC"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(actions:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FaceActionGroup",
+                    "printedName": "IDVerification.IDVerify.FaceActionGroup",
+                    "usr": "s:14IDVerification8IDVerifyC15FaceActionGroupC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.NSNumber]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:14IDVerification8IDVerifyC15FaceActionGroupC7actionsAESaySo8NSNumberCG_tcfc",
+                "mangledName": "$s14IDVerification8IDVerifyC15FaceActionGroupC7actionsAESaySo8NSNumberCG_tcfc",
+                "moduleName": "IDVerification",
+                "objc_name": "initWithActions:",
+                "declAttributes": [
+                  "AccessControl",
+                  "ObjC"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FaceActionGroup",
+                    "printedName": "IDVerification.IDVerify.FaceActionGroup",
+                    "usr": "s:14IDVerification8IDVerifyC15FaceActionGroupC"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:14IDVerification8IDVerifyC15FaceActionGroupCAEycfc",
+                "mangledName": "$s14IDVerification8IDVerifyC15FaceActionGroupCAEycfc",
+                "moduleName": "IDVerification",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "init",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "Override"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:14IDVerification8IDVerifyC15FaceActionGroupC",
+            "mangledName": "$s14IDVerification8IDVerifyC15FaceActionGroupC",
+            "moduleName": "IDVerification",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "superclassUsr": "c:objc(cs)NSObject",
+            "superclassNames": [
+              "ObjectiveC.NSObject"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CVarArg",
+                "printedName": "CVarArg",
+                "usr": "s:s7CVarArgP",
+                "mangledName": "$ss7CVarArgP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObservingPublishing",
+                "printedName": "_KeyValueCodingAndObservingPublishing",
+                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObserving",
+                "printedName": "_KeyValueCodingAndObserving",
+                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "smileAction",
+            "printedName": "smileAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@IDVerification@objc(cs)IDVerify(cpy)smileAction",
+            "mangledName": "$s14IDVerification8IDVerifyC11smileActionSo8NSNumberCvpZ",
+            "moduleName": "IDVerification",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@IDVerification@objc(cs)IDVerify(cm)smileAction",
+                "mangledName": "$s14IDVerification8IDVerifyC11smileActionSo8NSNumberCvgZ",
+                "moduleName": "IDVerification",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eyeCloseAction",
+            "printedName": "eyeCloseAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@IDVerification@objc(cs)IDVerify(cpy)eyeCloseAction",
+            "mangledName": "$s14IDVerification8IDVerifyC14eyeCloseActionSo8NSNumberCvpZ",
+            "moduleName": "IDVerification",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@IDVerification@objc(cs)IDVerify(cm)eyeCloseAction",
+                "mangledName": "$s14IDVerification8IDVerifyC14eyeCloseActionSo8NSNumberCvgZ",
+                "moduleName": "IDVerification",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceLeftAction",
+            "printedName": "faceLeftAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@IDVerification@objc(cs)IDVerify(cpy)faceLeftAction",
+            "mangledName": "$s14IDVerification8IDVerifyC14faceLeftActionSo8NSNumberCvpZ",
+            "moduleName": "IDVerification",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@IDVerification@objc(cs)IDVerify(cm)faceLeftAction",
+                "mangledName": "$s14IDVerification8IDVerifyC14faceLeftActionSo8NSNumberCvgZ",
+                "moduleName": "IDVerification",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceRightAction",
+            "printedName": "faceRightAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@IDVerification@objc(cs)IDVerify(cpy)faceRightAction",
+            "mangledName": "$s14IDVerification8IDVerifyC15faceRightActionSo8NSNumberCvpZ",
+            "moduleName": "IDVerification",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@IDVerification@objc(cs)IDVerify(cm)faceRightAction",
+                "mangledName": "$s14IDVerification8IDVerifyC15faceRightActionSo8NSNumberCvgZ",
+                "moduleName": "IDVerification",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceUpAction",
+            "printedName": "faceUpAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@IDVerification@objc(cs)IDVerify(cpy)faceUpAction",
+            "mangledName": "$s14IDVerification8IDVerifyC12faceUpActionSo8NSNumberCvpZ",
+            "moduleName": "IDVerification",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@IDVerification@objc(cs)IDVerify(cm)faceUpAction",
+                "mangledName": "$s14IDVerification8IDVerifyC12faceUpActionSo8NSNumberCvgZ",
+                "moduleName": "IDVerification",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "selectRandomFaceAction",
+            "printedName": "selectRandomFaceAction(actionList:groupList:actionCount:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.NSNumber]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.NSNumber]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@IDVerification@objc(cs)IDVerify(cm)selectRandomFaceActionWithActionList:groupList:actionCount:",
+            "mangledName": "$s14IDVerification8IDVerifyC22selectRandomFaceAction10actionList05groupH00G5CountySaySo8NSNumberCG_AJSitFZ",
+            "moduleName": "IDVerification",
+            "static": true,
+            "objc_name": "selectRandomFaceActionWithActionList:groupList:actionCount:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Function",
             "name": "switchFrontCamera",
             "printedName": "switchFrontCamera()",
@@ -41131,590 +41670,646 @@
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 313,
-      "length": 2,
-      "value": "60"
+      "offset": 268,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 291,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 314,
+      "length": 1,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
       "offset": 338,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 359,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 450,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 22390,
+      "offset": 475,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22527,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 22423,
+      "offset": 22560,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 22471,
+      "offset": 22608,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 22484,
+      "offset": 22621,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 22532,
+      "offset": 22669,
       "length": 4,
       "value": "0.90"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 22546,
+      "offset": 22683,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 22658,
+      "offset": 22795,
       "length": 24,
       "value": "\"smartvist.com.IDVerify\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 22719,
+      "offset": 22856,
       "length": 14,
       "value": "\"idvStart.png\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 22996,
+      "offset": 23133,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 23029,
+      "offset": 23166,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 23077,
+      "offset": 23214,
       "length": 4,
       "value": "0.75"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 23090,
+      "offset": 23227,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 23138,
+      "offset": 23275,
       "length": 4,
       "value": "0.90"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 23152,
+      "offset": 23289,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 23263,
+      "offset": 23400,
       "length": 24,
       "value": "\"smartvist.com.IDVerify\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 23324,
+      "offset": 23461,
       "length": 13,
       "value": "\"idvExit.png\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 23604,
+      "offset": 23741,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 23637,
+      "offset": 23774,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 23685,
+      "offset": 23822,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 23698,
+      "offset": 23835,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 23746,
+      "offset": 23883,
       "length": 4,
       "value": "0.90"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 23760,
+      "offset": 23897,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 23872,
+      "offset": 24009,
       "length": 24,
       "value": "\"smartvist.com.IDVerify\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 23933,
+      "offset": 24070,
       "length": 14,
       "value": "\"idvRetry.png\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 24219,
+      "offset": 24356,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 24252,
+      "offset": 24389,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 24300,
+      "offset": 24437,
       "length": 4,
       "value": "0.75"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 24313,
+      "offset": 24450,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 24361,
+      "offset": 24498,
       "length": 4,
       "value": "0.90"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 24375,
+      "offset": 24512,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 24487,
+      "offset": 24624,
       "length": 24,
       "value": "\"smartvist.com.IDVerify\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 24548,
+      "offset": 24685,
       "length": 13,
       "value": "\"idvExit.png\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 24831,
+      "offset": 24968,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 24864,
+      "offset": 25001,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 24912,
+      "offset": 25049,
       "length": 4,
       "value": "0.75"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 24925,
+      "offset": 25062,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 24973,
+      "offset": 25110,
       "length": 4,
       "value": "0.90"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 24987,
+      "offset": 25124,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 25099,
+      "offset": 25236,
       "length": 24,
       "value": "\"smartvist.com.IDVerify\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 25160,
+      "offset": 25297,
       "length": 15,
       "value": "\"idvHangup.png\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 25444,
+      "offset": 25581,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 25477,
+      "offset": 25614,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 25525,
+      "offset": 25662,
       "length": 4,
       "value": "0.50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 25538,
+      "offset": 25675,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 25586,
+      "offset": 25723,
       "length": 4,
       "value": "0.90"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 25600,
+      "offset": 25737,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 25712,
+      "offset": 25849,
       "length": 24,
       "value": "\"smartvist.com.IDVerify\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 25773,
+      "offset": 25910,
       "length": 15,
       "value": "\"idvHangup.png\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 26050,
+      "offset": 26187,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 26083,
+      "offset": 26220,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 26131,
+      "offset": 26268,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 26144,
+      "offset": 26281,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 26192,
+      "offset": 26329,
       "length": 4,
       "value": "0.90"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 26206,
+      "offset": 26343,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 26318,
+      "offset": 26455,
       "length": 24,
       "value": "\"smartvist.com.IDVerify\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 26379,
+      "offset": 26516,
       "length": 13,
       "value": "\"idvCall.png\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 26657,
+      "offset": 26794,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 26690,
+      "offset": 26827,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 26738,
+      "offset": 26875,
       "length": 4,
       "value": "0.75"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 26751,
+      "offset": 26888,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 26799,
+      "offset": 26936,
       "length": 4,
       "value": "0.90"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 26813,
+      "offset": 26950,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 26925,
+      "offset": 27062,
       "length": 24,
       "value": "\"smartvist.com.IDVerify\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 26986,
+      "offset": 27123,
       "length": 15,
       "value": "\"idvHangup.png\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 27269,
+      "offset": 27406,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 27302,
+      "offset": 27439,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 27350,
+      "offset": 27487,
       "length": 4,
       "value": "0.50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 27363,
+      "offset": 27500,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 27411,
+      "offset": 27548,
       "length": 4,
       "value": "0.85"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 27425,
+      "offset": 27562,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 27537,
+      "offset": 27674,
       "length": 24,
       "value": "\"smartvist.com.IDVerify\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 27598,
+      "offset": 27735,
       "length": 15,
       "value": "\"idvRotate.png\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 27885,
+      "offset": 28022,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 27918,
+      "offset": 28055,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 27966,
+      "offset": 28103,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 27980,
+      "offset": 28117,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "FloatLiteral",
-      "offset": 28028,
+      "offset": 28165,
       "length": 4,
       "value": "0.90"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 28042,
+      "offset": 28179,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 28091,
+      "offset": 28228,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 28102,
+      "offset": 28239,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 28146,
+      "offset": 28283,
       "length": 24,
       "value": "\"smartvist.com.IDVerify\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
       "kind": "StringLiteral",
-      "offset": 28207,
+      "offset": 28344,
       "length": 15,
       "value": "\"idvRotate.png\""
+    },
+    {
+      "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
+      "kind": "Array",
+      "offset": 38037,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
+      "kind": "Array",
+      "offset": 38117,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/IDVerifyFunctions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 38192,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/VSession.swift",
@@ -42181,35 +42776,35 @@
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/VSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 5236,
+      "offset": 5282,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/VSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 5264,
+      "offset": 5310,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/VSession.swift",
       "kind": "StringLiteral",
-      "offset": 5470,
+      "offset": 5516,
       "length": 9,
       "value": "\"face_id\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/VSession.swift",
       "kind": "StringLiteral",
-      "offset": 5501,
+      "offset": 5547,
       "length": 8,
       "value": "\"doc_id\""
     },
     {
       "filePath": "\/Users\/svmac\/XCodeProjects\/IDVerifyi-1.3.18.3\/IDVerification\/Models\/VSession.swift",
       "kind": "StringLiteral",
-      "offset": 5532,
+      "offset": 5578,
       "length": 9,
       "value": "\"chip_id\""
     },

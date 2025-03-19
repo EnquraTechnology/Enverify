@@ -438,6 +438,17 @@ public class DataGroup14 : IDVerification.DataGroup {
   @objc public static func setFaceCaptureEnabled(isFaceCaptureEnabled: Swift.Bool)
   @objc public static func setFlexibleTabReader(enabled: Swift.Bool)
   @objc public static func setFaceOverlayAngleCount(count: Swift.Int)
+  @objc public class FaceActionGroup : ObjectiveC.NSObject {
+    @objc final public let actions: [Foundation.NSNumber]
+    @objc public init(actions: [Foundation.NSNumber])
+    @objc deinit
+  }
+  @objc public static let smileAction: Foundation.NSNumber
+  @objc public static let eyeCloseAction: Foundation.NSNumber
+  @objc public static let faceLeftAction: Foundation.NSNumber
+  @objc public static let faceRightAction: Foundation.NSNumber
+  @objc public static let faceUpAction: Foundation.NSNumber
+  @objc public static func selectRandomFaceAction(actionList: [Foundation.NSNumber] = [], groupList: [Foundation.NSNumber] = [], actionCount: Swift.Int = 0)
   @objc public static func switchFrontCamera()
   @objc public static func switchBackCamera()
   @objc public static func startVideoAgentCall()

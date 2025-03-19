@@ -431,6 +431,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CustomerIdentityDoc * 
 @class UIButton;
 @class UIView;
 @class AVAsset;
+@class NSNumber;
 
 SWIFT_CLASS("_TtC14IDVerification8IDVerify")
 @interface IDVerify : NSObject
@@ -585,7 +586,27 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) UIButton * _Nonnull ic
 + (void)setFaceCaptureEnabledWithIsFaceCaptureEnabled:(BOOL)isFaceCaptureEnabled;
 + (void)setFlexibleTabReaderWithEnabled:(BOOL)enabled;
 + (void)setFaceOverlayAngleCountWithCount:(NSInteger)count;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull smileAction;)
++ (NSNumber * _Nonnull)smileAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull eyeCloseAction;)
++ (NSNumber * _Nonnull)eyeCloseAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull faceLeftAction;)
++ (NSNumber * _Nonnull)faceLeftAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull faceRightAction;)
++ (NSNumber * _Nonnull)faceRightAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull faceUpAction;)
++ (NSNumber * _Nonnull)faceUpAction SWIFT_WARN_UNUSED_RESULT;
++ (void)selectRandomFaceActionWithActionList:(NSArray<NSNumber *> * _Nonnull)actionList groupList:(NSArray<NSNumber *> * _Nonnull)groupList actionCount:(NSInteger)actionCount;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtCC14IDVerification8IDVerify15FaceActionGroup")
+@interface FaceActionGroup : NSObject
+@property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nonnull actions;
+- (nonnull instancetype)initWithActions:(NSArray<NSNumber *> * _Nonnull)actions OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -1243,6 +1264,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CustomerIdentityDoc * 
 @class UIButton;
 @class UIView;
 @class AVAsset;
+@class NSNumber;
 
 SWIFT_CLASS("_TtC14IDVerification8IDVerify")
 @interface IDVerify : NSObject
@@ -1397,7 +1419,27 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) UIButton * _Nonnull ic
 + (void)setFaceCaptureEnabledWithIsFaceCaptureEnabled:(BOOL)isFaceCaptureEnabled;
 + (void)setFlexibleTabReaderWithEnabled:(BOOL)enabled;
 + (void)setFaceOverlayAngleCountWithCount:(NSInteger)count;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull smileAction;)
++ (NSNumber * _Nonnull)smileAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull eyeCloseAction;)
++ (NSNumber * _Nonnull)eyeCloseAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull faceLeftAction;)
++ (NSNumber * _Nonnull)faceLeftAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull faceRightAction;)
++ (NSNumber * _Nonnull)faceRightAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull faceUpAction;)
++ (NSNumber * _Nonnull)faceUpAction SWIFT_WARN_UNUSED_RESULT;
++ (void)selectRandomFaceActionWithActionList:(NSArray<NSNumber *> * _Nonnull)actionList groupList:(NSArray<NSNumber *> * _Nonnull)groupList actionCount:(NSInteger)actionCount;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtCC14IDVerification8IDVerify15FaceActionGroup")
+@interface FaceActionGroup : NSObject
+@property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nonnull actions;
+- (nonnull instancetype)initWithActions:(NSArray<NSNumber *> * _Nonnull)actions OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 

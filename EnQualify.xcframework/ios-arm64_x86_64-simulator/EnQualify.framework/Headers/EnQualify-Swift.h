@@ -346,6 +346,7 @@ SWIFT_CLASS("_TtC9EnQualify10EnVSession")
 @class AVAsset;
 @class EnverifyScreenRecordingData;
 @class NSTimer;
+@class NSNumber;
 @class UIImage;
 @class AVPlayer;
 @class CXCall;
@@ -411,6 +412,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sess
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sessionAddEmail;)
 + (NSString * _Nonnull)sessionAddEmail SWIFT_WARN_UNUSED_RESULT;
 + (void)setSessionAddEmail:(NSString * _Nonnull)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull smileAction;)
++ (NSNumber * _Nonnull)smileAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull eyeCloseAction;)
++ (NSNumber * _Nonnull)eyeCloseAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull faceLeftAction;)
++ (NSNumber * _Nonnull)faceLeftAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull faceRightAction;)
++ (NSNumber * _Nonnull)faceRightAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull faceUpAction;)
++ (NSNumber * _Nonnull)faceUpAction SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL sslPiningForIO;)
 + (BOOL)sslPiningForIO SWIFT_WARN_UNUSED_RESULT;
 + (void)setSslPiningForIO:(BOOL)value;
@@ -420,6 +431,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable ref
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable taxNumber;)
 + (NSString * _Nullable)taxNumber SWIFT_WARN_UNUSED_RESULT;
 + (void)setTaxNumber:(NSString * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable callBusinessUId;)
++ (NSString * _Nullable)callBusinessUId SWIFT_WARN_UNUSED_RESULT;
++ (void)setCallBusinessUId:(NSString * _Nullable)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id _Nullable isSameIdentityFromDoc;)
 + (id _Nullable)isSameIdentityFromDoc SWIFT_WARN_UNUSED_RESULT;
 + (void)setIsSameIdentityFromDoc:(id _Nullable)value;
@@ -567,6 +581,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)saveRecordAssetWithFilePath:(NSString * _Nonnull)filePath;
 + (void)setBarcodeReaderWithState:(BOOL)state;
 + (void)setFaceOverlayAngleCountWithCount:(NSInteger)count;
++ (void)selectRandomFaceActionWithActionList:(NSArray<NSNumber *> * _Nonnull)actionList groupList:(NSArray<NSNumber *> * _Nonnull)groupList actionCount:(NSInteger)actionCount;
 + (void)startCardFrontDetect;
 + (void)startCardHoloDetect;
 + (void)startCardBackDetect;
@@ -600,8 +615,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)speedCheck;
 + (void)signDocumentWithData:(NSData * _Nonnull)data reference:(NSString * _Nullable)reference completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 + (void)signDocumentFinishWithCompletionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
-+ (void)barcodeReadWithContent:(NSString * _Nonnull)content completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
++ (void)barcodeReadWithContent:(NSString * _Nonnull)content identityNo:(NSString * _Nonnull)identityNo completionHandler:(void (^ _Nonnull)(NSString * _Nullable, BOOL, BOOL))completionHandler;
 + (void)barcodeVerifyWithIdentityNo:(NSString * _Nonnull)identityNo barcode:(NSString * _Nonnull)barcode completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
++ (void)documentAddObjcWithCategory:(NSString * _Nonnull)category documents:(NSArray<NSDictionary<NSString *, NSString *> *> * _Nonnull)documents completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 + (void)startBase64CameraOn:(UIViewController * _Nonnull)viewController withImageNamed:(NSString * _Nonnull)imageName;
 + (void)startGenericPassportCameraOn:(UIViewController * _Nonnull)viewController withImageNamed:(NSString * _Nonnull)imageName;
 + (id _Nullable)getIsSameIdentityFromDoc SWIFT_WARN_UNUSED_RESULT;
@@ -1103,7 +1119,6 @@ typedef SWIFT_ENUM(NSInteger, SessionInfoType, open) {
 
 
 
-@class NSNumber;
 
 SWIFT_CLASS("_TtC9EnQualify36VerifyMobileParameterGetResponseOBJC")
 @interface VerifyMobileParameterGetResponseOBJC : NSObject
@@ -1513,6 +1528,7 @@ SWIFT_CLASS("_TtC9EnQualify10EnVSession")
 @class AVAsset;
 @class EnverifyScreenRecordingData;
 @class NSTimer;
+@class NSNumber;
 @class UIImage;
 @class AVPlayer;
 @class CXCall;
@@ -1578,6 +1594,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sess
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sessionAddEmail;)
 + (NSString * _Nonnull)sessionAddEmail SWIFT_WARN_UNUSED_RESULT;
 + (void)setSessionAddEmail:(NSString * _Nonnull)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull smileAction;)
++ (NSNumber * _Nonnull)smileAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull eyeCloseAction;)
++ (NSNumber * _Nonnull)eyeCloseAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull faceLeftAction;)
++ (NSNumber * _Nonnull)faceLeftAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull faceRightAction;)
++ (NSNumber * _Nonnull)faceRightAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull faceUpAction;)
++ (NSNumber * _Nonnull)faceUpAction SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL sslPiningForIO;)
 + (BOOL)sslPiningForIO SWIFT_WARN_UNUSED_RESULT;
 + (void)setSslPiningForIO:(BOOL)value;
@@ -1587,6 +1613,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable ref
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable taxNumber;)
 + (NSString * _Nullable)taxNumber SWIFT_WARN_UNUSED_RESULT;
 + (void)setTaxNumber:(NSString * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable callBusinessUId;)
++ (NSString * _Nullable)callBusinessUId SWIFT_WARN_UNUSED_RESULT;
++ (void)setCallBusinessUId:(NSString * _Nullable)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id _Nullable isSameIdentityFromDoc;)
 + (id _Nullable)isSameIdentityFromDoc SWIFT_WARN_UNUSED_RESULT;
 + (void)setIsSameIdentityFromDoc:(id _Nullable)value;
@@ -1734,6 +1763,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)saveRecordAssetWithFilePath:(NSString * _Nonnull)filePath;
 + (void)setBarcodeReaderWithState:(BOOL)state;
 + (void)setFaceOverlayAngleCountWithCount:(NSInteger)count;
++ (void)selectRandomFaceActionWithActionList:(NSArray<NSNumber *> * _Nonnull)actionList groupList:(NSArray<NSNumber *> * _Nonnull)groupList actionCount:(NSInteger)actionCount;
 + (void)startCardFrontDetect;
 + (void)startCardHoloDetect;
 + (void)startCardBackDetect;
@@ -1767,8 +1797,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)speedCheck;
 + (void)signDocumentWithData:(NSData * _Nonnull)data reference:(NSString * _Nullable)reference completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 + (void)signDocumentFinishWithCompletionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
-+ (void)barcodeReadWithContent:(NSString * _Nonnull)content completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
++ (void)barcodeReadWithContent:(NSString * _Nonnull)content identityNo:(NSString * _Nonnull)identityNo completionHandler:(void (^ _Nonnull)(NSString * _Nullable, BOOL, BOOL))completionHandler;
 + (void)barcodeVerifyWithIdentityNo:(NSString * _Nonnull)identityNo barcode:(NSString * _Nonnull)barcode completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
++ (void)documentAddObjcWithCategory:(NSString * _Nonnull)category documents:(NSArray<NSDictionary<NSString *, NSString *> *> * _Nonnull)documents completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 + (void)startBase64CameraOn:(UIViewController * _Nonnull)viewController withImageNamed:(NSString * _Nonnull)imageName;
 + (void)startGenericPassportCameraOn:(UIViewController * _Nonnull)viewController withImageNamed:(NSString * _Nonnull)imageName;
 + (id _Nullable)getIsSameIdentityFromDoc SWIFT_WARN_UNUSED_RESULT;
@@ -2270,7 +2301,6 @@ typedef SWIFT_ENUM(NSInteger, SessionInfoType, open) {
 
 
 
-@class NSNumber;
 
 SWIFT_CLASS("_TtC9EnQualify36VerifyMobileParameterGetResponseOBJC")
 @interface VerifyMobileParameterGetResponseOBJC : NSObject
