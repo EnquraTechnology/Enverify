@@ -4,6 +4,14 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Alamofire.bundle/Info.plist</key>
+		<data>
+		6U/7bkhpxqax9Fv9fG7lQVDDwV4=
+		</data>
+		<key>Alamofire.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		ovFJMFOLMjzh8DLJKmXncj8JIgU=
+		</data>
 		<key>Assets.car</key>
 		<data>
 		C3cLan3WLIbm3dLWwyqUMTbAQR4=
@@ -114,11 +122,11 @@
 		</data>
 		<key>Modules/IDVerification.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		BAJUKIm2OHurnfHcsXjBeLTIoGM=
+		P8nK9CFZNvUVc6eSvekhxtsifkM=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		BirjAo6+dqE33CY0k21H5eu2bO8=
+		0ZOzapmEdhrubhQahPUkqj1o+Fc=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -197,6 +205,20 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Alamofire.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NNgztrW1H3ZUR/L1g8fZZJsla2RxEShDMse2yKkiTq4=
+			</data>
+		</dict>
+		<key>Alamofire.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CNkOaUbb/qDQtbF/tlnXfu0j5EO3Rdjntbn6N4y3RHc=
+			</data>
+		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
@@ -383,14 +405,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LjdS6WTSq20O1mE8cDL4lm/e4juYLYOsvOTvqzQqQ68=
+			j/Rdf8eynIpjJ9bWGzkQW23nOzBjvjugtc67iphVZC8=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tefYXJTPDwfD+68gv+0j5dwodaGm3AB+kTsDpQ4mFdA=
+			crnFK+4x1zJAS2zcjNWUceg9aOW9WDNkXXMD/+VLHNQ=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
