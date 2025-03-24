@@ -304,7 +304,7 @@ public struct SignedMessageDocumentsAppFolderGetRequest : Swift.Codable {
   @objc deinit
 }
 public enum Model : Swift.String {
-  case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPad5, iPad6, iPad7, iPad8, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, iPhone13Mini, iPhone13, iPhone13Pro, iPhone13ProMax, iPhone14, iPhone14Plus, iPhone14Pro, iPhone14ProMax, iPhone15, iPhone15Plus, iPhone15Pro, iPhone15ProMax, iPhone16, iPhone16Plus, iPhone16Pro, iPhone16ProMax, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, unrecognized
+  case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPad5, iPad6, iPad7, iPad8, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, iPhone13Mini, iPhone13, iPhone13Pro, iPhone13ProMax, iPhone14, iPhone14Plus, iPhone14Pro, iPhone14ProMax, iPhone15, iPhone15Plus, iPhone15Pro, iPhone15ProMax, iPhone16, iPhone16Plus, iPhone16Pro, iPhone16ProMax, iPhoneSE3, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, unrecognized
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -647,7 +647,7 @@ public struct SignedMessageDocumentsAppFolderGetDocumentRequest : Swift.Codable 
   @objc @_Concurrency.MainActor @preconcurrency public static func speedCheck()
   @objc @_Concurrency.MainActor @preconcurrency public static func signDocument(data: Foundation.Data, reference: Swift.String? = nil, completionHandler: @escaping (Swift.Bool) -> ())
   @objc @_Concurrency.MainActor @preconcurrency public static func signDocumentFinish(completionHandler: @escaping (Swift.Bool) -> ())
-  @objc @_Concurrency.MainActor @preconcurrency public static func barcodeRead(content: Swift.String, completionHandler: @escaping (Swift.String?) -> ())
+  @objc @_Concurrency.MainActor @preconcurrency public static func barcodeRead(content: Swift.String, identityNo: Swift.String, completionHandler: @escaping (_ barcode: Swift.String?, _ isNotExpired: Swift.Bool, _ isSameIdentity: Swift.Bool) -> ())
   @objc @_Concurrency.MainActor @preconcurrency public static func barcodeVerify(identityNo: Swift.String, barcode: Swift.String, completionHandler: @escaping (Swift.Bool) -> ())
   @_Concurrency.MainActor @preconcurrency public static func documentAdd(category: Swift.String, documents: [EnQualify.VerifyInfoDocumentArray], completionHandler: @escaping (Swift.Bool) -> ())
   @objc @_Concurrency.MainActor @preconcurrency public static func documentAddObjc(category: Swift.String, documents: [[Swift.String : Swift.String]], completionHandler: @escaping (Swift.Bool) -> ())
@@ -2799,10 +2799,14 @@ public struct VerifyInfoDocumentCategoryResponse : Swift.Codable {
 public struct VerifyMobileDocumentBarcodeReadRequest : Swift.Codable {
   public var content: Swift.String?
   public var contentHash: Swift.String?
-  public init(content: Swift.String? = nil, contentHash: Swift.String? = nil)
+  public var isWithAddress: Swift.Bool?
+  public var identityNo: Swift.String?
+  public init(content: Swift.String? = nil, contentHash: Swift.String? = nil, isWithAddress: Swift.Bool? = nil, identityNo: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case content
     case contentHash
+    case isWithAddress
+    case identityNo
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -6744,9 +6748,15 @@ public struct LogsAuditLogRecordListResponse : Swift.Codable {
 }
 public struct VerifyMobileDocumentBarcodeRead : Swift.Codable {
   public var barcode: Swift.String?
-  public init(barcode: Swift.String? = nil)
+  public var address: Swift.String?
+  public var isSameIdentity: Swift.Bool?
+  public var expireDate: Swift.String?
+  public init(barcode: Swift.String? = nil, address: Swift.String? = nil, isSameIdentity: Swift.Bool? = nil, expireDate: Swift.String? = nil)
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case barcode
+    case address
+    case isSameIdentity
+    case expireDate
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)

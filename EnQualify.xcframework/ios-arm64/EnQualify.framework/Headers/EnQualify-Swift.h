@@ -607,7 +607,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)speedCheck;
 + (void)signDocumentWithData:(NSData * _Nonnull)data reference:(NSString * _Nullable)reference completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 + (void)signDocumentFinishWithCompletionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
-+ (void)barcodeReadWithContent:(NSString * _Nonnull)content completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
++ (void)barcodeReadWithContent:(NSString * _Nonnull)content identityNo:(NSString * _Nonnull)identityNo completionHandler:(void (^ _Nonnull)(NSString * _Nullable, BOOL, BOOL))completionHandler;
 + (void)barcodeVerifyWithIdentityNo:(NSString * _Nonnull)identityNo barcode:(NSString * _Nonnull)barcode completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 + (void)documentAddObjcWithCategory:(NSString * _Nonnull)category documents:(NSArray<NSDictionary<NSString *, NSString *> *> * _Nonnull)documents completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 + (void)startBase64CameraOn:(UIViewController * _Nonnull)viewController withImageNamed:(NSString * _Nonnull)imageName;
