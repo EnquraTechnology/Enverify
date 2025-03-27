@@ -1,14 +1,14 @@
    Pod::Spec.new do |spec|
     spec.name         = "EnVerify"
-    spec.version      = "1.3.18.5-s"
+    spec.version      = "1.3.18.1-s"
     spec.summary      = "EnVerify."
     spec.authors      = { "Enqura" => "http://www.enqura.com" }
     spec.homepage     = "http://www.enqura.com"
-    spec.license      = { :type => 'MIT', :text => "MIT License" }
+    spec.license          = { :type => 'MIT', :text => "MIT License" }
     spec.platform     = :ios
     spec.ios.deployment_target = '12.0'
-    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/1.3.18.5-s.zip"}
-    spec.ios.vendored_frameworks = "EnVerify-1.3.18.5-s/EnQualify.xcframework" , "EnVerify-1.3.18.5-s/IDVerification.xcframework"
+    spec.source       = {:http =>  "https://github.com/EnquraTechnology/Enverify/archive/refs/tags/1.3.18.1-s.zip"}
+    spec.ios.vendored_frameworks = "EnVerify-1.3.18.1-s/EnQualify.xcframework" , "EnVerify-1.3.18.1-s/IDVerification.xcframework"
     spec.ios.frameworks = "EnQualify"
     spec.requires_arc = true	
     spec.swift_versions = '5.0' 

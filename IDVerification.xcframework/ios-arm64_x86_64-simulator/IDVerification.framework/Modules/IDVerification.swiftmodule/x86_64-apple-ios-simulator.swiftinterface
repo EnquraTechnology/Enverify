@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name IDVerification
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
@@ -303,7 +303,6 @@ public class DataGroup14 : IDVerification.DataGroup {
   @objc public static func idVerifyOCRStart(_ sender: Any) -> Swift.Bool
   @objc public static func idVerifyNFCStart(_ sender: Any) -> Swift.Bool
   @objc public static func checkPermissions() -> Swift.Bool
-  @objc public static func mainVCStart(_ sender: Any) -> Swift.Bool
   @objc public static func videoCallStart(_ sender: Any) -> Swift.Bool
   @objc public static func selfServiceStart(_ sender: Any) -> Swift.Bool
   @objc public static func idFakeCheckStart()
@@ -376,7 +375,7 @@ public class DataGroup14 : IDVerification.DataGroup {
   @objc public static func onExitSelfService()
   @objc public static func onExitSelfServiceWithoutPop()
   @objc public static func onRetrySelfService()
-  @objc public static func onStartVideoCall()
+  @objc public static func onStartCall()
   @objc public static func onExitCall()
   @objc public static func onExitCallWithoutPop()
   @objc public static func onHangupCall()
@@ -435,17 +434,6 @@ public class DataGroup14 : IDVerification.DataGroup {
   @objc public static func setFaceCaptureEnabled(isFaceCaptureEnabled: Swift.Bool)
   @objc public static func setFlexibleTabReader(enabled: Swift.Bool)
   @objc public static func setFaceOverlayAngleCount(count: Swift.Int)
-  @objc public class FaceActionGroup : ObjectiveC.NSObject {
-    @objc final public let actions: [Foundation.NSNumber]
-    @objc public init(actions: [Foundation.NSNumber])
-    @objc deinit
-  }
-  @objc public static let smileAction: Foundation.NSNumber
-  @objc public static let eyeCloseAction: Foundation.NSNumber
-  @objc public static let faceLeftAction: Foundation.NSNumber
-  @objc public static let faceRightAction: Foundation.NSNumber
-  @objc public static let faceUpAction: Foundation.NSNumber
-  @objc public static func selectRandomFaceAction(actionList: [Foundation.NSNumber] = [], groupList: [Foundation.NSNumber] = [], actionCount: Swift.Int = 0)
   @objc override dynamic public init()
   @objc deinit
 }
