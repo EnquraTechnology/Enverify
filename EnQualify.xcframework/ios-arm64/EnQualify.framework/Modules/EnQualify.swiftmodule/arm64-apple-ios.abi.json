@@ -22317,8 +22317,8 @@
           },
           {
             "kind": "Var",
-            "name": "iPhoneSE3",
-            "printedName": "iPhoneSE3",
+            "name": "iPhone16e",
+            "printedName": "iPhone16e",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -22348,8 +22348,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:9EnQualify5ModelO9iPhoneSE3yA2CmF",
-            "mangledName": "$s9EnQualify5ModelO9iPhoneSE3yA2CmF",
+            "usr": "s:9EnQualify5ModelO9iPhone16eyA2CmF",
+            "mangledName": "$s9EnQualify5ModelO9iPhone16eyA2CmF",
             "moduleName": "EnQualify",
             "declAttributes": [
               "RawDocComment"
@@ -28490,6 +28490,282 @@
           },
           {
             "kind": "Var",
+            "name": "smileAction",
+            "printedName": "smileAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@EnQualify@objc(cs)EnVerify(cpy)smileAction",
+            "mangledName": "$s9EnQualify0A6VerifyC11smileActionSo8NSNumberCvpZ",
+            "moduleName": "EnQualify",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@EnQualify@objc(cs)EnVerify(cm)smileAction",
+                "mangledName": "$s9EnQualify0A6VerifyC11smileActionSo8NSNumberCvgZ",
+                "moduleName": "EnQualify",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eyeCloseAction",
+            "printedName": "eyeCloseAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@EnQualify@objc(cs)EnVerify(cpy)eyeCloseAction",
+            "mangledName": "$s9EnQualify0A6VerifyC14eyeCloseActionSo8NSNumberCvpZ",
+            "moduleName": "EnQualify",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@EnQualify@objc(cs)EnVerify(cm)eyeCloseAction",
+                "mangledName": "$s9EnQualify0A6VerifyC14eyeCloseActionSo8NSNumberCvgZ",
+                "moduleName": "EnQualify",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceLeftAction",
+            "printedName": "faceLeftAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@EnQualify@objc(cs)EnVerify(cpy)faceLeftAction",
+            "mangledName": "$s9EnQualify0A6VerifyC14faceLeftActionSo8NSNumberCvpZ",
+            "moduleName": "EnQualify",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@EnQualify@objc(cs)EnVerify(cm)faceLeftAction",
+                "mangledName": "$s9EnQualify0A6VerifyC14faceLeftActionSo8NSNumberCvgZ",
+                "moduleName": "EnQualify",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceRightAction",
+            "printedName": "faceRightAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@EnQualify@objc(cs)EnVerify(cpy)faceRightAction",
+            "mangledName": "$s9EnQualify0A6VerifyC15faceRightActionSo8NSNumberCvpZ",
+            "moduleName": "EnQualify",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@EnQualify@objc(cs)EnVerify(cm)faceRightAction",
+                "mangledName": "$s9EnQualify0A6VerifyC15faceRightActionSo8NSNumberCvgZ",
+                "moduleName": "EnQualify",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "faceUpAction",
+            "printedName": "faceUpAction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@EnQualify@objc(cs)EnVerify(cpy)faceUpAction",
+            "mangledName": "$s9EnQualify0A6VerifyC12faceUpActionSo8NSNumberCvpZ",
+            "moduleName": "EnQualify",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@EnQualify@objc(cs)EnVerify(cm)faceUpAction",
+                "mangledName": "$s9EnQualify0A6VerifyC12faceUpActionSo8NSNumberCvgZ",
+                "moduleName": "EnQualify",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "sslPiningForIO",
             "printedName": "sslPiningForIO",
             "children": [
@@ -31987,7 +32263,7 @@
           {
             "kind": "Function",
             "name": "idvSettings",
-            "printedName": "idvSettings(domainName:certificateNames:aiUsername:aiPassword:signalingServer:stunServer:turnServer:turnUsername:turnPassword:backOfficeBasePath:userNameForToken:isContinue:referenceID:)",
+            "printedName": "idvSettings(domainName:certificateNames:signalingServer:stunServer:turnServer:turnUsername:turnPassword:backOfficeBasePath:userNameForToken:isContinue:referenceID:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -32119,34 +32395,6 @@
                     "usr": "s:SS"
                   }
                 ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
@@ -32174,11 +32422,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@EnQualify@objc(cs)EnVerify(cm)idvSettingsWithDomainName:certificateNames:aiUsername:aiPassword:signalingServer:stunServer:turnServer:turnUsername:turnPassword:backOfficeBasePath:userNameForToken:isContinue:referenceID:",
-            "mangledName": "$s9EnQualify0A6VerifyC11idvSettings10domainName16certificateNames10aiUsername0J8Password15signalingServer04stunN004turnN00pK00pL018backOfficeBasePath04userG8ForToken10isContinue11referenceIDSbSSSg_SaySSGA9RSbARtFZ",
+            "usr": "c:@M@EnQualify@objc(cs)EnVerify(cm)idvSettingsWithDomainName:certificateNames:signalingServer:stunServer:turnServer:turnUsername:turnPassword:backOfficeBasePath:userNameForToken:isContinue:referenceID:",
+            "mangledName": "$s9EnQualify0A6VerifyC11idvSettings10domainName16certificateNames15signalingServer04stunK004turnK00M8Username0M8Password18backOfficeBasePath04userG8ForToken10isContinue11referenceIDSbSSSg_SaySSGA7PSbAPtFZ",
             "moduleName": "EnQualify",
             "static": true,
-            "objc_name": "idvSettingsWithDomainName:certificateNames:aiUsername:aiPassword:signalingServer:stunServer:turnServer:turnUsername:turnPassword:backOfficeBasePath:userNameForToken:isContinue:referenceID:",
+            "objc_name": "idvSettingsWithDomainName:certificateNames:signalingServer:stunServer:turnServer:turnUsername:turnPassword:backOfficeBasePath:userNameForToken:isContinue:referenceID:",
             "declAttributes": [
               "Final",
               "Preconcurrency",
@@ -32615,32 +32863,6 @@
           },
           {
             "kind": "Function",
-            "name": "onStartCall",
-            "printedName": "onStartCall()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@EnQualify@objc(cs)EnVerify(cm)onStartCall",
-            "mangledName": "$s9EnQualify0A6VerifyC11onStartCallyyFZ",
-            "moduleName": "EnQualify",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "startVideoAgentCall",
             "printedName": "startVideoAgentCall()",
             "children": [
@@ -32660,7 +32882,8 @@
               "Preconcurrency",
               "Custom",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -33805,6 +34028,69 @@
             "moduleName": "EnQualify",
             "static": true,
             "objc_name": "setFaceOverlayAngleCountWithCount:",
+            "declAttributes": [
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "selectRandomFaceAction",
+            "printedName": "selectRandomFaceAction(actionList:groupList:actionCount:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.NSNumber]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.NSNumber]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@EnQualify@objc(cs)EnVerify(cm)selectRandomFaceActionWithActionList:groupList:actionCount:",
+            "mangledName": "$s9EnQualify0A6VerifyC22selectRandomFaceAction10actionList05groupI00H5CountySaySo8NSNumberCG_AJSitFZ",
+            "moduleName": "EnQualify",
+            "static": true,
+            "objc_name": "selectRandomFaceActionWithActionList:groupList:actionCount:",
             "declAttributes": [
               "Final",
               "Preconcurrency",
@@ -49644,6 +49930,123 @@
           },
           {
             "kind": "Var",
+            "name": "domainNameV2",
+            "printedName": "domainNameV2",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@EnQualify@objc(cs)VerifyMobileParameterGetResponseOBJC(py)domainNameV2",
+            "mangledName": "$s9EnQualify36VerifyMobileParameterGetResponseOBJCC12domainNameV2SSSgvp",
+            "moduleName": "EnQualify",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@EnQualify@objc(cs)VerifyMobileParameterGetResponseOBJC(im)domainNameV2",
+                "mangledName": "$s9EnQualify36VerifyMobileParameterGetResponseOBJCC12domainNameV2SSSgvg",
+                "moduleName": "EnQualify",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@EnQualify@objc(cs)VerifyMobileParameterGetResponseOBJC(im)setDomainNameV2:",
+                "mangledName": "$s9EnQualify36VerifyMobileParameterGetResponseOBJCC12domainNameV2SSSgvs",
+                "moduleName": "EnQualify",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EnQualify36VerifyMobileParameterGetResponseOBJCC12domainNameV2SSSgvM",
+                "mangledName": "$s9EnQualify36VerifyMobileParameterGetResponseOBJCC12domainNameV2SSSgvM",
+                "moduleName": "EnQualify",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "aIUsername",
             "printedName": "aIUsername",
             "children": [
@@ -51037,7 +51440,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(isSuccessful:referenceId:livenessScore:faceRecognitionThreshold:timeout:maxCallStartErrorTime:maxCallStartWaitTime:screenRecordBitrate:screenRecord:screenRecordPart:screenRecordUploadRetryCount:screenRecordUploadTimeout:oCRMode:oCRDifficultyLevel:livenessCalibration:eyeDetectionTimeout:headCalibration:smileCalibration:eyeCalibration:livenessTimeOut:distanceMin:distanceMax:chipDistanceMin:chipDistanceMax:maxCallTime:setIceCheckingTimeout:setCallWaitTimeout:getDG1Name:domainName:aIUsername:aIPassword:signalServer:stunServer:turnServer:turnServerUser:turnServerKey:mediaServer:oCRFrontReader:addressVerification:readBarcodeIdentityNo:toleranceTime:)",
+            "printedName": "init(isSuccessful:referenceId:livenessScore:faceRecognitionThreshold:timeout:maxCallStartErrorTime:maxCallStartWaitTime:screenRecordBitrate:screenRecord:screenRecordPart:screenRecordUploadRetryCount:screenRecordUploadTimeout:oCRMode:oCRDifficultyLevel:livenessCalibration:eyeDetectionTimeout:headCalibration:smileCalibration:eyeCalibration:livenessTimeOut:distanceMin:distanceMax:chipDistanceMin:chipDistanceMax:maxCallTime:setIceCheckingTimeout:setCallWaitTimeout:getDG1Name:domainName:domainNameV2:aIUsername:aIPassword:signalServer:stunServer:turnServer:turnServerUser:turnServerKey:mediaServer:oCRFrontReader:addressVerification:readBarcodeIdentityNo:toleranceTime:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -51585,6 +51988,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "AnyObject?",
                 "children": [
                   {
@@ -51655,10 +52073,10 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@EnQualify@objc(cs)VerifyMobileParameterGetResponseOBJC(im)initWithIsSuccessful:referenceId:livenessScore:faceRecognitionThreshold:timeout:maxCallStartErrorTime:maxCallStartWaitTime:screenRecordBitrate:screenRecord:screenRecordPart:screenRecordUploadRetryCount:screenRecordUploadTimeout:oCRMode:oCRDifficultyLevel:livenessCalibration:eyeDetectionTimeout:headCalibration:smileCalibration:eyeCalibration:livenessTimeOut:distanceMin:distanceMax:chipDistanceMin:chipDistanceMax:maxCallTime:setIceCheckingTimeout:setCallWaitTimeout:getDG1Name:domainName:aIUsername:aIPassword:signalServer:stunServer:turnServer:turnServerUser:turnServerKey:mediaServer:oCRFrontReader:addressVerification:readBarcodeIdentityNo:toleranceTime:",
-            "mangledName": "$s9EnQualify36VerifyMobileParameterGetResponseOBJCC12isSuccessful11referenceId13livenessScore24faceRecognitionThreshold7timeout21maxCallStartErrorTime0stu4WaitW019screenRecordBitrate0yZ00yZ4Part0yZ16UploadRetryCount0yZ13UploadTimeout7oCRMode18oCRDifficultyLevel0M11Calibration19eyeDetectionTimeout15headCalibration16smileCalibration14eyeCalibration0mW3Out11distanceMin11distanceMax15chipDistanceMin15chipDistanceMax0stW021setIceCheckingTimeout03settX7Timeout10getDG1Name10domainName10aIUsername10aIPassword12signalServer10stunServer10turnServer14turnServerUser13turnServerKey11mediaServer14oCRFrontReader19addressVerification21readBarcodeIdentityNo09toleranceW0ACyXlSg_10Foundation4UUIDVSgSo8NSNumberCSgA24_A24_A24_A24_A24_A17_SSSgA24_A24_A25_A24_A24_A24_A24_A24_A24_A24_A24_A24_A24_A24_A24_A24_A24_A17_A25_A25_A25_A25_A25_A25_A25_A25_A17_A17_A17_A17_A24_tcfc",
+            "usr": "c:@M@EnQualify@objc(cs)VerifyMobileParameterGetResponseOBJC(im)initWithIsSuccessful:referenceId:livenessScore:faceRecognitionThreshold:timeout:maxCallStartErrorTime:maxCallStartWaitTime:screenRecordBitrate:screenRecord:screenRecordPart:screenRecordUploadRetryCount:screenRecordUploadTimeout:oCRMode:oCRDifficultyLevel:livenessCalibration:eyeDetectionTimeout:headCalibration:smileCalibration:eyeCalibration:livenessTimeOut:distanceMin:distanceMax:chipDistanceMin:chipDistanceMax:maxCallTime:setIceCheckingTimeout:setCallWaitTimeout:getDG1Name:domainName:domainNameV2:aIUsername:aIPassword:signalServer:stunServer:turnServer:turnServerUser:turnServerKey:mediaServer:oCRFrontReader:addressVerification:readBarcodeIdentityNo:toleranceTime:",
+            "mangledName": "$s9EnQualify36VerifyMobileParameterGetResponseOBJCC12isSuccessful11referenceId13livenessScore24faceRecognitionThreshold7timeout21maxCallStartErrorTime0stu4WaitW019screenRecordBitrate0yZ00yZ4Part0yZ16UploadRetryCount0yZ13UploadTimeout7oCRMode18oCRDifficultyLevel0M11Calibration19eyeDetectionTimeout15headCalibration16smileCalibration14eyeCalibration0mW3Out11distanceMin11distanceMax15chipDistanceMin15chipDistanceMax0stW021setIceCheckingTimeout03settX7Timeout10getDG1Name10domainName12domainNameV210aIUsername10aIPassword12signalServer10stunServer10turnServer14turnServerUser13turnServerKey11mediaServer14oCRFrontReader19addressVerification21readBarcodeIdentityNo09toleranceW0ACyXlSg_10Foundation4UUIDVSgSo8NSNumberCSgA25_A25_A25_A25_A25_A18_SSSgA25_A25_A26_A25_A25_A25_A25_A25_A25_A25_A25_A25_A25_A25_A25_A25_A25_A18_A26_A26_A26_A26_A26_A26_A26_A26_A26_A18_A18_A18_A18_A25_tcfc",
             "moduleName": "EnQualify",
-            "objc_name": "initWithIsSuccessful:referenceId:livenessScore:faceRecognitionThreshold:timeout:maxCallStartErrorTime:maxCallStartWaitTime:screenRecordBitrate:screenRecord:screenRecordPart:screenRecordUploadRetryCount:screenRecordUploadTimeout:oCRMode:oCRDifficultyLevel:livenessCalibration:eyeDetectionTimeout:headCalibration:smileCalibration:eyeCalibration:livenessTimeOut:distanceMin:distanceMax:chipDistanceMin:chipDistanceMax:maxCallTime:setIceCheckingTimeout:setCallWaitTimeout:getDG1Name:domainName:aIUsername:aIPassword:signalServer:stunServer:turnServer:turnServerUser:turnServerKey:mediaServer:oCRFrontReader:addressVerification:readBarcodeIdentityNo:toleranceTime:",
+            "objc_name": "initWithIsSuccessful:referenceId:livenessScore:faceRecognitionThreshold:timeout:maxCallStartErrorTime:maxCallStartWaitTime:screenRecordBitrate:screenRecord:screenRecordPart:screenRecordUploadRetryCount:screenRecordUploadTimeout:oCRMode:oCRDifficultyLevel:livenessCalibration:eyeDetectionTimeout:headCalibration:smileCalibration:eyeCalibration:livenessTimeOut:distanceMin:distanceMax:chipDistanceMin:chipDistanceMax:maxCallTime:setIceCheckingTimeout:setCallWaitTimeout:getDG1Name:domainName:domainNameV2:aIUsername:aIPassword:signalServer:stunServer:turnServer:turnServerUser:turnServerKey:mediaServer:oCRFrontReader:addressVerification:readBarcodeIdentityNo:toleranceTime:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -64505,12 +64923,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "[Swift.String : any Swift.Sendable]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "printedName": "[Swift.String : any Swift.Sendable]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -64520,8 +64938,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "Sendable",
+                        "printedName": "any Swift.Sendable",
+                        "usr": "s:s8SendableP"
                       }
                     ],
                     "usr": "s:SD"
@@ -64544,8 +64963,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9EnQualify18JSONEncodingHelperC18encodingParameters18forEncodableObjectSDySSypGSgxSg_tSERzlFZ",
-            "mangledName": "$s9EnQualify18JSONEncodingHelperC18encodingParameters18forEncodableObjectSDySSypGSgxSg_tSERzlFZ",
+            "usr": "s:9EnQualify18JSONEncodingHelperC18encodingParameters18forEncodableObjectSDySSs8Sendable_pGSgxSg_tSERzlFZ",
+            "mangledName": "$s9EnQualify18JSONEncodingHelperC18encodingParameters18forEncodableObjectSDySSs8Sendable_pGSgxSg_tSERzlFZ",
             "moduleName": "EnQualify",
             "genericSig": "<τ_0_0 where τ_0_0 : Swift.Encodable>",
             "sugared_genericSig": "<T where T : Swift.Encodable>",
@@ -64564,12 +64983,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "[Swift.String : any Swift.Sendable]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "printedName": "[Swift.String : any Swift.Sendable]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -64579,8 +64998,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "Sendable",
+                        "printedName": "any Swift.Sendable",
+                        "usr": "s:s8SendableP"
                       }
                     ],
                     "usr": "s:SD"
@@ -64603,8 +65023,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9EnQualify18JSONEncodingHelperC18encodingParameters18forEncodableObjectSDySSypGSgypSg_tFZ",
-            "mangledName": "$s9EnQualify18JSONEncodingHelperC18encodingParameters18forEncodableObjectSDySSypGSgypSg_tFZ",
+            "usr": "s:9EnQualify18JSONEncodingHelperC18encodingParameters18forEncodableObjectSDySSs8Sendable_pGSgypSg_tFZ",
+            "mangledName": "$s9EnQualify18JSONEncodingHelperC18encodingParameters18forEncodableObjectSDySSs8Sendable_pGSgypSg_tFZ",
             "moduleName": "EnQualify",
             "static": true,
             "isOpen": true,
@@ -66948,12 +67368,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "[Swift.String : any Swift.Sendable]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "printedName": "[Swift.String : any Swift.Sendable]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -66963,8 +67383,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "Sendable",
+                        "printedName": "any Swift.Sendable",
+                        "usr": "s:s8SendableP"
                       }
                     ],
                     "usr": "s:SD"
@@ -66974,8 +67395,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9EnQualify16JSONDataEncodingV6encode_4with10Foundation10URLRequestV9Alamofire0H11Convertible_p_SDySSypGSgtKF",
-            "mangledName": "$s9EnQualify16JSONDataEncodingV6encode_4with10Foundation10URLRequestV9Alamofire0H11Convertible_p_SDySSypGSgtKF",
+            "usr": "s:9EnQualify16JSONDataEncodingV6encode_4with10Foundation10URLRequestV9Alamofire0H11Convertible_p_SDySSs8Sendable_pGSgtKF",
+            "mangledName": "$s9EnQualify16JSONDataEncodingV6encode_4with10Foundation10URLRequestV9Alamofire0H11Convertible_p_SDySSs8Sendable_pGSgtKF",
             "moduleName": "EnQualify",
             "declAttributes": [
               "AccessControl",
@@ -66992,12 +67413,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "[Swift.String : any Swift.Sendable]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "printedName": "[Swift.String : any Swift.Sendable]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -67007,8 +67428,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "Sendable",
+                        "printedName": "any Swift.Sendable",
+                        "usr": "s:s8SendableP"
                       }
                     ],
                     "usr": "s:SD"
@@ -67032,8 +67454,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9EnQualify16JSONDataEncodingV18encodingParameters8jsonDataSDySSypGSg10Foundation0H0VSg_tFZ",
-            "mangledName": "$s9EnQualify16JSONDataEncodingV18encodingParameters8jsonDataSDySSypGSg10Foundation0H0VSg_tFZ",
+            "usr": "s:9EnQualify16JSONDataEncodingV18encodingParameters8jsonDataSDySSs8Sendable_pGSg10Foundation0H0VSg_tFZ",
+            "mangledName": "$s9EnQualify16JSONDataEncodingV18encodingParameters8jsonDataSDySSs8Sendable_pGSg10Foundation0H0VSg_tFZ",
             "moduleName": "EnQualify",
             "static": true,
             "declAttributes": [
@@ -67070,6 +67492,13 @@
             "printedName": "ParameterEncoding",
             "usr": "s:9Alamofire17ParameterEncodingP",
             "mangledName": "$s9Alamofire17ParameterEncodingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -381683,6 +382112,116 @@
           },
           {
             "kind": "Var",
+            "name": "domainNameV2",
+            "printedName": "domainNameV2",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9EnQualify32VerifyMobileParameterGetResponseV12domainNameV2SSSgvp",
+            "mangledName": "$s9EnQualify32VerifyMobileParameterGetResponseV12domainNameV2SSSgvp",
+            "moduleName": "EnQualify",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EnQualify32VerifyMobileParameterGetResponseV12domainNameV2SSSgvg",
+                "mangledName": "$s9EnQualify32VerifyMobileParameterGetResponseV12domainNameV2SSSgvg",
+                "moduleName": "EnQualify",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EnQualify32VerifyMobileParameterGetResponseV12domainNameV2SSSgvs",
+                "mangledName": "$s9EnQualify32VerifyMobileParameterGetResponseV12domainNameV2SSSgvs",
+                "moduleName": "EnQualify",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9EnQualify32VerifyMobileParameterGetResponseV12domainNameV2SSSgvM",
+                "mangledName": "$s9EnQualify32VerifyMobileParameterGetResponseV12domainNameV2SSSgvM",
+                "moduleName": "EnQualify",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "aIUsername",
             "printedName": "aIUsername",
             "children": [
@@ -383444,7 +383983,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(isSuccessful:result:warning:referenceId:livenessScore:faceRecognitionThreshold:timeout:maxCallStartErrorTime:maxCallStartWaitTime:screenRecordBitrate:screenRecord:screenRecordPart:screenRecordUploadRetryCount:screenRecordUploadTimeout:oCRMode:oCRDifficultyLevel:livenessCalibration:eyeDetectionTimeout:headCalibration:smileCalibration:eyeCalibration:livenessTimeOut:distanceMin:distanceMax:chipDistanceMin:chipDistanceMax:maxCallTime:setIceCheckingTimeout:setCallWaitTimeout:getDG1Name:domainName:aIUsername:aIPassword:signalServer:stunServer:turnServer:turnServerUser:turnServerKey:mediaServer:oCRFrontReader:addressVerification:readBarcodeIdentityNo:toleranceTime:antiSpoofingMax:antiSpoofingMin:nFCReadTimeout:identityNoSetFromOptionalData1:)",
+            "printedName": "init(isSuccessful:result:warning:referenceId:livenessScore:faceRecognitionThreshold:timeout:maxCallStartErrorTime:maxCallStartWaitTime:screenRecordBitrate:screenRecord:screenRecordPart:screenRecordUploadRetryCount:screenRecordUploadTimeout:oCRMode:oCRDifficultyLevel:livenessCalibration:eyeDetectionTimeout:headCalibration:smileCalibration:eyeCalibration:livenessTimeOut:distanceMin:distanceMax:chipDistanceMin:chipDistanceMax:maxCallTime:setIceCheckingTimeout:setCallWaitTimeout:getDG1Name:domainName:domainNameV2:aIUsername:aIPassword:signalServer:stunServer:turnServer:turnServerUser:turnServerKey:mediaServer:oCRFrontReader:addressVerification:readBarcodeIdentityNo:toleranceTime:antiSpoofingMax:antiSpoofingMin:nFCReadTimeout:identityNoSetFromOptionalData1:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -384025,6 +384564,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "Swift.Bool?",
                 "children": [
                   {
@@ -384159,8 +384713,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:9EnQualify32VerifyMobileParameterGetResponseV12isSuccessful6result7warning11referenceId13livenessScore24faceRecognitionThreshold7timeout21maxCallStartErrorTime0tuv4WaitX019screenRecordBitrate0Z6Record0Z10RecordPart0Z22RecordUploadRetryCount0Z19RecordUploadTimeout7oCRMode18oCRDifficultyLevel0N11Calibration19eyeDetectionTimeout15headCalibration16smileCalibration14eyeCalibration0nX3Out11distanceMin11distanceMax15chipDistanceMin15chipDistanceMax0tuX021setIceCheckingTimeout03setuY7Timeout10getDG1Name10domainName10aIUsername10aIPassword12signalServer10stunServer10turnServer14turnServerUser13turnServerKey11mediaServer14oCRFrontReader19addressVerification21readBarcodeIdentityNo09toleranceX015antiSpoofingMax15antiSpoofingMin14nFCReadTimeout30identityNoSetFromOptionalData1ACSbSg_AA10ResultInfoVSgA26_10Foundation4UUIDVSgSdSgA31_SiSgA32_A32_A32_A23_SSSgA32_A32_A33_A32_A32_A32_A32_A31_A31_A32_A31_A31_A31_A31_A32_A32_A32_A23_A33_A33_A33_A33_A33_A33_A33_A33_A23_A23_A23_A23_A32_A31_A31_A32_A23_tcfc",
-            "mangledName": "$s9EnQualify32VerifyMobileParameterGetResponseV12isSuccessful6result7warning11referenceId13livenessScore24faceRecognitionThreshold7timeout21maxCallStartErrorTime0tuv4WaitX019screenRecordBitrate0Z6Record0Z10RecordPart0Z22RecordUploadRetryCount0Z19RecordUploadTimeout7oCRMode18oCRDifficultyLevel0N11Calibration19eyeDetectionTimeout15headCalibration16smileCalibration14eyeCalibration0nX3Out11distanceMin11distanceMax15chipDistanceMin15chipDistanceMax0tuX021setIceCheckingTimeout03setuY7Timeout10getDG1Name10domainName10aIUsername10aIPassword12signalServer10stunServer10turnServer14turnServerUser13turnServerKey11mediaServer14oCRFrontReader19addressVerification21readBarcodeIdentityNo09toleranceX015antiSpoofingMax15antiSpoofingMin14nFCReadTimeout30identityNoSetFromOptionalData1ACSbSg_AA10ResultInfoVSgA26_10Foundation4UUIDVSgSdSgA31_SiSgA32_A32_A32_A23_SSSgA32_A32_A33_A32_A32_A32_A32_A31_A31_A32_A31_A31_A31_A31_A32_A32_A32_A23_A33_A33_A33_A33_A33_A33_A33_A33_A23_A23_A23_A23_A32_A31_A31_A32_A23_tcfc",
+            "usr": "s:9EnQualify32VerifyMobileParameterGetResponseV12isSuccessful6result7warning11referenceId13livenessScore24faceRecognitionThreshold7timeout21maxCallStartErrorTime0tuv4WaitX019screenRecordBitrate0Z6Record0Z10RecordPart0Z22RecordUploadRetryCount0Z19RecordUploadTimeout7oCRMode18oCRDifficultyLevel0N11Calibration19eyeDetectionTimeout15headCalibration16smileCalibration14eyeCalibration0nX3Out11distanceMin11distanceMax15chipDistanceMin15chipDistanceMax0tuX021setIceCheckingTimeout03setuY7Timeout10getDG1Name10domainName12domainNameV210aIUsername10aIPassword12signalServer10stunServer10turnServer14turnServerUser13turnServerKey11mediaServer14oCRFrontReader19addressVerification21readBarcodeIdentityNo09toleranceX015antiSpoofingMax15antiSpoofingMin14nFCReadTimeout30identityNoSetFromOptionalData1ACSbSg_AA10ResultInfoVSgA27_10Foundation4UUIDVSgSdSgA32_SiSgA33_A33_A33_A24_SSSgA33_A33_A34_A33_A33_A33_A33_A32_A32_A33_A32_A32_A32_A32_A33_A33_A33_A24_A34_A34_A34_A34_A34_A34_A34_A34_A34_A24_A24_A24_A24_A33_A32_A32_A33_A24_tcfc",
+            "mangledName": "$s9EnQualify32VerifyMobileParameterGetResponseV12isSuccessful6result7warning11referenceId13livenessScore24faceRecognitionThreshold7timeout21maxCallStartErrorTime0tuv4WaitX019screenRecordBitrate0Z6Record0Z10RecordPart0Z22RecordUploadRetryCount0Z19RecordUploadTimeout7oCRMode18oCRDifficultyLevel0N11Calibration19eyeDetectionTimeout15headCalibration16smileCalibration14eyeCalibration0nX3Out11distanceMin11distanceMax15chipDistanceMin15chipDistanceMax0tuX021setIceCheckingTimeout03setuY7Timeout10getDG1Name10domainName12domainNameV210aIUsername10aIPassword12signalServer10stunServer10turnServer14turnServerUser13turnServerKey11mediaServer14oCRFrontReader19addressVerification21readBarcodeIdentityNo09toleranceX015antiSpoofingMax15antiSpoofingMin14nFCReadTimeout30identityNoSetFromOptionalData1ACSbSg_AA10ResultInfoVSgA27_10Foundation4UUIDVSgSdSgA32_SiSgA33_A33_A33_A24_SSSgA33_A33_A34_A33_A33_A33_A33_A32_A32_A33_A32_A32_A32_A32_A33_A33_A33_A24_A34_A34_A34_A34_A34_A34_A34_A34_A34_A24_A24_A24_A24_A33_A32_A32_A33_A24_tcfc",
             "moduleName": "EnQualify",
             "declAttributes": [
               "AccessControl"
@@ -385317,6 +385871,43 @@
                 "declKind": "EnumElement",
                 "usr": "s:9EnQualify32VerifyMobileParameterGetResponseV10CodingKeysO10domainNameyA2EmF",
                 "mangledName": "$s9EnQualify32VerifyMobileParameterGetResponseV10CodingKeysO10domainNameyA2EmF",
+                "moduleName": "EnQualify"
+              },
+              {
+                "kind": "Var",
+                "name": "domainNameV2",
+                "printedName": "domainNameV2",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(EnQualify.VerifyMobileParameterGetResponse.CodingKeys.Type) -> EnQualify.VerifyMobileParameterGetResponse.CodingKeys",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "EnQualify.VerifyMobileParameterGetResponse.CodingKeys",
+                        "usr": "s:9EnQualify32VerifyMobileParameterGetResponseV10CodingKeysO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "EnQualify.VerifyMobileParameterGetResponse.CodingKeys.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "EnQualify.VerifyMobileParameterGetResponse.CodingKeys",
+                            "usr": "s:9EnQualify32VerifyMobileParameterGetResponseV10CodingKeysO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9EnQualify32VerifyMobileParameterGetResponseV10CodingKeysO12domainNameV2yA2EmF",
+                "mangledName": "$s9EnQualify32VerifyMobileParameterGetResponseV10CodingKeysO12domainNameV2yA2EmF",
                 "moduleName": "EnQualify"
               },
               {
@@ -412304,6 +412895,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Interpolatable",
+            "printedName": "Interpolatable",
+            "usr": "s:6Lottie14InterpolatableP",
+            "mangledName": "$s6Lottie14InterpolatableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnyInterpolatable",
+            "printedName": "AnyInterpolatable",
+            "usr": "s:6Lottie17AnyInterpolatableP",
+            "mangledName": "$s6Lottie17AnyInterpolatableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "SocketData",
             "printedName": "SocketData",
             "usr": "s:8SocketIO0A4DataP",
@@ -412903,6 +413508,20 @@
             "printedName": "MLTensorScalar",
             "usr": "s:6CoreML14MLTensorScalarP",
             "mangledName": "$s6CoreML14MLTensorScalarP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Interpolatable",
+            "printedName": "Interpolatable",
+            "usr": "s:6Lottie14InterpolatableP",
+            "mangledName": "$s6Lottie14InterpolatableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnyInterpolatable",
+            "printedName": "AnyInterpolatable",
+            "usr": "s:6Lottie17AnyInterpolatableP",
+            "mangledName": "$s6Lottie17AnyInterpolatableP"
           }
         ]
       },
@@ -416644,6 +417263,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Interpolatable",
+            "printedName": "Interpolatable",
+            "usr": "s:6Lottie14InterpolatableP",
+            "mangledName": "$s6Lottie14InterpolatableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnyInterpolatable",
+            "printedName": "AnyInterpolatable",
+            "usr": "s:6Lottie17AnyInterpolatableP",
+            "mangledName": "$s6Lottie17AnyInterpolatableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "SocketData",
             "printedName": "SocketData",
             "usr": "s:8SocketIO0A4DataP",
@@ -418362,104 +418995,104 @@
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Extensions\/UIDevice+Extentions.swift",
       "kind": "StringLiteral",
       "offset": 3728,
-      "length": 19,
-      "value": "\"iPhone SE 3rd gen\""
+      "length": 12,
+      "value": "\"iPhone 16e\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Extensions\/UIDevice+Extentions.swift",
       "kind": "StringLiteral",
-      "offset": 3824,
+      "offset": 3817,
       "length": 18,
       "value": "\"Apple Watch 1gen\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Extensions\/UIDevice+Extentions.swift",
       "kind": "StringLiteral",
-      "offset": 3875,
+      "offset": 3868,
       "length": 22,
       "value": "\"Apple Watch Series 1\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Extensions\/UIDevice+Extentions.swift",
       "kind": "StringLiteral",
-      "offset": 3930,
+      "offset": 3923,
       "length": 22,
       "value": "\"Apple Watch Series 2\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Extensions\/UIDevice+Extentions.swift",
       "kind": "StringLiteral",
-      "offset": 3985,
+      "offset": 3978,
       "length": 22,
       "value": "\"Apple Watch Series 3\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Extensions\/UIDevice+Extentions.swift",
       "kind": "StringLiteral",
-      "offset": 4040,
+      "offset": 4033,
       "length": 22,
       "value": "\"Apple Watch Series 4\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Extensions\/UIDevice+Extentions.swift",
       "kind": "StringLiteral",
-      "offset": 4095,
+      "offset": 4088,
       "length": 22,
       "value": "\"Apple Watch Series 5\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Extensions\/UIDevice+Extentions.swift",
       "kind": "StringLiteral",
-      "offset": 4150,
+      "offset": 4143,
       "length": 29,
       "value": "\"Apple Watch Special Edition\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Extensions\/UIDevice+Extentions.swift",
       "kind": "StringLiteral",
-      "offset": 4212,
+      "offset": 4205,
       "length": 22,
       "value": "\"Apple Watch Series 6\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Extensions\/UIDevice+Extentions.swift",
       "kind": "StringLiteral",
-      "offset": 4296,
+      "offset": 4289,
       "length": 15,
       "value": "\"Apple TV 1gen\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Extensions\/UIDevice+Extentions.swift",
       "kind": "StringLiteral",
-      "offset": 4343,
+      "offset": 4336,
       "length": 15,
       "value": "\"Apple TV 2gen\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Extensions\/UIDevice+Extentions.swift",
       "kind": "StringLiteral",
-      "offset": 4390,
+      "offset": 4383,
       "length": 15,
       "value": "\"Apple TV 3gen\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Extensions\/UIDevice+Extentions.swift",
       "kind": "StringLiteral",
-      "offset": 4437,
+      "offset": 4430,
       "length": 15,
       "value": "\"Apple TV 4gen\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Extensions\/UIDevice+Extentions.swift",
       "kind": "StringLiteral",
-      "offset": 4484,
+      "offset": 4477,
       "length": 13,
       "value": "\"Apple TV 4K\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Extensions\/UIDevice+Extentions.swift",
       "kind": "StringLiteral",
-      "offset": 4539,
+      "offset": 4532,
       "length": 16,
       "value": "\"?unrecognized?\""
     },
@@ -418515,163 +419148,191 @@
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "StringLiteral",
-      "offset": 1412,
+      "offset": 1400,
+      "length": 52,
+      "value": "\"3asvt=&7fb98925c6-clo8j7yar%jq8we&*l_w0i8483jdc^j@\""
+    },
+    {
+      "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
+      "kind": "StringLiteral",
+      "offset": 1511,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "IntegerLiteral",
-      "offset": 1471,
+      "offset": 1570,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 1522,
+      "offset": 1621,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "StringLiteral",
-      "offset": 1637,
+      "offset": 1736,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 1744,
+      "offset": 1843,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 1952,
+      "offset": 2051,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 2005,
+      "offset": 2104,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "StringLiteral",
-      "offset": 2065,
+      "offset": 2164,
       "length": 12,
       "value": "\"5555555555\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "StringLiteral",
-      "offset": 2132,
+      "offset": 2231,
       "length": 19,
       "value": "\"enqura@enqura.com\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 2254,
+      "offset": 2773,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 2310,
+      "offset": 2829,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 2465,
+      "offset": 2984,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 2516,
+      "offset": 3035,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 2572,
+      "offset": 3091,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 2627,
+      "offset": 3146,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 2824,
+      "offset": 3343,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 3558,
+      "offset": 4077,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 4036,
+      "offset": 4555,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 4094,
+      "offset": 4613,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 4158,
+      "offset": 4677,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "StringLiteral",
-      "offset": 73570,
+      "offset": 74167,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 82600,
+      "offset": 83197,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 105031,
+      "offset": 105585,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
+      "kind": "Array",
+      "offset": 120044,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
+      "kind": "Array",
+      "offset": 120072,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
+      "kind": "IntegerLiteral",
+      "offset": 120095,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/CodableHelper.swift",
@@ -418963,21 +419624,21 @@
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Extensions\/String+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 6753,
+      "offset": 6754,
       "length": 18,
       "value": "\"dd\/MM\/yyyy hh:mm\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Extensions\/String+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 6956,
+      "offset": 6957,
       "length": 12,
       "value": "\"yyyy-MM-dd\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Extensions\/String+Extensions.swift",
       "kind": "StringLiteral",
-      "offset": 7166,
+      "offset": 7167,
       "length": 23,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss\""
     },
@@ -429582,329 +430243,336 @@
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6036,
+      "offset": 6143,
       "length": 14,
       "value": "\"IsSuccessful\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6073,
+      "offset": 6180,
       "length": 8,
       "value": "\"Result\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6105,
+      "offset": 6212,
       "length": 9,
       "value": "\"Warning\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6142,
+      "offset": 6249,
       "length": 13,
       "value": "\"ReferenceId\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6185,
+      "offset": 6292,
       "length": 15,
       "value": "\"LivenessScore\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6241,
+      "offset": 6348,
       "length": 26,
       "value": "\"FaceRecognitionThreshold\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6291,
+      "offset": 6398,
       "length": 9,
       "value": "\"Timeout\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6338,
+      "offset": 6445,
       "length": 23,
       "value": "\"MaxCallStartErrorTime\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6398,
+      "offset": 6505,
       "length": 22,
       "value": "\"MaxCallStartWaitTime\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6456,
+      "offset": 6563,
       "length": 21,
       "value": "\"ScreenRecordBitrate\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6506,
+      "offset": 6613,
       "length": 14,
       "value": "\"ScreenRecord\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6553,
+      "offset": 6660,
       "length": 18,
       "value": "\"ScreenRecordPart\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6616,
+      "offset": 6723,
       "length": 30,
       "value": "\"ScreenRecordUploadRetryCount\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6688,
+      "offset": 6795,
       "length": 27,
       "value": "\"ScreenRecordUploadTimeout\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6739,
+      "offset": 6846,
       "length": 9,
       "value": "\"OCRMode\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6783,
+      "offset": 6890,
       "length": 20,
       "value": "\"OCRDifficultyLevel\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6839,
+      "offset": 6946,
       "length": 21,
       "value": "\"LivenessCalibration\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6896,
+      "offset": 7003,
       "length": 21,
       "value": "\"EyeDetectionTimeout\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6949,
+      "offset": 7056,
       "length": 17,
       "value": "\"HeadCalibration\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 6999,
+      "offset": 7106,
       "length": 18,
       "value": "\"SmileCalibration\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7048,
+      "offset": 7155,
       "length": 16,
       "value": "\"EyeCalibration\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7096,
+      "offset": 7203,
       "length": 17,
       "value": "\"LivenessTimeOut\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7141,
+      "offset": 7248,
       "length": 13,
       "value": "\"DistanceMin\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7182,
+      "offset": 7289,
       "length": 13,
       "value": "\"DistanceMax\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7227,
+      "offset": 7334,
       "length": 17,
       "value": "\"ChipDistanceMin\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7276,
+      "offset": 7383,
       "length": 17,
       "value": "\"ChipDistanceMax\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7321,
+      "offset": 7428,
       "length": 13,
       "value": "\"MaxCallTime\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7372,
+      "offset": 7479,
       "length": 23,
       "value": "\"SetIceCheckingTimeout\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7430,
+      "offset": 7537,
       "length": 20,
       "value": "\"SetCallWaitTimeout\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7477,
+      "offset": 7584,
       "length": 12,
       "value": "\"GetDG1Name\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7516,
+      "offset": 7623,
       "length": 12,
       "value": "\"DomainName\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7555,
+      "offset": 7664,
+      "length": 14,
+      "value": "\"DomainNameV2\""
+    },
+    {
+      "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 7705,
       "length": 12,
       "value": "\"AIUsername\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7594,
+      "offset": 7744,
       "length": 12,
       "value": "\"AIPassword\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7635,
+      "offset": 7785,
       "length": 14,
       "value": "\"SignalServer\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7676,
+      "offset": 7826,
       "length": 12,
       "value": "\"StunServer\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7715,
+      "offset": 7865,
       "length": 12,
       "value": "\"TurnServer\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7758,
+      "offset": 7908,
       "length": 16,
       "value": "\"TurnServerUser\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7804,
+      "offset": 7954,
       "length": 15,
       "value": "\"TurnServerKey\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7847,
+      "offset": 7997,
       "length": 13,
       "value": "\"MediaServer\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7891,
+      "offset": 8041,
       "length": 16,
       "value": "\"OCRFrontReader\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 7943,
+      "offset": 8093,
       "length": 21,
       "value": "\"AddressVerification\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 8002,
+      "offset": 8152,
       "length": 23,
       "value": "\"ReadBarcodeIdentityNo\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 8055,
+      "offset": 8205,
       "length": 15,
       "value": "\"ToleranceTime\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 8102,
+      "offset": 8252,
       "length": 17,
       "value": "\"AntiSpoofingMax\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 8151,
+      "offset": 8301,
       "length": 17,
       "value": "\"AntiSpoofingMin\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 8199,
+      "offset": 8349,
       "length": 16,
       "value": "\"NFCReadTimeout\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Models\/VerifyMobileParameterGetResponse.swift",
       "kind": "StringLiteral",
-      "offset": 8262,
+      "offset": 8412,
       "length": 32,
       "value": "\"IdentityNoSetFromOptionalData1\""
     },

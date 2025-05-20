@@ -346,6 +346,7 @@ SWIFT_CLASS("_TtC9EnQualify10EnVSession")
 @class AVAsset;
 @class EnverifyScreenRecordingData;
 @class NSTimer;
+@class NSNumber;
 @class UIImage;
 @class AVPlayer;
 @class CXCall;
@@ -411,6 +412,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sess
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull sessionAddEmail;)
 + (NSString * _Nonnull)sessionAddEmail SWIFT_WARN_UNUSED_RESULT;
 + (void)setSessionAddEmail:(NSString * _Nonnull)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull smileAction;)
++ (NSNumber * _Nonnull)smileAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull eyeCloseAction;)
++ (NSNumber * _Nonnull)eyeCloseAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull faceLeftAction;)
++ (NSNumber * _Nonnull)faceLeftAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull faceRightAction;)
++ (NSNumber * _Nonnull)faceRightAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull faceUpAction;)
++ (NSNumber * _Nonnull)faceUpAction SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL sslPiningForIO;)
 + (BOOL)sslPiningForIO SWIFT_WARN_UNUSED_RESULT;
 + (void)setSslPiningForIO:(BOOL)value;
@@ -517,7 +528,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)onConfirmDocWithoutPop;
 + (void)startLivenessDetect;
 + (void)setSSStartButtonsWithButtonState:(BOOL)buttonState;
-+ (BOOL)idvSettingsWithDomainName:(NSString * _Nullable)domainName certificateNames:(NSArray<NSString *> * _Nonnull)certificateNames aiUsername:(NSString * _Nullable)aiUsername aiPassword:(NSString * _Nullable)aiPassword signalingServer:(NSString * _Nullable)signalingServer stunServer:(NSString * _Nullable)stunServer turnServer:(NSString * _Nullable)turnServer turnUsername:(NSString * _Nullable)turnUsername turnPassword:(NSString * _Nullable)turnPassword backOfficeBasePath:(NSString * _Nullable)backOfficeBasePath userNameForToken:(NSString * _Nullable)userNameForToken isContinue:(BOOL)isContinue referenceID:(NSString * _Nullable)referenceID SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)idvSettingsWithDomainName:(NSString * _Nullable)domainName certificateNames:(NSArray<NSString *> * _Nonnull)certificateNames signalingServer:(NSString * _Nullable)signalingServer stunServer:(NSString * _Nullable)stunServer turnServer:(NSString * _Nullable)turnServer turnUsername:(NSString * _Nullable)turnUsername turnPassword:(NSString * _Nullable)turnPassword backOfficeBasePath:(NSString * _Nullable)backOfficeBasePath userNameForToken:(NSString * _Nullable)userNameForToken isContinue:(BOOL)isContinue referenceID:(NSString * _Nullable)referenceID SWIFT_WARN_UNUSED_RESULT;
 + (void)agentRequestCompleted;
 + (void)stopSSStartVC:(id _Nonnull)sender;
 + (void)setNavigationControllerWithNavigator:(UINavigationController * _Nonnull)navigator;
@@ -533,7 +544,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)onExitSelfService;
 + (void)onExitSelfServiceWithoutPop;
 + (void)onHangupCall;
-+ (void)onStartCall;
 + (void)startVideoAgentCall;
 + (void)startAVRecording SWIFT_AVAILABILITY(ios,introduced=11.0);
 + (void)stopAVRecording SWIFT_AVAILABILITY(ios,introduced=11.0);
@@ -571,6 +581,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)saveRecordAssetWithFilePath:(NSString * _Nonnull)filePath;
 + (void)setBarcodeReaderWithState:(BOOL)state;
 + (void)setFaceOverlayAngleCountWithCount:(NSInteger)count;
++ (void)selectRandomFaceActionWithActionList:(NSArray<NSNumber *> * _Nonnull)actionList groupList:(NSArray<NSNumber *> * _Nonnull)groupList actionCount:(NSInteger)actionCount;
 + (void)startCardFrontDetect;
 + (void)startCardHoloDetect;
 + (void)startCardBackDetect;
@@ -1111,7 +1122,6 @@ typedef SWIFT_ENUM(NSInteger, SessionInfoType, open) {
 
 
 
-@class NSNumber;
 
 SWIFT_CLASS("_TtC9EnQualify36VerifyMobileParameterGetResponseOBJC")
 @interface VerifyMobileParameterGetResponseOBJC : NSObject
@@ -1148,6 +1158,7 @@ SWIFT_CLASS("_TtC9EnQualify36VerifyMobileParameterGetResponseOBJC")
 @property (nonatomic, strong) NSNumber * _Nullable setCallWaitTimeout;
 @property (nonatomic, strong) id _Nullable getDG1Name;
 @property (nonatomic, copy) NSString * _Nullable domainName;
+@property (nonatomic, copy) NSString * _Nullable domainNameV2;
 @property (nonatomic, copy) NSString * _Nullable aIUsername;
 @property (nonatomic, copy) NSString * _Nullable aIPassword;
 @property (nonatomic, copy) NSString * _Nullable signalServer;
@@ -1160,7 +1171,7 @@ SWIFT_CLASS("_TtC9EnQualify36VerifyMobileParameterGetResponseOBJC")
 @property (nonatomic, strong) id _Nullable addressVerification;
 @property (nonatomic, strong) id _Nullable readBarcodeIdentityNo;
 @property (nonatomic, strong) NSNumber * _Nullable toleranceTime;
-- (nonnull instancetype)initWithIsSuccessful:(id _Nullable)isSuccessful referenceId:(NSUUID * _Nullable)referenceId livenessScore:(NSNumber * _Nullable)livenessScore faceRecognitionThreshold:(NSNumber * _Nullable)faceRecognitionThreshold timeout:(NSNumber * _Nullable)timeout maxCallStartErrorTime:(NSNumber * _Nullable)maxCallStartErrorTime maxCallStartWaitTime:(NSNumber * _Nullable)maxCallStartWaitTime screenRecordBitrate:(NSNumber * _Nullable)screenRecordBitrate screenRecord:(id _Nullable)screenRecord screenRecordPart:(NSString * _Nullable)screenRecordPart screenRecordUploadRetryCount:(NSNumber * _Nullable)screenRecordUploadRetryCount screenRecordUploadTimeout:(NSNumber * _Nullable)screenRecordUploadTimeout oCRMode:(NSString * _Nullable)oCRMode oCRDifficultyLevel:(NSNumber * _Nullable)oCRDifficultyLevel livenessCalibration:(NSNumber * _Nullable)livenessCalibration eyeDetectionTimeout:(NSNumber * _Nullable)eyeDetectionTimeout headCalibration:(NSNumber * _Nullable)headCalibration smileCalibration:(NSNumber * _Nullable)smileCalibration eyeCalibration:(NSNumber * _Nullable)eyeCalibration livenessTimeOut:(NSNumber * _Nullable)livenessTimeOut distanceMin:(NSNumber * _Nullable)distanceMin distanceMax:(NSNumber * _Nullable)distanceMax chipDistanceMin:(NSNumber * _Nullable)chipDistanceMin chipDistanceMax:(NSNumber * _Nullable)chipDistanceMax maxCallTime:(NSNumber * _Nullable)maxCallTime setIceCheckingTimeout:(NSNumber * _Nullable)setIceCheckingTimeout setCallWaitTimeout:(NSNumber * _Nullable)setCallWaitTimeout getDG1Name:(id _Nullable)getDG1Name domainName:(NSString * _Nullable)domainName aIUsername:(NSString * _Nullable)aIUsername aIPassword:(NSString * _Nullable)aIPassword signalServer:(NSString * _Nullable)signalServer stunServer:(NSString * _Nullable)stunServer turnServer:(NSString * _Nullable)turnServer turnServerUser:(NSString * _Nullable)turnServerUser turnServerKey:(NSString * _Nullable)turnServerKey mediaServer:(id _Nullable)mediaServer oCRFrontReader:(id _Nullable)oCRFrontReader addressVerification:(id _Nullable)addressVerification readBarcodeIdentityNo:(id _Nullable)readBarcodeIdentityNo toleranceTime:(NSNumber * _Nullable)toleranceTime OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithIsSuccessful:(id _Nullable)isSuccessful referenceId:(NSUUID * _Nullable)referenceId livenessScore:(NSNumber * _Nullable)livenessScore faceRecognitionThreshold:(NSNumber * _Nullable)faceRecognitionThreshold timeout:(NSNumber * _Nullable)timeout maxCallStartErrorTime:(NSNumber * _Nullable)maxCallStartErrorTime maxCallStartWaitTime:(NSNumber * _Nullable)maxCallStartWaitTime screenRecordBitrate:(NSNumber * _Nullable)screenRecordBitrate screenRecord:(id _Nullable)screenRecord screenRecordPart:(NSString * _Nullable)screenRecordPart screenRecordUploadRetryCount:(NSNumber * _Nullable)screenRecordUploadRetryCount screenRecordUploadTimeout:(NSNumber * _Nullable)screenRecordUploadTimeout oCRMode:(NSString * _Nullable)oCRMode oCRDifficultyLevel:(NSNumber * _Nullable)oCRDifficultyLevel livenessCalibration:(NSNumber * _Nullable)livenessCalibration eyeDetectionTimeout:(NSNumber * _Nullable)eyeDetectionTimeout headCalibration:(NSNumber * _Nullable)headCalibration smileCalibration:(NSNumber * _Nullable)smileCalibration eyeCalibration:(NSNumber * _Nullable)eyeCalibration livenessTimeOut:(NSNumber * _Nullable)livenessTimeOut distanceMin:(NSNumber * _Nullable)distanceMin distanceMax:(NSNumber * _Nullable)distanceMax chipDistanceMin:(NSNumber * _Nullable)chipDistanceMin chipDistanceMax:(NSNumber * _Nullable)chipDistanceMax maxCallTime:(NSNumber * _Nullable)maxCallTime setIceCheckingTimeout:(NSNumber * _Nullable)setIceCheckingTimeout setCallWaitTimeout:(NSNumber * _Nullable)setCallWaitTimeout getDG1Name:(id _Nullable)getDG1Name domainName:(NSString * _Nullable)domainName domainNameV2:(NSString * _Nullable)domainNameV2 aIUsername:(NSString * _Nullable)aIUsername aIPassword:(NSString * _Nullable)aIPassword signalServer:(NSString * _Nullable)signalServer stunServer:(NSString * _Nullable)stunServer turnServer:(NSString * _Nullable)turnServer turnServerUser:(NSString * _Nullable)turnServerUser turnServerKey:(NSString * _Nullable)turnServerKey mediaServer:(id _Nullable)mediaServer oCRFrontReader:(id _Nullable)oCRFrontReader addressVerification:(id _Nullable)addressVerification readBarcodeIdentityNo:(id _Nullable)readBarcodeIdentityNo toleranceTime:(NSNumber * _Nullable)toleranceTime OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

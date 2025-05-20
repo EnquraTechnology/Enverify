@@ -431,6 +431,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CustomerIdentityDoc * 
 @class UIButton;
 @class UIView;
 @class AVAsset;
+@class NSNumber;
 
 SWIFT_CLASS("_TtC14IDVerification8IDVerify")
 @interface IDVerify : NSObject
@@ -438,6 +439,7 @@ SWIFT_CLASS("_TtC14IDVerification8IDVerify")
 + (BOOL)idVerifyOCRStart:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)idVerifyNFCStart:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)checkPermissions SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)mainVCStart:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)videoCallStart:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)selfServiceStart:(id _Nonnull)sender SWIFT_WARN_UNUSED_RESULT;
 + (void)idFakeCheckStart;
@@ -483,7 +485,7 @@ SWIFT_CLASS("_TtC14IDVerification8IDVerify")
 + (void)idTypeCheckFrontStart;
 + (void)onRetryDoc;
 + (void)onConfirmDoc;
-+ (BOOL)idvSettingsWithDomainName:(NSString * _Nullable)domainName certificateNames:(NSArray<NSString *> * _Nonnull)certificateNames aiUsername:(NSString * _Nullable)aiUsername aiPassword:(NSString * _Nullable)aiPassword signalingServer:(NSString * _Nullable)signalingServer stunServer:(NSString * _Nullable)stunServer turnServer:(NSString * _Nullable)turnServer turnUsername:(NSString * _Nullable)turnUsername turnPassword:(NSString * _Nullable)turnPassword SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)idvSettingsWithDomainName:(NSString * _Nullable)domainName certificateNames:(NSArray<NSString *> * _Nonnull)certificateNames aiAPIKey:(NSString * _Nullable)aiAPIKey signalingServer:(NSString * _Nullable)signalingServer stunServer:(NSString * _Nullable)stunServer turnServer:(NSString * _Nullable)turnServer turnUsername:(NSString * _Nullable)turnUsername turnPassword:(NSString * _Nullable)turnPassword SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)setMessageWithMessage:(NSString * _Nonnull)message index:(NSInteger)index SWIFT_WARN_UNUSED_RESULT;
 + (void)stopSSStartVC:(id _Nonnull)sender;
 + (void)setNavigationControllerWithNavigator:(UINavigationController * _Nonnull)navigator;
@@ -507,7 +509,7 @@ SWIFT_CLASS("_TtC14IDVerification8IDVerify")
 + (void)onExitSelfService;
 + (void)onExitSelfServiceWithoutPop;
 + (void)onRetrySelfService;
-+ (void)onStartCall;
++ (void)onStartVideoCall;
 + (void)onExitCall;
 + (void)onExitCallWithoutPop;
 + (void)onHangupCall;
@@ -584,13 +586,34 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) UIButton * _Nonnull ic
 + (void)setFaceCaptureEnabledWithIsFaceCaptureEnabled:(BOOL)isFaceCaptureEnabled;
 + (void)setFlexibleTabReaderWithEnabled:(BOOL)enabled;
 + (void)setFaceOverlayAngleCountWithCount:(NSInteger)count;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull smileAction;)
++ (NSNumber * _Nonnull)smileAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull eyeCloseAction;)
++ (NSNumber * _Nonnull)eyeCloseAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull faceLeftAction;)
++ (NSNumber * _Nonnull)faceLeftAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull faceRightAction;)
++ (NSNumber * _Nonnull)faceRightAction SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSNumber * _Nonnull faceUpAction;)
++ (NSNumber * _Nonnull)faceUpAction SWIFT_WARN_UNUSED_RESULT;
++ (void)selectRandomFaceActionWithActionList:(NSArray<NSNumber *> * _Nonnull)actionList groupList:(NSArray<NSNumber *> * _Nonnull)groupList actionCount:(NSInteger)actionCount;
 + (void)setFaceAntispoofingWithEnabled:(BOOL)enabled;
 + (void)setPassiveLivenessAlgorithmModeWithMode:(NSInteger)mode;
 + (void)setBackofficeIntegrationWithEnabled:(BOOL)enabled;
 + (void)setFaceAnimationWithEnabled:(BOOL)enabled;
 + (void)switchFrontCamera;
 + (void)switchBackCamera;
++ (void)startVideoAgentCall;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtCC14IDVerification8IDVerify15FaceActionGroup")
+@interface FaceActionGroup : NSObject
+@property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nonnull actions;
+- (nonnull instancetype)initWithActions:(NSArray<NSNumber *> * _Nonnull)actions OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
