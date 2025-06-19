@@ -4,25 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Alamofire.bundle/Info.plist</key>
-		<data>
-		nI6MvIsjEQk0iuPiS66cAryOOnw=
-		</data>
-		<key>Alamofire.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		ovFJMFOLMjzh8DLJKmXncj8JIgU=
-		</data>
 		<key>AntiSpoofingBin128.mlmodelc/analytics/coremldata.bin</key>
 		<data>
 		EN5EfDgcmDuYxJfSpwNb+glAHOc=
 		</data>
 		<key>AntiSpoofingBin128.mlmodelc/coremldata.bin</key>
 		<data>
-		JeDrCnNHNKd6EfmaAu4PrXU202c=
+		uRmTeXGao6I00Mv98nkNgQ3RDdw=
 		</data>
 		<key>AntiSpoofingBin128.mlmodelc/metadata.json</key>
 		<data>
-		SnyXbe+y3wbYTMJ57MduGwFdWUo=
+		4b8MoAZDF9pos6FBQ30L2CwN6Vs=
 		</data>
 		<key>AntiSpoofingBin128.mlmodelc/model.espresso.net</key>
 		<data>
@@ -46,35 +38,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		0RCVwr64nKYjjd2bnfwDf+Zxc4Y=
+		xzcBIqB6jqUkATPegxTUu0o0P+8=
 		</data>
 		<key>Config.plist</key>
 		<data>
 		G3fZEyQca4yMnbmTwSVyrMdR0bo=
-		</data>
-		<key>FBLPromises_Privacy.bundle/Info.plist</key>
-		<data>
-		WH6H8qhvXc2Pe0VRSr/ROLpAZIY=
-		</data>
-		<key>FBLPromises_Privacy.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		ZajnvEs/MYRS3X4TPLAhBWi8mc4=
-		</data>
-		<key>GTMSessionFetcher_Core_Privacy.bundle/Info.plist</key>
-		<data>
-		V3nCbeM7cXjg9UFFgahNLwy4uwU=
-		</data>
-		<key>GTMSessionFetcher_Core_Privacy.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		GqeAMkwbcNQeG0K4qQhQh2vHhHo=
-		</data>
-		<key>GoogleDataTransport_Privacy.bundle/Info.plist</key>
-		<data>
-		JpwDiPriOdDFVffVQXafztO7Zq4=
-		</data>
-		<key>GoogleDataTransport_Privacy.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		WXQUJr75eMRgiVnLGyf8Gr3uLUU=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
 		<data>
@@ -128,33 +96,9 @@
 		<data>
 		RxtbTN3LjpFChp3tmniX3KD+dsE=
 		</data>
-		<key>GoogleToolboxForMac_Logger_Privacy.bundle/Info.plist</key>
-		<data>
-		7jlSzpd9QBmoTO+Ds3pJhgtiDq0=
-		</data>
-		<key>GoogleToolboxForMac_Logger_Privacy.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		GqeAMkwbcNQeG0K4qQhQh2vHhHo=
-		</data>
-		<key>GoogleToolboxForMac_Privacy.bundle/Info.plist</key>
-		<data>
-		N3epl6GN/cnEmJZPnJSYfEm91RI=
-		</data>
-		<key>GoogleToolboxForMac_Privacy.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		ZajnvEs/MYRS3X4TPLAhBWi8mc4=
-		</data>
-		<key>GoogleUtilities_Privacy.bundle/Info.plist</key>
-		<data>
-		Gr/eb+EsrvbrnZmRQlZW8EuEf9g=
-		</data>
-		<key>GoogleUtilities_Privacy.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		TrRzpkxcmDwPf9xXhrQKnuRceyI=
-		</data>
 		<key>Headers/IDVerification-Swift.h</key>
 		<data>
-		+0VhXcx9GKy5PCeA6hH2HCTJQEM=
+		oHYiIX6d2dIDAU4Lh5qnY2jUdJY=
 		</data>
 		<key>Headers/IDVerify.h</key>
 		<data>
@@ -162,7 +106,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xPkitnGPtVytZNVvKA1iz7VPgvY=
+		JcNzZn42BybvRVXKejXU9aGqK4k=
 		</data>
 		<key>LatinOCRResources.bundle/Info.plist</key>
 		<data>
@@ -200,14 +144,6 @@
 		<data>
 		oYS7+p9yJEEy3UOE1YgjDNNbLAM=
 		</data>
-		<key>LottiePrivacyInfo.bundle/Info.plist</key>
-		<data>
-		SK/878lDtIzQOxOVOzt8Q1NQxjk=
-		</data>
-		<key>LottiePrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		9slhmTZYKDmos4efk+3YOXYOQXo=
-		</data>
 		<key>MLKitImageLabelingResources.bundle/Info.plist</key>
 		<data>
 		9ZTxK5Wl5ahbCIafSoEE+2MqcS8=
@@ -234,19 +170,19 @@
 		</data>
 		<key>Modules/IDVerification.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		i+sILxb4LERdZkYpAv/7mOdrgw0=
+		+JY3rrmggPCTkmPR8k7i92p/6D0=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		rIRll1Oj0GHQDmyy/gfaNfXM9ds=
+		nQQquupgKECBxM8ePRQ7ZzjaFN0=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		5+uMPfdaLTwTqPLQQ/2YE+keobw=
+		n4qcFRTAViANECTOpnLaU0UBErA=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		xur85Jr/ZuOBfkdLHsDOZbaUySw=
+		yRTR+0vafymbPOtjOy1XSFGOcTA=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -254,19 +190,19 @@
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xur85Jr/ZuOBfkdLHsDOZbaUySw=
+		yRTR+0vafymbPOtjOy1XSFGOcTA=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XXbcIUssh4Dh+/w0/FI8HPMcjE8=
+		esjEx5das+hQry5qFNf6qYDzcDg=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		5+uMPfdaLTwTqPLQQ/2YE+keobw=
+		n4qcFRTAViANECTOpnLaU0UBErA=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		qQMvWd6I5N4PpLchCbxwma4am94=
+		qUj1W1hnO0tAez9X9zfuGrhGbK8=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -274,11 +210,11 @@
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qQMvWd6I5N4PpLchCbxwma4am94=
+		qUj1W1hnO0tAez9X9zfuGrhGbK8=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		inmELSqcf4EDy9i1TpFRWxrQCqE=
+		MeyQuuQZnhFtFRtTc3oUPGkUCvc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -305,14 +241,6 @@
 		<data>
 		qocrxEqBRHxVEH3KY+eX9XzCwuc=
 		</data>
-		<key>nanopb_Privacy.bundle/Info.plist</key>
-		<data>
-		QabQNz2ZdVuR1Fz30EFzKk/8DJM=
-		</data>
-		<key>nanopb_Privacy.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		KY5lfwC2TvsgFj4wt7hkMmainbs=
-		</data>
 		<key>tr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -325,20 +253,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Alamofire.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			P2wrdlPaa23EZk3GLNzvE9UAIAXQnxr374c7obv17xk=
-			</data>
-		</dict>
-		<key>Alamofire.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CNkOaUbb/qDQtbF/tlnXfu0j5EO3Rdjntbn6N4y3RHc=
-			</data>
-		</dict>
 		<key>AntiSpoofingBin128.mlmodelc/analytics/coremldata.bin</key>
 		<dict>
 			<key>hash2</key>
@@ -350,14 +264,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dYRwqMq+e9rbnHMu5ZmF4ZfI3tggfG05wNWCOO8Qwwo=
+			pSrtfsdFC1N771OZAfQyh9nnbXC1JQ7nOWOMqPNVuVw=
 			</data>
 		</dict>
 		<key>AntiSpoofingBin128.mlmodelc/metadata.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bS/1v8j/nUeTvBPOjKhxLEK0xmG/S0a9szTk2L672HY=
+			xhyv+4S6m7VcCezz78+jbpl4DKo0LTPzS5JOxFVboHA=
 			</data>
 		</dict>
 		<key>AntiSpoofingBin128.mlmodelc/model.espresso.net</key>
@@ -399,7 +313,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fdlRMcDjfBk2IGySe2fOJDzTEYLLWC4t6tjIN/2jgJk=
+			0BJQN1olnBOgoXQM7gFW3OPfkKxCARKFDiKtpvpSY7M=
 			</data>
 		</dict>
 		<key>Config.plist</key>
@@ -407,48 +321,6 @@
 			<key>hash2</key>
 			<data>
 			0Fr5WU+93jDtP8DRRZxbipu61X/so5mKBAxQZ0h0uO4=
-			</data>
-		</dict>
-		<key>FBLPromises_Privacy.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EyVkUYXHTYIxcqJbY6PHnqAUOIPuZz1fIwOjHbA1alU=
-			</data>
-		</dict>
-		<key>FBLPromises_Privacy.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			dLDNcvwjwe8wLyLuJ1P2GBfNxa8P96fy0GMrUk+4rOo=
-			</data>
-		</dict>
-		<key>GTMSessionFetcher_Core_Privacy.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			htpqMUhegpqmjYuLgjj/1XKdvoABsTPGGXUhAkiMsEk=
-			</data>
-		</dict>
-		<key>GTMSessionFetcher_Core_Privacy.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			PkqTy+hqzvfdfgY6KMhJmS9Vbn9SytxfN8HosOG1RoY=
-			</data>
-		</dict>
-		<key>GoogleDataTransport_Privacy.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Pt1HfhMD78Jb4BbwD8mXGv46pv6PyWT+eJ0iVZfvens=
-			</data>
-		</dict>
-		<key>GoogleDataTransport_Privacy.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			z7s8T3ambVNpi66R9xEMAPIUjm5vE619MlkpCbwBDlE=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
@@ -542,53 +414,11 @@
 			2pAlL0mzu5QuX4gBgKFFYfZpKW5/s+3s3quqi2u3gio=
 			</data>
 		</dict>
-		<key>GoogleToolboxForMac_Logger_Privacy.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			dqUQd/lwEyMxZzJuvMFIElzZY2WuYYl6te6T9CeyRxg=
-			</data>
-		</dict>
-		<key>GoogleToolboxForMac_Logger_Privacy.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			PkqTy+hqzvfdfgY6KMhJmS9Vbn9SytxfN8HosOG1RoY=
-			</data>
-		</dict>
-		<key>GoogleToolboxForMac_Privacy.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			PPPCiCkVRUenFI0uYUYg42bLXqyyXH+E8sd1RvnahuM=
-			</data>
-		</dict>
-		<key>GoogleToolboxForMac_Privacy.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			dLDNcvwjwe8wLyLuJ1P2GBfNxa8P96fy0GMrUk+4rOo=
-			</data>
-		</dict>
-		<key>GoogleUtilities_Privacy.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tAyurkdKKsaEIj+j1gyRbaQFQh1+cKN9XmPS+q5m0Es=
-			</data>
-		</dict>
-		<key>GoogleUtilities_Privacy.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			jxZCM8XSFfsGzrh4STQCHd3X05qJ15Xla6XIMqsPs/c=
-			</data>
-		</dict>
 		<key>Headers/IDVerification-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s61eSxWosgMQiX7IjsGJ8cInKmJXxtfzhnk4Vi9+mJw=
+			yHG4BcHhkevuFtSWZpBmuaV0shC+HWhVHDOSTfRjLE4=
 			</data>
 		</dict>
 		<key>Headers/IDVerify.h</key>
@@ -661,20 +491,6 @@
 			DtYuT74PxcQJCuxHOxNuGI+ChZB2XAKDgjWNrds8y24=
 			</data>
 		</dict>
-		<key>LottiePrivacyInfo.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			bgnLVqy3/fVKMjfT6XpCB1uw8k51WxsevZCFGoTTccw=
-			</data>
-		</dict>
-		<key>LottiePrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ENpn8heCTwGSiOwyirq8KQqwOZxS6b53ok1JQzkTfaI=
-			</data>
-		</dict>
 		<key>MLKitImageLabelingResources.bundle/Info.plist</key>
 		<dict>
 			<key>hash2</key>
@@ -721,28 +537,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oPSzc2DOvj27EOVBZ7DBPmbLu8Mob33iGlwR7N7L+1w=
+			4k45XoMe1QBNUjbX1A4AJeTGOysIaSJZbH8X6HOqf+s=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mozu6zTxOf91LQqdmOJ3ccnn7Hm0OnwzwpNChgU3SDY=
+			z+dEw+cbxXvcNMkXza67Y5XgZDPizBWeFkKcsf+Bd/Q=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V51luhcZ/QKLDnSPaV87W0ImZgcj2wqtLT6AMe8H/Fw=
+			3Zt2z34vVrC1/d8i3odF6w6zgYM/ZMMKdv8uYyHB0d4=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m6gKrsu+tqKhrw2VQb9rRD/f39sAil4OFvzHhLRYY10=
+			DjaHM0H4yO9Mh3QOMG8HoX/NeausU9S5GipzsMT22i0=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -756,28 +572,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			m6gKrsu+tqKhrw2VQb9rRD/f39sAil4OFvzHhLRYY10=
+			DjaHM0H4yO9Mh3QOMG8HoX/NeausU9S5GipzsMT22i0=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oSI1ljR4bvTZ6xhtJBxPn647Jxbyf4VpKota3UHb+dM=
+			5bR8LLOwjTxoB3u6XJaLEWGTd4bGR5JKcmF+alVw9XY=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V51luhcZ/QKLDnSPaV87W0ImZgcj2wqtLT6AMe8H/Fw=
+			3Zt2z34vVrC1/d8i3odF6w6zgYM/ZMMKdv8uYyHB0d4=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dhp76wu0mXUwm7pA4GekmCOKrE4pClsveMTfkFFfxXk=
+			zrtpwD51CNceexIMWyDglKD7HRBEAtalrr1TFWPKBnE=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -791,14 +607,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dhp76wu0mXUwm7pA4GekmCOKrE4pClsveMTfkFFfxXk=
+			zrtpwD51CNceexIMWyDglKD7HRBEAtalrr1TFWPKBnE=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PGezOsWBOnO85UoR4nlmcedGWqTiRRAB5c+rtslvmY0=
+			/NnHpDkYz2lcLV/0AoXMzhV2HuDQIQq3Gn11Oetb2WE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -836,20 +652,6 @@
 			<key>hash2</key>
 			<data>
 			oD/kU4QXJinBjRswuZ22CwsQMEtL9xB/BBSdApDoiz4=
-			</data>
-		</dict>
-		<key>nanopb_Privacy.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			otkHr2mB/tC4QzytGEV1J8tn8WGfmiFs49nE6OGg2Tw=
-			</data>
-		</dict>
-		<key>nanopb_Privacy.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			cpujy9D0WMeM1h7fFzUO2v4ONMqG4xTsZMjLIszSG1Q=
 			</data>
 		</dict>
 		<key>tr.lproj/Localizable.strings</key>

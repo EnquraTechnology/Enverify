@@ -12,6 +12,7 @@ import CoreTelephony
 import CryptoKit
 import Foundation
 import IDVerification
+import OpenSSL
 import Photos
 import ReplayKit
 import Security
@@ -559,7 +560,7 @@ public struct SignedMessageDocumentsAppFolderGetDocumentRequest : Swift.Codable 
   @objc @_Concurrency.MainActor @preconcurrency public static func onConfirmDocWithoutPop()
   @objc @_Concurrency.MainActor @preconcurrency public static func startLivenessDetect()
   @objc @_Concurrency.MainActor @preconcurrency public static func setSSStartButtons(buttonState: Swift.Bool)
-  @objc @_Concurrency.MainActor @preconcurrency public static func idvSettings(domainName: Swift.String?, certificateNames: [Swift.String], signalingServer: Swift.String?, stunServer: Swift.String?, turnServer: Swift.String?, turnUsername: Swift.String?, turnPassword: Swift.String?, backOfficeBasePath: Swift.String?, userNameForToken: Swift.String? = nil, isContinue: Swift.Bool = false, referenceID: Swift.String? = nil) -> Swift.Bool
+  @objc @_Concurrency.MainActor @preconcurrency public static func idvSettings(domainName: Swift.String?, certificateNames: [Swift.String], signalingServer: Swift.String?, stunServer: Swift.String?, turnServer: Swift.String?, backOfficeBasePath: Swift.String?, userNameForToken: Swift.String? = nil, isContinue: Swift.Bool = false, referenceID: Swift.String? = nil) -> Swift.Bool
   @objc @_Concurrency.MainActor @preconcurrency public static func agentRequestCompleted()
   @objc @_Concurrency.MainActor @preconcurrency public static func stopSSStartVC(_ sender: Any)
   @objc @_Concurrency.MainActor @preconcurrency public static func setNavigationController(navigator: UIKit.UINavigationController)

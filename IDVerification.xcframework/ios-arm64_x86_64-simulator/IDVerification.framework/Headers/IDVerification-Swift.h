@@ -485,7 +485,7 @@ SWIFT_CLASS("_TtC14IDVerification8IDVerify")
 + (void)idTypeCheckFrontStart;
 + (void)onRetryDoc;
 + (void)onConfirmDoc;
-+ (BOOL)idvSettingsWithDomainName:(NSString * _Nullable)domainName certificateNames:(NSArray<NSString *> * _Nonnull)certificateNames aiAPIKey:(NSString * _Nullable)aiAPIKey signalingServer:(NSString * _Nullable)signalingServer stunServer:(NSString * _Nullable)stunServer turnServer:(NSString * _Nullable)turnServer turnUsername:(NSString * _Nullable)turnUsername turnPassword:(NSString * _Nullable)turnPassword SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)idvSettingsWithDomainName:(NSString * _Nullable)domainName certificateNames:(NSArray<NSString *> * _Nonnull)certificateNames aiAPIKey:(NSString * _Nullable)aiAPIKey signalingServer:(NSString * _Nullable)signalingServer stunServer:(NSString * _Nullable)stunServer turnServer:(NSString * _Nullable)turnServer SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)setMessageWithMessage:(NSString * _Nonnull)message index:(NSInteger)index SWIFT_WARN_UNUSED_RESULT;
 + (void)stopSSStartVC:(id _Nonnull)sender;
 + (void)setNavigationControllerWithNavigator:(UINavigationController * _Nonnull)navigator;
@@ -1323,7 +1323,7 @@ SWIFT_CLASS("_TtC14IDVerification8IDVerify")
 + (void)idTypeCheckFrontStart;
 + (void)onRetryDoc;
 + (void)onConfirmDoc;
-+ (BOOL)idvSettingsWithDomainName:(NSString * _Nullable)domainName certificateNames:(NSArray<NSString *> * _Nonnull)certificateNames aiAPIKey:(NSString * _Nullable)aiAPIKey signalingServer:(NSString * _Nullable)signalingServer stunServer:(NSString * _Nullable)stunServer turnServer:(NSString * _Nullable)turnServer turnUsername:(NSString * _Nullable)turnUsername turnPassword:(NSString * _Nullable)turnPassword SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)idvSettingsWithDomainName:(NSString * _Nullable)domainName certificateNames:(NSArray<NSString *> * _Nonnull)certificateNames aiAPIKey:(NSString * _Nullable)aiAPIKey signalingServer:(NSString * _Nullable)signalingServer stunServer:(NSString * _Nullable)stunServer turnServer:(NSString * _Nullable)turnServer SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)setMessageWithMessage:(NSString * _Nonnull)message index:(NSInteger)index SWIFT_WARN_UNUSED_RESULT;
 + (void)stopSSStartVC:(id _Nonnull)sender;
 + (void)setNavigationControllerWithNavigator:(UINavigationController * _Nonnull)navigator;

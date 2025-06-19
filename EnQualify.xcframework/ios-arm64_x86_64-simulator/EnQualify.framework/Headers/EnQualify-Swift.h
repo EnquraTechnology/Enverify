@@ -528,7 +528,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)onConfirmDocWithoutPop;
 + (void)startLivenessDetect;
 + (void)setSSStartButtonsWithButtonState:(BOOL)buttonState;
-+ (BOOL)idvSettingsWithDomainName:(NSString * _Nullable)domainName certificateNames:(NSArray<NSString *> * _Nonnull)certificateNames signalingServer:(NSString * _Nullable)signalingServer stunServer:(NSString * _Nullable)stunServer turnServer:(NSString * _Nullable)turnServer turnUsername:(NSString * _Nullable)turnUsername turnPassword:(NSString * _Nullable)turnPassword backOfficeBasePath:(NSString * _Nullable)backOfficeBasePath userNameForToken:(NSString * _Nullable)userNameForToken isContinue:(BOOL)isContinue referenceID:(NSString * _Nullable)referenceID SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)idvSettingsWithDomainName:(NSString * _Nullable)domainName certificateNames:(NSArray<NSString *> * _Nonnull)certificateNames signalingServer:(NSString * _Nullable)signalingServer stunServer:(NSString * _Nullable)stunServer turnServer:(NSString * _Nullable)turnServer backOfficeBasePath:(NSString * _Nullable)backOfficeBasePath userNameForToken:(NSString * _Nullable)userNameForToken isContinue:(BOOL)isContinue referenceID:(NSString * _Nullable)referenceID SWIFT_WARN_UNUSED_RESULT;
 + (void)agentRequestCompleted;
 + (void)stopSSStartVC:(id _Nonnull)sender;
 + (void)setNavigationControllerWithNavigator:(UINavigationController * _Nonnull)navigator;
@@ -1714,7 +1714,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) CalibrationValues * _N
 + (void)onConfirmDocWithoutPop;
 + (void)startLivenessDetect;
 + (void)setSSStartButtonsWithButtonState:(BOOL)buttonState;
-+ (BOOL)idvSettingsWithDomainName:(NSString * _Nullable)domainName certificateNames:(NSArray<NSString *> * _Nonnull)certificateNames signalingServer:(NSString * _Nullable)signalingServer stunServer:(NSString * _Nullable)stunServer turnServer:(NSString * _Nullable)turnServer turnUsername:(NSString * _Nullable)turnUsername turnPassword:(NSString * _Nullable)turnPassword backOfficeBasePath:(NSString * _Nullable)backOfficeBasePath userNameForToken:(NSString * _Nullable)userNameForToken isContinue:(BOOL)isContinue referenceID:(NSString * _Nullable)referenceID SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)idvSettingsWithDomainName:(NSString * _Nullable)domainName certificateNames:(NSArray<NSString *> * _Nonnull)certificateNames signalingServer:(NSString * _Nullable)signalingServer stunServer:(NSString * _Nullable)stunServer turnServer:(NSString * _Nullable)turnServer backOfficeBasePath:(NSString * _Nullable)backOfficeBasePath userNameForToken:(NSString * _Nullable)userNameForToken isContinue:(BOOL)isContinue referenceID:(NSString * _Nullable)referenceID SWIFT_WARN_UNUSED_RESULT;
 + (void)agentRequestCompleted;
 + (void)stopSSStartVC:(id _Nonnull)sender;
 + (void)setNavigationControllerWithNavigator:(UINavigationController * _Nonnull)navigator;

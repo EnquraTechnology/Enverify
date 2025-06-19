@@ -363,7 +363,7 @@ public class DataGroup14 : IDVerification.DataGroup {
   @objc public static func idTypeCheckFrontStart()
   @objc public static func onRetryDoc()
   @objc public static func onConfirmDoc()
-  @objc public static func idvSettings(domainName: Swift.String?, certificateNames: [Swift.String], aiAPIKey: Swift.String?, signalingServer: Swift.String?, stunServer: Swift.String?, turnServer: Swift.String?, turnUsername: Swift.String?, turnPassword: Swift.String?) -> Swift.Bool
+  @objc public static func idvSettings(domainName: Swift.String?, certificateNames: [Swift.String], aiAPIKey: Swift.String?, signalingServer: Swift.String?, stunServer: Swift.String?, turnServer: Swift.String?) -> Swift.Bool
   @objc public static func setMessage(message: Swift.String, index: Swift.Int) -> Swift.Bool
   @objc public static func stopSSStartVC(_ sender: Any)
   @objc public static func setNavigationController(navigator: UIKit.UINavigationController)

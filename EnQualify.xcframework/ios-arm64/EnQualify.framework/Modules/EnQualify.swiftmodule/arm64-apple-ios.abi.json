@@ -32263,7 +32263,7 @@
           {
             "kind": "Function",
             "name": "idvSettings",
-            "printedName": "idvSettings(domainName:certificateNames:signalingServer:stunServer:turnServer:turnUsername:turnPassword:backOfficeBasePath:userNameForToken:isContinue:referenceID:)",
+            "printedName": "idvSettings(domainName:certificateNames:signalingServer:stunServer:turnServer:backOfficeBasePath:userNameForToken:isContinue:referenceID:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -32367,34 +32367,6 @@
                     "usr": "s:SS"
                   }
                 ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
@@ -32422,11 +32394,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@EnQualify@objc(cs)EnVerify(cm)idvSettingsWithDomainName:certificateNames:signalingServer:stunServer:turnServer:turnUsername:turnPassword:backOfficeBasePath:userNameForToken:isContinue:referenceID:",
-            "mangledName": "$s9EnQualify0A6VerifyC11idvSettings10domainName16certificateNames15signalingServer04stunK004turnK00M8Username0M8Password18backOfficeBasePath04userG8ForToken10isContinue11referenceIDSbSSSg_SaySSGA7PSbAPtFZ",
+            "usr": "c:@M@EnQualify@objc(cs)EnVerify(cm)idvSettingsWithDomainName:certificateNames:signalingServer:stunServer:turnServer:backOfficeBasePath:userNameForToken:isContinue:referenceID:",
+            "mangledName": "$s9EnQualify0A6VerifyC11idvSettings10domainName16certificateNames15signalingServer04stunK004turnK018backOfficeBasePath04userG8ForToken10isContinue11referenceIDSbSSSg_SaySSGA5NSbANtFZ",
             "moduleName": "EnQualify",
             "static": true,
-            "objc_name": "idvSettingsWithDomainName:certificateNames:signalingServer:stunServer:turnServer:turnUsername:turnPassword:backOfficeBasePath:userNameForToken:isContinue:referenceID:",
+            "objc_name": "idvSettingsWithDomainName:certificateNames:signalingServer:stunServer:turnServer:backOfficeBasePath:userNameForToken:isContinue:referenceID:",
             "declAttributes": [
               "Final",
               "Preconcurrency",
@@ -46522,6 +46494,13 @@
         "kind": "Import",
         "name": "CommonCrypto",
         "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "EnQualify"
+      },
+      {
+        "kind": "Import",
+        "name": "OpenSSL",
+        "printedName": "OpenSSL",
         "declKind": "Import",
         "moduleName": "EnQualify"
       },
@@ -419295,21 +419274,21 @@
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "StringLiteral",
-      "offset": 74167,
+      "offset": 74265,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 83197,
+      "offset": 83295,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/EnVerify.swift",
       "kind": "BooleanLiteral",
-      "offset": 105585,
+      "offset": 105641,
       "length": 5,
       "value": "false"
     },
@@ -419666,9 +419645,30 @@
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Managers\/EnMessageSignature.swift",
       "kind": "StringLiteral",
-      "offset": 227,
+      "offset": 242,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Managers\/EnMessageSignature.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14466,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Managers\/EnMessageSignature.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14497,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/Managers\/EnMessageSignature.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14528,
+      "length": 2,
+      "value": "16"
     },
     {
       "filePath": "\/Users\/alikarababa\/EnQualify\/SDKs\/EnQualifyIOSSDK1.3\/EnVerify\/API\/Extensions.swift",
