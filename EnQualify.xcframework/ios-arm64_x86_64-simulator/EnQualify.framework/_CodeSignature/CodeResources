@@ -66,7 +66,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CQ5zB+KLrKPWNGCyDPJHxleCSc8=
+		8KnbFFPwdEQMP+W6dbrxMqck48s=
 		</data>
 		<key>LatinOCRResources.bundle/Info.plist</key>
 		<data>
@@ -130,11 +130,11 @@
 		</data>
 		<key>Modules/EnQualify.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		Uftl4kIlFNs8q+gK5JsH89KLzkA=
+		b16z+7Q6XOSzAMkkCRqMGI2Q/WI=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		vnYZNVsIoGiOh8iCYebuTPqGCpE=
+		FhYGEzNIR59CuZ9ohG4EFGg0Svg=
 		</data>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -397,14 +397,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PKC7zEzrrsD88W6U3zgXhOUIpGWmvxrRPxg6jmNlr+A=
+			ecLvNaKsvh+vmwVAK0WZrCtpOtKO6uQzyGzU92chRv4=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s/T9h4tBqwNiLsuok3xCP3lGEXDaTnbLbExrFauke0g=
+			Efsq8coLAJ33rIeFLgs4IlGJdT6Ij5L5IMcHXCOJkqw=
 			</data>
 		</dict>
 		<key>Modules/EnQualify.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
