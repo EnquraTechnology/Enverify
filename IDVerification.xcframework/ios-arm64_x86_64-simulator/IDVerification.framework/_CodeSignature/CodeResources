@@ -4,6 +4,14 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Alamofire.bundle/Info.plist</key>
+		<data>
+		nI6MvIsjEQk0iuPiS66cAryOOnw=
+		</data>
+		<key>Alamofire.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		ovFJMFOLMjzh8DLJKmXncj8JIgU=
+		</data>
 		<key>AntiSpoofingBin128.mlmodelc/analytics/coremldata.bin</key>
 		<data>
 		EN5EfDgcmDuYxJfSpwNb+glAHOc=
@@ -14,7 +22,7 @@
 		</data>
 		<key>AntiSpoofingBin128.mlmodelc/metadata.json</key>
 		<data>
-		4b8MoAZDF9pos6FBQ30L2CwN6Vs=
+		SnyXbe+y3wbYTMJ57MduGwFdWUo=
 		</data>
 		<key>AntiSpoofingBin128.mlmodelc/model.espresso.net</key>
 		<data>
@@ -43,6 +51,30 @@
 		<key>Config.plist</key>
 		<data>
 		G3fZEyQca4yMnbmTwSVyrMdR0bo=
+		</data>
+		<key>FBLPromises_Privacy.bundle/Info.plist</key>
+		<data>
+		WH6H8qhvXc2Pe0VRSr/ROLpAZIY=
+		</data>
+		<key>FBLPromises_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		ZajnvEs/MYRS3X4TPLAhBWi8mc4=
+		</data>
+		<key>GTMSessionFetcher_Core_Privacy.bundle/Info.plist</key>
+		<data>
+		V3nCbeM7cXjg9UFFgahNLwy4uwU=
+		</data>
+		<key>GTMSessionFetcher_Core_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		GqeAMkwbcNQeG0K4qQhQh2vHhHo=
+		</data>
+		<key>GoogleDataTransport_Privacy.bundle/Info.plist</key>
+		<data>
+		JpwDiPriOdDFVffVQXafztO7Zq4=
+		</data>
+		<key>GoogleDataTransport_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		WXQUJr75eMRgiVnLGyf8Gr3uLUU=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
 		<data>
@@ -96,6 +128,30 @@
 		<data>
 		RxtbTN3LjpFChp3tmniX3KD+dsE=
 		</data>
+		<key>GoogleToolboxForMac_Logger_Privacy.bundle/Info.plist</key>
+		<data>
+		7jlSzpd9QBmoTO+Ds3pJhgtiDq0=
+		</data>
+		<key>GoogleToolboxForMac_Logger_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		GqeAMkwbcNQeG0K4qQhQh2vHhHo=
+		</data>
+		<key>GoogleToolboxForMac_Privacy.bundle/Info.plist</key>
+		<data>
+		N3epl6GN/cnEmJZPnJSYfEm91RI=
+		</data>
+		<key>GoogleToolboxForMac_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		ZajnvEs/MYRS3X4TPLAhBWi8mc4=
+		</data>
+		<key>GoogleUtilities_Privacy.bundle/Info.plist</key>
+		<data>
+		Gr/eb+EsrvbrnZmRQlZW8EuEf9g=
+		</data>
+		<key>GoogleUtilities_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		TrRzpkxcmDwPf9xXhrQKnuRceyI=
+		</data>
 		<key>Headers/IDVerification-Swift.h</key>
 		<data>
 		oHYiIX6d2dIDAU4Lh5qnY2jUdJY=
@@ -144,6 +200,14 @@
 		<data>
 		oYS7+p9yJEEy3UOE1YgjDNNbLAM=
 		</data>
+		<key>LottiePrivacyInfo.bundle/Info.plist</key>
+		<data>
+		SK/878lDtIzQOxOVOzt8Q1NQxjk=
+		</data>
+		<key>LottiePrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		9slhmTZYKDmos4efk+3YOXYOQXo=
+		</data>
 		<key>MLKitImageLabelingResources.bundle/Info.plist</key>
 		<data>
 		9ZTxK5Wl5ahbCIafSoEE+2MqcS8=
@@ -170,15 +234,15 @@
 		</data>
 		<key>Modules/IDVerification.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		a7YYs3iVg86Eq/g/arnXdIstxuE=
+		GaIkRr4tZmOrscuj0Cuepd4PyTA=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		Kxq8TKwjQ3SZ+h5xMLeqCR4MhUI=
+		9mC0E06mbQSlMT5YUoxrQBDNGz0=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		54VofKcyE0hfpt8MPS+SEmRTeNk=
+		zXyYHHboqajds+95q2qZZusUZK4=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -194,11 +258,11 @@
 		</data>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aXx8kHTvDKbn+GwvtKQwmiB0mos=
+		XNa91G7ZX0I/e9QzXVW7/8LLkbM=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		54VofKcyE0hfpt8MPS+SEmRTeNk=
+		zXyYHHboqajds+95q2qZZusUZK4=
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -214,11 +278,19 @@
 		</data>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		beUdU5W/6gvonrehwxgCHri3lB8=
+		G4roSY9CzIfs4mg0HaClPTA8P+M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		6x7+4vZ2X65NtUTT0hPloQ1wQmM=
+		</data>
+		<key>Starscream_Privacy.bundle/Info.plist</key>
+		<data>
+		wW4WPOQvkIqzHyPQakQSZXVG4JQ=
+		</data>
+		<key>Starscream_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		J3jCDET/Yn1lAQbrw44v61PrV7c=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
@@ -241,6 +313,14 @@
 		<data>
 		qocrxEqBRHxVEH3KY+eX9XzCwuc=
 		</data>
+		<key>nanopb_Privacy.bundle/Info.plist</key>
+		<data>
+		QabQNz2ZdVuR1Fz30EFzKk/8DJM=
+		</data>
+		<key>nanopb_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		KY5lfwC2TvsgFj4wt7hkMmainbs=
+		</data>
 		<key>tr.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -253,6 +333,20 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Alamofire.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			P2wrdlPaa23EZk3GLNzvE9UAIAXQnxr374c7obv17xk=
+			</data>
+		</dict>
+		<key>Alamofire.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CNkOaUbb/qDQtbF/tlnXfu0j5EO3Rdjntbn6N4y3RHc=
+			</data>
+		</dict>
 		<key>AntiSpoofingBin128.mlmodelc/analytics/coremldata.bin</key>
 		<dict>
 			<key>hash2</key>
@@ -271,7 +365,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xhyv+4S6m7VcCezz78+jbpl4DKo0LTPzS5JOxFVboHA=
+			bS/1v8j/nUeTvBPOjKhxLEK0xmG/S0a9szTk2L672HY=
 			</data>
 		</dict>
 		<key>AntiSpoofingBin128.mlmodelc/model.espresso.net</key>
@@ -321,6 +415,48 @@
 			<key>hash2</key>
 			<data>
 			0Fr5WU+93jDtP8DRRZxbipu61X/so5mKBAxQZ0h0uO4=
+			</data>
+		</dict>
+		<key>FBLPromises_Privacy.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EyVkUYXHTYIxcqJbY6PHnqAUOIPuZz1fIwOjHbA1alU=
+			</data>
+		</dict>
+		<key>FBLPromises_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dLDNcvwjwe8wLyLuJ1P2GBfNxa8P96fy0GMrUk+4rOo=
+			</data>
+		</dict>
+		<key>GTMSessionFetcher_Core_Privacy.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			htpqMUhegpqmjYuLgjj/1XKdvoABsTPGGXUhAkiMsEk=
+			</data>
+		</dict>
+		<key>GTMSessionFetcher_Core_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PkqTy+hqzvfdfgY6KMhJmS9Vbn9SytxfN8HosOG1RoY=
+			</data>
+		</dict>
+		<key>GoogleDataTransport_Privacy.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Pt1HfhMD78Jb4BbwD8mXGv46pv6PyWT+eJ0iVZfvens=
+			</data>
+		</dict>
+		<key>GoogleDataTransport_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			z7s8T3ambVNpi66R9xEMAPIUjm5vE619MlkpCbwBDlE=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/BCLjoy_200.emd</key>
@@ -414,6 +550,48 @@
 			2pAlL0mzu5QuX4gBgKFFYfZpKW5/s+3s3quqi2u3gio=
 			</data>
 		</dict>
+		<key>GoogleToolboxForMac_Logger_Privacy.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dqUQd/lwEyMxZzJuvMFIElzZY2WuYYl6te6T9CeyRxg=
+			</data>
+		</dict>
+		<key>GoogleToolboxForMac_Logger_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PkqTy+hqzvfdfgY6KMhJmS9Vbn9SytxfN8HosOG1RoY=
+			</data>
+		</dict>
+		<key>GoogleToolboxForMac_Privacy.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PPPCiCkVRUenFI0uYUYg42bLXqyyXH+E8sd1RvnahuM=
+			</data>
+		</dict>
+		<key>GoogleToolboxForMac_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dLDNcvwjwe8wLyLuJ1P2GBfNxa8P96fy0GMrUk+4rOo=
+			</data>
+		</dict>
+		<key>GoogleUtilities_Privacy.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tAyurkdKKsaEIj+j1gyRbaQFQh1+cKN9XmPS+q5m0Es=
+			</data>
+		</dict>
+		<key>GoogleUtilities_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jxZCM8XSFfsGzrh4STQCHd3X05qJ15Xla6XIMqsPs/c=
+			</data>
+		</dict>
 		<key>Headers/IDVerification-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -491,6 +669,20 @@
 			DtYuT74PxcQJCuxHOxNuGI+ChZB2XAKDgjWNrds8y24=
 			</data>
 		</dict>
+		<key>LottiePrivacyInfo.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bgnLVqy3/fVKMjfT6XpCB1uw8k51WxsevZCFGoTTccw=
+			</data>
+		</dict>
+		<key>LottiePrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ENpn8heCTwGSiOwyirq8KQqwOZxS6b53ok1JQzkTfaI=
+			</data>
+		</dict>
 		<key>MLKitImageLabelingResources.bundle/Info.plist</key>
 		<dict>
 			<key>hash2</key>
@@ -537,21 +729,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5Ed1a1sZ+zIEMchQqsWnX5Py+KxDOE7b5A0RTb792Yc=
+			qalBnqjy7MsrO2SwSIOt0LLZKLkPO2GJROmTV8R07NM=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J48dmDadZ6hdQ9CrtA3odq78TsaGTjuY8c0BP9vWCnE=
+			1pEn+MbW5TehbGbRz2w+Y7gp1Q8NUc5xcjxzUQdK05w=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U9GYHlfuGV5pinac34+qn75IMD9VuCw3q60xB3IHb5g=
+			ig1QlNBkTHUfmXikUry1p7gzb7R3GsqxnrgWzH5f3XU=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -579,14 +771,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/pnYKIlN5zl970W3ajKOnnDrfqoxBV9DVJNcprefH74=
+			Fdm+z2FK+O5Jw6f5J2bMW8P6avQpcLKbHjTGJJr2oYY=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U9GYHlfuGV5pinac34+qn75IMD9VuCw3q60xB3IHb5g=
+			ig1QlNBkTHUfmXikUry1p7gzb7R3GsqxnrgWzH5f3XU=
 			</data>
 		</dict>
 		<key>Modules/IDVerification.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -614,7 +806,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9sR0VVxAtojsXGcaTiZSHOOYsL6OgioCAfRarLG/wbc=
+			cLRzgTSe1Z4ljVNRP7qaIsAK51L5glLStwFUL7Au5U4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -622,6 +814,20 @@
 			<key>hash2</key>
 			<data>
 			9qJ7OMPbA1dnainCCvI6kGc1/bOxi0Zu9CEJ/kvg9ok=
+			</data>
+		</dict>
+		<key>Starscream_Privacy.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6feDLTOQYqngRyhb/ywND+o11x44WtP85A8fNf3c8YY=
+			</data>
+		</dict>
+		<key>Starscream_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Uoqz/KkQ0qwvPvJW1epMIycwOnpKXvuSNph/MBjjEfM=
 			</data>
 		</dict>
 		<key>en.lproj/Localizable.strings</key>
@@ -652,6 +858,20 @@
 			<key>hash2</key>
 			<data>
 			oD/kU4QXJinBjRswuZ22CwsQMEtL9xB/BBSdApDoiz4=
+			</data>
+		</dict>
+		<key>nanopb_Privacy.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			otkHr2mB/tC4QzytGEV1J8tn8WGfmiFs49nE6OGg2Tw=
+			</data>
+		</dict>
+		<key>nanopb_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cpujy9D0WMeM1h7fFzUO2v4ONMqG4xTsZMjLIszSG1Q=
 			</data>
 		</dict>
 		<key>tr.lproj/Localizable.strings</key>
